@@ -30,7 +30,7 @@
 			if("laugh")
 				used = list('sound/vo/male/abyssariad/laugh (1).ogg','sound/vo/male/abyssariad/laugh (2).ogg','sound/vo/male/abyssariad/laugh again.ogg','sound/vo/male/abyssariad/laugh(3).ogg','sound/vo/male/abyssariad/morelaugh.ogg')
 			if("pain")
-				used = list('sound/vo/male/abyssariad/pain(1).ogg','sound/vo/male/abyssariad/pain(4).ogg','sound/vo/male/abyssariad/pain(5).ogg','sound/vo/male/abyssariad/pain(3).ogg')
+				used = list('sound/vo/male/abyssariad/pain(4).ogg','sound/vo/male/abyssariad/pain(5).ogg','sound/vo/male/abyssariad/pain(3).ogg')
 			if("paincrit")
 				used = list('sound/vo/male/abyssariad/painmoan.ogg','sound/vo/male/abyssariad/paincrit(3).ogg')
 			if("painmoan")

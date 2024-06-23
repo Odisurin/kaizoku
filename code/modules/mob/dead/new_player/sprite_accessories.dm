@@ -718,13 +718,13 @@
 	name = "Femdoshi"
 	icon_state = "female_fundoshi"
 	gender = FEMALE
-	specuse = ALL_RACES_LIST
+	specuse = list("abyssariad")
 
 /datum/sprite_accessory/underwear/male_fundoshi
 	name = "Mendoshi"
 	icon_state = "male_fundoshi"
 	gender = MALE
-	specuse = ALL_RACES_LIST
+	specuse = list("abyssariad")
 
 
 /datum/sprite_accessory/underwear/female_leotard

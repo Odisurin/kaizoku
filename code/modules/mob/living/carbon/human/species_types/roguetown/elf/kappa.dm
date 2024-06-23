@@ -2,7 +2,7 @@
 	race = /datum/species/elf/kappa
 
 /datum/species/elf/kappa
-	name = "kappa"
+	name = "Kappa"
 	id = "elf"
 	desc = "<b>Kappa</b><br>\
     Originally elves that arrived at the island centuries in the past, they have been \
@@ -28,7 +28,7 @@
 	limbs_icon_f = 'icons/roguetown/mob/bodies/f/fs_kappa.dmi'
 	dam_icon = 'icons/roguetown/mob/bodies/dam/dam_male.dmi'
 	dam_icon_f = 'icons/roguetown/mob/bodies/dam/dam_female.dmi'
-	hairyness = "t3"
+	hairyness = ""
 	use_f = FALSE
 	soundpack_m = /datum/voicepack/male/elf
 	soundpack_f = /datum/voicepack/female/elf
@@ -61,7 +61,7 @@
 
 /datum/species/elf/kappa/get_skin_list()
 	return sortList(list(
-	"Swampclan" = "129B57", 
+	"Swampclan" = "728400", 
 	"Jungleclan" = "0D6D30",
 	"Leafclan" = "E26846",
 	"Bogclan" = "086247",

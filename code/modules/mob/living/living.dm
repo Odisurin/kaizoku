@@ -1048,12 +1048,14 @@
 			to_chat(src, "<span class='warning'>You cannot do this ritual while unable to reach your chest.</span>")
 			return
 		else
-			if(alert(src, "Commit ritualistic disembowelment?","YES","NO") == "YES")
+			if(alert(src, "Commit ritualistic disembowelment?",,"YES","NO") == "YES")
 				say("Hesitation is DEFEAT!")
 				visible_message("<span class='warning'>'s claws carves their own guts before splitting themselves apart!</span>", \
 				"<span class='notice'>You voluntarily sever your boundaries to this consciousness as vitae spills out in waves.</span>", null, null, pulledby)
 				to_chat(src, "<span class='warning'>Your ancestors honors your sacrifice.</span>")
-				spill_organs(TRUE, FALSE, TRUE)
+				apply_damage(250, BRUTE, "chest", run_armor_check("chest", "melee", damage = 10))
+				spill_organs(FALSE, FALSE, TRUE)
+				spawn_gibs()
 				adjust_triumphs(1)
 		return
 	if(alert(src, "Yield in surrender?",,"YES","NO") != "YES")

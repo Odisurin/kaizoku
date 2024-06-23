@@ -42,8 +42,8 @@
 	OFFSET_FACE_F = list(0,-1), OFFSET_BELT_F = list(0,0), OFFSET_BACK_F = list(0,-1), \
 	OFFSET_NECK_F = list(0,-1), OFFSET_MOUTH_F = list(0,-1), OFFSET_PANTS_F = list(0,0), \
 	OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,0))
-	specstats = list("strength" = -1, "perception" = 1, "intelligence" = 1, "constitution" = 0, "endurance" = 0, "speed" = 2, "fortune" = 0)
-	specstats_f = list("strength" = -1, "perception" = 1, "intelligence" = 2, "constitution" = -1, "endurance" = -1, "speed" = 3, "fortune" = 0)
+	specstats = list("strength" = 0, "perception" = 0, "intelligence" = 1, "constitution" = 0, "endurance" = 0, "speed" = 3, "fortune" = 0)
+	specstats_f = list("strength" = -1, "perception" = 0, "intelligence" = 2, "constitution" = -1, "endurance" = -1, "speed" = 3, "fortune" = 0)
 	enflamed_icon = "widefire"
 	possible_faiths = list(FAITH_PSYDON)
 
@@ -59,15 +59,12 @@
 
 /datum/species/abyssariad/tengu/get_skin_list()
 	return sortList(list(
-	"Silver Purifier Branch" = "ffe0d1",
-	"Warp Caster Branch" = "fcccb3",
-	"Marble Branch" = "edc6b3",
-	"Bogwalker Branch" = "e2b9a3",
-	"Duskwalker Branch" = "d9a284",
-	"Bronze Purifier Branch" = "c9a893",
-	"Twilight Veil Branch" = "ba9882",
-	"Midnight Veil Branch" = "44342a",
-	"Ebony Purifier Branch" = "221A15"
+	"Lookout unit" = "f39083",
+	"Scout Unit" = "25242c",
+	"Vanguard Unit" = "abf76d",
+	"Pioneer Unit" = "e2b9a3",
+	"Peppersblow Unit" = "771111",
+	"Stargazer Unit" = "50cfaf"
 	))
 
 /datum/species/abyssariad/tengu/get_hairc_list()
@@ -99,23 +96,24 @@
 	if(unique)
 		if(gender == MALE)
 			for(var/i in 1 to 10)
-				randname = pick( world.file2list("strings/rt/names/human/humnorm.txt") )
+				randname = pick( world.file2list("strings/rt/names/abyssariad/abyssnorm.txt") )
 				if(!findname(randname))
 					break
 		if(gender == FEMALE)
 			for(var/i in 1 to 10)
-				randname = pick( world.file2list("strings/rt/names/human/humnorf.txt") )
+				randname = pick( world.file2list("strings/rt/names/abyssariad/abyssnorf.txt") )
 				if(!findname(randname))
 					break
 	else
 		if(gender == MALE)
-			randname = pick( world.file2list("strings/rt/names/human/humnorm.txt") )
+			randname = pick( world.file2list("strings/rt/names/abyssariad/abyssnorm.txt") )
 		if(gender == FEMALE)
-			randname = pick( world.file2list("strings/rt/names/human/humnorf.txt") )
+			randname = pick( world.file2list("strings/rt/names/abyssariad/abyssnorf.txt") )
 	return randname
 
-/datum/species/abyssariad/tengu/random_surname()
-	return " [pick(world.file2list("strings/rt/names/human/humnorlast.txt"))]"
+/datum/species/abyssariad/kitsune/random_surname()
+	return " [pick(world.file2list("strings/rt/names/abyssariad/abyssnorm.txt.txt"))]"
 
-/datum/species/abyssariad/tengu/get_accent_list()
+/datum/species/abyssariad/kitsune/get_accent_list()
 	return strings("japanese_replacement.json", "japanese")
+

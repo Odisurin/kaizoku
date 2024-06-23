@@ -256,10 +256,10 @@ SUBSYSTEM_DEF(ticker)
 
 /datum/controller/subsystem/ticker/proc/checkreqroles()
 	var/list/readied_jobs = list()
-	var/list/required_jobs = list("Queen","King","Merchant")
+	var/list/required_jobs = list("")
 #ifdef DEPLOY_TEST
 	required_jobs = list()
-	readied_jobs = list("Merchant", "King")
+	readied_jobs = list("")
 #endif
 #ifdef ROGUEWORLD
 	required_jobs = list()
@@ -275,6 +275,7 @@ SUBSYSTEM_DEF(ticker)
 							to_chat(player, "<span class='warning'>You cannot be [V] and thus are not considered.</span>")
 							continue
 				readied_jobs.Add(V)
+/*
 	if("Merchant" in readied_jobs)
 		if(("King" in readied_jobs) || ("Queen" in readied_jobs))
 			if("King" in readied_jobs)
@@ -289,6 +290,7 @@ SUBSYSTEM_DEF(ticker)
 		var/list/stuffy = list("Set Merchant to 'high' in your class preferences to start the game!", "PLAY Merchant NOW!", "A Merchant is required to start.", "Pray for a Merchant.", "One day, there will be a Merchant.", "Just try playing Merchant.", "If you don't play Merchant, the game will never start.", "We need at least one Merchant to start the game.", "We're waiting for you to pick Merchant to start.", "Still no Merchant is readied..", "I'm going to lose my mind if we don't get a Merchant readied up.","No. The game will not start because there is no Merchant.","What's the point of ROGUETOWN without a Merchant?")
 		to_chat(world, "<span class='purple'>[pick(stuffy)]</span>")
 		return FALSE
+*/
 
 #ifdef DEPLOY_TEST
 	var/amt_ready = 999
@@ -305,8 +307,8 @@ SUBSYSTEM_DEF(ticker)
 			continue
 		if(player.ready == PLAYER_READY_TO_PLAY)
 			amt_ready++
-	if(amt_ready < 2)
-		to_chat(world, "<span class='purple'>[amt_ready]/20 players ready.</span>")
+	if(amt_ready < 1)
+		to_chat(world, "<span class='purple'>[amt_ready]/1 players ready.</span>")
 /*		failedstarts++
 		if(failedstarts > 7)
 			to_chat(world, "<span class='purple'>[failedstarts]/13</span>")

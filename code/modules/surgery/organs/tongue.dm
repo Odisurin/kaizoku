@@ -13,6 +13,7 @@
 		/datum/language/common,
 		/datum/language/dwarvish,
 		/datum/language/elvish,
+		/datum/language/abyssal,
 		/datum/language/celestial,
 		/datum/language/hellspeak,
 		/datum/language/beast

@@ -171,8 +171,11 @@
 	. = ..()
 	if(iscarbon(owner))
 		var/mob/living/carbon/C = owner
-		C.add_nausea(100)
-		C.add_stress(/datum/stressevent/uncookedfood)
+		if(!C.dna.species?.id == "abyssariad")
+			C.add_nausea(100)
+			C.add_stress(/datum/stressevent/uncookedfood)
+		else
+			return
 
 /datum/status_effect/debuff/badmeal
 	alert_type = /atom/movable/alert/status_effect/debuff/badmeal

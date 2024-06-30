@@ -358,7 +358,7 @@ em						{font-style: normal;	font-weight: bold;}
 .sans					{font-family: "Comic Sans MS", cursive, sans-serif;}
 .papyrus				{font-family: "Papyrus", cursive, sans-serif;}
 .robot					{font-family: "Courier New", cursive, sans-serif;}
-.abyssal				{font-family: "Honoka Mincho", Pterra;}
+.abyssal				{font-family: "Honoka Mincho", cursive, sans-serif;}
 
 .command_headset		{font-weight: bold;	font-size: 160%;}
 .small					{font-size: 75%;}

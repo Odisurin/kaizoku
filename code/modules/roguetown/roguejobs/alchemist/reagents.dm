@@ -62,3 +62,19 @@
 	M.adjust_fire_stacks(1)
 	M.IgniteMob()
 	return ..()
+
+/datum/reagent/organpoison
+	name = "Organ Scourge"
+	description = "the downfall of unsuited flesh eaters."
+	taste_description = "dormant curse"
+	reagent_state = LIQUID
+	color = "#7c0202"
+	metabolization_rate = 0.1
+
+/datum/reagent/organpoison/on_mob_life(mob/living/carbon/M)
+	if(M.dna.species?.id == "abyssariad")
+		return
+	else
+		M.add_nausea(9)
+		M.adjustToxLoss(3, 0)
+		return ..()

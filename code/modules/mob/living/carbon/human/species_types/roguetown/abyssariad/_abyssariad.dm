@@ -11,7 +11,7 @@
 	RegisterSignal(C, COMSIG_MOB_SAY, .proc/handle_speech)
 	C.grant_language(/datum/language/common)
 	C.grant_language(/datum/language/abyssal)
-	C.cmode_music = 'sound/music/combatbandit.ogg'
+	C.cmode_music = 'sound/music/combatabyssariad.ogg'
 
 /datum/species/abyssariad/check_roundstart_eligible()
 	return FALSE

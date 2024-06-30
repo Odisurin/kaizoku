@@ -48,13 +48,15 @@
         "hoe": "ho",
         "yokai": "abyssariad",
         "bitch": "betche",
-        "master": "masta",
         "liquor": "rinka",
         "insect": "insekuto",
         "bread": "pan",
         "husband": "hazubando",
         "wife":"waifu",
         "hand": "hando",
+        "master": "sensei",
+        "teacher": "sensei",
+        "cute": "kawaii",
         "fish": "fishu",
         "devil": "deviru",
         "amazing": "sugoi",
@@ -73,6 +75,7 @@
         "cringe": "hiku",
         "mattress": "futon",
         "bed": "futon",
+        "hentai": "pervert",
         "divine wind": "kamikaze",
         "self-destructive": "kamikaze",
         "foolhardy": "kamikaze",
@@ -93,11 +96,8 @@
         "bishoujo": "Dishonor. I'm not going to say that.",
         "yaoi": "Dishonor. I'm not going to say that.",
         "yuri": "Dishonor. I'm not going to say that.",
-        "senpai": "I know I should say that just fine, but I will just not.",
-        "kawaii": "I know I should say that just fine, but I will just not.",
         "anime": "cutout paper animation",
-        "hikikomori": "Dishonor. I'm not going to say that."
+        "hikikomori": "Dishonor. I'm not going to say that.",
+        "homeless": "homeress"
     }
-
-
 }

@@ -6,6 +6,7 @@
 #define TRAIT_NUTCRACKER 				"Nutcracker"
 #define TRAIT_SEEPRICES				"Golden Blood"
 #define TRAIT_STRONGBITE				"Strong Bite"
+#define TRAIT_KAIZOKU				"Abyssariad Cultured"
 #define TRAIT_TORTURER					"Torturer"
 #define TRAIT_HATEWOMEN				"Ladykiller"
 #define TRAIT_GOODLOVER				"Fabled Lover"
@@ -65,6 +66,7 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_MEDIUMARMOR = "I can move freely in medium armor.",
 	TRAIT_HEAVYARMOR = "I can move freely in heavy armor.",
 	TRAIT_DODGEEXPERT = "I can dodge easly while only wearing light armor.",
+	TRAIT_KAIZOKU = "I belong to the ocean people. All my crafts are Abyssariad in nature.",
 	TRAIT_VILLAIN = "I am a devious, conniving villain!",
 	TRAIT_SOUL_EXAMINE = "<span class='deadsay'>I know when someone's soul has departed.</span>",
 	TRAIT_CYCLOPS_RIGHT = "<span class='warning'>My right eye has been poked out...</span>",

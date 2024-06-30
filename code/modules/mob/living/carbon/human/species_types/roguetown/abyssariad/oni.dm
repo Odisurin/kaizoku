@@ -5,13 +5,13 @@
 	name = "Oni"
 	id = "abyssariad"
 	desc = "<b>Island Branched Champion</b><br>\
-	Molded from Abyssor's shifting of the sea floor, the oni \
-	are a stoic race, with stout and sturdy bodies like wide trunked \
+	Created from Abyssor's purifying artifacts under guide of others Abyssariads, \
+	the Oni are a stoic race, with stout and sturdy bodies like wide trunked \
 	trees. Like the islands that sprinkle the ocean's surface, \
 	Oni are individuals bearing the constant waves and storms of life. \
-	It is said that Oni were a salvaged race from the Demonic Wars, \
+	It is said that Oni were a salvaged orcs from the Demonic Wars, \
 	taken in, and reshaped with abyssal artifacts to be molded more into the \
-	likeness of the Elder races.  Abandoned by Abyssor, they are stranded \
+	likeness of the Oceanic races. Now abandoned by Abyssor, they are stranded \
 	without divine guidance, marred by their past. \
 	Rekindled souls, condemned to suffer in a dying world. \
 	"
@@ -44,8 +44,8 @@
 	OFFSET_FACE_F = list(0,1), OFFSET_BELT_F = list(0,1), OFFSET_BACK_F = list(0,1), \
 	OFFSET_NECK_F = list(0,1), OFFSET_MOUTH_F = list(0,1), OFFSET_PANTS_F = list(0,1), \
 	OFFSET_SHIRT_F = list(0,1), OFFSET_ARMOR_F = list(0,1), OFFSET_UNDIES_F = list(0,1))
-	specstats = list("strength" = 2, "perception" = -1, "intelligence" = -1, "constitution" = 1, "endurance" = 1, "speed" = -1, "fortune" = -1)
-	specstats_f = list("strength" = 2, "perception" = -1, "intelligence" = -1, "constitution" = 1, "endurance" = 1, "speed" = -1, "fortune" = -1)
+	specstats = list("strength" = 2, "perception" = -1, "intelligence" = -2, "constitution" = 1, "endurance" = 1, "speed" = -1, "fortune" = -1)
+	specstats_f = list("strength" = 2, "perception" = -1, "intelligence" = -2, "constitution" = 1, "endurance" = 1, "speed" = -1, "fortune" = -1)
 	enflamed_icon = "widefire"
 	patreon_req = 0
 
@@ -56,9 +56,10 @@
 	return sortList(list(
 	"skin1" = "A84C4F",
 	"skin2" = "09371A",
-	"skin3" = "50715C",
-	"skin4" = "292413",
-	"skin5" = "1F1A23"
+	"skin3" = "439399",
+	"skin4" = "50715C",
+	"skin5" = "292413",
+	"skin6" = "1F1A23"
 	))
 
 

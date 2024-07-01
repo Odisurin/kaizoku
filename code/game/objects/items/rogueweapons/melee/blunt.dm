@@ -97,6 +97,22 @@
 	smeltresult = /obj/item/ash
 	minstr = 0
 
+/obj/item/rogueweapon/mace/jitte
+	force = 15
+	force_wielded = 20
+	name = "jitte"
+	desc = "Unlike most weapons named in the Abyssariad tongue, the jitte was designed by Humens. The hook along the shaft allows the club to arrest a blade that has been parried, greatly increasing the defensive utility of the otherwise simple baton."
+	icon_state = "jitte"
+	//dropshrink = 0.75
+	wbalance = 2
+	wdefense = 10
+	max_integrity = 300
+	wlength = WLENGTH_SHORT
+	w_class = WEIGHT_CLASS_NORMAL
+	possible_item_intents = list(/datum/intent/mace/strike, /datum/intent/mace/smash)
+	smeltresult = /obj/item/ingot/steel
+	minstr = 0
+
 /obj/item/rogueweapon/mace/woodclub/New()
 	..()
 	icon_state = "club[rand(1,2)]"
@@ -139,6 +155,28 @@
 	wbalance = 0
 	minstr = 0
 	wdefense = 3
+
+/obj/item/rogueweapon/mace/cudgel/ararebo
+	force = 15
+	force_wielded = 20
+	name = "ararebo"
+	icon_state = "ararebo"
+	desc = "A short, steel-capped club used by Abyssariads as a cudgel. The spikes cause it to inflict bleeding wounds."
+	gripped_intents = null
+	smeltresult = /obj/item/ingot/steel
+	wlength = WLENGTH_SHORT
+	w_class = WEIGHT_CLASS_NORMAL
+	sharpness = IS_SHARP
+	max_integrity = 300
+	wbalance = 0
+	minstr = 0
+	wdefense = 3
+
+/obj/item/rogueweapon/mace/cudgel/ararebo/obsidian
+	name = "obsidian club"
+	icon_state = "obsidian_club"
+	desc = "A short, wooden club with sharp flakes of obsidian embedded into it. Its appearance is similar to a flanged mace, but it inflicts deep cuts.s"
+	max_integrity = 150
 
 /obj/item/rogueweapon/mace/cudgel/getonmobprop(tag)
 	. = ..()
@@ -199,6 +237,64 @@
 	max_integrity = 400
 	minstr = 10
 	wdefense = 3
+	pixel_y = -16
+	pixel_x = -16
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	bigboy = TRUE
+	gripsprite = TRUE
+	slowdown = 1
+
+/obj/item/rogueweapon/mace/goden/kanabo
+	force = 20
+	force_wielded = 35
+	possible_item_intents = list(/datum/intent/mace/heavy/strike)
+	gripped_intents = list(/datum/intent/mace/heavy/strike, /datum/intent/mace/heavy/smash)
+	name = "kanabo"
+	desc = "A heavy two handed club, reinforced with an iron sleeve. Most commonly seen in the hands of Oni."
+	icon_state = "kanabo"
+	icon = 'icons/roguetown/weapons/64.dmi'
+	sharpness = IS_BLUNT
+	//dropshrink = 0.75
+	wlength = WLENGTH_LONG
+	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_BACK
+	associated_skill = /datum/skill/combat/axesmaces
+	smeltresult = /obj/item/ingot/iron
+	parrysound = "parrywood"
+	swingsound = BLUNTWOOSH_MED
+	max_integrity = 400
+	minstr = 12//Favored weapon of the Oni
+	wdefense = 3
+	pixel_y = -16
+	pixel_x = -16
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	bigboy = TRUE
+	gripsprite = TRUE
+	slowdown = 1
+
+/obj/item/rogueweapon/mace/goden/tetsubo
+	force = 25
+	force_wielded = 50
+	possible_item_intents = list(/datum/intent/mace/heavy/strike)
+	gripped_intents = list(/datum/intent/mace/heavy/strike, /datum/intent/mace/heavy/smash)
+	name = "tetsubo"
+	desc = "A heavier variant of the kanabo, fitted with a steel sleeve bearing menacing spikes and favored by Oni Warlords. Requires immense strength to use, but hits like a raging bull."
+	icon_state = "tetsubo"
+	icon = 'icons/roguetown/weapons/64.dmi'
+	sharpness = IS_SHARP
+	//dropshrink = 0.75
+	wlength = WLENGTH_LONG
+	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_BACK
+	associated_skill = /datum/skill/combat/axesmaces
+	smeltresult = /obj/item/ingot/steel
+	parrysound = "parrywood"
+	swingsound = BLUNTWOOSH_MED
+	max_integrity = 600
+	minstr = 15//Favored weapon of the Oni
+	wdefense = 4
 	pixel_y = -16
 	pixel_x = -16
 	inhand_x_dimension = 64
@@ -388,3 +484,30 @@
 				return list("shrink" = 0.6,"sx" = 5,"sy" = -3,"nx" = -5,"ny" = -2,"wx" = -5,"wy" = -1,"ex" = 3,"ey" = -2,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = 7,"sturn" = -7,"wturn" = 16,"eturn" = -22,"nflip" = 8,"sflip" = 0,"wflip" = 8,"eflip" = 0)
 			if("onbelt")
 				return list("shrink" = 0.3,"sx" = -2,"sy" = -5,"nx" = 4,"ny" = -5,"wx" = 0,"wy" = -5,"ex" = 2,"ey" = -5,"nturn" = 0,"sturn" = 0,"wturn" = 0,"eturn" = 0,"nflip" = 0,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0)
+
+/obj/item/rogueweapon/mace/warhammer/otsuchi
+	force = 10
+	force_wielded = 20
+	possible_item_intents = list(/datum/intent/mace/strike)
+	gripped_intents = list(/datum/intent/mace/heavy/strike, /datum/intent/mace/heavy/smash)
+	name = "otsuchi"
+	desc = "A wooden greathammer of Abyssariad make, heavy enough to give any warrior pause."
+	icon_state = "otsuchi"
+	icon = 'icons/roguetown/weapons/64.dmi'
+	sharpness = IS_BLUNT
+	//dropshrink = 0.75
+	wlength = WLENGTH_GREAT
+	w_class = WEIGHT_CLASS_BULKY
+	slot_flags = ITEM_SLOT_BACK
+	associated_skill = /datum/skill/combat/axesmaces
+	smeltresult = /obj/item/ash
+	swingsound = BLUNTWOOSH_HUGE
+	max_integrity = 500
+	minstr = 10
+	wdefense = 3
+	pixel_y = -16
+	pixel_x = -16
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	bigboy = TRUE
+	gripsprite = TRUE

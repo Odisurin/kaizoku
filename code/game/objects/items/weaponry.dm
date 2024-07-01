@@ -271,10 +271,11 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 
 
 /obj/item/throwing_star
-	name = "throwing star"
-	desc = ""
-	icon_state = "throwingstar"
-	item_state = "eshield0"
+	name = "shuriken"
+	desc = "A sharpened star made of iron that makes for a dangerous throwing weapon"
+	icon = 'icons/roguetown/weapons/32.dmi'
+	icon_state = "shuriken"
+	item_state = "shuriken"
 	lefthand_file = 'icons/mob/inhands/equipment/shields_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/shields_righthand.dmi'
 	force = 2

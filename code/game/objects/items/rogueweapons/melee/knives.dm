@@ -176,7 +176,7 @@
 	icon_state = "sai"
 	name = "sai"
 	desc = "Typically carried in pairs, the sai is recognizable for its unique design, with the central shaft consisting of a sharply-tapered rod and two prongs protecting the cross-guard. Although effective enough at damaging with jabbing attacks, it lacks a blade and cannot cut. What it excels at, however is defending against other weapons."
-	w_defense = 8
+	wdefense = 8
 
 /obj/item/rogueweapon/huntingknife/idagger/steel/special
 	icon_state = "sdaggeralt"

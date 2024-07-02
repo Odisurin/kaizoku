@@ -28,6 +28,15 @@
 	sellprice = 20
 	wdefense = 4
 
+/obj/item/rogueweapon/sword/uchigatana
+	force_wielded = 30
+	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/chop)
+	name = "uchigatana"
+	desc = "Slightly shorter and simpler in design than the tachi, the uchigatana is the main sword of Abyssariad and Islander footsoldiers. Unlike continental swords of similar length, this design lends itself well to brutal chopping strikes alongside skillful swordplay, but lacks a long crossguard for safely parrying other blades."
+	icon = 'icons/roguetown/weapons/64.dmi'
+	icon_state = "uchigatana"
+	wdefense = 3
+
 /obj/item/rogueweapon/sword/Initialize()
 	. = ..()
 	if(icon_state == "sword1")
@@ -76,7 +85,7 @@
 // Long Swords
 /obj/item/rogueweapon/sword/long
 	force = 18
-	force_wielded = 28
+	force_wielded = 30
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike)
 	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike, /datum/intent/sword/chop)
 	icon_state = "longsword"
@@ -279,6 +288,12 @@
 			if("onbelt")
 				return list("shrink" = 0.5,"sx" = -4,"sy" = -6,"nx" = 5,"ny" = -6,"wx" = 0,"wy" = -6,"ex" = -1,"ey" = -6,"nturn" = 100,"sturn" = 156,"wturn" = 90,"eturn" = 180,"nflip" = 0,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0)
 
+/obj/item/rogueweapon/sword/long/rider/tachi
+	icon_state = "tachi"
+	item_state = "tachi"
+	name = "tachi"
+	desc = "A long, curved blade of Abyssariad make, introduced when sea raiders returned to the Fog Isles with captured horses and began developing their own cavalry tactics. Due to the time and expense of making such a blade, most tachi seen today are artisan blades held as status symbols or family heirlooms by nobility or otherwise wealthy and influential samurai."
+
 /obj/item/rogueweapon/sword/long/marlin
 	force = 15
 	force_wielded = 30
@@ -323,8 +338,8 @@
 				return list("shrink" = 0.5,"sx" = -4,"sy" = -6,"nx" = 5,"ny" = -6,"wx" = 0,"wy" = -6,"ex" = -1,"ey" = -6,"nturn" = 100,"sturn" = 156,"wturn" = 90,"eturn" = 180,"nflip" = 0,"sflip" = 0,"wflip" = 0,"eflip" = 0,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0)
 
 /obj/item/rogueweapon/greatsword
-	force = 12
-	force_wielded = 32
+	force = 15
+	force_wielded = 40
 	possible_item_intents = list(/datum/intent/sword/chop,/datum/intent/sword/strike) //bash is for nonlethal takedowns, only targets limbs
 	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/longsword/chop, /datum/intent/sword/thrust, /datum/intent/sword/strike)
 	name = "greatsword"
@@ -351,6 +366,17 @@
 	max_integrity = 500
 	wdefense = 3
 
+/obj/item/rogueweapon/greatsword/odachi
+	force = 15
+	force_wielded = 40
+	possible_item_intents = list(/datum/intent/sword/cut) //bash is for nonlethal takedowns, only targets limbs
+	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/longsword/chop, /datum/intent/sword/thrust)
+	name = "odachi"
+	desc = "A large and extraordinarily expensive sword, the venerable odachi are constructed from a single large billet of steel by a masterful swordsmith. Of all the weapons that have emerged in Abyssariad and Islander culture, none exemplify bravery, strength, and warrior spirit more than this massive sword. As it is too large to carry and unsheathe from upon one's belt, it is tradition for the user to carry it in a back-mounted scabbard and unsheathe it prior to battle, simply carry it in-scabbard by hand, or grant a trusted servant the privilege of carrying it for them."
+	icon_state = "odachi"
+	icon = 'icons/roguetown/weapons/64.dmi'
+	parrysound = "bladedlarge"
+
 /obj/item/rogueweapon/greatsword/getonmobprop(tag)
 	. = ..()
 	if(tag)
@@ -367,7 +393,7 @@
 	desc = "Commonly known as a flame-bladed sword, this weapon has an undulating blade. It's wave-like form distributes force better, and is less likely to break on impact."
 	icon_state = "flamberge"
 	force = 10
-	force_wielded = 28 // Unique weapon from rare job
+	force_wielded = 40 // Unique weapon from rare job
 	smeltresult = /obj/item/ingot/steel
 	max_blade_int = 200
 	max_integrity = 400
@@ -387,7 +413,7 @@
 
 /obj/item/rogueweapon/greatsword/elfgsword
 	force = 12
-	force_wielded = 28 // Unique weapon from rare job
+	force_wielded = 35 // Unique weapon from rare job
 	name = "elven kriegsmesser"
 	desc = "A huge, curved elven blade. It's metal is of a high quality, yet still light, crafted by the greatest elven bladesmiths."
 	icon_state = "kriegsmesser"
@@ -415,7 +441,7 @@
     attack_verb = list("stabs")
     animname = "stab"
     icon_state = "instab"
-    reach = 1
+    reach = 2
     chargetime = 1
     warnie = "mobwarning"
     hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
@@ -457,7 +483,7 @@
 	penfactor = 20
 	damfactor = 1.1
 	chargetime = 1.2
-	swingdelay = 1.5
+	swingdelay = 1.25
 	misscost = 15
 	warnie = "mobwarning"
 
@@ -560,6 +586,13 @@
 	max_blade_int = 200
 	max_integrity = 300
 
+/obj/item/rogueweapon/sword/short/wakizashi
+	force = 30
+	name = "wakizashi"
+	desc = "A shorter design of katana designed to replace the tanto as a samurai's sidearm, the wakizashi most commonly accompanies an uchigatana when worn in a samurai's daisho. Even on its own, the wakizashi is popular with commoners as a defense against bandits and is often legal weapon for them to carry."
+	possible_item_intents = list(/datum/intent/sword/cut/short, /datum/intent/sword/thrust/short, /datum/intent/sword/chop)
+	smeltresult = /obj/item/ingot/steel
+	minstr = 6
 
 // Sabres
 /obj/item/rogueweapon/sword/sabre

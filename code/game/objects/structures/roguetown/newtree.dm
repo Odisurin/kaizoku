@@ -81,13 +81,17 @@
 		if(L.mind)
 			var/myskill = L.mind.get_skill_level(/datum/skill/misc/climbing)
 			var/obj/structure/table/TA = locate() in L.loc
+			var/obj/item/offhand = user.get_inactive_held_item()
+			if(offhand)
+				if(istype(offhand, /obj/item/rogueweapon/huntingknife/idagger/kunai))
+					myskill += 3
 			if(TA)
 				myskill += 1
 			else
 				var/obj/structure/chair/CH = locate() in L.loc
 				if(CH)
 					myskill += 1
-			used_time = max(70 - (myskill * 10) - (L.STASPD * 3), 30)
+			used_time = max(70 - (myskill * 10) - (L.STASPD * 3), 20)
 		playsound(user, 'sound/foley/climb.ogg', 100, TRUE)
 		user.visible_message("<span class='warning'>[user] starts to climb [src].</span>", "<span class='warning'>I start to climb [src]...</span>")
 		if(do_after(L, used_time, target = src))

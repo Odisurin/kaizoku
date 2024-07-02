@@ -140,14 +140,43 @@
 	desc = "Thin, sharp, pointed death."
 	force = 12
 	icon_state = "idagger"
-	smeltresult = null
+	smeltresult = /obj/item/ingot/iron
+
+/obj/item/rogueweapon/huntingknife/idagger/kunai
+	name = "kunai"
+	desc = "Originating as a masonry or gardening tool, a properly sharpened kunai is a simple iron stabbing weapon that also happens to be useful for climbing walls, similar to how a piton would be used."
+	force = 12
+	icon_state = "kunai"
 
 /obj/item/rogueweapon/huntingknife/idagger/steel
 	name = "dagger"
 	desc = "A dagger made of refined steel."
 	force = 14
 	icon_state = "sdagger"
-	smeltresult = null
+	smeltresult = /obj/item/ingot/steel
+
+/obj/item/rogueweapon/huntingknife/idagger/steel/tanto
+	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut,/datum/intent/dagger/thrust/pick)
+	force = 15
+	name = "tanto"
+	icon_state = "tanto"
+	desc = "Abyssariad swordmakers first created the tanto as a companion blade to the tachi in a samurai's daisho, later creating the wakizashi to replace it with the advent of the uchigatana and the shift from cavalry tactics to infantry tactics following the Demon War. It is primarily a thrusting weapon, but is also a decent cutting implement."
+
+/obj/item/rogueweapon/huntingknife/idagger/steel/kaiken
+	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut,/datum/intent/dagger/thrust/pick)
+	w_class = WEIGHT_CLASS_TINY
+	icon_state = "kaiken"
+	name = "kaiken"
+	desc = "As improvements in Abyssariad steelcraft were made, laws were put into place in many a humen society forbidding anyone outside of the nobility and their ashigaru from carrying blades in public. Following such laws came the emergence of tiny, easily concealed blades such as this, used mostly for self-defense but also, occasionally, for political assassinations."
+
+/obj/item/rogueweapon/huntingknife/idagger/sai
+	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/thrust/pick)
+	w_class = WEIGHT_CLASS_NORMAL
+	force = 10
+	icon_state = "sai"
+	name = "sai"
+	desc = "Typically carried in pairs, the sai is recognizable for its unique design, with the central shaft consisting of a sharply-tapered rod and two prongs protecting the cross-guard. Although effective enough at damaging with jabbing attacks, it lacks a blade and cannot cut. What it excels at, however is defending against other weapons."
+	wdefense = 8
 
 /obj/item/rogueweapon/huntingknife/idagger/steel/special
 	icon_state = "sdaggeralt"
@@ -246,8 +275,8 @@
 	desc = "A tool favored by the wood-elves, easy to make, useful for skinning the flesh of beast and man alike."
 	icon_state = "stone_knife"
 	smeltresult = null
-	max_integrity = 15
-	max_blade_int = 15
+	max_integrity = 50
+	max_blade_int = 50
 	wdefense = 1
 	smeltresult = /obj/item/ash
 

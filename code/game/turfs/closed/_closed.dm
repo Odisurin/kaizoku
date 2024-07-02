@@ -150,6 +150,10 @@
 			if(L.mind)
 				var/myskill = L.mind.get_skill_level(/datum/skill/misc/climbing)
 				var/obj/structure/table/TA = locate() in L.loc
+				var/obj/item/offhand = user.get_inactive_held_item()
+				if(offhand)
+					if(istype(offhand, /obj/item/rogueweapon/huntingknife/idagger/kunai))
+						myskill += 3
 				if(TA)
 					myskill += 1
 				else
@@ -165,7 +169,7 @@
 				if(myskill < climbdiff)
 					to_chat(user, "<span class='warning'>I can't climb here.</span>")
 					return
-				used_time = max(70 - (myskill * 10) - (L.STASPD * 3), 30)
+				used_time = max(70 - (myskill * 10) - (L.STASPD * 3), 20)
 			if(user.m_intent != MOVE_INTENT_SNEAK)
 				playsound(user, climbsound, 100, TRUE)
 			user.visible_message("<span class='warning'>[user] starts to climb [src].</span>", "<span class='warning'>I start to climb [src]...</span>")

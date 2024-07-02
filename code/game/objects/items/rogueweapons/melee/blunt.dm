@@ -97,7 +97,7 @@
 	smeltresult = /obj/item/ash
 	minstr = 0
 
-/obj/item/rogueweapon/mace/jitte
+/obj/item/rogueweapon/mace/cudgel/jitte
 	force = 15
 	force_wielded = 20
 	name = "jitte"
@@ -107,7 +107,7 @@
 	wbalance = 2
 	wdefense = 10
 	max_integrity = 300
-	wlength = WLENGTH_SHORT
+	wlength = WLENGTH_NORMAL
 	w_class = WEIGHT_CLASS_NORMAL
 	possible_item_intents = list(/datum/intent/mace/strike, /datum/intent/mace/smash)
 	smeltresult = /obj/item/ingot/steel
@@ -148,7 +148,7 @@
 	icon_state = "cudgel"
 	desc = "A stubby little club favored for thwacking thieves and smart-mouthed peasant folk."
 	gripped_intents = null
-	smeltresult = /obj/item/ash
+	smeltresult = /obj/item/ingot/iron
 	wlength = WLENGTH_SHORT
 	w_class = WEIGHT_CLASS_NORMAL
 	max_integrity = 180

@@ -148,7 +148,7 @@
 	desc = "A well-balanced, short-handled Abyssariad axe designed for throwing. Traditionally used as a hunting weapon as an alternative to archery, as bow wood is scarce on the Fog Isles."
 	icon_state = "throwing_ono"
 	max_blade_int = 500
-	smeltresult = /obj/item/ingot/steel
+	smeltresult = /obj/item/ash
 	parrysound = list('sound/combat/parry/wood/parrywood (1).ogg', 'sound/combat/parry/wood/parrywood (2).ogg', 'sound/combat/parry/wood/parrywood (3).ogg')
 	swingsound = BLADEWOOSH_MED
 	wlength = WLENGTH_SHORT

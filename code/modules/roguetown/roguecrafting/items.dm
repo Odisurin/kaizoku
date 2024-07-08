@@ -250,7 +250,7 @@ datum/crafting_recipe/roguetown/poisonbolt
 
 /datum/crafting_recipe/roguetown/handmadebow
 	name = "wooden bow"
-	result = list(/obj/item/gun/ballistic/revolver/grenadelauncher/bow)
+	result = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 	reqs = list(/obj/item/grown/log/tree/small = 1,
 	/obj/item/natural/fibers = 6)
 	craftdiff = 3
@@ -264,3 +264,23 @@ datum/crafting_recipe/roguetown/poisonbolt
 			/obj/item/ingot/iron = 1)
 	skillcraft = /datum/skill/craft/engineering
 	craftdiff = 0 // Something to practice engineering with.
+
+/datum/crafting_recipe/roguetown/softrepairkit
+	name = "stitchwork armor repair kit"
+	result = /obj/item/repairkit
+	reqs = list(
+			/obj/item/needle = 1
+			/obj/item/natural/cloth = 1,
+			/obj/item/natural/fiber = 6)
+	skillcraft = /datum/skill/misc/sewing
+	craftdiff = 2
+
+/datum/crafting_recipe/roguetown/hardrepairkit
+	name = "metalwork armor repair kit"
+	result = /obj/item/repairkit
+	reqs = list(
+			/obj/item/rogueweapon/hammer = 1
+			/obj/item/storage/roguebag/crafted = 1,
+			/obj/item/ingot/iron = 1)
+	skillcraft = /datum/skill/craft/armorsmithing
+	craftdiff = 2

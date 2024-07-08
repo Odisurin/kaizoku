@@ -419,6 +419,7 @@
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	block2add = FOV_RIGHT|FOV_LEFT
+	body_parts_covered = HEAD|EARS|HAIR|NOSE|EYES|FACE
 	smeltresult = /obj/item/ingot/steel
 
 /obj/item/clothing/head/roguetown/helmet/heavy/guard
@@ -448,7 +449,7 @@
 	block2add = FOV_RIGHT|FOV_LEFT
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
-	body_parts_covered = HEAD|EARS|HAIR|NOSE|EYES
+	body_parts_covered = HEAD|EARS|HAIR|NOSE|EYES|FACE
 	smeltresult = /obj/item/ingot/steel
 
 /obj/item/clothing/head/roguetown/helmet/heavy/knight/black

@@ -15,6 +15,7 @@
 	tool_behaviour = TOOL_SUTURE
 	/// Amount of uses left
 	var/stringamt = 10
+	var/maxstring = 20
 	/// If this needle is infinite
 	var/infinite = FALSE
 	/// If this needle can be used to repair items
@@ -23,7 +24,7 @@
 /obj/item/needle/examine()
 	. = ..()
 	if(!infinite)
-		. += "<span class='bold'>It has [stringamt] uses left.</span>"
+		. += "<span class='bold'>It has [stringamt] of [maxstring] uses left.</span>"
 	else
 		. += "Can be used indefinitely."
 
@@ -34,15 +35,17 @@
 /obj/item/needle/update_overlays()
 	. = ..()
 	if(stringamt <= 0)
-		return
-	. += "[icon_state]string"
+		. -= "[icon_state]string"
+	else
+		. += "[icon_state]string"
 
 /obj/item/needle/use(used)
 	if(infinite)
 		return TRUE
 	stringamt = stringamt - used
-	if(stringamt <= 0)
-		qdel(src)
+	update_overlays()
+//	if(stringamt <= 0) Needles will no longer delete themselves and can be refilled with individual fibers.
+//		qdel(src)
 
 /obj/item/needle/attack(mob/living/M, mob/user)
 	sew(M, user)
@@ -60,6 +63,9 @@
 			if(!I.ontable())
 				to_chat(user, "<span class='warning'>I should put this on a table first.</span>")
 				return
+			if(stringamt < 1)
+				to_chat(user, "<span class='warning'>There's no thread left...</span>")
+				return
 			playsound(loc, 'sound/foley/sewflesh.ogg', 100, TRUE, -2)
 			var/sewtime = 70
 			if(user.mind)
@@ -70,6 +76,23 @@
 				I.obj_integrity = I.max_integrity
 				return
 		return
+	return ..()
+
+/obj/item/needle/attackby(obj/item/I, mob/user, params)
+	if(istype(I, /obj/item/natural/fibers))
+		if(infinite)
+			to_chat(user, "<span class='green'>This needle creates its own thread and never needs replenishing.</span>")
+			return
+		if(maxstring - stringamt < 5)
+			to_chat(user, "<span class='warning'>Not enough room for more thread!</span>")
+			return
+		else
+			to_chat(user, "I begin threading the needle with additional fibers...")
+			if(do_after(user, 6 SECONDS - user.mind.get_skill_level(/datum/skill/misc/sewing), target = I))
+				stringamt += 5
+				to_chat(user, "<span class='green'>I replenish the needle's thread.</span>")
+				qdel(I)
+			return
 	return ..()
 
 /obj/item/needle/proc/sew(mob/living/target, mob/living/user)
@@ -93,6 +116,9 @@
 		sewable = affecting.get_sewable_wounds()
 	else
 		sewable = patient.get_sewable_wounds()
+	if(stringamt < 1)
+		to_chat(user, "<span class='warning'>There's no thread left...</span>")
+		return
 	if(!length(sewable))
 		to_chat(doctor, "<span class='warning'>There aren't any wounds to be sewn.</span>")
 		return FALSE
@@ -132,7 +158,7 @@
 	name = "wooden needle"
 	icon_state = "thornneedle"
 	desc = "This rough needle can be used to sew cloth and wounds."
-	stringamt = 3
+	stringamt = 5
 
 /obj/item/needle/blessed
 	name = "blessed needle"

@@ -135,4 +135,33 @@
 /datum/anvil_recipe/tools/chain
 	name = "chain"
 	req_bar = /obj/item/ingot/iron
-	created_item = list(/obj/item/rope/chain)
+	created_item = /obj/item/rope/chain
+
+/datum/anvil_recipe/tools/surgery
+	name = "scalpel"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/rogueweapon/surgery/scalpel
+
+/datum/anvil_recipe/tools/surgery/saw
+	name = "bonesaw"
+	created_item = /obj/item/rogueweapon/surgery/saw
+
+/datum/anvil_recipe/tools/surgery/hemostat
+	name = "forceps"
+	created_item = /obj/item/rogueweapon/surgery/hemostat
+
+/datum/anvil_recipe/tools/surgery/retractor
+	name = "speculum"
+	created_item = /obj/item/rogueweapon/surgery/retractor
+
+/datum/anvil_recipe/tools/surgery/bonesetter
+	name = "bone forceps"
+	created_item = /obj/item/rogueweapon/surgery/bonesetter
+
+/datum/anvil_recipe/tools/surgery/cautery
+	name = "cautery iron"
+	created_item = /obj/item/rogueweapon/surgery/cautery
+
+/datum/anvil_recipe/tools/surgery/hammer
+	name = "examination hammer"
+	created_item = /obj/item/rogueweapon/surgery/hammer

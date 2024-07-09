@@ -11,15 +11,17 @@
 		if(obj_integrity < max_integrity)
 			var/meme = round(((obj_integrity / max_integrity) * 100), 1)
 			switch(meme)
-				if(0 to 10)
-					. += "<span class='warning'>It's nearly broken.</span>"
+				if(1 to 10)
+					if(!obj_broken)
+						. += "<span class='warning'>It's nearly broken.</span>"
+					else
+						. += "<span class='warning'>It's broken.</span>"
 				if(10 to 30)
 					. += "<span class='warning'>It's severely damaged.</span>"
 				if(30 to 80)
 					. += "<span class='warning'>It's damaged.</span>"
 				if(80 to 99)
 					. += "<span class='warning'>It's a little damaged.</span>"
-
 //	if(has_inspect_verb || (obj_integrity < max_integrity))
 //		. += "<span class='notice'><a href='?src=[REF(src)];inspect=1'>Inspect</a></span>"
 
@@ -50,7 +52,7 @@
 				baitquality = "good"
 			if(10)
 				baitquality = "passable"
-		. += "<span class='info'>It is \a [baitquality] bait for fish.</span>"		
+		. += "<span class='info'>It is \a [baitquality] bait for fish.</span>"
 
 	for(var/datum/examine_effect/E in examine_effects)
 		E.trigger(user)

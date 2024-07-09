@@ -35,7 +35,7 @@
 	tool_behaviour = TOOL_SCALPEL
 
 /obj/item/rogueweapon/surgery/saw
-	name = "saw"
+	name = "bonesaw"
 	desc = "A tool used to carve through bone."
 	icon_state = "bonesaw"
 	possible_item_intents = list(/datum/intent/dagger/cut, /datum/intent/dagger/chop/cleaver)

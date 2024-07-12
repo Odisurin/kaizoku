@@ -48,7 +48,7 @@ GLOBAL_LIST_INIT(wolf_suffixes, list("Fang", "Claw", "Stalker", "Prowler", "Roar
 #define FAITH_DWARF 3
 #define FAITH_SPIDER 4
 #define FAITH_ZIZO 5
-#define FAITH_ABYSSAL 5
+#define FAITH_ABYSSANCTUM 6
 
 /proc/get_faith_name(faith)
 	switch(faith)
@@ -62,8 +62,8 @@ GLOBAL_LIST_INIT(wolf_suffixes, list("Fang", "Claw", "Stalker", "Prowler", "Roar
 			return "Spider Queen"
 		if(FAITH_ZIZO)
 			return "Zizo"
-		if(FAITH_ABYSSAL)
-			return "Purificators"
+		if(FAITH_ABYSSANCTUM)
+			return "Purifiers"
 
 /proc/get_faith_desc(faith)
 	switch(faith)
@@ -77,8 +77,8 @@ GLOBAL_LIST_INIT(wolf_suffixes, list("Fang", "Claw", "Stalker", "Prowler", "Roar
 			return "You pledged your faith in the SPIDER QUEEN, a godlike creature who ruled the Under-World before her untimely death."
 		if(FAITH_ZIZO)
 			return "You are a disgusting slave of ZIZO! Let the scum of creation die in obscene ways as your beautiful evil turns the world dark and miserable."
-		if(FAITH_ABYSSAL)
-			return "You are a Anti-Patheon Loyalist who believes only Abyssor and their champions to be deserving of your faith. Never fear the primordial soup, as it is the true mother of all."
+		if(FAITH_ABYSSANCTUM)
+			return "You are a Champion loyalist distrusting of the Pantheonism, upholding Abyssor and their creations to be deserving of your faith - and anything else must be purified. Never fear the primordial soup, as it is the progenitor of all."
 
 
 GLOBAL_LIST_EMPTY(sunlights)

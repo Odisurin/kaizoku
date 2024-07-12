@@ -381,7 +381,7 @@
 
 /datum/anvil_recipe/weapons/greatsword/odachi
 	name = "odachi (+2 steel ingots)"
-	/obj/item/rogueweapon/greatsword/odachi
+	created_item = /obj/item/rogueweapon/greatsword/odachi
 
 /datum/anvil_recipe/weapons/steelshield
 	name = "heraldic shield (2) (+h)"

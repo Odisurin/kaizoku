@@ -28,6 +28,8 @@
 	var/hammer_repair
 
 /obj/item/rogueweapon/hammer/attack_obj(obj/O, mob/living/user)
+	var/amt2raise = 0
+	var/repair_skill
 	if(isitem(O))
 		var/obj/item/I = O
 		if(I.anvilrepair && I.max_integrity && !I.obj_broken)
@@ -35,27 +37,39 @@
 //				return ..()
 			if(!isturf(I.loc))
 				return
+			if(I.obj_integrity >= I.max_integrity)
+				to_chat(user, "<span class='green'>This equipment is in perfect condition.</span>")
+				return
 			var/repair_percent = 0.05
 			if(user.mind)
-				if(user.mind.get_skill_level(I.anvilrepair) <= 0)
-					if(prob(30))
-						repair_percent = 0.01
+				amt2raise = user.STAINT
+				repair_skill = user.mind.get_skill_level(I.anvilrepair)
+				if(repair_skill <= 0)
+					if(prob(30 + user.STAINT))
+						repair_percent = 0.05
 					else
 						repair_percent = 0
 				else
-					repair_percent = max(user.mind.get_skill_level(I.anvilrepair) * 0.03, 0.01)
+					repair_percent = max(user.mind.get_skill_level(I.anvilrepair) * 0.06, 0.01)
 			playsound(src,'sound/items/bsmithfail.ogg', 100, FALSE)
 			if(repair_percent)
 				repair_percent = repair_percent * I.max_integrity
 				I.obj_integrity = min(I.obj_integrity+repair_percent, I.max_integrity)
 				user.visible_message("<span class='info'>[user] repairs [I]!</span>")
+				if(amt2raise > 0)
+					user.mind.adjust_experience(repair_skill, amt2raise, FALSE)
 			else
 				user.visible_message("<span class='warning'>[user] damages [I]!</span>")
 				I.take_damage(5, BRUTE, "melee")
+				if(amt2raise > 0)
+					user.mind.adjust_experience(repair_skill, amt2raise / 2, FALSE)
 			return
 	if(isstructure(O))
 		var/obj/structure/I = O
 		if(I.hammer_repair && I.max_integrity && !I.obj_broken)
+			if(I.obj_integrity >= I.max_integrity)
+				to_chat(user, "<span class='green'>This structure is in perfect condition.</span>")
+				return
 			var/repair_percent = 0.05
 			if(user.mind)
 				if(user.mind.get_skill_level(I.hammer_repair) <= 0)

@@ -151,11 +151,12 @@
 	wlength = WLENGTH_NORMAL
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_HIP
+	blade_dulling = DULLING_BASHCHOP
 	associated_skill = /datum/skill/combat/whipsflails
 	smeltresult = /obj/item/ingot/iron
 	parrysound = list('sound/combat/parry/parrygen.ogg')
 	swingsound = BLUNTWOOSH_MED
-	max_blade_int = 100
+	max_blade_int = 150
 	max_integrity = 240
 	throwforce = 5
 	wdefense = 2

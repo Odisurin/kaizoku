@@ -592,6 +592,7 @@
 	force = 30
 	name = "wakizashi"
 	desc = "A shorter design of katana designed to replace the tanto as a samurai's sidearm, the wakizashi most commonly accompanies an uchigatana when worn in a samurai's daisho. Even on its own, the wakizashi is popular with commoners as a defense against bandits and is often legal weapon for them to carry."
+	icon_state = "wakizashi"
 	possible_item_intents = list(/datum/intent/sword/cut/short, /datum/intent/sword/thrust/short, /datum/intent/sword/chop)
 	smeltresult = /obj/item/ingot/steel
 	minstr = 6

@@ -193,3 +193,125 @@
 	desc = "Improved grip for wielding disembowled organs."
 	icon_state = "surggloves"
 	item_state = "surggloves"
+
+/* Re-using Gundam content here.
+/obj/item/clothing/gloves/dusters
+	name = "aluminium knuckle dusters"
+	desc = "More pain for them, less for you."
+	description_info = "Have to be worn in your gloves slot to increase your punch damage."
+	icon_state = "dusters"
+	item_state = "dusters"
+	min_cold_protection_temperature = null // They don't protect you from the cold at all!
+	var/punch_increase = 5
+	var/dusters_givith = FALSE
+	var/to_remove_givith = FALSE
+	price_tag = 10
+
+/obj/item/clothing/gloves/dusters/dropped(var/mob/M)
+	..()
+	update_dusters(M)
+
+/obj/item/clothing/gloves/dusters/equipped(var/mob/M)
+	.=..()
+	update_dusters(M)
+
+
+/obj/item/clothing/gloves/dusters/proc/update_dusters(mob/living/carbon/human/user)
+	if(istype(user))
+		if(user.gloves == src && !dusters_givith)
+			user.punch_damage_increase += punch_increase
+			dusters_givith = TRUE
+			to_remove_givith = TRUE
+		if(to_remove_givith && !(user.gloves == src))
+			user.punch_damage_increase -= punch_increase
+			dusters_givith = FALSE
+			to_remove_givith = FALSE
+
+=>the equipment area
+/obj/item/clothing/gloves/dusters/flamecestus
+	name = "Cataphract flame cestus"
+	desc = "Silvery wrapping with hollow tubes for radiance. Coats the enemy in radiance to ignite."
+	icon_state = "dusters_radiance"
+	item_state = "dusters_radiance"
+	punch_increase = 5 // Just a little extra damage, already strong by being able to light non-robots on fire.
+	price_tag = 0
+
+/obj/item/clothing/gloves/dusters/flamecestus/update_dusters(mob/living/carbon/human/user)
+	if(istype(user))
+		// Give us the flag that causes us to light people on fire with unarmed attacks.
+		if(user.gloves == src && !dusters_givith)
+			user.punch_damage_increase += punch_increase
+			dusters_givith = TRUE
+			to_remove_givith = TRUE
+			user.shining_finger = TRUE
+			user.fire_punch += 1
+		// Remove the flag from us when we take off our gloves.
+		if(to_remove_givith && !(user.gloves == src))
+			user.punch_damage_increase -= punch_increase
+			dusters_givith = FALSE
+			to_remove_givith = FALSE
+			user.shining_finger = FALSE
+			user.fire_punch -= 1
+
+=>Human Attackhand area
+
+			if(fire_punch > 0)
+				fire_stacks += fire_punch
+				fire_act()
+			if(water_punch > 0)
+				fire_stacks -= water_punch
+				fire_act()
+			if(eletric_punch > 0)
+				damage_through_armor(real_damage, (attack.deal_halloss ? HALLOSS : BURN), affecting, ARMOR_ENERGY, sharp = attack.sharp, edge = attack.edge)
+
+=>central content for damage
+
+/obj/item/stalker_hand_annomlie/pillar
+	name = "The pillar"
+	desc = "A smooth pilar made of black stone, It is well polished and seems very strong."
+	var/blood_difference = 60
+	var/punch_increase = 25 //IDK
+
+/obj/item/stalker_hand_annomlie/pillar/update_annomlie(mob/living/carbon/human/user)
+	if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(H.belt == src && !annomlie_givith)
+			H.punch_damage_increase += punch_increase
+			annomlie_givith = TRUE
+			to_remove_givith = TRUE
+			if(H.species && H.species.flags & NO_BLOOD) //We want the var for safety but we can do without the actual blood.
+				return
+			H.vessel.maximum_volume  -= blood_difference
+			H.drip_blood(blood_difference)
+		if(to_remove_givith && !(H.belt == src))
+			H.punch_damage_increase -= punch_increase
+			annomlie_givith = FALSE
+			to_remove_givith = FALSE
+
+=>humandefines
+	var/punch_damage_increase = 0 // increases... punch damage... can be affected by clothing or implants.
+	var/shining_finger = FALSE // When this is true, our harm intent punches burn carbon creatures. Used on Custodian knuckledusters.
+
+=>THIS OWN SERVER define. Use this for punch dmg
+
+/mob/living/carbon/human/get_punch_dmg()
+	var/damage = 12
+
+	var/used_str = STASTR
+
+	if(domhand)
+		used_str = get_str_arms(used_hand)
+
+	if(used_str >= 11)
+		damage = max(damage + (damage * ((used_str - 10) * 0.3)), 1)
+
+	if(used_str <= 9)
+		damage = max(damage - (damage * ((10 - used_str) * 0.1)), 1)
+
+	if(mind)
+		if(mind.has_antag_datum(/datum/antagonist/werewolf))
+			return 30
+
+	return damage
+
+*/

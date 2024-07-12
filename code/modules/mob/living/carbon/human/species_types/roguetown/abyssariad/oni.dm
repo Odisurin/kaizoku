@@ -16,12 +16,12 @@
 	Rekindled souls, condemned to suffer in a dying world. \
 	"
 	default_color = "FFFFFF"
-	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY)
+	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
 	default_features = list("mcolor" = "FFF", "ears" = "oni", "horns" = "onihorn")
 	mutant_bodyparts = list("ears","horns")
 	use_skintones = 1
-	possible_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
+	possible_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	skinned_type = /obj/item/stack/sheet/animalhide/human
 	disliked_food = NONE
 	liked_food = MEAT
@@ -86,7 +86,10 @@
 	"blond - pale" = "9d8d6e",
 	"blond - dirty" = "88754f",
 	"blond - drywheat" = "8f8766",
-	"blond - strawberry" = "977033"
+	"blond - strawberry" = "977033",
+	"white - silver" = "e8fdfd",
+	"white - oceanid" = "afdddd"
+
 
 	))
 

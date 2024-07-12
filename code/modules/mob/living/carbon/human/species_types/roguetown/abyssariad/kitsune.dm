@@ -17,7 +17,7 @@
 	for self-defense. Abandoned by Abyssor, they are stranded without divine guidance, searching for honor. \
 	Noble souls, condenmned to suffer in a dying world."
 	default_color = "FFFFFF"
-	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,OLDGREY)
+	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
 	default_features = list("mcolor" = "FFF", "ears" = "Vulp", "tail_human" = "VulpianiV")
 	use_skintones = 1
@@ -93,7 +93,10 @@
 	"red - berry" = "48322a",
 	"red - wine" = "82534c",
 	"red - sunset" = "82462b",
-	"red - blood" = "822b2b"
+	"red - blood" = "822b2b",
+	
+	"white - silver" = "e8fdfd",
+	"white - oceanid" = "afdddd"
 
 	))
 

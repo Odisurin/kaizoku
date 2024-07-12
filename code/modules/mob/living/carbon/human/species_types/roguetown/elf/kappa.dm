@@ -90,7 +90,10 @@
 	"green - grass" = "2a482c",
 	"green - swamp" = "3b482a",
 	"green - leaf" = "2f3c2e",
-	"green - moss" = "3b3c2a"
+	"green - moss" = "3b3c2a",
+	"white - silver" = "e8fdfd",
+	"white - oceanid" = "afdddd"
+
 
 	))
 

@@ -2162,6 +2162,7 @@
 #include "code\modules\jobs\job_types\roguetown\garrison\townguard.dm"
 #include "code\modules\jobs\job_types\roguetown\garrison\veteran.dm"
 #include "code\modules\jobs\job_types\roguetown\garrison\villagechief.dm"
+#include "code\modules\jobs\job_types\roguetown\kaizoku\adventurer\types\skirmisher\eidolon.dm"
 #include "code\modules\jobs\job_types\roguetown\nobility\feldsher.dm"
 #include "code\modules\jobs\job_types\roguetown\nobility\hand.dm"
 #include "code\modules\jobs\job_types\roguetown\nobility\lady.dm"

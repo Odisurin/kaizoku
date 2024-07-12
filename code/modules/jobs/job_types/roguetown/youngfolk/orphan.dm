@@ -1,4 +1,5 @@
-/datum/job/roguetown/orphan
+/* We hate children roles.
+datum/job/roguetown/orphan
 	title = "Orphan"
 	flag = ORPHAN
 	department_flag = YOUNGFOLK
@@ -47,3 +48,4 @@
 	H.change_stat("intelligence", -4)
 	H.change_stat("constitution", -1)
 	H.change_stat("endurance", -1)
+*/

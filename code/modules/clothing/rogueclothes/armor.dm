@@ -586,16 +586,233 @@
 													'sound/foley/footsteps/armor/fullplate (2).ogg',\
 													'sound/foley/footsteps/armor/fullplate (3).ogg'), 100)
 
-//casting armor
+////Kaizoku Armor Content////
 
-/obj/item/clothing/suit/roguetown/armor/plate/scale
+/obj/item/clothing/suit/roguetown/armor/kaizoku
+	icon = 'icons/kaizoku/clothingicon/armor.dmi'
+	mob_overlay_icon = 'icons/kaizoku/clothing/armor.dmi'
+	sleeved = 'icons/kaizoku/clothing/armor.dmi'
+	sleevetype = null
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/leather/muneate
+	name = "muneate"
+	desc = "A simple leather chest protector for casual archers. Not very protective, but can be repaired anytime."
+	icon_state = "vest"
+	item_state = "vest"
+	color = "#514339"
+	armor = list("melee" = 30, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT)
+	blocksound = SOFTHIT
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
+	blade_dulling = DULLING_BASHCHOP
+	body_parts_covered = CHEST
+	break_sound = 'sound/foley/cloth_rip.ogg'
+	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	max_integrity = 100
+	sewrepair = TRUE
+	//brokenrepair = TRUE
+	sleevetype = null
+	sleeved = null
+	armor_class = ARMOR_CLASS_LIGHT
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/nanbando
 	slot_flags = ITEM_SLOT_ARMOR
-	name = "copper scalemail"
-	desc = ""
-	body_parts_covered = CHEST|VITALS|GROIN|LEGS
-	allowed_sex = list(MALE, FEMALE)
-	icon_state = "lamellar"
+	name = "steel nanbando"
+	desc = "Abyssariad steel cuirass, refined and with additional sode for protection. Rare and prized by High-ranking samurais, this design has been adquired by raided humen settlements."
+	body_parts_covered = CHEST|VITALS
+	icon_state = "nanbando"
+	item_state = "nanbando"
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	allowed_race = ALL_RACES_LIST
+	nodismemsleeves = TRUE
+	blocking_behavior = null
+	max_integrity = 300
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/steel
+	armor_class = ARMOR_CLASS_MEDIUM
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/nanbando/cuirass
+	slot_flags = ITEM_SLOT_ARMOR
+	name = "steel nanbando cuirass"
+	desc = "The Abyssariad steel cuirass. Usually sourced from fallen raided soldiers, their armors taken and reshaped."
+	icon_state = "nanbandoc"
+	item_state = "nanbandoc"
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	allowed_race = ALL_RACES_LIST
+	blocking_behavior = null
+	max_integrity = 300
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/steel
+	armor_class = ARMOR_CLASS_MEDIUM
+
+/obj/item/clothing/suit/roguetown/armor/chainmail/kusari
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
+	name = "hauberk"
+	desc = "A longer steel maille that protects the legs."
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS|VITALS
+	icon_state = "hauberk"
+	item_state = "hauberk"
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	anvilrepair = /datum/skill/craft/armorsmithing
+	do_sound = TRUE
+	smeltresult = /obj/item/ingot/steel
+	armor_class = ARMOR_CLASS_MEDIUM
+
+/obj/item/clothing/suit/roguetown/armor/plate/full
+	name = "plate armor"
+	desc = "Full plate. Leg protecting tassets, groin cup, armored vambraces."
+	icon_state = "plate"
+	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
+	equip_delay_self = 80
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail/iron
+	icon_state = "ichainmail"
+	name = "chainmaille"
+	desc = "A chain vest made of heavy iron rings. Good protection form against melee weaponry of all kind."
+	body_parts_covered = CHEST|GROIN|VITALS
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor_class = ARMOR_CLASS_MEDIUM
+	smeltresult = /obj/item/ingot/iron
+	anvilrepair = /datum/skill/craft/armorsmithing
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/mirror/iron
+	name = "iron mirror armor"
+	icon_state = "imirrorarmor"
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	max_integrity = 200
+	smeltresult = /obj/item/ingot/iron
+	armor_class = ARMOR_CLASS_MEDIUM
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/bronze
+	name = "bronze breastplate"
+	icon_state = "bbreastplate"
+	desc = "A simple Kappa design casted on clay using bronze, copying the prewars Abyssariad armors. Protects less, but can endure a long beating."
+	armor = list("melee" = 60, "bullet" = 60, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	max_integrity = 350
+	smeltresult = /obj/item/ingot/copper
+	armor_class = ARMOR_CLASS_HEAVY
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/shozoku
+	name = "shozoku"
+	desc = "The main garment used by Ninjas and Kunoichis to blend into the night. Not viable during daylight, but it is easy to store anywhere."
+	icon_state = "shozoku"
+	item_state = "shozoku"
+	blocksound = SOFTHIT
+	armor = list("melee" = 60, "bullet" = 20, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT)
+	blocksound = SOFTHIT
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
+	blade_dulling = DULLING_BASHCHOP
+	body_parts_covered = CHEST|VITALS|LEGS|ARMS
+	break_sound = 'sound/foley/cloth_rip.ogg'
+	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	sewrepair = TRUE
+	sleevetype = null
+	sleeved = null
+	armor_class = ARMOR_CLASS_LIGHT
+	sewrepair = TRUE
+	nodismemsleeves = TRUE
+	max_integrity = 150
+	sellprice = 20
+
+obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
+	slot_flags = ITEM_SLOT_ARMOR
+	name = "san mai-do"
+	desc = "A cheap cuirass with three main plates riveted together with cloth. Flexible and dynamic, \
+	it is integral for many poor footsoldiers, usually conscripted from isolated abyssariad villages or raiders."
+	body_parts_covered = CHEST|VITALS
+	allowed_sex = list(MALE, FEMALE)
+	icon_state = "sanmaido"
+	max_integrity = 200
+	equip_delay_self = 25
+	armor_class = ARMOR_CLASS_MEDIUM
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/tatami
+	slot_flags = ITEM_SLOT_ARMOR
+	name = "steel karuta tatami"
+	desc = "a foldable, lightweight armor for convenient motion and manufacturing ease. \
+	It is made of rectangular steel plates sewn into chainmail. Often used by Ashigarus, it is the best light armor."
+	body_parts_covered = CHEST|ARMS|VITALS
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST) //Mixture of Chainmail and Segmented plates in a singular armor. Not a common thing on Europe. The space inbetween the rectangles makes it vulnerable to perfuration.
+	allowed_sex = list(MALE, FEMALE)
+	armor = list("melee" = 100, "bullet" = 80, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	icon_state = "laminartatami"
+	smeltresult = null
+	max_integrity = 250
+	blocksound = SOFTHIT
+	blade_dulling = DULLING_BASHCHOP
+	equip_delay_self = 25
+	armor_class = ARMOR_CLASS_LIGHT
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/itatami
+	slot_flags = ITEM_SLOT_ARMOR
+	name = "iron karuta tatami"
+	desc = "a foldable, lightweight armor for convenient motion and manufacturing ease. \
+	It is made of lacquered iron squares sewn into a padded cloth or leather backing."
+	allowed_sex = list(MALE, FEMALE)
+	armor = list("melee" = 80, "bullet" = 70, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	icon_state = "tatami"
+	max_integrity = 150
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/kikko
+	slot_flags = ITEM_SLOT_ARMOR
+	name = "kikko tatami"
+	desc = "A leather armor with small iron hexagon plates that has been sew on the material. Foldeable, cheap, easy to make and easy to repair."
+	body_parts_covered = CHEST|VITALS
+	prevent_crits = list(BCLASS_CUT,BCLASS_BLUNT,BCLASS_STAB)
+	allowed_sex = list(MALE, FEMALE)
+	armor = list("melee" = 70, "bullet" = 40, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	icon_state = "kikko"
+	smeltresult = null
+	max_integrity = 150
+	blocksound = SOFTHIT
+	blade_dulling = DULLING_BASHCHOP
+	equip_delay_self = 25
+	armor_class = ARMOR_CLASS_LIGHT
+	break_sound = 'sound/foley/cloth_rip.ogg'
+	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	sewrepair = TRUE
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/oyoroi
+	slot_flags = ITEM_SLOT_ARMOR
+	name = "o-yoroi"
+	desc = "Heavy-duty lamellar armor, designed for protection and flexibility for esteemed high-ranking samurais on horseback. \
+	Most suitable for horse archers, this armor can be found on those fighting on land."
+	body_parts_covered = CHEST|VITALS|GROIN|LEGS|ARMS
+	allowed_sex = list(MALE, FEMALE)
+	icon_state = "oyoroi"
+	max_integrity = 300
 	smeltresult = /obj/item/ingot/steel
 	equip_delay_self = 40
-	armor_class = ARMOR_CLASS_MEDIUM
+	armor_class = ARMOR_CLASS_HEAVY
+	detail_color = CLOTHING_RED
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/oyoroi/update_icon()
+	cut_overlays()
+	if(get_detail_tag())
+		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
+		pic.appearance_flags = RESET_COLOR
+		if(get_detail_color())
+			pic.color = get_detail_color()
+		add_overlay(pic)
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/oyoroi/samurai/Initialize()
+	. = ..()
+	if(GLOB.lordprimary)
+		lordcolor(GLOB.lordprimary,GLOB.lordsecondary)
+	else
+		GLOB.lordcolor += src
+
+/obj/item/clothing/suit/roguetown/armor/plate/kaizoku/oyoroi/samurai/lordcolor(primary,secondary)
+	detail_tag = "_jan"
+	detail_color = primary
+	update_icon()
+	if(ismob(loc))
+		var/mob/L = loc
+		L.update_inv_cloak()
+
+/obj/item/clothing/suit/roguetown/armor/plate/kaizoku/oyoroi/samurai/Destroy()
+	GLOB.lordcolor -= src
+	return ..()

@@ -26,7 +26,7 @@
 			if("haltyell")
 				used = used = list('sound/vo/male/abyssariad/halt.ogg','sound/vo/male/abyssariad/halt(3).ogg','sound/vo/male/abyssariad/halt2.ogg')
 			if("huh")
-				used = list('sound/vo/male/abyssariad/huh.ogg','sound/vo/male/abyssariad/huh(2).ogg','sound/vo/male/abyssariad/huh2.ogg')
+				used = list('sound/vo/male/abyssariad/huh.ogg','sound/vo/male/abyssariad/huh(2).ogg')
 			if("laugh")
 				used = list('sound/vo/male/abyssariad/laugh (1).ogg','sound/vo/male/abyssariad/laugh (2).ogg','sound/vo/male/abyssariad/laugh again.ogg','sound/vo/male/abyssariad/laugh(3).ogg','sound/vo/male/abyssariad/morelaugh.ogg')
 			if("pain")
@@ -57,28 +57,22 @@
 				used = 'sound/vo/male/gen/fatigue.ogg'
 			if("gag")
 				used = list('sound/vo/male/gen/gag (1).ogg','sound/vo/male/gen/gag (2).ogg','sound/vo/male/gen/gag (3).ogg')
-			if("gasp")
-				used = 'sound/vo/male/gen/gasp.ogg'
 			if("groin")
 				used = list('sound/vo/male/gen/groin (1).ogg','sound/vo/male/gen/groin (2).ogg')
 			if("groan")
 				used = list('sound/vo/male/gen/groan (1).ogg','sound/vo/male/gen/groan (2).ogg','sound/vo/male/gen/groan (3).ogg','sound/vo/male/gen/groan (4).ogg','sound/vo/male/gen/groan (5).ogg','sound/vo/male/gen/groan (6).ogg')
 			if("hmm")
-				used = 'sound/vo/male/gen/hmm.ogg'
+				used = 'sound/vo/male/abyssariad/huh2.ogg'
 			if("hum")
 				used = list('sound/vo/male/gen/hum (1).ogg','sound/vo/male/gen/hum (2).ogg','sound/vo/male/gen/hum (3).ogg')
 			if("jump")
 				used = 'sound/vo/male/gen/jump.ogg'
-			if("laugh")
-				used = list('sound/vo/male/gen/laugh (2).ogg','sound/vo/male/gen/laugh (3).ogg','sound/vo/male/gen/laugh (4).ogg','sound/vo/male/gen/laugh (5).ogg','sound/vo/male/gen/laugh (6).ogg')
 			if("leap")
 				used = 'sound/vo/male/gen/leap.ogg'
 			if("pain")
 				used = list('sound/vo/male/gen/pain (1).ogg','sound/vo/male/gen/pain (2).ogg','sound/vo/male/gen/pain (3).ogg')
 			if("paincrit")
 				used = list('sound/vo/male/gen/paincrit (1).ogg','sound/vo/male/gen/paincrit (2).ogg')
-			if("painmoan")
-				used = list('sound/vo/male/gen/painmoan (1).ogg','sound/vo/male/gen/painmoan (2).ogg','sound/vo/male/gen/painmoan (3).ogg','sound/vo/male/gen/painmoan (4).ogg','sound/vo/male/gen/painmoan (5).ogg')
 			if("painscream")
 				used = list('sound/vo/male/gen/painscream (1).ogg','sound/vo/male/gen/painscream (2).ogg','sound/vo/male/gen/painscream (3).ogg')
 			if("rage")

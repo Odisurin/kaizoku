@@ -63,7 +63,7 @@ GLOBAL_LIST_INIT(wolf_suffixes, list("Fang", "Claw", "Stalker", "Prowler", "Roar
 		if(FAITH_ZIZO)
 			return "Zizo"
 		if(FAITH_ABYSSAL)
-			return "Abyssal Loyalism"
+			return "Purificators"
 
 /proc/get_faith_desc(faith)
 	switch(faith)

@@ -240,30 +240,6 @@
 	gender = MALE
 	specuse = list("elf", "aasimar")
 
-/datum/sprite_accessory/hair/beasthair_chonmage
-	name = "Samurai"
-	icon_state = "beasthair_chonmage"
-	gender = MALE
-	specuse = list("abyssariad")
-
-/datum/sprite_accessory/hair/beasthair_ponytail
-	name = "Ronin"
-	icon_state = "beasthair_chonmage"
-	gender = MALE
-	specuse = list("abyssariad")
-
-/datum/sprite_accessory/hair/beasthair_chonmage
-	name = "Emperor"
-	icon_state = "beasthair_chonmage"
-	gender = MALE
-	specuse = list("abyssariad")
-
-/datum/sprite_accessory/hair/beasthair_chonmage
-	name = "Samurai"
-	icon_state = "beasthair_chonmage"
-	gender = MALE
-	specuse = list("abyssariad")
-
 /datum/sprite_accessory/hair/hair_sidecut
 	name = "Tied Sidecut"
 	icon_state = "TIED_SIDECUT"
@@ -292,8 +268,63 @@
 	name = "Manbun alt"
 	icon_state = "MANBUN_2"
 	gender = MALE
-	specuse = list("human", "tiefling", "aasimar")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad")
 
+/datum/sprite_accessory/hair/kaizoku/samurai
+	name = "Samurai Manbun"
+	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
+	icon_state = "samurai"
+	gender = MALE
+	specuse = list("abyssariad")
+
+/datum/sprite_accessory/hair/kaizoku/ronin
+	name = "Vagabond"
+	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
+	icon_state = "ronin"
+	gender = MALE
+	specuse = list("abyssariad")
+
+/datum/sprite_accessory/hair/kaizoku/freespirit
+	name = "Free Spirit"
+	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
+	icon_state = "freespirit"
+	gender = MALE
+	specuse = list("abyssariad")
+
+/datum/sprite_accessory/hair/kaizoku/novice
+	name = "New Rice (novice)"
+	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
+	icon_state = "novice"
+	gender = MALE
+	specuse = list("abyssariad")
+
+/datum/sprite_accessory/hair/kaizoku/yakuza
+	name = "Irezumi Gangster"
+	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
+	icon_state = "yakuza"
+	gender = MALE
+	specuse = list("abyssariad")
+
+/datum/sprite_accessory/hair/kaizoku/steppeman
+	name = "Aridlands raider"
+	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
+	icon_state = "steppeman"
+	gender = MALE
+	specuse = list("abyssariad")
+
+/datum/sprite_accessory/hair/kaizoku/bishonen
+	name = "Husband"
+	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
+	icon_state = "bishonen"
+	gender = MALE
+	specuse = list("abyssariad")
+
+/datum/sprite_accessory/hair/kaizoku/emperor
+	name = "Emperor"
+	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
+	icon_state = "emperor"
+	gender = MALE
+	specuse = list("abyssariad")
 
 /////////////////////////////
 // GIRLY Hair Definitions  //
@@ -440,6 +471,49 @@
 	icon_state = "felfhair_hime"
 	gender = FEMALE
 	specuse = list("elf", "abyssariad")
+
+/datum/sprite_accessory/hair/kaizoku/empress
+	name = "Abyssal Empress"
+	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
+	icon_state = "empress"
+	gender = FEMALE
+	specuse = list("abyssariad")
+
+/datum/sprite_accessory/hair/kaizoku/onnamusha
+	name = "Onnamusha"
+	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
+	icon_state = "warlady"
+	gender = FEMALE
+	specuse = list("abyssariad")
+
+/datum/sprite_accessory/hair/kaizoku/waterfield
+	name = "Waterbearer"
+	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
+	icon_state = "waterfield"
+	gender = FEMALE
+	specuse = list("abyssariad")
+
+/datum/sprite_accessory/hair/kaizoku/homewaifu
+	name = "Homewife"
+	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
+	icon_state = "homewaifu"
+	gender = FEMALE
+	specuse = list("abyssariad")
+
+/datum/sprite_accessory/hair/kaizoku/casual
+	name = "Natural River"
+	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
+	icon_state = "casual"
+	gender = FEMALE
+	specuse = list("abyssariad")
+
+/datum/sprite_accessory/hair/kaizoku/martyr
+	name = "Inhonor of the Fallen"
+	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
+	icon_state = "martyr"
+	gender = FEMALE
+	specuse = list("abyssariad")
+
 /*
 /datum/sprite_accessory/hair/felfhair_fatherless
 	name = "Princessly"

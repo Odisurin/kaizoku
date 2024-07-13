@@ -87,8 +87,10 @@
 	"blond - dirty" = "88754f",
 	"blond - drywheat" = "8f8766",
 	"blond - strawberry" = "977033",
-	"white - silver" = "e8fdfd",
-	"white - oceanid" = "afdddd"
+
+	"white - platinum" = "f8f3f3",
+	"white - silver" = "ddddc8",
+	"white - oceanid" = "141f1f"
 
 
 	))

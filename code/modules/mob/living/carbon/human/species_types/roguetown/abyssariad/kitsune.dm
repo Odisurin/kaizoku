@@ -95,8 +95,9 @@
 	"red - sunset" = "82462b",
 	"red - blood" = "822b2b",
 	
-	"white - silver" = "e8fdfd",
-	"white - oceanid" = "afdddd"
+	"white - platinum" = "f8f3f3",
+	"white - silver" = "ddddc8",
+	"white - oceanid" = "141f1f"
 
 	))
 

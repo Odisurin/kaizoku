@@ -761,3 +761,19 @@
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	landsound = 'sound/foley/jumpland/grassland.wav'
+
+/turf/open/floor/rogue/sand
+	icon = 'icons/kaizoku/tileset/tileset.dmi'
+	icon_state = "sand1"
+	name = "sand"
+	desc = "granular mineral as infertile as your grandma's womb."
+	footstep = FOOTSTEP_STONE
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	landsound = 'sound/foley/jumpland/grassland.wav'
+/turf/open/floor/rogue/sand/alt
+	icon_state = "sand2"
+/turf/open/floor/rogue/sand/altalt
+	icon_state = "sand3"
+

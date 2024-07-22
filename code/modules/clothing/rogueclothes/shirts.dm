@@ -437,3 +437,60 @@
 		if(get_detail_color())
 			pic.color = get_detail_color()
 		add_overlay(pic)
+
+////Kaizoku Shirt Content////
+
+/obj/item/clothing/suit/roguetown/shirt/kaizoku
+	icon = 'icons/kaizoku/clothingicon/shirt.dmi'
+	mob_overlay_icon = 'icons/kaizoku/clothing/shirt.dmi'
+	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_shirts.dmi'
+
+/obj/item/clothing/suit/roguetown/shirt/kaizoku/kimono
+	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
+	icon_state = "kimono"
+	item_state = "kimono"
+	boobed = TRUE
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS|VITALS
+
+/obj/item/clothing/suit/roguetown/shirt/kaizoku/kimono/Initialize()
+	color = pick("#94b4b6", "#ba8f9e", "#bd978c", "#92bd8c", "#06363f", "#df412c", "#161516", "#ddfaff", "#720303")
+	..()
+
+/obj/item/clothing/suit/roguetown/shirt/kaizoku/monkgarb
+	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
+	icon_state = "monkgarb"
+	item_state = "monkgarb"
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
+	body_parts_covered = CHEST|ARMS|VITALS
+
+/obj/item/clothing/suit/roguetown/shirt/kaizoku/monkgarb/Initialize()
+	color = pick("#94b4b6", "#ba8f9e", "#bd978c", "#92bd8c", "#06363f", "#df412c", "#161516", "#ddfaff", "#720303")
+	..()
+
+/obj/item/clothing/suit/roguetown/shirt/kaizoku/kamishimo
+	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
+	icon_state = "kamishimo"
+	item_state = "kamishimo"
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
+	body_parts_covered = CHEST|VITALS
+
+/obj/item/clothing/suit/roguetown/shirt/kaizoku/kamishimo/Initialize()
+	color = pick("#94b4b6", "#ba8f9e", "#bd978c", "#92bd8c", "#06363f", "#df412c", "#161516", "#ddfaff", "#720303")
+	..()
+
+/obj/item/clothing/suit/roguetown/shirt/kaizoku/looseshirt
+	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
+	icon_state = "looseshirt"
+	item_state = "looseshirt"
+	boobed = TRUE
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
+	body_parts_covered = CHEST|ARMS|VITALS
+
+/obj/item/clothing/suit/roguetown/shirt/kaizoku/looseshirt/Initialize()
+	color = pick("#94b4b6", "#ba8f9e", "#bd978c", "#92bd8c", "#06363f", "#df412c", "#161516", "#ddfaff", "#720303")
+	..()

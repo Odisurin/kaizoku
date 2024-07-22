@@ -478,6 +478,17 @@
 	if(input != QINTENT_SPELL)
 		if(ranged_ability)
 			ranged_ability.deactivate()
+	var/mutable_appearance/eldritch_maw = mutable_appearance('icons/roguetown/mob/bodies/m/mt_kit.dmi', "eldritch_maw", MOUTH_LAYER)
+	var/mob/living/carbon/human/H = src
+	if(input != QINTENT_BITE)
+		if(ishuman(src) && H.dna.species.name == "Kitsune") //The intention is to take away the overlay if not clicking on bite intent.
+			for(eldritch_maw in H.overlays)
+				H.remove_overlay(eldritch_maw)
+				visible_message("<span class='warning'>[src]'s face knits together.</span>")
+				playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
+				H.cut_overlay(eldritch_maw)
+				update_icon()
+				H.update_body()
 	switch(input)
 		if(QINTENT_KICK)
 			if(mmb_intent?.type == INTENT_KICK)
@@ -498,9 +509,7 @@
 				qdel(mmb_intent)
 				input = null
 				mmb_intent = null
-				var/mob/living/carbon/human/H = src
 				if(ishuman(src) && H.dna.species.name == "Kitsune") //The intention is to make them get an overlay. They may crit with their bite, but everyone will know they are biting.
-					var/mutable_appearance/eldritch_maw = mutable_appearance('icons/roguetown/mob/bodies/m/mt_kit.dmi', "eldritch_maw", MOUTH_LAYER)
 					H.remove_overlay(eldritch_maw)
 					visible_message("<span class='warning'>[src]'s face knits together.</span>")
 					playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
@@ -509,9 +518,7 @@
 					H.update_body()
 			else
 				mmb_intent = new INTENT_BITE(src)
-				var/mob/living/carbon/human/H = src
 				if(ishuman(src) && H.dna.species.name == "Kitsune") //The intention is to make them get an overlay. They may crit with their bite, but everyone will know they are biting.
-					var/mutable_appearance/eldritch_maw = mutable_appearance('icons/roguetown/mob/bodies/m/mt_kit.dmi', "eldritch_maw", MOUTH_LAYER)
 					H.remove_overlay(eldritch_maw)
 					visible_message("<span class='warning'>[src]'s face splits into a deadly maw.</span>")
 					playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)

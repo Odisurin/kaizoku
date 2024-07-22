@@ -96,7 +96,11 @@
 	"Castillian" = "cc5757",
 	"Devil" = "a74a4a",
 	"Wicked" = "D2042D",
-	"Gypsy" = "a23737"
+	"Gypsy" = "a23737",
+	"Abyssal" = "3747a2",
+	"Mephistopheles" = "54478b",
+	"Coldheart" = "679ea5",
+	"Uplander" = "5162aa"
 	))
 
 /datum/species/tieberian/get_hairc_list()
@@ -131,5 +135,3 @@
 /datum/species/tieberian/random_surname()
 	return " [pick(world.file2list("strings/rt/names/other/tieflast.txt"))]"
 
-/datum/species/tieberian/get_accent_list()
-	return strings("spanish_replacement.json", "spanish")

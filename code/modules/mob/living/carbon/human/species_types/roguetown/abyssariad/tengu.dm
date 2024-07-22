@@ -31,7 +31,7 @@
 	mutant_bodyparts = list("ears","tail_human")
 	use_f = TRUE
 	soundpack_m = /datum/voicepack/male/abyssariad
-	soundpack_f = /datum/voicepack/female/abyssariad
+	soundpack_f = /datum/voicepack/female
 	offset_features = list(OFFSET_ID = list(0,2), OFFSET_GLOVES = list(0,0), OFFSET_WRISTS = list(0,1),\
 	OFFSET_CLOAK = list(0,2), OFFSET_FACEMASK = list(0,2), OFFSET_HEAD = list(0,1), \
 	OFFSET_FACE = list(0,1), OFFSET_BELT = list(0,1), OFFSET_BACK = list(0,2), \

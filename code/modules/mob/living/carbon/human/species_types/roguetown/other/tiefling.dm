@@ -135,5 +135,3 @@
 /datum/species/tieberian/random_surname()
 	return " [pick(world.file2list("strings/rt/names/other/tieflast.txt"))]"
 
-/datum/species/tieberian/get_accent_list()
-	return strings("spanish_replacement.json", "spanish")

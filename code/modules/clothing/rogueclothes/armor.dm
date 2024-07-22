@@ -591,8 +591,9 @@
 /obj/item/clothing/suit/roguetown/armor/kaizoku
 	icon = 'icons/kaizoku/clothingicon/armor.dmi'
 	mob_overlay_icon = 'icons/kaizoku/clothing/armor.dmi'
-	sleeved = 'icons/kaizoku/clothing/armor.dmi'
-	sleevetype = null
+	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_armor.dmi'
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/leather/muneate
 	name = "muneate"
@@ -611,8 +612,6 @@
 	max_integrity = 100
 	sewrepair = TRUE
 	//brokenrepair = TRUE
-	sleevetype = null
-	sleeved = null
 	armor_class = ARMOR_CLASS_LIGHT
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/nanbando
@@ -631,6 +630,13 @@
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_MEDIUM
 
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/nanbando/full
+	name = "Full nanbando"
+	desc = "Abyssariad steel cuirass, refined and with additional auxiliary parts for protection."
+	icon_state = "nanbandofull"
+	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
+	equip_delay_self = 80
+
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/nanbando/cuirass
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "steel nanbando cuirass"
@@ -645,35 +651,17 @@
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_MEDIUM
 
-/obj/item/clothing/suit/roguetown/armor/chainmail/kusari
+/obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail/kusari
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
-	name = "hauberk"
-	desc = "A longer steel maille that protects the legs."
+	name = "kusari"
+	desc = "A abyssariad steel maille that protects the legs."
 	body_parts_covered = CHEST|GROIN|ARMS|LEGS|VITALS
-	icon_state = "hauberk"
-	item_state = "hauberk"
+	icon_state = "kusari"
+	item_state = "kusari"
 	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	anvilrepair = /datum/skill/craft/armorsmithing
-	do_sound = TRUE
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_MEDIUM
-
-/obj/item/clothing/suit/roguetown/armor/plate/full
-	name = "plate armor"
-	desc = "Full plate. Leg protecting tassets, groin cup, armored vambraces."
-	icon_state = "plate"
-	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
-	equip_delay_self = 80
-
-/obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail/iron
-	icon_state = "ichainmail"
-	name = "chainmaille"
-	desc = "A chain vest made of heavy iron rings. Good protection form against melee weaponry of all kind."
-	body_parts_covered = CHEST|GROIN|VITALS
-	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	armor_class = ARMOR_CLASS_MEDIUM
-	smeltresult = /obj/item/ingot/iron
-	anvilrepair = /datum/skill/craft/armorsmithing
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/mirror/iron
 	name = "iron mirror armor"
@@ -683,6 +671,7 @@
 	smeltresult = /obj/item/ingot/iron
 	armor_class = ARMOR_CLASS_MEDIUM
 
+/*
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/bronze
 	name = "bronze breastplate"
 	icon_state = "bbreastplate"
@@ -691,6 +680,7 @@
 	max_integrity = 350
 	smeltresult = /obj/item/ingot/copper
 	armor_class = ARMOR_CLASS_HEAVY
+*/
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/shozoku
 	name = "shozoku"
@@ -707,8 +697,6 @@
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
 	sewrepair = TRUE
-	sleevetype = null
-	sleeved = null
 	armor_class = ARMOR_CLASS_LIGHT
 	sewrepair = TRUE
 	nodismemsleeves = TRUE
@@ -728,7 +716,7 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami
-	slot_flags = ITEM_SLOT_ARMOR
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "steel karuta tatami"
 	desc = "a foldable, lightweight armor for convenient motion and manufacturing ease. \
 	It is made of rectangular steel plates sewn into chainmail. Often used by Ashigarus, it is the best light armor."
@@ -745,7 +733,7 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	armor_class = ARMOR_CLASS_LIGHT
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/itatami
-	slot_flags = ITEM_SLOT_ARMOR
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "iron karuta tatami"
 	desc = "a foldable, lightweight armor for convenient motion and manufacturing ease. \
 	It is made of lacquered iron squares sewn into a padded cloth or leather backing."
@@ -755,7 +743,7 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	max_integrity = 150
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/kikko
-	slot_flags = ITEM_SLOT_ARMOR
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "kikko tatami"
 	desc = "A leather armor with small iron hexagon plates that has been sew on the material. Foldeable, cheap, easy to make and easy to repair."
 	body_parts_covered = CHEST|VITALS
@@ -816,3 +804,23 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 /obj/item/clothing/suit/roguetown/armor/plate/kaizoku/oyoroi/samurai/Destroy()
 	GLOB.lordcolor -= src
 	return ..()
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/haori
+	name = "haori"
+	desc = "a traditional jacket meant to be worn over a kimono."
+	icon_state = "haori"
+	armor = null
+	blocksound = SOFTHIT
+	blade_dulling = DULLING_BASHCHOP
+	body_parts_covered = CHEST|VITALS
+	break_sound = 'sound/foley/cloth_rip.ogg'
+	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	sewrepair = TRUE
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
+	nodismemsleeves = TRUE
+	boobed = TRUE
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/haori/Initialize()
+	color = pick("#94b4b6", "#ba8f9e", "#bd978c", "#92bd8c", "#06363f")
+	..()

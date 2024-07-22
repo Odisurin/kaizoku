@@ -707,3 +707,107 @@
 	worn_x_dimension = 64
 	worn_y_dimension = 64
 	body_parts_covered = HEAD|EARS|HAIR|NOSE|EYES
+
+////Kaizoku Hat Content////
+
+/obj/item/clothing/head/roguetown/kaizoku
+	icon = 'icons/kaizoku/clothingicon/head.dmi'
+	mob_overlay_icon = 'icons/kaizoku/clothing/head.dmi'
+	max_integrity = 100
+
+/obj/item/clothing/head/roguetown/kaizoku/big
+	worn_x_dimension = 64
+	worn_y_dimension = 64
+	mob_overlay_icon = 'icons/kaizoku/clothing/head64.dmi'
+
+/obj/item/clothing/head/roguetown/kaizoku/big/tengai
+	name = "tengai"
+	icon_state = "tengai"
+
+/obj/item/clothing/head/roguetown/kaizoku/big/gasa
+	name = "gasa"
+	icon_state = "gasa"
+
+/obj/item/clothing/head/roguetown/kaizoku/big/roningasa
+	name = "roningasa"
+	icon_state = "roningasa"
+
+/obj/item/clothing/head/roguetown/kaizoku/big/torioigasa
+	name = "torioigasa"
+	icon_state = "torioigasa"
+
+/obj/item/clothing/head/roguetown/kaizoku/big/sandogasa
+	name = "sandogasa"
+	icon_state = "sandogasa"
+
+/obj/item/clothing/head/roguetown/kaizoku/shinobi_zukin
+	name = "shinobi hood"
+	icon_state = "shinobi_zukin"
+
+/obj/item/clothing/head/roguetown/kaizoku/takuhatsugasa
+	name = "takuhatsugasa"
+	icon_state = "takuhatsugasa"
+
+/obj/item/clothing/head/roguetown/kaizoku/helmet
+	name = "jingasa"
+	desc = ""
+	body_parts_covered = HEAD|HAIR
+	icon_state = "jingasa"
+	sleevetype = null
+	sleeved = null
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	dynamic_hair_suffix = "+generic"
+	bloody_icon_state = "helmetblood"
+	anvilrepair = /datum/skill/craft/armorsmithing
+	blocksound = PLATEHIT
+	max_integrity = 150
+
+/obj/item/clothing/head/roguetown/kaizoku/helmet/jingasa
+	name = "jingasa"
+
+/obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane
+	name = "hachi-gane"
+	desc = "Simple, massproduced head protection for the ronin and poor alike."
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	icon_state = "jingasa"
+	max_integrity = 100
+
+/obj/item/clothing/head/roguetown/kaizoku/karuta_kabuto
+	name = "karuta kabuto"
+	desc = ""
+	body_parts_covered = HEAD|HAIR|EARS
+	icon_state = "karuta_kabuto"
+	armor = list("melee" = 50, "bullet" = 25, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BLUNT, BCLASS_TWIST)
+	anvilrepair = null
+	sewrepair = TRUE
+	blocksound = SOFTHIT
+
+/obj/item/clothing/head/roguetown/kaizoku/karuta_kabuto
+	name = "karuta kabuto"
+	desc = ""
+	body_parts_covered = HEAD|HAIR|EARS
+	icon_state = "karuta_kabuto"
+	armor = list("melee" = 50, "bullet" = 25, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BLUNT, BCLASS_TWIST)
+	anvilrepair = null
+	sewrepair = TRUE
+	blocksound = SOFTHIT
+
+/obj/item/clothing/head/roguetown/kaizoku/zunari_kabuto
+	name = "zunari kabuto"
+	icon_state = "zunari_kabuto"
+	desc = "Abyssariad steel helmet."
+	smeltresult = /obj/item/ingot/steel
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	body_parts_covered = HEAD|HAIR|EARS
+	flags_inv = HIDEEARS
+	max_integrity = 200
+
+
+(big)
+rattan_helmet
+bronzeb
+tosei_kabuto

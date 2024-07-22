@@ -897,7 +897,7 @@
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 
-/obj/item/clothing/cloak/mino
+/obj/item/clothing/cloak/kaizoku/mino
 	name = "mino cloak"
 	desc = "An abyssariad raincoat made out of straw that covers the entire body."
 	icon_state = "mino"
@@ -909,5 +909,4 @@
 	slot_flags = ITEM_SLOT_CLOAK
 	allowed_sex = list(MALE)
 	allowed_race = list("human", "tiefling", "aasimar", "abyssariad")
-	sellprice = 50
 	nodismemsleeves = TRUE

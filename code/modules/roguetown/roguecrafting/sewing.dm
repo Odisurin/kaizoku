@@ -80,6 +80,72 @@
 	reqs = list(/obj/item/natural/fibers = 3)
 	craftdiff = 1
 
+/datum/crafting_recipe/roguetown/sewing/tengai
+	name = "tengai"
+	result = list(/obj/item/clothing/head/roguetown/kaizoku/big/tengai)
+	reqs = list(/obj/item/natural/fibers = 5)
+	craftdiff = 1
+
+/datum/crafting_recipe/roguetown/sewing/gasa
+	name = "gasa"
+	result = list(/obj/item/clothing/head/roguetown/kaizoku/big/gasa)
+	reqs = list(/obj/item/natural/fibers = 5)
+	craftdiff = 1
+
+/datum/crafting_recipe/roguetown/sewing/roningasa
+	name = "roningasa"
+	result = list(/obj/item/clothing/head/roguetown/kaizoku/big/roningasa)
+	reqs = list(/obj/item/natural/fibers = 5)
+	craftdiff = 1
+
+/datum/crafting_recipe/roguetown/sewing/torioigasa
+	name = "torioigasa"
+	result = list(/obj/item/clothing/head/roguetown/kaizoku/big/torioigasa)
+	reqs = list(/obj/item/natural/fibers = 5)
+	craftdiff = 1
+
+/datum/crafting_recipe/roguetown/sewing/sandogasa
+	name = "sandogasa"
+	result = list(/obj/item/clothing/head/roguetown/kaizoku/big/sandogasa)
+	reqs = list(/obj/item/natural/fibers = 5)
+	craftdiff = 1
+
+/datum/crafting_recipe/roguetown/sewing/kimono
+	name = "kimono"
+	result = list(/obj/item/clothing/suit/roguetown/shirt/kaizoku/kimono)
+	reqs = list(/obj/item/natural/cloth = 2,
+                /obj/item/natural/fibers = 1)
+	craftdiff = 1
+
+/datum/crafting_recipe/roguetown/sewing/monkgarb
+	name = "monk garb"
+	result = list(/obj/item/clothing/suit/roguetown/shirt/kaizoku/monkgarb)
+	reqs = list(/obj/item/natural/cloth = 2,
+                /obj/item/natural/fibers = 1)
+	craftdiff = 1
+
+/datum/crafting_recipe/roguetown/sewing/kamishimo
+	name = "kamishimo"
+	result = list(/obj/item/clothing/suit/roguetown/shirt/kaizoku/kamishimo)
+	reqs = list(/obj/item/natural/cloth = 2,
+                /obj/item/natural/fibers = 1)
+	craftdiff = 1
+
+/datum/crafting_recipe/roguetown/sewing/looseshirt
+	name = "loose shirt"
+	result = list(/obj/item/clothing/suit/roguetown/shirt/kaizoku/looseshirt)
+	reqs = list(/obj/item/natural/cloth = 2,
+                /obj/item/natural/fibers = 1)
+	craftdiff = 1
+
+/datum/crafting_recipe/roguetown/sewing/mino
+	name = "loose shirt"
+	result = list(/obj/item/clothing/cloak/kaizoku/mino)
+	reqs = list(/obj/item/natural/cloth = 2,
+                /obj/item/natural/fibers = 1)
+	craftdiff = 1
+
+
 /datum/crafting_recipe/roguetown/sewing/sack
 	name = "sack hood"
 	result = list(/obj/item/clothing/head/roguetown/menacing)

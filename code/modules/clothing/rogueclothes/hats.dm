@@ -806,8 +806,12 @@
 	flags_inv = HIDEEARS
 	max_integrity = 200
 
-
-(big)
-rattan_helmet
-bronzeb
-tosei_kabuto
+/obj/item/clothing/head/roguetown/kaizoku/big/rattan
+	name = "rattan helmet"
+	icon_state = "rattan_helmet"
+	desc = "A cheap abyssariad helmet made from stripped, oil boiled rattan. The process waterproofs the armor."
+	smeltresult = /obj/item/ingot/steel
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT)
+	body_parts_covered = HEAD|HAIR|EARS
+	flags_inv = HIDEEARS
+	max_integrity = 100

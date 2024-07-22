@@ -543,6 +543,11 @@
 	max_integrity = 180
 	sellprice = 10
 
+/obj/item/rogueweapon/sword/iron/jian
+	name = "iron jian"
+	desc = "a simple, iron double-edged straight sword of abyssariad design used in martial arts."
+	icon_state = "jian"
+
 /obj/item/rogueweapon/sword/iron/short
 	name = "short sword"
 	desc = "An iron sword of shortened design, a reduced grip for primarily single hand use."
@@ -575,6 +580,11 @@
 	gripped_intents = null
 	minstr = 4
 	wdefense = 2
+
+/obj/item/rogueweapon/sword/iron/messer/dao
+	name = "iron dao"
+	desc = "A single edged iron saber of Abyssariad making for horseback use. Suitable for chopping."
+	icon_state = "dao"
 
 /obj/item/rogueweapon/sword/short
 	force = 25

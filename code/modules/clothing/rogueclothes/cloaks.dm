@@ -896,3 +896,18 @@
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/obj/item/clothing/cloak/mino
+	name = "mino cloak"
+	desc = "An abyssariad raincoat made out of straw that covers the entire body."
+	icon_state = "mino"
+	icon = 'icons/kaizoku/clothingicon/cloak.dmi'
+	mob_overlay_icon = 'icons/kaizoku/clothing/cloak.dmi'
+	body_parts_covered = CHEST|GROIN|VITALS|ARMS
+	sleeved = 'icons/kaizoku/clothing/cloak.dmi'
+	sleevetype = "shirt"
+	slot_flags = ITEM_SLOT_CLOAK
+	allowed_sex = list(MALE)
+	allowed_race = list("human", "tiefling", "aasimar", "abyssariad")
+	sellprice = 50
+	nodismemsleeves = TRUE

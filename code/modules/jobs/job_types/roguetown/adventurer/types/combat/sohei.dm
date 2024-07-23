@@ -48,8 +48,8 @@
 		H.change_stat("speed", -1)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/sacred_flame_roguez)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/blindnessz)
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/invisibilityz)
-		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/revivez)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/spiderconjur)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/eoracursez)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	var/datum/devotion/cleric_holder/C = new /datum/devotion/cleric_holder(H, H.PATRON)
 	C.holder_mob = H

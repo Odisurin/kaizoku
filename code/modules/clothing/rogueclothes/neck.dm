@@ -155,6 +155,13 @@
 	icon_state = "psicrossiron"
 	sellprice = 50
 
+/obj/item/clothing/neck/roguetown/psicross/abyssor
+	name = "amulet of Abyssor"
+	desc = ""
+	icon = 'icons/kaizoku/clothingicon/neck.dmi'
+	mob_overlay_icon = 'icons/kaizoku/clothing/neck.dmi'
+	icon_state = "abyssor"
+
 /obj/item/clothing/neck/roguetown/psicross/silver/pickup(mob/user)
 	. = ..()
 	var/mob/living/carbon/human/H = user

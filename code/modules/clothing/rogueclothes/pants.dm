@@ -195,3 +195,89 @@
 		if(get_detail_color())
 			pic.color = get_detail_color()
 		add_overlay(pic)
+
+////Kaizoku Pants Content////
+
+/obj/item/clothing/under/roguetown/kaizoku
+	icon = 'icons/kaizoku/clothingicon/pants.dmi'
+	mob_overlay_icon = 'icons/kaizoku/clothing/pants.dmi'
+
+/obj/item/clothing/under/roguetown/kaizoku/haidate_tatami
+	name = "haidate tatami"
+	desc = "Flexible thigh guard with interlocking scales sewn into the fabric. Ideal for agility during battle."
+	gender = PLURAL
+	icon_state = "haidate_tatami"
+	item_state = "haidate_tatami"
+//	adjustable = CAN_CADJUST
+	sewrepair = FALSE
+	armor = list("melee" = 80, "bullet" = 50, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	max_integrity = 180
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_BLUNT)
+	armor_class = ARMOR_CLASS_MEDIUM
+	blocksound = CHAINHIT
+	var/do_sound = FALSE
+	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	anvilrepair = /datum/skill/craft/armorsmithing
+	r_sleeve_status = SLEEVE_NOMOD
+	l_sleeve_status = SLEEVE_NOMOD
+
+/obj/item/clothing/under/roguetown/kaizoku/haidate_tatami/sendan
+	name = "haidate sendan"
+	icon_state = "haidate_sendan"
+	desc = "Segmented thigh armor with overlapping plates that allows engagement in prolonged combat, without causing mobility issues."
+	armor = list("melee" = 100, "bullet" = 50, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_STAB, BCLASS_BLUNT)
+	max_integrity = 300
+
+/obj/item/clothing/under/roguetown/kaizoku/yoroihakama
+	name = "yoroihakama"
+	desc = "Hakama with extreme plate reinforcement, with protuding plates protecting the hips, and many interlocking steel plates under the cloth."
+	gender = PLURAL
+	icon_state = "yoroihakama"
+	item_state = "yoroihakama"
+	sewrepair = FALSE
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	max_integrity = 500
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_STAB, BCLASS_BLUNT)
+	armor_class = ARMOR_CLASS_HEAVY
+	blocksound = PLATEHIT
+	var/do_sound = FALSE
+	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	anvilrepair = /datum/skill/craft/armorsmithing
+	r_sleeve_status = SLEEVE_NOMOD
+	l_sleeve_status = SLEEVE_NOMOD
+	colorgrenz = TRUE
+
+/obj/item/clothing/under/roguetown/kaizoku/yoroihakama/update_icon()
+	cut_overlays()
+	if(get_detail_tag())
+		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
+		pic.appearance_flags = RESET_COLOR
+		if(get_detail_color())
+			pic.color = get_detail_color()
+		add_overlay(pic)
+
+/obj/item/clothing/under/roguetown/kaizoku/tobi
+	name = "tobi pants"
+	desc = "baggy pants of abyssariad design. Suitable for those who works the field and avoid horseback."
+	gender = PLURAL
+	icon_state = "tobi"
+	item_state = "tobi"
+//	adjustable = CAN_CADJUST
+	sewrepair = TRUE
+	armor = list("melee" = 10, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT)
+	blocksound = SOFTHIT
+	blade_dulling = DULLING_BASHCHOP
+	r_sleeve_status = SLEEVE_NOMOD
+	l_sleeve_status = SLEEVE_NOMOD
+	
+/obj/item/clothing/under/roguetown/kaizoku/tobi/fur
+	name = "fur tobi"
+	icon_state = "furpants"
+	desc = "it makes one wonder if it was woven out of Kitsune's tailfur with how soft it is.."
+
+/obj/item/clothing/under/roguetown/kaizoku/tobi/hakama
+	name = "hakama"
+	icon_state = "hakama"
+	desc = "Is this a skirt?"

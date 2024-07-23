@@ -723,34 +723,58 @@
 /obj/item/clothing/head/roguetown/kaizoku/big/tengai
 	name = "tengai"
 	icon_state = "tengai"
+	flags_inv = HIDEEARS
+	desc = "A wide-brimmed hat traditionally worn by wandering monks of the Abyssanctum fold."
+
+/obj/item/clothing/head/roguetown/kaizoku/big/stengai
+	name = "yamabushi tengai"
+	icon_state = "stengai"
+	flags_inv = HIDEEARS
+	desc = "A tengai painted in black tar traditionally worn by Abyssanctum yamabushis."
+
+/obj/item/clothing/head/roguetown/kaizoku/soheicloth
+	name = "sohei coverings"
+	icon_state = "soheicloth"
+	flags_inv = HIDEEARS
+	desc = "Facial coverings traditionally worn by Abyssanctum soheis."
 
 /obj/item/clothing/head/roguetown/kaizoku/big/gasa
 	name = "gasa"
 	icon_state = "gasa"
+	desc = "A conical straw hat used to protect from the sun and rain."
+	flags_inv = HIDEEARS
 
 /obj/item/clothing/head/roguetown/kaizoku/big/roningasa
 	name = "roningasa"
 	icon_state = "roningasa"
+	flags_inv = HIDEEARS
+	desc = "A hat typically worn by masterless zamurai, or the ronin."
 
 /obj/item/clothing/head/roguetown/kaizoku/big/torioigasa
 	name = "torioigasa"
 	icon_state = "torioigasa"
+	desc = "A traditional Abyssariad hat designed for long travels on the murklands. Most used by commoners."
 
 /obj/item/clothing/head/roguetown/kaizoku/big/sandogasa
 	name = "sandogasa"
 	icon_state = "sandogasa"
+	flags_inv = HIDEEARS
+	desc = "A large hat providing ample shade and protection from the elements, including rain."
 
 /obj/item/clothing/head/roguetown/kaizoku/shinobi_zukin
 	name = "shinobi hood"
 	icon_state = "shinobi_zukin"
+	flags_inv = HIDEEARS
+	desc = "A hood worn by members of Shinobi clans to conceal their identity and blend into the shadows. Unviable for spionage for being too obvious."
 
 /obj/item/clothing/head/roguetown/kaizoku/takuhatsugasa
 	name = "takuhatsugasa"
 	icon_state = "takuhatsugasa"
+	desc = "A type of hat worn by monks during their begging rounds."
 
 /obj/item/clothing/head/roguetown/kaizoku/helmet
 	name = "jingasa"
-	desc = ""
+	desc = "Lightweight helmet usually worn by Ashigarus, the Foot Soldiers of the Fog Islands."
 	body_parts_covered = HEAD|HAIR
 	icon_state = "jingasa"
 	sleevetype = null
@@ -765,6 +789,7 @@
 
 /obj/item/clothing/head/roguetown/kaizoku/helmet/jingasa
 	name = "jingasa"
+	flags_inv = HIDEEARS
 
 /obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane
 	name = "hachi-gane"
@@ -782,29 +807,34 @@
 	armor = list("melee" = 50, "bullet" = 25, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_BLUNT, BCLASS_TWIST)
 	anvilrepair = null
+	flags_inv = HIDEEARS
 	sewrepair = TRUE
 	blocksound = SOFTHIT
 
-/obj/item/clothing/head/roguetown/kaizoku/karuta_kabuto
-	name = "karuta kabuto"
-	desc = ""
-	body_parts_covered = HEAD|HAIR|EARS
-	icon_state = "karuta_kabuto"
-	armor = list("melee" = 50, "bullet" = 25, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_BLUNT, BCLASS_TWIST)
-	anvilrepair = null
-	sewrepair = TRUE
-	blocksound = SOFTHIT
-
-/obj/item/clothing/head/roguetown/kaizoku/zunari_kabuto
-	name = "zunari kabuto"
-	icon_state = "zunari_kabuto"
+/obj/item/clothing/head/roguetown/kaizoku/big/tosei_kabuto
+	name = "tosei kabuto"
+	icon_state = "tosei_kabuto"
 	desc = "Abyssariad steel helmet."
 	smeltresult = /obj/item/ingot/steel
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	body_parts_covered = HEAD|HAIR|EARS
 	flags_inv = HIDEEARS
 	max_integrity = 200
+
+/obj/item/clothing/head/roguetown/kaizoku/zunari
+	name = "zunari kabuto"
+	desc = ""
+	body_parts_covered = FULL_HEAD
+	icon_state = "zunari_kabuto"
+	item_state = "zunari_kabuto"
+	flags_inv = HIDEEARS|HIDEFACE
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	block2add = FOV_RIGHT|FOV_LEFT
+	flags_inv = HIDEEARS
+	body_parts_covered = HEAD|EARS|HAIR|NOSE|EYES|FACE
+	smeltresult = /obj/item/ingot/steel
 
 /obj/item/clothing/head/roguetown/kaizoku/big/rattan
 	name = "rattan helmet"
@@ -815,3 +845,26 @@
 	body_parts_covered = HEAD|HAIR|EARS
 	flags_inv = HIDEEARS
 	max_integrity = 100
+
+/obj/item/clothing/head/roguetown/kaizoku/big/bronzeb
+	name = "relic of urn"
+	icon_state = "bronzeb"
+	desc = "The puzzling bronze urn used by the legendary Eidolon champions, the farseers and demigods killers of Abyssor's realm. Light bends from the inside, allowing sight."
+	smeltresult = /obj/item/ingot/steel
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	body_parts_covered = HEAD|EARS|HAIR|NOSE|EYES|FACE
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	max_integrity = 200
+
+/obj/item/clothing/head/roguetown/kaizoku/big/dragonslayer
+	name = "dragonslayer helmet"
+	icon_state = "dragonslayer"
+	desc = "The asbestos-layered headgear of the heroic Dragonslayers, steadfast on feasting upon the sons of magma."
+	smeltresult = /obj/item/ingot/steel
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	body_parts_covered = HEAD|EARS|HAIR|NOSE|EYES|FACE
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	max_integrity = 200
+	heat_protection = HEAD|EARS|HAIR|NOSE|EYES|FACE
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	resistance_flags = FIRE_PROOF | ACID_PROOF

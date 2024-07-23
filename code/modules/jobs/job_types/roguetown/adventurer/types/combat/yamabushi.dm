@@ -20,7 +20,7 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/plate
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	pants = /obj/item/clothing/under/roguetown/kaizoku/tobi/hakama
-	shirt = /obj/item/clothing/suit/roguetown/shirt/kaizoku/kimono
+	shirt = /obj/item/clothing/suit/roguetown/shirt/kaizoku/looseshirt
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor

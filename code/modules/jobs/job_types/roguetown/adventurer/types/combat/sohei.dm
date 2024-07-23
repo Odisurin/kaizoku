@@ -23,7 +23,6 @@
 	shirt = /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/itatami
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	belt = /obj/item/storage/belt/rogue/leather
-	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	head = /obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane
 	if(prob(25))
 		backr = /obj/item/rogueweapon/spear/yari/katakama

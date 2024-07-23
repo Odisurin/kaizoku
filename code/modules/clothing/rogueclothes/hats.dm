@@ -797,7 +797,7 @@
 	desc = "Simple, massproduced head protection for the ronin and poor alike."
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
-	icon_state = "jingasa"
+	icon_state = "hachi-gane"
 	max_integrity = 100
 
 /obj/item/clothing/head/roguetown/kaizoku/karuta_kabuto

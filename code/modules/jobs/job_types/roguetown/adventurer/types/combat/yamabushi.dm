@@ -25,10 +25,11 @@
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	head = /obj/item/clothing/head/roguetown/kaizoku/big/stengai
-	if(prob(25))
-        beltr = /obj/item/rogueweapon/mace/cudgel/ararebo
-    else
-        backr = /obj/item/rogueweapon/mace/goden/kanabo
+	if(prob(50))
+		beltr = /obj/item/rogueweapon/mace/cudgel/ararebo
+		beltl = /obj/item/rogueweapon/thrown/ono
+	else
+		backr = /obj/item/rogueweapon/mace/goden/kanabo
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/axesmaces, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)

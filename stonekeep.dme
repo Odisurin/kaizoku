@@ -2120,6 +2120,7 @@
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\mage.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\ranger.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\rogue.dm"
+#include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\shrinecaretaker.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\sohei.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\yamabushi.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\sorceress.dm"

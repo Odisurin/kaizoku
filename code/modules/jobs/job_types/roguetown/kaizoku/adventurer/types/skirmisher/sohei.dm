@@ -18,7 +18,7 @@
 		to_chat(H, "<span class='warning'>I am a Abyssanctum, loyal to [H.PATRON] the world whale. May the tides of fate guide me to honor.")
 
 	neck = /obj/item/clothing/neck/roguetown/psicross/abyssor
-	armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/nanbando/cuirass
+	armor = /ob/obj/item/clothing/suit/roguetown/armor/kaizoku/plate
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	pants = /obj/item/clothing/under/roguetown/kaizoku/tobi
 	shirt = /obj/item/clothing/suit/roguetown/shirt/kaizoku/looseshirt

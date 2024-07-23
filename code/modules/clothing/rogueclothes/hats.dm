@@ -736,6 +736,7 @@
 	name = "sohei coverings"
 	icon_state = "soheicloth"
 	flags_inv = HIDEEARS
+	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HEAD
 	desc = "Facial coverings traditionally worn by Abyssanctum soheis."
 
 /obj/item/clothing/head/roguetown/kaizoku/big/gasa

@@ -614,30 +614,32 @@
 	//brokenrepair = TRUE
 	armor_class = ARMOR_CLASS_LIGHT
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/nanbando
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "steel nanbando"
 	desc = "Abyssariad steel cuirass, refined and with additional sode for protection. Rare and prized by High-ranking samurais, this design has been adquired by raided humen settlements."
-	body_parts_covered = CHEST|VITALS
+	body_parts_covered = CHEST|GROIN|VITALS
 	icon_state = "nanbando"
 	item_state = "nanbando"
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	allowed_race = ALL_RACES_LIST
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	nodismemsleeves = TRUE
 	blocking_behavior = null
 	max_integrity = 300
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
-	armor_class = ARMOR_CLASS_MEDIUM
+	equip_delay_self = 40
+	armor_class = ARMOR_CLASS_HEAVY
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/nanbando/full
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/full
 	name = "Full nanbando"
 	desc = "Abyssariad steel cuirass, refined and with additional auxiliary parts for protection."
 	icon_state = "nanbandofull"
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
 	equip_delay_self = 80
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/nanbando/cuirass
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/cuirass
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "steel nanbando cuirass"
 	desc = "The Abyssariad steel cuirass. Usually sourced from fallen raided soldiers, their armors taken and reshaped."
@@ -663,11 +665,18 @@
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_MEDIUM
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/mirror/iron
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/cuirass/iron
 	name = "iron mirror armor"
 	icon_state = "imirrorarmor"
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	max_integrity = 200
+	smeltresult = /obj/item/ingot/iron
+	armor_class = ARMOR_CLASS_MEDIUM
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/cuirass/steel
+	name = "mirror armor"
+	icon_state = "mirrorarmor"
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	smeltresult = /obj/item/ingot/iron
 	armor_class = ARMOR_CLASS_MEDIUM
 
@@ -711,7 +720,7 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	body_parts_covered = CHEST|VITALS
 	allowed_sex = list(MALE, FEMALE)
 	icon_state = "sanmaido"
-	max_integrity = 200
+	max_integrity = 150
 	equip_delay_self = 25
 	armor_class = ARMOR_CLASS_MEDIUM
 

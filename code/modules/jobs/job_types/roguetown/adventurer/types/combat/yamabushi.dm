@@ -1,4 +1,3 @@
-/*
 /datum/advclass/combat/yamabushi
 	name = "Yamabushi"
 	tutorial = "The Yamabushi are battle ready religious figures of the Abyssanctum faith, one with the Curator Branch. They safeguard knowledge and take care of the living, focused on betterment of society as a whole."
@@ -57,4 +56,3 @@
 	C.holder_mob = H
 	C.grant_spells(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
-*/

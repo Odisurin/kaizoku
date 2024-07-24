@@ -1038,7 +1038,7 @@
 	name = "TenguS"
 	icon_state = "tengus"
 	specuse = list("tengu")
-	color_src = SKINCOLOR
+	color_src = HAIR
 	offsetti = TRUE
 
 /datum/sprite_accessory/ears/oni

@@ -7,7 +7,6 @@
 	"Tengu",
 	"Oni",
 	"Kappa")
-	ispilgrim = FALSE
 	outfit = /datum/outfit/job/roguetown/adventurer/sohei
 
 /datum/outfit/job/roguetown/adventurer/sohei/pre_equip(mob/living/carbon/human/H)

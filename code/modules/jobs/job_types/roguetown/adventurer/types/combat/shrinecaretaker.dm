@@ -8,7 +8,6 @@
 	"Oni",
 	"Kappa")
 	outfit = /datum/outfit/job/roguetown/adventurer/shrinecaretaker
-	ispilgrim = FALSE
 
 /datum/outfit/job/roguetown/adventurer/shrinecaretaker/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -16,7 +16,7 @@
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
-	default_features = list("mcolor" = "FFF", "ears" = "TanguS", "tail_human" = "TenguV")
+	default_features = list("mcolor" = "FFF", "ears" = "TenguS", "tail_human" = "TenguV")
 	use_skintones = 1
 	possible_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	skinned_type = /obj/item/stack/sheet/animalhide/human
@@ -59,13 +59,18 @@
 
 /datum/species/abyssariad/tengu/get_skin_list()
 	return sortList(list(
-	"Lookout unit" = "f39083",
-	"Scout Unit" = "25242c",
-	"Vanguard Unit" = "abf76d",
-	"Pioneer Unit" = "e2b9a3",
+	"Silver Purifier" = "ffe0d1",
+	"Warp Caster" = "fcccb3",
+	"Marble" = "edc6b3",
+	"Bogwalker" = "e2b9a3",
+	"Duskwalker" = "d9a284",
+	"Bronze Purifier" = "c9a893",
+	"Twilight Veil" = "ba9882",
+	"Midnight Veil" = "44342a",
 	"Peppersblow Unit" = "771111",
-	"Stargazer Unit" = "50cfaf"
+	"Ebony Purifier" = "221A15"
 	))
+
 
 /datum/species/abyssariad/tengu/get_hairc_list()
 	return sortList(list(

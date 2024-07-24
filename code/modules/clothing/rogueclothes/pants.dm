@@ -241,6 +241,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_STAB, BCLASS_BLUNT)
 	armor_class = ARMOR_CLASS_HEAVY
 	blocksound = PLATEHIT
+	detail_tag = "_detail"
 	var/do_sound = FALSE
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -275,9 +276,9 @@
 /obj/item/clothing/under/roguetown/kaizoku/tobi/fur
 	name = "fur tobi"
 	icon_state = "furpants"
-	desc = "it makes one wonder if it was woven out of Kitsune's tailfur with how soft it is.."
+	desc = "woven out of dendor's beloved animals."
 
 /obj/item/clothing/under/roguetown/kaizoku/tobi/hakama
 	name = "hakama"
 	icon_state = "hakama"
-	desc = "Is this a skirt?"
+	desc = "suitable for the Abyssariad-cultured, in which men can use skirts without being considered an act of homossexuality."

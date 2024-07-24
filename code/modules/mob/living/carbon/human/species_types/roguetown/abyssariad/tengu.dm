@@ -46,6 +46,8 @@
 	specstats_f = list("strength" = -1, "perception" = 0, "intelligence" = 2, "constitution" = -1, "endurance" = -1, "speed" = 3, "fortune" = 0)
 	enflamed_icon = "widefire"
 	possible_faiths = list(FAITH_PSYDON)
+	mutanteyes = /obj/item/organ/eyes/tengu
+
 
 /datum/species/abyssariad/tengu/get_span_language(datum/language/message_language)
 	if(!message_language)

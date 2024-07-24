@@ -170,3 +170,76 @@
 	. = ..()
 	name = "dishonor mask"
 	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
+
+/obj/item/clothing/mask/rogue/kaizoku
+	icon = 'icons/kaizoku/clothingicon/masks.dmi'
+	mob_overlay_icon = 'icons/kaizoku/clothing/masks.dmi'
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
+	body_parts_covered = FACE
+	slot_flags = ITEM_SLOT_MASK
+
+/obj/item/clothing/mask/rogue/kaizoku/menpo
+	name = "iron menpo"
+	icon_state = "ironmenpo"
+	max_integrity = 100
+	blocksound = PLATEHIT
+	break_sound = 'sound/foley/breaksound.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	resistance_flags = FIRE_PROOF
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	flags_inv = HIDEFACE
+	body_parts_covered = FACE|NECK|MOUTH|EYES
+	block2add = FOV_BEHIND
+	slot_flags = ITEM_SLOT_MASK|ITEM_SLOT_HIP
+	experimental_onhip = TRUE
+
+/obj/item/clothing/mask/rogue/kaizoku/menpo/half
+	name = "iron half menpo"
+	icon_state = "ironhalfmenpo"
+	max_integrity = 100
+	body_parts_covered = NECK|MOUTH
+
+/obj/item/clothing/mask/rogue/kaizoku/menpo/steel
+	name = "steel menpo"
+	icon_state = "steelmenpo"
+	max_integrity = 200
+
+/obj/item/clothing/mask/rogue/kaizoku/menpo/steel/half
+	name = "steel menpo"
+	icon_state = "steelmenpo"
+	max_integrity = 200
+	body_parts_covered = NECK|MOUTH
+
+/obj/item/clothing/mask/rogue/kaizoku/menpo/tribal
+	name = "iron tribal mask"
+	icon_state = "ironmenpo_tribal"
+	max_integrity = 100
+	body_parts_covered = FACE|MOUTH|EYES
+
+/obj/item/clothing/mask/rogue/kaizoku/menpo/tribal/steel
+	name = "steel tribal mask"
+	icon_state = "steelmenpo_tribal"
+	max_integrity = 200
+	body_parts_covered = FACE|MOUTH|EYES
+
+/obj/item/clothing/mask/rogue/kaizoku/menpo/steel/tengu
+	name = "tengu mask"
+	icon_state = "colourable_tengumask"
+	max_integrity = 200
+
+/obj/item/clothing/mask/rogue/kaizoku/menpo/steel/kitsune
+	name = "kitsune mask"
+	icon_state = "colourable_kitsunemask"
+	max_integrity = 200
+	detail_tag = "_detail"
+
+/obj/item/clothing/mask/rogue/kaizoku/menpo/steel/kitsune/update_icon()
+	cut_overlays()
+	if(get_detail_tag())
+		var/mutable_appearance/pic = mutable_appearance(icon(icon, "[icon_state][detail_tag]"))
+		pic.appearance_flags = RESET_COLOR
+		if(get_detail_color())
+			pic.color = get_detail_color()
+		add_overlay(pic)

@@ -2118,6 +2118,7 @@
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\dbomb.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\dwarfranger.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\mage.dm"
+#include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\wokou.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\ranger.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\rogue.dm"
 #include "code\modules\jobs\job_types\roguetown\adventurer\types\combat\shrinecaretaker.dm"

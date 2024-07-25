@@ -118,8 +118,8 @@
 	max_integrity = 550
 
 /turf/closed/wall/mineral/rogue/kokabewood
-	name = "kokabe wall"
-	desc = "A rough-hewn wall of wood."
+	name = "abyssariad kokabe wall"
+	desc = "a wall containing a kokabe, extending partway down from the ceiling."
 	icon = 'icons/turf/walls/kaizokuwood.dmi'
 	icon_state = "wood"
 	smooth = SMOOTH_MORE
@@ -135,8 +135,8 @@
 	climbdiff = 3
 
 /turf/closed/wall/mineral/rogue/kokabewood/window
-	name = "wooden window"
-	desc = "A window with a rough-hewn wooden frame."
+	name = "abyssariad kokabe window"
+	desc = "A window containing a kokabe, extending partway down from the ceiling."
 	opacity = FALSE
 	max_integrity = 550
 

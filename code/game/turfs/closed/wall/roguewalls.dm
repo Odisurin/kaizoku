@@ -119,7 +119,7 @@
 
 /turf/closed/wall/mineral/rogue/kokabewood
 	name = "abyssariad kokabe wall"
-	desc = "a wall containing a kokabe, extending partway down from the ceiling."
+	desc = "a wall containing a narrow horizontal section, extending partway down from the ceiling."
 	icon = 'icons/turf/walls/kaizokuwood.dmi'
 	icon_state = "wood"
 	smooth = SMOOTH_MORE
@@ -136,7 +136,7 @@
 
 /turf/closed/wall/mineral/rogue/kokabewood/window
 	name = "abyssariad kokabe window"
-	desc = "A window containing a kokabe, extending partway down from the ceiling."
+	desc = "A window containing a narrow horizontal section, extending partway down from the ceiling."
 	opacity = FALSE
 	max_integrity = 550
 

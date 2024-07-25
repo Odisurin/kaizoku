@@ -16,6 +16,32 @@
 				return
 	return TRUE
 
+/datum/crafting_recipe/roguetown/turfs/kaizokuwood
+	name = "kokabe wall"
+	result = /turf/closed/wall/mineral/rogue/kaizokuwood
+	reqs = list(/obj/item/grown/log/tree/small = 2)
+	skillcraft = /datum/skill/craft/carpentry
+
+/datum/crafting_recipe/roguetown/turfs/kaizokuwood/TurfCheck(mob/user, turf/T)
+	if(isclosedturf(T))
+		return
+	if(!istype(T, /turf/open/floor/rogue))
+		return
+	return TRUE
+
+/datum/crafting_recipe/roguetown/turfs/kaizokuwindow
+	name = "kaizoku window"
+	result = /turf/closed/wall/mineral/rogue/kaizokuwood/window
+	reqs = list(/obj/item/grown/log/tree/small = 2)
+	skillcraft = /datum/skill/craft/carpentry
+
+/datum/crafting_recipe/roguetown/turfs/kaizokuwindow/TurfCheck(mob/user, turf/T)
+	if(isclosedturf(T))
+		return
+	if(!istype(T, /turf/open/floor/rogue))
+		return
+	return TRUE
+
 /datum/crafting_recipe/roguetown/turfs/woodwall
 	name = "wooden wall"
 	result = /turf/closed/wall/mineral/rogue/wood

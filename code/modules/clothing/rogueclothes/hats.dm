@@ -893,6 +893,7 @@
 	name = "dragonslayer helmet"
 	icon_state = "dragonslayer"
 	desc = "The asbestos-layered headgear of the heroic Dragonslayers, steadfast on feasting upon the sons of magma."
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 75,"energy" = 75, "bomb" = 75, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	smeltresult = /obj/item/ingot/steel
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	body_parts_covered = HEAD|EARS|HAIR|NOSE|EYES|FACE

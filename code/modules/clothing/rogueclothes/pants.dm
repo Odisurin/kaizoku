@@ -294,7 +294,8 @@
 /obj/item/clothing/under/roguetown/kaizoku/tobi/dragonslayer
 	desc = "baggy pants of abyssariad design. This one is coated in asbestos, and may be just as dangerous."
 	color = "#3d4681"
-	
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 75,"energy" = 75, "bomb" = 75, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
 /obj/item/clothing/under/roguetown/kaizoku/tobi/fur
 	name = "fur tobi"
 	icon_state = "furpants"

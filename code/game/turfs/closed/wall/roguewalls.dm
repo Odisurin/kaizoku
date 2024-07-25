@@ -134,7 +134,7 @@
 	neighborlay = "dirtedge"
 	climbdiff = 3
 
-/turf/closed/wall/mineral/rogue/wood/window
+/turf/closed/wall/mineral/rogue/kaizokuwood/window
 	name = "wooden window"
 	desc = "A window with a rough-hewn wooden frame."
 	opacity = FALSE

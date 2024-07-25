@@ -37,3 +37,26 @@
 	slot_flags = ITEM_SLOT_WRISTS
 	icon_state = "wrappings"
 	item_state = "wrappings"
+
+////Kaizoku Wrist Content////
+
+/obj/item/clothing/wrists/roguetown/kaizoku
+	icon = 'icons/kaizoku/clothingicon/wrists.dmi'
+	mob_overlay_icon = 'icons/kaizoku/clothing/wrists.dmi'
+
+/obj/item/clothing/wrists/roguetown/kaizoku/kote
+	name = "kote"
+	desc = "a sashinuki kote, the armored sleeves and gloves knitted into a jacket layer. It belongs as one of the armor component of Sangu, together with Suneate and Haidate."
+	body_parts_covered = ARMS|HANDS
+	icon_state = "kote"
+	item_state = "kote"
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	blocksound = PLATEHIT
+	anvilrepair = /datum/skill/craft/armorsmithing
+
+/obj/item/clothing/wrists/roguetown/kaizoku/dragonwrap
+	name = "dragon wrappings"
+	slot_flags = ITEM_SLOT_WRISTS
+	icon_state = "dragonwrap"
+	item_state = "dragonwrap"

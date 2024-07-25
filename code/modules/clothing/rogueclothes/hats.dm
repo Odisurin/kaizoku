@@ -739,6 +739,22 @@
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HEAD
 	desc = "Facial coverings traditionally worn by Abyssanctum soheis."
 
+/obj/item/clothing/head/roguetown/kaizoku/soheicloth/thunder
+	name = "thunder sohei coverings"
+	color = "#be8b48"
+
+/obj/item/clothing/head/roguetown/kaizoku/soheicloth/storm
+	name = "storm sohei coverings"
+	color = "#1a2677"
+
+/obj/item/clothing/head/roguetown/kaizoku/soheicloth/ocean
+	name = "ocean sohei coverings"
+	color = "#56928a"
+
+/obj/item/clothing/head/roguetown/kaizoku/soheicloth/island
+	name = "island sohei coverings"
+	color = "#bd3541"
+
 /obj/item/clothing/head/roguetown/kaizoku/big/gasa
 	name = "gasa"
 	icon_state = "gasa"
@@ -794,11 +810,27 @@
 
 /obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane
 	name = "hachi-gane"
-	desc = "Simple, massproduced head protection for the ronin and poor alike."
+	desc = "Simple, massproduced head protection for humble monks, ronins and poor alike."
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	icon_state = "hachi-gane"
 	max_integrity = 100
+
+/obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane/thunder
+	name = "thunder hachi-gane"
+	color = "#be8b48"
+
+/obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane/storm
+	name = "storm hachi-gane"
+	color = "#1a2677"
+
+/obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane/ocean
+	name = "ocean hachi-gane"
+	color = "#56928a"
+
+/obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane/island
+	name = "island hachi-gane"
+	color = "#bd3541"
 
 /obj/item/clothing/head/roguetown/kaizoku/karuta_kabuto
 	name = "karuta kabuto"
@@ -815,7 +847,7 @@
 /obj/item/clothing/head/roguetown/kaizoku/big/tosei_kabuto
 	name = "tosei kabuto"
 	icon_state = "tosei_kabuto"
-	desc = "Abyssariad steel helmet."
+	desc = "made from multiple steel plates riveted together, arranged in a radial pattern, having great balance and weight distribution - protecting even against firearms."
 	smeltresult = /obj/item/ingot/steel
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	body_parts_covered = HEAD|HAIR|EARS
@@ -824,7 +856,7 @@
 
 /obj/item/clothing/head/roguetown/kaizoku/zunari
 	name = "zunari kabuto"
-	desc = ""
+	desc = "a etchu zunari kabuto with the front end of the logitudinal plate overlapping the browplate rather than riveted beneath it."
 	body_parts_covered = FULL_HEAD
 	icon_state = "zunari_kabuto"
 	item_state = "zunari_kabuto"

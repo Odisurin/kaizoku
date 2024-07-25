@@ -251,3 +251,29 @@
 	new /obj/item/rogueweapon/surgery/cautery(src)
 	new /obj/item/natural/worms/leech/parasite(src)
 	new /obj/item/rogueweapon/surgery/hammer(src)
+
+/obj/item/storage/belt/rogue/kaizoku
+	icon = 'icons/kaizoku/clothingicon/belts.dmi'
+	mob_overlay_icon = 'icons/kaizoku/clothing/belts.dmi'
+
+/obj/item/storage/belt/rogue/kaizoku/leather/daisho
+	name = "daisho belt"
+	desc = "A oil-boiled reinforced cloth belt used by Abyssariads for practicing Daisho."
+	icon_state = "daisho"
+	sellprice = 5
+
+/obj/item/storage/belt/rogue/kaizoku/leather/daisho/thunder
+	name = "thunder daisho belt"
+	color = "#be8b48"
+
+/obj/item/storage/belt/rogue/kaizoku/leather/daisho/storm
+	name = "storm daisho belt"
+	color = "#1a2677"
+
+/obj/item/storage/belt/rogue/kaizoku/leather/daisho/ocean
+	name = "ocean daisho belt"
+	color = "#56928a"
+
+/obj/item/storage/belt/rogue/kaizoku/leather/daisho/island
+	name = "island daisho belt"
+	color = "#bd3541"

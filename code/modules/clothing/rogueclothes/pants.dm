@@ -272,6 +272,28 @@
 	blade_dulling = DULLING_BASHCHOP
 	r_sleeve_status = SLEEVE_NOMOD
 	l_sleeve_status = SLEEVE_NOMOD
+
+/obj/item/clothing/under/roguetown/kaizoku/tobi
+
+/obj/item/clothing/under/roguetown/kaizoku/tobi/thunder
+	name = "thunder tobi pants"
+	color = "#be8b48"
+
+/obj/item/clothing/under/roguetown/kaizoku/tobi/storm
+	name = "storm tobi pants"
+	color = "#1a2677"
+
+/obj/item/clothing/under/roguetown/kaizoku/tobi/ocean
+	name = "ocean tobi pants"
+	color = "#56928a"
+
+/obj/item/clothing/under/roguetown/kaizoku/tobi/island
+	name = "island tobi pants"
+	color = "#bd3541"
+
+/obj/item/clothing/under/roguetown/kaizoku/tobi/dragonslayer
+	desc = "baggy pants of abyssariad design. This one is coated in asbestos, and may be just as dangerous."
+	color = "#3d4681"
 	
 /obj/item/clothing/under/roguetown/kaizoku/tobi/fur
 	name = "fur tobi"

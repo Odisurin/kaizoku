@@ -270,8 +270,8 @@
 	gender = MALE
 	specuse = list("human", "tiefling", "aasimar", "abyssariad")
 
-/datum/sprite_accessory/hair/kaizoku/samurai
-	name = "Samurai Manbun"
+/datum/sprite_accessory/hair/kaizoku/zamurai
+	name = "zamurai Manbun"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "samurai"
 	gender = MALE

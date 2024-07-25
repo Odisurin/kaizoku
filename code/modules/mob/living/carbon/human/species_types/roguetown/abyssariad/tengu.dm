@@ -42,8 +42,8 @@
 	OFFSET_FACE_F = list(0,-1), OFFSET_BELT_F = list(0,0), OFFSET_BACK_F = list(0,-1), \
 	OFFSET_NECK_F = list(0,-1), OFFSET_MOUTH_F = list(0,-1), OFFSET_PANTS_F = list(0,0), \
 	OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,0))
-	specstats = list("strength" = 0, "perception" = 0, "intelligence" = 1, "constitution" = 0, "endurance" = 0, "speed" = 3, "fortune" = 0)
-	specstats_f = list("strength" = -1, "perception" = 0, "intelligence" = 2, "constitution" = -1, "endurance" = -1, "speed" = 3, "fortune" = 0)
+	specstats = list("strength" = 0, "perception" = 1, "intelligence" = 0, "constitution" = 0, "endurance" = 0, "speed" = 3, "fortune" = 0)
+	specstats_f = list("strength" = 0, "perception" = 2, "intelligence" = 0, "constitution" = -1, "endurance" = -1, "speed" = 3, "fortune" = 0)
 	enflamed_icon = "widefire"
 	possible_faiths = list(FAITH_PSYDON)
 	mutanteyes = /obj/item/organ/eyes/tengu

@@ -8,6 +8,7 @@
 	"Oni",
 	"Kappa")
 	outfit = /datum/outfit/job/roguetown/adventurer/sohei
+	ispilgrim = FALSE
 
 /datum/outfit/job/roguetown/adventurer/sohei/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -21,12 +22,37 @@
 	pants = /obj/item/clothing/under/roguetown/kaizoku/tobi
 	shirt = /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/itatami
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
-	belt = /obj/item/storage/belt/rogue/leather
 	head = /obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane
+	beltr = /obj/item/rogueweapon/huntingknife/idagger/sai
+	armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
+
+	var/randy = rand(1,8)
+	switch(randy)
+		if(1 to 2)
+			neck = /obj/item/clothing/head/roguetown/kaizoku/soheicloth/thunder
+			pants = /obj/item/clothing/under/roguetown/kaizoku/tobi/thunder
+			belt = /obj/item/storage/belt/rogue/kaizoku/leather/daisho/thunder
+			head = /obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane/thunder
+		if(3 to 4)
+			neck = /obj/item/clothing/head/roguetown/kaizoku/soheicloth/storm
+			pants = /obj/item/clothing/under/roguetown/kaizoku/tobi/storm
+			belt = /obj/item/storage/belt/rogue/kaizoku/leather/daisho/storm
+			head = /obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane/storm
+		if(5 to 6)
+			neck = /obj/item/clothing/head/roguetown/kaizoku/soheicloth/ocean
+			pants = /obj/item/clothing/under/roguetown/kaizoku/tobi/ocean
+			belt = /obj/item/storage/belt/rogue/kaizoku/leather/daisho/ocean
+			head = /obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane/ocean
+		if(7 to 8)
+			neck = /obj/item/clothing/head/roguetown/kaizoku/soheicloth/island
+			pants = /obj/item/clothing/under/roguetown/kaizoku/tobi/island
+			belt = /obj/item/storage/belt/rogue/kaizoku/leather/daisho/island
+			head = /obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane/island
+
 	if(prob(25))
-		backr = /obj/item/rogueweapon/spear/yari/katakama
+		backr = /obj/item/rogueweapon/spear/yari/jumonji
 	else 
-		backr = /obj/item/rogueweapon/spear/yari
+		backr = /obj/item/rogueweapon/spear/yari/katakama
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)

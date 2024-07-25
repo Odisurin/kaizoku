@@ -160,7 +160,7 @@
 	force = 15
 	name = "tanto"
 	icon_state = "tanto"
-	desc = "Abyssariad swordmakers first created the tanto as a companion blade to the tachi in a samurai's daisho, later creating the wakizashi to replace it with the advent of the uchigatana and the shift from cavalry tactics to infantry tactics following the Demon War. It is primarily a thrusting weapon, but is also a decent cutting implement."
+	desc = "Abyssariad swordmakers first created the tanto as a companion blade to the tachi in a zamurai's daisho, later creating the wakizashi to replace it with the advent of the uchigatana and the shift from cavalry tactics to infantry tactics following the Demon War. It is primarily a thrusting weapon, but is also a decent cutting implement."
 
 /obj/item/rogueweapon/huntingknife/idagger/steel/kaiken
 	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/cut,/datum/intent/dagger/thrust/pick)

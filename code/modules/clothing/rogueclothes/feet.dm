@@ -12,16 +12,6 @@
 	equip_delay_self = 30
 	resistance_flags = FIRE_PROOF
 
-/obj/item/clothing/shoes/roguetown/boots
-	name = "dark boots"
-	//dropshrink = 0.75
-	color = "#d5c2aa"
-	desc = "Boots made out of darker materials. Offers light protection against melee attacks."
-	gender = PLURAL
-	icon_state = "blackboots"
-	item_state = "blackboots"
-	armor = list("melee" = 15, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-
 /obj/item/clothing/shoes/roguetown/nobleboot
 	name = "noble boots"
 	//dropshrink = 0.75
@@ -200,3 +190,60 @@
 	color = null
 	blocksound = PLATEHIT
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/shoes/roguetown/kaizoku
+	icon = 'icons/kaizoku/clothingicon/feet.dmi'
+	mob_overlay_icon = 'icons/kaizoku/clothing/feet.dmi'
+	sleeved = 'icons/kaizoku/clothing/feet.dmi'
+
+/obj/item/clothing/shoes/roguetown/boots
+	name = "dark boots"
+	//dropshrink = 0.75
+	color = "#d5c2aa"
+	desc = "Boots made out of darker materials. Offers light protection against melee attacks."
+	gender = PLURAL
+	icon_state = "blackboots"
+	item_state = "blackboots"
+	armor = list("melee" = 15, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/shoes/roguetown/kaizoku/boots/armor/kusaritabi
+	name = "kusari tabi"
+	icon_state = "kusaritabi"
+	item_state = "kusaritabi"
+	desc = "The riveted chainmail version of the unarmored Tabi footwear."
+	armor = list("melee" = 80, "bullet" = 80, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	max_integrity = 250
+	armor_class = ARMOR_CLASS_MEDIUM
+
+/obj/item/clothing/shoes/roguetown/kaizoku/boots/armor/suneate
+	name = "suneate boots"
+	desc = "Armored suneate made from steel offering heavy protection against both melee and ranged attacks."
+	body_parts_covered = FEET
+	icon_state = "suneate"
+	item_state = "suneate"
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	color = null
+	blocksound = PLATEHIT
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	max_integrity = 500
+	armor_class = ARMOR_CLASS_HEAVY
+
+/obj/item/clothing/shoes/roguetown/kaizoku/jikatabi
+	name = "jikatabi"
+	desc = "A standard tabi."
+	gender = PLURAL
+	icon_state = "jikatabi"
+	item_state = "jikatabi"
+
+/obj/item/clothing/shoes/roguetown/kaizoku/boots/armor/dragontabi
+	name = "dragontabi"
+	icon_state = "dragontabi"
+	item_state = "dragontabi"
+	desc = "A tabi reinforced in dragon bones and asbestos, making it fire immune. Not very protective against physical damage, but still fairly durable."
+	armor = list("melee" = 40, "bullet" = 40, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	max_integrity = 250
+	armor_class = ARMOR_CLASS_MEDIUM
+	heat_protection = LEGS|FEET
+	body_parts_covered = LEGS|FEET
+	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
+	resistance_flags = FIRE_PROOF | ACID_PROOF

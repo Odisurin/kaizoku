@@ -8,6 +8,7 @@
 	"Tengu",
 	"Oni",
 	"Kappa")
+	ispilgrim = FALSE
 	outfit = /datum/outfit/job/roguetown/adventurer/wokou
 
 /datum/outfit/job/roguetown/adventurer/wokou/pre_equip(mob/living/carbon/human/H)
@@ -40,7 +41,7 @@
 		H.update_body()
 	shoes = /obj/item/clothing/shoes/roguetown/boots
 	gloves = /obj/item/clothing/gloves/roguetown/leather
-	belt = /obj/item/storage/belt/rogue/leather
+	belt = /obj/item/storage/belt/rogue/kaizoku/leather/daisho
 	if(prob(25))
 		armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/cuirass/iron
 		pants = /obj/item/clothing/under/roguetown/kaizoku/haidate_tatami

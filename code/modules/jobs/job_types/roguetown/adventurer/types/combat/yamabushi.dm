@@ -8,6 +8,7 @@
 	"Oni",
 	"Kappa")
 	outfit = /datum/outfit/job/roguetown/adventurer/yamabushi
+	ispilgrim = FALSE
 
 /datum/outfit/job/roguetown/adventurer/yamabushi/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -21,14 +22,14 @@
 	pants = /obj/item/clothing/under/roguetown/kaizoku/tobi/hakama
 	shirt = /obj/item/clothing/suit/roguetown/shirt/kaizoku/looseshirt
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
-	belt = /obj/item/storage/belt/rogue/leather
+	belt = /obj/item/storage/belt/rogue/kaizoku/leather/daisho
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	head = /obj/item/clothing/head/roguetown/kaizoku/big/stengai
 	if(prob(50))
 		beltr = /obj/item/rogueweapon/mace/cudgel/ararebo
 		beltl = /obj/item/rogueweapon/thrown/ono
 	else
-		backr = /obj/item/rogueweapon/mace/goden/kanabo
+		backr = /obj/item/rogueweapon/mace/warhammer/otsuchi
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/axesmaces, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)

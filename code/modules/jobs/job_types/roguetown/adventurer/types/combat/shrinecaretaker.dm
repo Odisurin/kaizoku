@@ -8,6 +8,7 @@
 	"Oni",
 	"Kappa")
 	outfit = /datum/outfit/job/roguetown/adventurer/shrinecaretaker
+	ispilgrim = FALSE
 
 /datum/outfit/job/roguetown/adventurer/shrinecaretaker/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -28,6 +29,7 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/lesser_healz)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/blesscropz)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/churnz)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/cure_rotz)
@@ -35,10 +37,10 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/beasttamez)
 
 		H.change_stat("strength", 3)
-		H.change_stat("speed", 2)
+		H.change_stat("speed", 1)
+		H.change_stat("constitution", 2)
 		H.change_stat("perception", -2)
-		H.change_stat("endurance", -1)
-		H.change_stat("constitution", -1)
+		H.change_stat("intelligence", -1)
 		ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	var/datum/devotion/cleric_holder/C = new /datum/devotion/cleric_holder(H, H.PATRON)
 	C.holder_mob = H

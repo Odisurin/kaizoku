@@ -129,7 +129,7 @@
 	possible_item_intents = list(/datum/intent/flail/strike/ranged, /datum/intent/flail/strike/ranged/smash)
 	w_class = WEIGHT_CLASS_NORMAL
 	name = "kusari fundo"
-	desc = "A pair of heavy iron weights spanned by a long iron chain, developed as a self-defense weapon by peasants in regions where swords are carried only by Samurai or other nobles."
+	desc = "A pair of heavy iron weights spanned by a long iron chain, developed as a self-defense weapon by peasants in regions where swords are carried only by Zamurai or other nobles."
 	icon_state = "kusarifundo"
 
 /obj/item/rogueweapon/flail/nunchaku

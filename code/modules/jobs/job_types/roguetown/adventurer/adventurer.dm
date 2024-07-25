@@ -103,7 +103,7 @@ GLOBAL_LIST_EMPTY(billagerspawns)
 		if(check_whitelist(ckey))
 			whitelisted = 1
 		else
-			whitelisted = 0
+			whitelisted = 1
 		return whitelisted
 
 /client/proc/blacklisted()
@@ -163,10 +163,9 @@ GLOBAL_LIST_EMPTY(billagerspawns)
 		testing("[pickableclasses.len]")
 		if(pickableclasses.len == 7 && !classesunlocked)
 			testing("pickable class length is 7")
-			if(get_triumphs() > 3)
+			if(get_triumphs() > -1)
 				testing("triumphs greater than 3")
-				if(alert(src, "Would you like to spend THREE TRIUMPHS to access all combat classes?. You will no longer be able to access Town classes. (Keep in mind, if your PQ is too low, you will not have access to rare classes. )", "Adventurous Pilgrim", "Yes", "No") != "No")
-					adjust_triumphs(-3)
+				if(alert(src, "Hello. I'm Monochrome, and I did some changes on the THRIUMP reset so it just gives you all combat roles for free. This description will be changed later, but I gotta warn you will not be able to access town classes if you do. (Keep in mind, if your PQ is too low, you will not have access to rare classes. )", "Adventurous Pilgrim", "Yes", "No") != "No")
 					for(var/datum/advclass/pilgrim/p in special_classes)
 						special_classes -= p
 					for(var/datum/advclass/pilgrim/p in possibleclass)

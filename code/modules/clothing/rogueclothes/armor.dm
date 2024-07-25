@@ -617,7 +617,7 @@
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "steel nanbando"
-	desc = "Abyssariad steel cuirass, refined and with additional sode for protection. Rare and prized by High-ranking samurais, this design has been adquired by raided humen settlements."
+	desc = "Abyssariad steel cuirass, refined and with additional sode for protection. Rare and prized by High-ranking zamurais, this design has been adquired by raided humen settlements."
 	body_parts_covered = CHEST|GROIN|VITALS
 	icon_state = "nanbando"
 	item_state = "nanbando"
@@ -724,6 +724,22 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	equip_delay_self = 25
 	armor_class = ARMOR_CLASS_MEDIUM
 
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido/thunder
+	name = "thunder san mai-do"
+	color = "#be8b48"
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido/storm
+	name = "storm san mai-do"
+	color = "#1a2677"
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido/ocean
+	name = "ocean san mai-do"
+	color = "#56928a"
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido/island
+	name = "island san mai-do"
+	color = "#bd3541"
+
 /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "steel karuta tatami"
@@ -772,10 +788,13 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 
+/obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/kikko/ronin
+	color = "#362daf"
+
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/oyoroi
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "o-yoroi"
-	desc = "Heavy-duty lamellar armor, designed for protection and flexibility for esteemed high-ranking samurais on horseback. \
+	desc = "Heavy-duty lamellar armor, designed for protection and flexibility for esteemed high-ranking zamurais on horseback. \
 	Most suitable for horse archers, this armor can be found on those fighting on land."
 	body_parts_covered = CHEST|VITALS|GROIN|LEGS|ARMS
 	allowed_sex = list(MALE, FEMALE)
@@ -795,14 +814,14 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 			pic.color = get_detail_color()
 		add_overlay(pic)
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/oyoroi/samurai/Initialize()
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/oyoroi/zamurai/Initialize()
 	. = ..()
 	if(GLOB.lordprimary)
 		lordcolor(GLOB.lordprimary,GLOB.lordsecondary)
 	else
 		GLOB.lordcolor += src
 
-/obj/item/clothing/suit/roguetown/armor/plate/kaizoku/oyoroi/samurai/lordcolor(primary,secondary)
+/obj/item/clothing/suit/roguetown/armor/plate/kaizoku/oyoroi/zamurai/lordcolor(primary,secondary)
 	detail_tag = "_jan"
 	detail_color = primary
 	update_icon()
@@ -810,7 +829,7 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 		var/mob/L = loc
 		L.update_inv_cloak()
 
-/obj/item/clothing/suit/roguetown/armor/plate/kaizoku/oyoroi/samurai/Destroy()
+/obj/item/clothing/suit/roguetown/armor/plate/kaizoku/oyoroi/zamurai/Destroy()
 	GLOB.lordcolor -= src
 	return ..()
 

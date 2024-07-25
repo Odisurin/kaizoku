@@ -789,7 +789,7 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	l_sleeve_status = SLEEVE_NORMAL
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/kikko/ronin
-	color = "#362daf"
+	color = "#060330"
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/oyoroi
 	slot_flags = ITEM_SLOT_ARMOR

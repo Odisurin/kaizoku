@@ -16,7 +16,7 @@
 	belt = /obj/item/storage/belt/rogue/kaizoku/leather/daisho
 	pants = /obj/item/clothing/under/roguetown/kaizoku/haidate_tatami
 	shoes = /obj/item/clothing/shoes/roguetown/kaizoku/boots/armor/kusaritabi
-	shirt = /obj/item/clothing/suit/roguetown/shirt/kaizoku/looseshirt
+	shirt = /obj/item/clothing/suit/roguetown/shirt/kaizoku/kimono/ronin
 	armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/kikko/ronin
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless

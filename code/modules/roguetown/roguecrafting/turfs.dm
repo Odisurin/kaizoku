@@ -16,26 +16,26 @@
 				return
 	return TRUE
 
-/datum/crafting_recipe/roguetown/turfs/kaizokuwood
+/datum/crafting_recipe/roguetown/turfs/kokabewood
 	name = "kokabe wall"
-	result = /turf/closed/wall/mineral/rogue/kaizokuwood
+	result = /turf/closed/wall/mineral/rogue/kokabewood
 	reqs = list(/obj/item/grown/log/tree/small = 2)
 	skillcraft = /datum/skill/craft/carpentry
 
-/datum/crafting_recipe/roguetown/turfs/kaizokuwood/TurfCheck(mob/user, turf/T)
+/datum/crafting_recipe/roguetown/turfs/kokabewood/TurfCheck(mob/user, turf/T)
 	if(isclosedturf(T))
 		return
 	if(!istype(T, /turf/open/floor/rogue))
 		return
 	return TRUE
 
-/datum/crafting_recipe/roguetown/turfs/kaizokuwindow
-	name = "kaizoku window"
-	result = /turf/closed/wall/mineral/rogue/kaizokuwood/window
+/datum/crafting_recipe/roguetown/turfs/kokabewindow
+	name = "kokabe window"
+	result = /turf/closed/wall/mineral/rogue/kokabewood/window
 	reqs = list(/obj/item/grown/log/tree/small = 2)
 	skillcraft = /datum/skill/craft/carpentry
 
-/datum/crafting_recipe/roguetown/turfs/kaizokuwindow/TurfCheck(mob/user, turf/T)
+/datum/crafting_recipe/roguetown/turfs/kokabewindow/TurfCheck(mob/user, turf/T)
 	if(isclosedturf(T))
 		return
 	if(!istype(T, /turf/open/floor/rogue))

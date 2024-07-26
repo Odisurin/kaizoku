@@ -49,7 +49,7 @@
 		beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/kaiken
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 	shoes = /obj/item/clothing/shoes/roguetown/kaizoku/jikatabi/shinobi
-    neck = /obj/item/clothing/neck/roguetown/gorget
+	neck = /obj/item/clothing/neck/roguetown/gorget
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 
 

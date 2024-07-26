@@ -235,6 +235,9 @@
 	icon_state = "jikatabi"
 	item_state = "jikatabi"
 
+/obj/item/clothing/shoes/roguetown/kaizoku/jikatabi/shinobi
+	color = "#372161"
+
 /obj/item/clothing/shoes/roguetown/kaizoku/boots/armor/dragontabi
 	name = "dragontabi"
 	icon_state = "dragontabi"

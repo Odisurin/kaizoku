@@ -498,6 +498,9 @@
 	color = pick("#94b4b6", "#ba8f9e", "#bd978c", "#92bd8c", "#06363f", "#df412c", "#161516", "#ddfaff", "#720303")
 	..()
 
+/obj/item/clothing/suit/roguetown/shirt/kaizoku/looseshirt/shinobi
+	color = "#372161"
+
 /obj/item/clothing/suit/roguetown/shirt/kaizoku/shrinemaiden
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	icon_state = "shrinemaiden"

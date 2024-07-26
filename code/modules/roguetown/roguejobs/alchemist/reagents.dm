@@ -78,3 +78,25 @@
 		M.add_nausea(9)
 		M.adjustToxLoss(3, 0)
 		return ..()
+
+/datum/reagent/fogblight
+	name = "fogblight"
+	description = "liquid concentrate from fog island's frogs. Used by shinobis."
+	taste_description = "naked kappa"
+	reagent_state = LIQUID
+	color = "#34aa3d"
+	metabolization_rate = 0.2
+
+/datum/reagent/toxin/chloralhydrate/on_mob_life(mob/living/carbon/M)
+	switch(current_cycle)
+		if(1 to 10)
+			M.confused += 2
+			M.drowsyness += 2
+		if(10 to 50)
+			M.Sleeping(40, 0)
+			. = 1
+		if(51 to INFINITY)
+			M.Sleeping(40, 0)
+			M.adjustToxLoss((current_cycle - 50)*REM, 0)
+			. = 1
+	..()

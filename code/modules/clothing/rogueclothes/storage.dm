@@ -262,6 +262,11 @@
 	icon_state = "daisho"
 	sellprice = 5
 
+/obj/item/storage/belt/rogue/kaizoku/leather/daisho/ninja/PopulateContents()
+	new /obj/item/reagent_containers/food/snacks/grown/berries/rogue/poison(src)
+	new /obj/item/reagent_containers/food/snacks/grown/berries/rogue/poison(src)
+	new /obj/item/reagent_containers/food/snacks/grown/berries/rogue/poison(src)
+
 /obj/item/storage/belt/rogue/kaizoku/leather/daisho/thunder
 	name = "thunder daisho belt"
 	color = "#be8b48"
@@ -277,3 +282,8 @@
 /obj/item/storage/belt/rogue/kaizoku/leather/daisho/island
 	name = "island daisho belt"
 	color = "#bd3541"
+
+/obj/item/storage/backpack/rogue/satchel/ninja/PopulateContents()
+	new /obj/item/throwing_star/ninja(src)
+	new /obj/item/throwing_star/ninja(src)
+	new /obj/item/throwing_star/ninja(src)

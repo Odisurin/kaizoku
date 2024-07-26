@@ -305,3 +305,17 @@
 	name = "hakama"
 	icon_state = "hakama"
 	desc = "suitable for the Abyssariad-cultured, in which men can use skirts without being considered an act of homossexuality."
+
+/obj/item/clothing/under/roguetown/kaizoku/shinobizubon
+	name = "shinobi zubon"
+	desc = "Traditional flexible pants with loose fit around the legs with hardened leather tied under the cloth and ankles to prevent snagging and noise."
+	gender = PLURAL
+	icon_state = "shinobizubon"
+	item_state = "shinobizubon"
+	sewrepair = TRUE
+	armor = list("melee" = 15, "bullet" = 10, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT)
+	blocksound = SOFTHIT
+	blade_dulling = DULLING_BASHCHOP
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL

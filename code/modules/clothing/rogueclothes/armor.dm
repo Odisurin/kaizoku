@@ -694,8 +694,8 @@
 /obj/item/clothing/suit/roguetown/armor/kaizoku/shozoku
 	name = "shozoku"
 	desc = "The main garment used by Ninjas and Kunoichis to blend into the night. Not viable during daylight, but it is easy to store anywhere."
-	icon_state = "shozoku"
-	item_state = "shozoku"
+	icon_state = "shinobi"
+	item_state = "shinobi"
 	blocksound = SOFTHIT
 	armor = list("melee" = 60, "bullet" = 20, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT)
@@ -852,3 +852,66 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 /obj/item/clothing/suit/roguetown/armor/kaizoku/haori/Initialize()
 	color = pick("#94b4b6", "#ba8f9e", "#bd978c", "#92bd8c", "#06363f")
 	..()
+/*
+/obj/item/clothing/suit/roguetown/armor/chainmail
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
+	name = "haubergeon"
+	desc = "A maille shirt typically made out of steel. Successor to the iron chain vest. A firm medium protection format."
+	body_parts_covered = CHEST|GROIN|ARMS|VITALS
+	icon_state = "haubergeon"
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP) // Chainmail is meant to stop cuts and chops, but is weaker against stabs and arrows on its own. Wear a gambeson under it.
+	blocksound = CHAINHIT
+	var/do_sound = FALSE
+	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	anvilrepair = /datum/skill/craft/armorsmithing
+	armor_class = ARMOR_CLASS_MEDIUM
+	smeltresult = /obj/item/ingot/steel
+
+/obj/item/clothing/suit/roguetown/armor/chainmail/Initialize()
+	. = ..()
+	if(do_sound)
+		AddComponent(/datum/component/squeak, list('sound/foley/footsteps/armor/chain (1).ogg',\
+													'sound/foley/footsteps/armor/chain (2).ogg',\
+													'sound/foley/footsteps/armor/chain (3).ogg'), 100)
+
+
+/obj/item/clothing/suit/roguetown/armor/chainmail
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
+	name = "steel scale mail"
+	desc = "A maille shirt typically made out of steel. Successor to the iron chain vest. A firm medium protection format."
+	body_parts_covered = CHEST|GROIN|ARMS|VITALS
+	icon_state = "haubergeon"
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP) // Chainmail is meant to stop cuts and chops, but is weaker against stabs and arrows on its own. Wear a gambeson under it.
+	blocksound = CHAINHIT
+	var/do_sound = FALSE
+	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	anvilrepair = /datum/skill/craft/armorsmithing
+	armor_class = ARMOR_CLASS_MEDIUM
+	smeltresult = /obj/item/ingot/steel
+
+
+/obj/item/clothing/suit/roguetown/armor/chainmail/iron
+	icon_state = "iron scale armor"
+	name = "chainmaille"
+	desc = "A chain vest made of heavy iron rings. Good protection form against melee weaponry of all kind."
+	body_parts_covered = CHEST|GROIN|VITALS
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor_class = ARMOR_CLASS_MEDIUM
+	smeltresult = /obj/item/ingot/iron
+	anvilrepair = /datum/skill/craft/armorsmithing
+
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
+	name = "hauberk"
+	desc = "A longer steel maille that protects the legs."
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS|VITALS
+	icon_state = "hauberk"
+	item_state = "hauberk"
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	anvilrepair = /datum/skill/craft/armorsmithing
+	do_sound = TRUE
+	smeltresult = /obj/item/ingot/steel
+	armor_class = ARMOR_CLASS_MEDIUM
+*/

@@ -12,16 +12,15 @@
 
 /datum/outfit/job/roguetown/adventurer/ronin/pre_equip(mob/living/carbon/human/H)
 	..()
-	shirt = /obj/item/clothing/suit/roguetown/shirt/kaizoku/kimono
 	belt = /obj/item/storage/belt/rogue/kaizoku/leather/daisho
 	pants = /obj/item/clothing/under/roguetown/kaizoku/haidate_tatami
 	shoes = /obj/item/clothing/shoes/roguetown/kaizoku/boots/armor/kusaritabi
 	shirt = /obj/item/clothing/suit/roguetown/shirt/kaizoku/kamishimo
-	armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/kikko/ronin
+	armor = obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless
 	backl = /obj/item/storage/backpack/rogue/satchel
-	if(prob(23))
+	if(prob(25))
 		beltr = /obj/item/rogueweapon/sword/short/wakizashi
 	else
 		beltr = /obj/item/rogueweapon/huntingknife/idagger/steel/tanto

@@ -271,60 +271,60 @@
 	specuse = list("human", "tiefling", "aasimar", "abyssariad")
 
 /datum/sprite_accessory/hair/kaizoku/zamurai
-	name = "zamurai Manbun"
+	name = "Zamurai Manbun (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "samurai"
 	gender = MALE
-	specuse = list("abyssariad")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad", "elf")
 
 /datum/sprite_accessory/hair/kaizoku/ronin
-	name = "Vagabond"
+	name = "Vagabond (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "ronin"
 	gender = MALE
-	specuse = list("abyssariad")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad", "elf")
 
 /datum/sprite_accessory/hair/kaizoku/freespirit
-	name = "Free Spirit"
+	name = "Free Spirit (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "freespirit"
 	gender = MALE
-	specuse = list("abyssariad")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad", "elf")
 
 /datum/sprite_accessory/hair/kaizoku/novice
-	name = "New Rice (novice)"
+	name = "New Rice (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "novice"
 	gender = MALE
-	specuse = list("abyssariad")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad", "elf")
 
 /datum/sprite_accessory/hair/kaizoku/yakuza
-	name = "Irezumi Gangster"
+	name = "Irezumi Gangster (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "yakuza"
 	gender = MALE
-	specuse = list("abyssariad")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad", "elf")
 
 /datum/sprite_accessory/hair/kaizoku/steppeman
-	name = "Aridlands raider"
+	name = "Aridlands raider (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "steppeman"
 	gender = MALE
-	specuse = list("abyssariad")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad", "elf")
 
 /datum/sprite_accessory/hair/kaizoku/bishonen
-	name = "Husband"
+	name = "Husband (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "bishonen"
 	gender = MALE
-	specuse = list("abyssariad")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad", "elf")
 
 /datum/sprite_accessory/hair/kaizoku/emperor
-	name = "Emperor"
+	name = "Emperor (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "emperor"
 	gender = MALE
-	specuse = list("abyssariad")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad", "elf")
 
 /////////////////////////////
 // GIRLY Hair Definitions  //
@@ -473,46 +473,46 @@
 	specuse = list("elf", "abyssariad")
 
 /datum/sprite_accessory/hair/kaizoku/empress
-	name = "Abyssal Empress"
+	name = "Abyssal Empress (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "empress"
 	gender = FEMALE
-	specuse = list("abyssariad")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad", "elf")
 
 /datum/sprite_accessory/hair/kaizoku/onnamusha
-	name = "Onnamusha"
+	name = "Onnamusha (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "warlady"
 	gender = FEMALE
-	specuse = list("abyssariad")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad", "elf")
 
 /datum/sprite_accessory/hair/kaizoku/waterfield
-	name = "Waterbearer"
+	name = "Waterbeare (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "waterfield"
 	gender = FEMALE
-	specuse = list("abyssariad")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad", "elf")
 
 /datum/sprite_accessory/hair/kaizoku/homewaifu
-	name = "Homewife"
+	name = "Homewife (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "homewaifu"
 	gender = FEMALE
-	specuse = list("abyssariad")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad", "elf")
 
 /datum/sprite_accessory/hair/kaizoku/casual
-	name = "Natural River"
+	name = "Natural River (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "casual"
 	gender = FEMALE
-	specuse = list("abyssariad")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad", "elf")
 
 /datum/sprite_accessory/hair/kaizoku/martyr
-	name = "Inhonor of the Fallen"
+	name = "Inhonor of the Fallen (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'
 	icon_state = "martyr"
 	gender = FEMALE
-	specuse = list("abyssariad")
+	specuse = list("human", "tiefling", "aasimar", "abyssariad", "elf")
 
 /*
 /datum/sprite_accessory/hair/felfhair_fatherless

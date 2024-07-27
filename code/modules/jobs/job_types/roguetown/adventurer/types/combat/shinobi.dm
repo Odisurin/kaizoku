@@ -42,16 +42,15 @@
 	belt = /obj/item/storage/belt/rogue/kaizoku/leather/daisho/ninja
 	armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/shozoku
 	backl = /obj/item/storage/backpack/rogue/satchel/ninja
-	beltr = /obj/item/quiver/bolts
+	beltr = /obj/item/quiver/arrows/shinobi
 	if(prob(50))
 		beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/tanto
 	else 
 		beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/kaiken
-	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
+	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 	shoes = /obj/item/clothing/shoes/roguetown/kaizoku/jikatabi/shinobi
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
-
 
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	H.change_stat("strength", 1)

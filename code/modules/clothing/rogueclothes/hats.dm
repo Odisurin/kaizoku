@@ -726,10 +726,9 @@
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	desc = "A wide-brimmed hat traditionally worn by wandering monks of the Abyssanctum fold."
 
-/obj/item/clothing/head/roguetown/kaizoku/big/stengai
+/obj/item/clothing/head/roguetown/kaizoku/big/tengai/yamabushi
 	name = "yamabushi tengai"
 	icon_state = "stengai"
-	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	desc = "A tengai painted in black tar traditionally worn by Abyssanctum yamabushis."
 
 /obj/item/clothing/head/roguetown/kaizoku/soheicloth
@@ -777,6 +776,11 @@
 	icon_state = "sandogasa"
 	flags_inv = HIDEEARS
 	desc = "A large hat providing ample shade and protection from the elements, including rain."
+
+/obj/item/clothing/head/roguetown/kaizoku/big/sandogasa/yamabushi
+	name = "yamabushi sandogasa"
+	icon_state = "sandogasa"
+	desc = "A sandogasa painted in black tar traditionally worn by Abyssanctum yamabushis."
 
 /obj/item/clothing/head/roguetown/kaizoku/shinobi_zukin
 	name = "shinobi hood"

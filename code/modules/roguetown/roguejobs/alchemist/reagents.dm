@@ -87,7 +87,7 @@
 	color = "#34aa3d"
 	metabolization_rate = 0.2
 
-/datum/reagent/toxin/chloralhydrate/on_mob_life(mob/living/carbon/M)
+/datum/reagent/fogblight/on_mob_life(mob/living/carbon/M)
 	switch(current_cycle)
 		if(1 to 10)
 			M.confused += 2

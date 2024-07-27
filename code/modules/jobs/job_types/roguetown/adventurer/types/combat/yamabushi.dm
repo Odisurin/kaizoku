@@ -24,7 +24,10 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	belt = /obj/item/storage/belt/rogue/kaizoku/leather/daisho
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
-	head = /obj/item/clothing/head/roguetown/kaizoku/big/stengai
+	if(prob(50))
+		head = /obj/item/clothing/head/roguetown/kaizoku/big/tengai/yamabushi
+	else
+		head = /obj/item/clothing/head/roguetown/kaizoku/big/tengai/yamabushi
 	if(prob(50))
 		beltr = /obj/item/rogueweapon/mace/cudgel/ararebo
 		beltl = /obj/item/rogueweapon/thrown/ono

@@ -744,28 +744,30 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "steel karuta tatami"
 	desc = "a foldable, lightweight armor for convenient motion and manufacturing ease. \
-	It is made of rectangular steel plates sewn into chainmail. Often used by Ashigarus, it is the best light armor."
-	body_parts_covered = CHEST|ARMS|VITALS
-	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST) //Mixture of Chainmail and Segmented plates in a singular armor. Not a common thing on Europe. The space inbetween the rectangles makes it vulnerable to perfuration.
+	It is made of rectangular steel plates sewn into chainmail and often used by Ashigarus."
+	body_parts_covered = CHEST|GROIN|ARMS|VITALS
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP) // Chainmail is meant to stop cuts and chops, but is weaker against stabs and arrows on its own. Wear a gambeson under it.
 	allowed_sex = list(MALE, FEMALE)
-	armor = list("melee" = 100, "bullet" = 80, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	icon_state = "laminartatami"
 	smeltresult = null
 	max_integrity = 250
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
 	equip_delay_self = 25
-	armor_class = ARMOR_CLASS_LIGHT
+	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/itatami
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "iron karuta tatami"
 	desc = "a foldable, lightweight armor for convenient motion and manufacturing ease. \
 	It is made of lacquered iron squares sewn into a padded cloth or leather backing."
+	body_parts_covered = CHEST|GROIN|VITALS
 	allowed_sex = list(MALE, FEMALE)
-	armor = list("melee" = 80, "bullet" = 70, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	icon_state = "tatami"
-	max_integrity = 150
+	smeltresult = /obj/item/ingot/iron
+	anvilrepair = /datum/skill/craft/armorsmithing
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/kikko
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
@@ -777,7 +779,7 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	armor = list("melee" = 70, "bullet" = 40, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	icon_state = "kikko"
 	smeltresult = null
-	max_integrity = 150
+	max_integrity = 200
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
 	equip_delay_self = 25
@@ -789,7 +791,7 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	l_sleeve_status = SLEEVE_NORMAL
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/kikko/ronin
-	color = "#060330"
+	color = "#413f55"
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/oyoroi
 	slot_flags = ITEM_SLOT_ARMOR

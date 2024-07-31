@@ -458,6 +458,9 @@
 	color = pick("#94b4b6", "#ba8f9e", "#bd978c", "#92bd8c", "#06363f", "#df412c", "#161516", "#ddfaff", "#720303")
 	..()
 
+/obj/item/clothing/suit/roguetown/shirt/kaizoku/kimono/ronin
+	color = "#526652"
+
 /obj/item/clothing/suit/roguetown/shirt/kaizoku/monkgarb
 	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
 	icon_state = "monkgarb"
@@ -494,3 +497,15 @@
 /obj/item/clothing/suit/roguetown/shirt/kaizoku/looseshirt/Initialize()
 	color = pick("#94b4b6", "#ba8f9e", "#bd978c", "#92bd8c", "#06363f", "#df412c", "#161516", "#ddfaff", "#720303")
 	..()
+
+/obj/item/clothing/suit/roguetown/shirt/kaizoku/looseshirt/shinobi
+	color = "#372161"
+
+/obj/item/clothing/suit/roguetown/shirt/kaizoku/shrinemaiden
+	slot_flags = ITEM_SLOT_SHIRT|ITEM_SLOT_ARMOR
+	icon_state = "shrinemaiden"
+	item_state = "shrinemaiden"
+	boobed = TRUE
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS|VITALS

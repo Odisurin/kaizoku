@@ -614,30 +614,32 @@
 	//brokenrepair = TRUE
 	armor_class = ARMOR_CLASS_LIGHT
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/nanbando
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "steel nanbando"
-	desc = "Abyssariad steel cuirass, refined and with additional sode for protection. Rare and prized by High-ranking samurais, this design has been adquired by raided humen settlements."
-	body_parts_covered = CHEST|VITALS
+	desc = "Abyssariad steel cuirass, refined and with additional sode for protection. Rare and prized by High-ranking zamurais, this design has been adquired by raided humen settlements."
+	body_parts_covered = CHEST|GROIN|VITALS
 	icon_state = "nanbando"
 	item_state = "nanbando"
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	allowed_race = ALL_RACES_LIST
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	nodismemsleeves = TRUE
 	blocking_behavior = null
 	max_integrity = 300
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
-	armor_class = ARMOR_CLASS_MEDIUM
+	equip_delay_self = 40
+	armor_class = ARMOR_CLASS_HEAVY
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/nanbando/full
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/full
 	name = "Full nanbando"
 	desc = "Abyssariad steel cuirass, refined and with additional auxiliary parts for protection."
 	icon_state = "nanbandofull"
 	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
 	equip_delay_self = 80
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/nanbando/cuirass
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/cuirass
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "steel nanbando cuirass"
 	desc = "The Abyssariad steel cuirass. Usually sourced from fallen raided soldiers, their armors taken and reshaped."
@@ -663,11 +665,18 @@
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_MEDIUM
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/mirror/iron
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/cuirass/iron
 	name = "iron mirror armor"
 	icon_state = "imirrorarmor"
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	max_integrity = 200
+	smeltresult = /obj/item/ingot/iron
+	armor_class = ARMOR_CLASS_MEDIUM
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/cuirass/steel
+	name = "mirror armor"
+	icon_state = "mirrorarmor"
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	smeltresult = /obj/item/ingot/iron
 	armor_class = ARMOR_CLASS_MEDIUM
 
@@ -685,8 +694,8 @@
 /obj/item/clothing/suit/roguetown/armor/kaizoku/shozoku
 	name = "shozoku"
 	desc = "The main garment used by Ninjas and Kunoichis to blend into the night. Not viable during daylight, but it is easy to store anywhere."
-	icon_state = "shozoku"
-	item_state = "shozoku"
+	icon_state = "shinobi"
+	item_state = "shinobi"
 	blocksound = SOFTHIT
 	armor = list("melee" = 60, "bullet" = 20, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT)
@@ -711,36 +720,54 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	body_parts_covered = CHEST|VITALS
 	allowed_sex = list(MALE, FEMALE)
 	icon_state = "sanmaido"
-	max_integrity = 200
+	max_integrity = 150
 	equip_delay_self = 25
 	armor_class = ARMOR_CLASS_MEDIUM
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido/thunder
+	name = "thunder san mai-do"
+	color = "#be8b48"
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido/storm
+	name = "storm san mai-do"
+	color = "#1a2677"
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido/ocean
+	name = "ocean san mai-do"
+	color = "#56928a"
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido/island
+	name = "island san mai-do"
+	color = "#bd3541"
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "steel karuta tatami"
 	desc = "a foldable, lightweight armor for convenient motion and manufacturing ease. \
-	It is made of rectangular steel plates sewn into chainmail. Often used by Ashigarus, it is the best light armor."
-	body_parts_covered = CHEST|ARMS|VITALS
-	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST) //Mixture of Chainmail and Segmented plates in a singular armor. Not a common thing on Europe. The space inbetween the rectangles makes it vulnerable to perfuration.
+	It is made of rectangular steel plates sewn into chainmail and often used by Ashigarus."
+	body_parts_covered = CHEST|GROIN|ARMS|VITALS
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP) // Chainmail is meant to stop cuts and chops, but is weaker against stabs and arrows on its own. Wear a gambeson under it.
 	allowed_sex = list(MALE, FEMALE)
-	armor = list("melee" = 100, "bullet" = 80, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	icon_state = "laminartatami"
 	smeltresult = null
 	max_integrity = 250
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
 	equip_delay_self = 25
-	armor_class = ARMOR_CLASS_LIGHT
+	armor_class = ARMOR_CLASS_MEDIUM
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/itatami
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "iron karuta tatami"
 	desc = "a foldable, lightweight armor for convenient motion and manufacturing ease. \
 	It is made of lacquered iron squares sewn into a padded cloth or leather backing."
+	body_parts_covered = CHEST|GROIN|VITALS
 	allowed_sex = list(MALE, FEMALE)
-	armor = list("melee" = 80, "bullet" = 70, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	icon_state = "tatami"
-	max_integrity = 150
+	smeltresult = /obj/item/ingot/iron
+	anvilrepair = /datum/skill/craft/armorsmithing
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/kikko
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
@@ -752,7 +779,7 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	armor = list("melee" = 70, "bullet" = 40, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	icon_state = "kikko"
 	smeltresult = null
-	max_integrity = 150
+	max_integrity = 200
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
 	equip_delay_self = 25
@@ -763,10 +790,13 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
 
+/obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/kikko/ronin
+	color = "#413f55"
+
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/oyoroi
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "o-yoroi"
-	desc = "Heavy-duty lamellar armor, designed for protection and flexibility for esteemed high-ranking samurais on horseback. \
+	desc = "Heavy-duty lamellar armor, designed for protection and flexibility for esteemed high-ranking zamurais on horseback. \
 	Most suitable for horse archers, this armor can be found on those fighting on land."
 	body_parts_covered = CHEST|VITALS|GROIN|LEGS|ARMS
 	allowed_sex = list(MALE, FEMALE)
@@ -786,14 +816,14 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 			pic.color = get_detail_color()
 		add_overlay(pic)
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/oyoroi/samurai/Initialize()
+/obj/item/clothing/suit/roguetown/armor/kaizoku/plate/oyoroi/zamurai/Initialize()
 	. = ..()
 	if(GLOB.lordprimary)
 		lordcolor(GLOB.lordprimary,GLOB.lordsecondary)
 	else
 		GLOB.lordcolor += src
 
-/obj/item/clothing/suit/roguetown/armor/plate/kaizoku/oyoroi/samurai/lordcolor(primary,secondary)
+/obj/item/clothing/suit/roguetown/armor/plate/kaizoku/oyoroi/zamurai/lordcolor(primary,secondary)
 	detail_tag = "_jan"
 	detail_color = primary
 	update_icon()
@@ -801,7 +831,7 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 		var/mob/L = loc
 		L.update_inv_cloak()
 
-/obj/item/clothing/suit/roguetown/armor/plate/kaizoku/oyoroi/samurai/Destroy()
+/obj/item/clothing/suit/roguetown/armor/plate/kaizoku/oyoroi/zamurai/Destroy()
 	GLOB.lordcolor -= src
 	return ..()
 
@@ -824,3 +854,66 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 /obj/item/clothing/suit/roguetown/armor/kaizoku/haori/Initialize()
 	color = pick("#94b4b6", "#ba8f9e", "#bd978c", "#92bd8c", "#06363f")
 	..()
+/*
+/obj/item/clothing/suit/roguetown/armor/chainmail
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
+	name = "haubergeon"
+	desc = "A maille shirt typically made out of steel. Successor to the iron chain vest. A firm medium protection format."
+	body_parts_covered = CHEST|GROIN|ARMS|VITALS
+	icon_state = "haubergeon"
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP) // Chainmail is meant to stop cuts and chops, but is weaker against stabs and arrows on its own. Wear a gambeson under it.
+	blocksound = CHAINHIT
+	var/do_sound = FALSE
+	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	anvilrepair = /datum/skill/craft/armorsmithing
+	armor_class = ARMOR_CLASS_MEDIUM
+	smeltresult = /obj/item/ingot/steel
+
+/obj/item/clothing/suit/roguetown/armor/chainmail/Initialize()
+	. = ..()
+	if(do_sound)
+		AddComponent(/datum/component/squeak, list('sound/foley/footsteps/armor/chain (1).ogg',\
+													'sound/foley/footsteps/armor/chain (2).ogg',\
+													'sound/foley/footsteps/armor/chain (3).ogg'), 100)
+
+
+/obj/item/clothing/suit/roguetown/armor/chainmail
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
+	name = "steel scale mail"
+	desc = "A maille shirt typically made out of steel. Successor to the iron chain vest. A firm medium protection format."
+	body_parts_covered = CHEST|GROIN|ARMS|VITALS
+	icon_state = "haubergeon"
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP) // Chainmail is meant to stop cuts and chops, but is weaker against stabs and arrows on its own. Wear a gambeson under it.
+	blocksound = CHAINHIT
+	var/do_sound = FALSE
+	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	anvilrepair = /datum/skill/craft/armorsmithing
+	armor_class = ARMOR_CLASS_MEDIUM
+	smeltresult = /obj/item/ingot/steel
+
+
+/obj/item/clothing/suit/roguetown/armor/chainmail/iron
+	icon_state = "iron scale armor"
+	name = "chainmaille"
+	desc = "A chain vest made of heavy iron rings. Good protection form against melee weaponry of all kind."
+	body_parts_covered = CHEST|GROIN|VITALS
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor_class = ARMOR_CLASS_MEDIUM
+	smeltresult = /obj/item/ingot/iron
+	anvilrepair = /datum/skill/craft/armorsmithing
+
+/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
+	name = "hauberk"
+	desc = "A longer steel maille that protects the legs."
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS|VITALS
+	icon_state = "hauberk"
+	item_state = "hauberk"
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	anvilrepair = /datum/skill/craft/armorsmithing
+	do_sound = TRUE
+	smeltresult = /obj/item/ingot/steel
+	armor_class = ARMOR_CLASS_MEDIUM
+*/

@@ -117,9 +117,9 @@
 	opacity = FALSE
 	max_integrity = 550
 
-/turf/closed/wall/mineral/rogue/kaizokuwood
-	name = "kokabe wall"
-	desc = "A rough-hewn wall of wood."
+/turf/closed/wall/mineral/rogue/kokabewood
+	name = "abyssariad kokabe wall"
+	desc = "a wall containing a narrow horizontal section, extending partway down from the ceiling."
 	icon = 'icons/turf/walls/kaizokuwood.dmi'
 	icon_state = "wood"
 	smooth = SMOOTH_MORE
@@ -127,25 +127,25 @@
 	max_integrity = 1100
 	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
 	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
-	canSmoothWith = list(/turf/closed/wall/mineral/rogue/wood, /obj/structure/roguewindow, /obj/structure/roguetent, /turf/closed/wall/mineral/rogue/wooddark, /turf/closed/wall/mineral/rogue/kaizokuwood)
+	canSmoothWith = list(/turf/closed/wall/mineral/rogue/wood, /obj/structure/roguewindow, /obj/structure/roguetent, /turf/closed/wall/mineral/rogue/wooddark, /turf/closed/wall/mineral/rogue/kokabewood)
 //	sheet_type = /obj/item/grown/log/tree/lumber
 	above_floor = /turf/open/floor/rogue/twig
 	baseturfs = list(/turf/open/floor/rogue/twig)
 	neighborlay = "dirtedge"
 	climbdiff = 3
 
-/turf/closed/wall/mineral/rogue/wood/window
-	name = "wooden window"
-	desc = "A window with a rough-hewn wooden frame."
+/turf/closed/wall/mineral/rogue/kokabewood/window
+	name = "abyssariad kokabe window"
+	desc = "A window containing a narrow horizontal section, extending partway down from the ceiling."
 	opacity = FALSE
 	max_integrity = 550
 
-/turf/closed/wall/mineral/rogue/wood/window/CanPass(atom/movable/mover, turf/target)
+/turf/closed/wall/mineral/rogue/kokabewood/window/CanPass(atom/movable/mover, turf/target)
 	if(istype(mover) && ((mover.pass_flags & PASSTABLE) || (mover.pass_flags & PASSGRILLE)) )
 		return 1
 	return ..()
 
-/turf/closed/wall/mineral/rogue/wood/window/Initialize()
+/turf/closed/wall/mineral/rogue/kokabewood/window/Initialize()
 	. = ..()
 	var/mutable_appearance/M = mutable_appearance(icon, "woodhole", layer = ABOVE_NORMAL_TURF_LAYER)
 	add_overlay(M)

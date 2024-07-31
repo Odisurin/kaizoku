@@ -17,6 +17,8 @@
 /obj/item/reagent_containers/glass/bottle/rogue/water
 	list_reagents = list(/datum/reagent/water = 45) // Fuck you water is a alch-thing.
 
+/obj/item/reagent_containers/glass/bottle/rogue/fogblight
+	list_reagents = list(/datum/reagent/fogblight = 45)
 
 //////////////////////////
 /// ALCOHOLIC BOTTLES ///

@@ -229,11 +229,11 @@
 #define JDO_CLAN 1.2
 #define JDO_KARO 2
 #define JDO_BUGYO 3
-#define JDO_SAMURAI 4
+#define JDO_ZAMURAI 4
 #define JDO_ONMYOJI 5
 #define JDO_ONMAPP 6
 
-// Kaizoku: Samurai Caste //
+// Kaizoku: Zamurai Caste //
 #define JDO_SHOGUN 7
 #define JDO_KAISHA 8
 #define JDO_MONBAN 9

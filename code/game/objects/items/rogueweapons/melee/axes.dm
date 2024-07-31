@@ -143,7 +143,7 @@
 /obj/item/rogueweapon/thrown/ono
 	slot_flags = ITEM_SLOT_HIP
 	force = 10
-	possible_item_intents = list(/datum/intent/axe/cut)
+	possible_item_intents = list(/datum/intent/axe/cut, /datum/intent/axe/chop) //Added chop because the throwing Ono is still suitable for woodcutting.
 	name = "nage ono"
 	desc = "A well-balanced, short-handled Abyssariad axe designed for throwing. Traditionally used as a hunting weapon as an alternative to archery, as bow wood is scarce on the Fog Isles."
 	icon_state = "throwing_ono"

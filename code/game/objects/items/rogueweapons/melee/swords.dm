@@ -293,7 +293,7 @@
 	icon_state = "tachi"
 	item_state = "tachi"
 	name = "tachi"
-	desc = "A long, curved blade of Abyssariad make, introduced when sea raiders returned to the Fog Isles with captured horses and began developing their own cavalry tactics. Due to the time and expense of making such a blade, most tachi seen today are artisan blades held as status symbols or family heirlooms by nobility or otherwise wealthy and influential samurai."
+	desc = "A long, curved blade of Abyssariad make, introduced when sea raiders returned to the Fog Isles with captured horses and began developing their own cavalry tactics. Due to the time and expense of making such a blade, most tachi seen today are artisan blades held as status symbols or family heirlooms by nobility or otherwise wealthy and influential zamurai."
 	wbalance = 1
 
 /obj/item/rogueweapon/sword/long/marlin
@@ -543,6 +543,11 @@
 	max_integrity = 180
 	sellprice = 10
 
+/obj/item/rogueweapon/sword/iron/jian
+	name = "iron jian"
+	desc = "a simple, iron double-edged straight sword of abyssariad design used in martial arts."
+	icon_state = "jian"
+
 /obj/item/rogueweapon/sword/iron/short
 	name = "short sword"
 	desc = "An iron sword of shortened design, a reduced grip for primarily single hand use."
@@ -576,6 +581,11 @@
 	minstr = 4
 	wdefense = 2
 
+/obj/item/rogueweapon/sword/iron/messer/dao
+	name = "iron dao"
+	desc = "A single edged iron saber of Abyssariad making for horseback use. Suitable for chopping."
+	icon_state = "dao"
+
 /obj/item/rogueweapon/sword/short
 	force = 25
 	name = "short sword"
@@ -591,7 +601,7 @@
 /obj/item/rogueweapon/sword/short/wakizashi
 	force = 30
 	name = "wakizashi"
-	desc = "A shorter design of katana designed to replace the tanto as a samurai's sidearm, the wakizashi most commonly accompanies an uchigatana when worn in a samurai's daisho. Even on its own, the wakizashi is popular with commoners as a defense against bandits and is often legal weapon for them to carry."
+	desc = "A shorter design of katana designed to replace the tanto as a zamurai's sidearm, the wakizashi most commonly accompanies an uchigatana when worn in a zamurai's daisho. Even on its own, the wakizashi is popular with commoners as a defense against bandits and is often legal weapon for them to carry."
 	icon_state = "wakizashi"
 	possible_item_intents = list(/datum/intent/sword/cut/short, /datum/intent/sword/thrust/short, /datum/intent/sword/chop)
 	smeltresult = /obj/item/ingot/steel

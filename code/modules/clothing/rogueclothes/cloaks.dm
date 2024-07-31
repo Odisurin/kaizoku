@@ -885,17 +885,28 @@
 
 /obj/item/clothing/cloak/kaizoku/dragonslayer
 	name = "asbestos cloak"
-	icon = 'icons/roguetown/clothing/cloaks.dmi'
-	mob_overlay_icon = 'icons/roguetown/clothing/onmob/cloaks.dmi'
 	slot_flags = ITEM_SLOT_CLOAK
+	icon_state = "rain_cloak"
+	item_state = "rain_cloak"
 	desc = "Fireproof asbestos cloak processed in Copal and Frankincense resin, enclosed within dragonscales to prevent direct contact with asbestos fibers. The cloak almost completely prevents warmth from achieving the user."
 	edelay_type = 4
 	equip_delay_self = 20
 	bloody_icon_state = "bodyblood"
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 75,"energy" = 75, "bomb" = 75, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	heat_protection = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	body_parts_covered = CHEST|GROIN|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+	color = "#7e0707"
+	alternate_worn_layer = CLOAK_BEHIND_LAYER
+	slot_flags = ITEM_SLOT_BACK_R|ITEM_SLOT_CLOAK
+//	body_parts_covered = ARMS|CHEST
+	boobed = TRUE
+	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
+	sleevetype = "shirt"
+	nodismemsleeves = TRUE
+	inhand_mod = TRUE
+	toggle_icon_state = FALSE
 
 /obj/item/clothing/cloak/kaizoku/mino
 	name = "mino cloak"

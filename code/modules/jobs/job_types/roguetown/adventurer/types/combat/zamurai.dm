@@ -34,8 +34,8 @@
 	backl = /obj/item/storage/backpack/rogue/satchel
 	beltr = /obj/item/quiver/arrows
 	beltl = /obj/item/rogueweapon/sword/uchigatana
-	head = /obj/item/clothing/head/roguetown/kaizoku/zunari
-	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/rich=1)
+	head = /obj/item/clothing/head/roguetown/kaizoku/big/tosei_kabuto
+	backpack_contents = list(/obj/item/storage/belt/rogue/pouch/coins/mid=1)
 	if(prob(23))
 		gloves = /obj/item/clothing/gloves/roguetown/leather
 	else

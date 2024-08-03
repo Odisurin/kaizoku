@@ -20,7 +20,7 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	wrists = /obj/item/clothing/neck/roguetown/psicross/abyssor
 	pants = /obj/item/clothing/under/roguetown/kaizoku/tobi
-	shirt = /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/itatami
+	shirt = /obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail/itatami
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	head = /obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane
 	beltr = /obj/item/rogueweapon/huntingknife/idagger/sai
@@ -54,7 +54,7 @@
 	else 
 		backr = /obj/item/rogueweapon/spear/yari/katakama
 	if(H.mind)
-		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
@@ -63,7 +63,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
 		if(H.age == AGE_OLD)
-			H.mind.adjust_skillrank(/datum/skill/combat/axesmaces, 1, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 			H.mind.adjust_skillrank(/datum/skill/magic/holy, 1, TRUE)
 		H.change_stat("strength", 2)
 		H.change_stat("perception", -2)

@@ -12,6 +12,23 @@
 	C.grant_language(/datum/language/common)
 	C.grant_language(/datum/language/abyssal)
 	C.cmode_music = 'sound/music/combatabyssariad.ogg'
+	C.verbs |= /mob/proc/praise
+
+/mob/proc/praise()
+	set name = "Praise"
+	set category = "Noises"
+	emote("praise")
+
+/mob/proc/yoo()
+	set name = "Yoo"
+	set category = "Noises"
+	emote("yoo")
+
+/mob/proc/throatsing()
+	set name = "Throatsing"
+	set category = "Noises"
+	emote("throatsing")
+
 
 /datum/species/abyssariad/check_roundstart_eligible()
 	return FALSE

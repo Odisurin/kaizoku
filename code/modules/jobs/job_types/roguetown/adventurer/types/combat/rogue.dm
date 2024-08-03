@@ -8,11 +8,8 @@
 	"Dwarf",
 	"Tiefling",
 	"Dark Elf",
-	"Aasimar",
-	"Kitsune",
-	"Tengu",
-	"Oni",
-	"Kappa")
+	"Aasimar"
+	)
 	outfit = /datum/outfit/job/roguetown/adventurer/rogue
 /datum/outfit/job/roguetown/adventurer/rogue/pre_equip(mob/living/carbon/human/H)
 	..()

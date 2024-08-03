@@ -33,6 +33,13 @@
 				used = list('sound/vo/female/elf/painscream (1).ogg','sound/vo/female/elf/painscream (2).ogg')
 			if("scream")
 				used = list('sound/vo/female/elf/scream (1).ogg','sound/vo/female/elf/scream (2).ogg','sound/vo/female/elf/scream (3).ogg','sound/vo/female/elf/scream (4).ogg')
+			if("praise")
+				used = 'sound/vo/psst.ogg'
+			if("yoo")
+				used = 'sound/vo/psst.ogg'
+			if("throatsing")
+				used = 'sound/vo/psst.ogg'
+
 
 	if(!used) //we haven't found a racial specific sound so use generic
 		used = ..(soundin)

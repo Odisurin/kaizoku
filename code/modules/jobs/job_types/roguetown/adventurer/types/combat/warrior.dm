@@ -9,11 +9,8 @@
 	"Dwarf",
 	"Tiefling",
 	"Dark Elf",
-	"Aasimar",
-	"Kitsune",
-	"Tengu",
-	"Oni",
-	"Kappa")
+	"Aasimar"
+	)
 	outfit = /datum/outfit/job/roguetown/adventurer/sfighter
 
 

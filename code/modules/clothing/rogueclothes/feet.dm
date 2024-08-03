@@ -234,6 +234,7 @@
 	gender = PLURAL
 	icon_state = "jikatabi"
 	item_state = "jikatabi"
+	body_parts_covered = FEET
 
 /obj/item/clothing/shoes/roguetown/kaizoku/jikatabi/shinobi
 	color = "#372161"
@@ -250,3 +251,11 @@
 	body_parts_covered = LEGS|FEET
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/obj/item/clothing/shoes/roguetown/kaizoku/geta
+	name = "geta"
+	desc = "A normal wooden geta most suitable for those who need to wander where the mud absorbs pressure."
+	gender = PLURAL
+	icon_state = "geta"
+	item_state = "geta"
+	body_parts_covered = FEET

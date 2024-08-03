@@ -178,6 +178,8 @@
 	l_sleeve_status = SLEEVE_NORMAL
 	body_parts_covered = FACE
 	slot_flags = ITEM_SLOT_MASK
+	var/colorable_var = FALSE
+	var/picked
 
 /obj/item/clothing/mask/rogue/kaizoku/menpo
 	name = "iron menpo"
@@ -188,8 +190,10 @@
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	resistance_flags = FIRE_PROOF
 	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_STAB)
+	blocksound = PLATEHIT
 	flags_inv = HIDEFACE
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH | MASKCOVERSMOUTH
 	body_parts_covered = FACE|NECK|MOUTH|EYES
 	block2add = FOV_BEHIND
 	slot_flags = ITEM_SLOT_MASK|ITEM_SLOT_HIP
@@ -212,28 +216,29 @@
 	max_integrity = 200
 	body_parts_covered = NECK|MOUTH
 
-/obj/item/clothing/mask/rogue/kaizoku/menpo/tribal
+/obj/item/clothing/mask/rogue/kaizoku/menpo/facemask
 	name = "iron tribal mask"
 	icon_state = "ironmenpo_tribal"
 	max_integrity = 100
 	body_parts_covered = FACE|MOUTH|EYES
 
-/obj/item/clothing/mask/rogue/kaizoku/menpo/tribal/steel
+/obj/item/clothing/mask/rogue/kaizoku/menpo/facemask/steel
 	name = "steel tribal mask"
 	icon_state = "steelmenpo_tribal"
 	max_integrity = 200
-	body_parts_covered = FACE|MOUTH|EYES
 
-/obj/item/clothing/mask/rogue/kaizoku/menpo/steel/tengu
+/obj/item/clothing/mask/rogue/kaizoku/menpo/facemask/tengu
 	name = "tengu mask"
 	icon_state = "colourable_tengumask"
-	max_integrity = 200
+	max_integrity = 100
+	colorable_var = TRUE
 
-/obj/item/clothing/mask/rogue/kaizoku/menpo/steel/kitsune
+/obj/item/clothing/mask/rogue/kaizoku/menpo/facemask/kitsune
 	name = "kitsune mask"
 	icon_state = "colourable_kitsunemask"
-	max_integrity = 200
+	max_integrity = 100
 	detail_tag = "_detail"
+	colorable_var = TRUE
 
 /obj/item/clothing/mask/rogue/kaizoku/menpo/steel/kitsune/update_icon()
 	cut_overlays()
@@ -243,3 +248,23 @@
 		if(get_detail_color())
 			pic.color = get_detail_color()
 		add_overlay(pic)
+
+/obj/item/clothing/mask/rogue/kaizoku/attack_right(mob/user)
+	if(colorable_var == TRUE)
+		if(picked)
+			return
+		var/the_time = world.time
+		if(world.time > (the_time + 30 SECONDS))
+			return
+		var/colorone = input(user, "Your emotions spreads your will.","Abyssor allows you to flush emotions within the threads.") as null|anything in CLOTHING_COLOR_NAMES
+		if(!colorone)
+			return
+		picked = TRUE
+		color = clothing_color2hex(colorone)
+		update_icon()
+		if(ismob(loc))
+			var/mob/L = loc
+			L.update_inv_wear_mask()
+		return
+	else 
+		return

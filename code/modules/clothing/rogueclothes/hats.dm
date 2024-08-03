@@ -725,11 +725,13 @@
 	icon_state = "tengai"
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	desc = "A wide-brimmed hat traditionally worn by wandering monks of the Abyssanctum fold."
+	bloody_icon_state = "helmetblood"
 
 /obj/item/clothing/head/roguetown/kaizoku/big/tengai/yamabushi
 	name = "yamabushi tengai"
 	icon_state = "stengai"
 	desc = "A tengai painted in black tar traditionally worn by Abyssanctum yamabushis."
+	bloody_icon_state = "helmetblood"
 
 /obj/item/clothing/head/roguetown/kaizoku/soheicloth
 	name = "sohei coverings"
@@ -760,10 +762,25 @@
 	desc = "A conical straw hat used to protect from the sun and rain."
 	flags_inv = HIDEEARS
 
+/obj/item/clothing/head/roguetown/kaizoku/lilly/small
+	name = "small lilypad gasa"
+	icon_state = "lilypad_small"
+	desc = "a small lilypad used by Kappas to protect from sun and rain. This comes as a intercultural exchange mimicking Abyssariad's gasas."
+
+/obj/item/clothing/head/roguetown/kaizoku/lilly/medium
+	name = "medium lilypad gasa"
+	icon_state = "lilypad_medium"
+	desc = "a medium lilypad used by Kappas to protect from sun and rain. This comes as a intercultural exchange mimicking Abyssariad's gasas."
+
+/obj/item/clothing/head/roguetown/kaizoku/lilly/big
+	name = "big lilypad gasa"
+	icon_state = "lilypad_big"
+	desc = "a big lilypad used by Kappas to protect from sun and rain. This comes as a intercultural exchange mimicking Abyssariad's gasas."
+
 /obj/item/clothing/head/roguetown/kaizoku/big/roningasa
 	name = "roningasa"
 	icon_state = "roningasa"
-	flags_inv = HIDEEARS
+	flags_inv = HIDEEARS|HIDEFACE
 	desc = "A hat typically worn by masterless zamurai, or the ronin."
 
 /obj/item/clothing/head/roguetown/kaizoku/big/torioigasa
@@ -785,8 +802,8 @@
 /obj/item/clothing/head/roguetown/kaizoku/shinobi_zukin
 	name = "shinobi hood"
 	icon_state = "shinobi_zukin"
-	flags_inv = HIDEEARS
-	desc = "A hood worn by members of Shinobi clans to conceal their identity and blend into the shadows. Unviable for spionage for being too obvious."
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+	desc = "A hood worn by members of Shinobi clans to conceal their identity and blend into the shadows. Unsuitable for espionage for being too obvious."
 
 /obj/item/clothing/head/roguetown/kaizoku/takuhatsugasa
 	name = "takuhatsugasa"
@@ -906,3 +923,40 @@
 	heat_protection = HEAD|EARS|HAIR|NOSE|EYES|FACE
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+
+/obj/item/clothing/head/roguetown/kaizoku/ceramic
+	name = "bone helmet"
+	icon_state = "ivory_head"
+	desc = "a simple, protective bone helmet made from the creatures of the land."
+	smeltresult = null
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT)
+	body_parts_covered = HEAD|HAIR|EARS
+	flags_inv = HIDEEARS
+	max_integrity = 150
+
+/obj/item/clothing/head/roguetown/kaizoku/big/ceramic
+	name = "ivory ravanger helmet"
+	icon_state = "ravager_head"
+	desc = "The helmets commonly used by Kappa warriors or common riverdwellers who took upon themselves to protect their heads against goblin attacks."
+	smeltresult = null
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_STAB)
+	body_parts_covered = HEAD|HAIR|EARS
+	flags_inv = HIDEEARS
+	max_integrity = 200
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	smeltresult = /obj/item/ingot/siliconcarbide
+
+/obj/item/clothing/head/roguetown/kaizoku/big/ceramic/heavy
+	name = "marauder heavy helmet"
+	icon_state = "marauder_head"
+	desc = "The well-protective helmets used by Kappa warriors under the banner of the Abyssariads. Technology granted by mutual cooperation."
+	smeltresult = null
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT)
+	body_parts_covered = HEAD|EARS|HAIR|NOSE|EYES|FACE
+	flags_inv = HIDEEARS
+	max_integrity = 200
+	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	block2add = FOV_RIGHT|FOV_LEFT
+	smeltresult = /obj/item/ingot/siliconcarbide

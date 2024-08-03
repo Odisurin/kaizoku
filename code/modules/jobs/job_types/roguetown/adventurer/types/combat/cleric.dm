@@ -9,11 +9,8 @@
 	"Dwarf",
 	"Tiefling",
 	"Dark Elf",
-	"Aasimar",
-	"Kitsune",
-	"Tengu",
-	"Oni",
-	"Kappa")
+	"Aasimar"
+	)
 	allowed_patrons = list("Astrata", "Dendor", "Necra")
 	ispilgrim = FALSE
 	outfit = /datum/outfit/job/roguetown/adventurer/cleric
@@ -45,6 +42,7 @@
 			neck = /obj/item/clothing/neck/roguetown/psicross/dendor
 		if("Necra")
 			neck = /obj/item/clothing/neck/roguetown/psicross/necra
+			cloak = /obj/item/clothing/cloak/raincloak/mortus
 
 	armor = /obj/item/clothing/suit/roguetown/armor/plate
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
@@ -54,8 +52,6 @@
 	beltr = /obj/item/rogueweapon/mace
 	beltl = /obj/item/storage/belt/rogue/pouch
 	backr = /obj/item/rogueweapon/shovel
-	if(H.PATRON == /datum/patrongods/necra)
-		cloak = /obj/item/clothing/cloak/raincloak/mortus
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/axesmaces, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)

@@ -47,11 +47,11 @@
 		pants = /obj/item/clothing/under/roguetown/kaizoku/haidate_tatami
 		shirt = /obj/item/clothing/suit/roguetown/shirt/kaizoku/looseshirt
 	else if(prob(50))
-		armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/kikko
-		shirt = /obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/itatami
+		armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail/kikko
+		shirt = /obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail/itatami
 		pants = /obj/item/clothing/under/roguetown/kaizoku/tobi/hakama
 	else
-		armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail/kusari
+		armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail
 		pants = /obj/item/clothing/under/roguetown/kaizoku/tobi/fur
 		shirt = /obj/item/clothing/suit/roguetown/shirt/kaizoku/looseshirt
 	backl = /obj/item/storage/backpack/rogue/satchel
@@ -64,13 +64,13 @@
 		beltl = /obj/item/rogueweapon/flail/kusarigama
 	if(prob(66))
 		neck = /obj/item/clothing/neck/roguetown/chaincoif
-		mask = /obj/item/clothing/mask/rogue/kaizoku/menpo/half
-	else
-		head = /obj/item/clothing/head/roguetown/helmet/skullcap
 		mask = /obj/item/clothing/mask/rogue/kaizoku/menpo
+	else
+		head = /obj/item/clothing/head/roguetown/kaizoku/helmet
+		mask = /obj/item/clothing/mask/rogue/kaizoku/menpo/half
 
 	H.change_stat("strength", 2)
-	H.change_stat("endurance", 1) // 7 stat points total as a low-skill martial role without magic. Compared to Pally with 5 points.
+	H.change_stat("endurance", 1) 
 	H.change_stat("speed", 1)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)

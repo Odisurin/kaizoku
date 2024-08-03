@@ -1281,3 +1281,36 @@
 	else
 		to_chat(user, "<span class='warning'>You're incapable of slapping in your current state.</span>")
 */
+
+//Kappa use only.
+/datum/emote/living/croak
+	key = "croak"
+	message = "croaks"
+	emote_type = EMOTE_AUDIBLE
+	only_forced_audio = TRUE
+
+//Abyssariad use only.
+
+/datum/emote/living/praise
+	key = "praise"
+	message = "praises the heavenly emperor!"
+	emote_type = EMOTE_AUDIBLE
+	only_forced_audio = TRUE
+
+/datum/emote/living/yoo
+	key = "yoo"
+	message = "announces their presence"
+	emote_type = EMOTE_AUDIBLE
+	only_forced_audio = TRUE
+
+/datum/emote/living/throatsing
+	key = "throatsing"
+	message = "throatsings"
+	emote_type = EMOTE_AUDIBLE
+	only_forced_audio = TRUE
+
+/datum/emote/living/kitsunesmug
+	key = "evilsmug"
+	key_third_person = "smugs with evil intention."
+	message = "delivers a gloating, soul-piercing wicked smug."
+	message_param = "delivers a gloating, soul-piercing wicked smug at %t."

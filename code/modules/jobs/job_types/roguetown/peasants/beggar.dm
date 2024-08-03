@@ -7,15 +7,17 @@
 	total_positions = 15
 	spawn_positions = 15
 
-	allowed_races = list(
-		"Humen",
-		"Elf",
-		"Dwarf",
-		"Half-Elf",
-		"Tiefling",
-		"Dark Elf",
-		"Aasimar"
-	)
+	allowed_races = list("Humen",
+	"Elf",
+	"Half-Elf",
+	"Dwarf",
+	"Tiefling",
+	"Dark Elf",
+	"Aasimar",
+	"Kitsune",
+	"Tengu",
+	"Oni",
+	"Kappa")
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	outfit = /datum/outfit/job/roguetown/vagrant
 	bypass_lastclass = TRUE

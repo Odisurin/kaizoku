@@ -201,6 +201,8 @@
 /obj/item/clothing/under/roguetown/kaizoku
 	icon = 'icons/kaizoku/clothingicon/pants.dmi'
 	mob_overlay_icon = 'icons/kaizoku/clothing/pants.dmi'
+	var/colorable_var = FALSE
+	var/picked
 
 /obj/item/clothing/under/roguetown/kaizoku/haidate_tatami
 	name = "haidate tatami"
@@ -248,6 +250,8 @@
 	r_sleeve_status = SLEEVE_NOMOD
 	l_sleeve_status = SLEEVE_NOMOD
 	colorgrenz = TRUE
+	colorable_var = TRUE
+
 
 /obj/item/clothing/under/roguetown/kaizoku/yoroihakama/update_icon()
 	cut_overlays()
@@ -272,8 +276,7 @@
 	blade_dulling = DULLING_BASHCHOP
 	r_sleeve_status = SLEEVE_NOMOD
 	l_sleeve_status = SLEEVE_NOMOD
-
-/obj/item/clothing/under/roguetown/kaizoku/tobi
+	colorable_var = TRUE
 
 /obj/item/clothing/under/roguetown/kaizoku/tobi/thunder
 	name = "thunder tobi pants"
@@ -300,11 +303,14 @@
 	name = "fur tobi"
 	icon_state = "furpants"
 	desc = "woven out of dendor's beloved animals."
+	colorable_var = TRUE
 
 /obj/item/clothing/under/roguetown/kaizoku/tobi/hakama
 	name = "hakama"
 	icon_state = "hakama"
+	body_parts_covered = GROIN|LEGS|FEET
 	desc = "suitable for the Abyssariad-cultured, in which men can use skirts without being considered an act of homossexuality."
+	colorable_var = TRUE
 
 /obj/item/clothing/under/roguetown/kaizoku/shinobizubon
 	name = "shinobi zubon"
@@ -319,3 +325,55 @@
 	blade_dulling = DULLING_BASHCHOP
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
+
+/obj/item/clothing/under/roguetown/kaizoku/ceramic
+	name = "marauder chausses"
+	desc = "."
+	gender = PLURAL
+	icon_state = "marauder_leg"
+	item_state = "marauder_leg"
+	sewrepair = FALSE
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	max_integrity = 300
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT)
+	armor_class = ARMOR_CLASS_HEAVY
+	body_parts_covered = GROIN|LEGS|FEET
+	blocksound = PLATEHIT
+	var/do_sound = FALSE
+	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	anvilrepair = /datum/skill/craft/armorsmithing
+	r_sleeve_status = SLEEVE_NOMOD
+	l_sleeve_status = SLEEVE_NOMOD
+
+/obj/item/clothing/under/roguetown/kaizoku/ceramic/light
+	name = "ivory chausses"
+	desc = "."
+	max_integrity = 200
+	prevent_crits = list(BCLASS_CHOP, BCLASS_BLUNT)
+
+	gender = PLURAL
+	icon_state = "ivory_legs"
+	item_state = "ivory_legs"
+
+/obj/item/clothing/under/roguetown/kaizoku/attack_right(mob/user)
+	if(colorable_var == TRUE)
+		if(picked)
+			return
+		var/the_time = world.time
+		if(world.time > (the_time + 30 SECONDS))
+			return
+		var/colorone = input(user, "Your emotions spreads your will.","Abyssor allows you to flush emotions within the threads.") as null|anything in CLOTHING_COLOR_NAMES
+		if(!colorone)
+			return
+		picked = TRUE
+		color = clothing_color2hex(colorone)
+		update_icon()
+		if(ismob(loc))
+			var/mob/L = loc
+			L.update_inv_pants()
+	return
+
+/obj/item/clothing/under/roguetown/kaizoku/tribal
+	name = "tribal lowerhalf"
+	icon_state = "tribalcloth"
+	desc = "piece of clothings usually used by Kappa tribesmen of all genders."

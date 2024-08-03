@@ -95,9 +95,12 @@
 				used = list('sound/vo/male/gen/yawn (1).ogg','sound/vo/male/gen/yawn (2).ogg')
 			if("attnwhistle")
 				used = 'sound/vo/attn.ogg'
-			if("psst")
-				used = 'sound/vo/psst.ogg'
-
+			if("praise")
+				used = list('sound/vo/male/abyssariad/abyssariad_praise.ogg','sound/vo/male/abyssariad/abyssariad_praise2.ogg')
+			if("yoo")
+				used = 'sound/vo/male/abyssariad/yoooo.ogg'
+			if("throatsing")
+				used = list('sound/vo/male/abyssariad/throatsing1.ogg','sound/vo/male/abyssariad/throatsing2.ogg')
 	if(!used)
 		used = ..(soundin)
 	return used

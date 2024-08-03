@@ -7,15 +7,15 @@
 /datum/species/abyssariad/kitsune
 	name = "Kitsune"
 	id = "abyssariad"
-	desc = "<b>Storm branched Champion</b><br>\
-	Molded from Abyssor's tumultuous embrace of storm and will, the kitsune are a sentinel race \
-	deeply bonded with honor, intertwined with the tempestuous forces of the sea, \
-	settled to defend their territories and safeguard ancient traditions with their own lives. \
-	Their society almost crumbled during the Demonic wars and internal strife with the Tengus. \
-	Now, they seek out Abyssor's lost artifact. Kitsunes tends to be humble and very quick tempered, \
-	and are know for either loving duels for honor's sake, or despise any waste of blood that isn't \
-	for self-defense. Abandoned by Abyssor, they are stranded without divine guidance, searching for honor. \
-	Noble souls, condenmned to suffer in a dying world."
+	desc = "<b>Storm branched Champions</b><br>\
+	Molded from Abyssor's tumultuous embrace of storm and will, the Kitsune are a warrior, demiurgic race \
+	deeply bonded with honor and Ethos that intertwines with the tempestuous forces of Abyssor, \
+	never set on a balance, all Kitsunes are extreme as the storms, with the tendency to be both \
+	hermeticly humble and quick tempered, and know for either loving duel for honor's sake \
+	- or being the most radical martial pacifists on the planet. Their society almost crumbled \
+	during The Bloody Apotheosis, but their bronze-age traditions lives on together with a deep \
+	hatred for all things Graggar. Noble souls that, when not belonging to military or clerical jobs, \
+	usually partakes in the society's intelligentsia division, usually as scientists, alchemists and astronomers."
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
@@ -41,7 +41,7 @@
 	OFFSET_NECK = list(0,1), OFFSET_MOUTH = list(0,1), OFFSET_PANTS = list(0,1), \
 	OFFSET_SHIRT = list(0,1), OFFSET_ARMOR = list(0,1), OFFSET_HANDS = list(0,1), OFFSET_UNDIES = list(0,1), \
 	OFFSET_ID_F = list(0,-1), OFFSET_GLOVES_F = list(0,1), OFFSET_WRISTS_F = list(0,1), OFFSET_HANDS_F = list(0,1), \
-	OFFSET_CLOAK_F = list(0,1), OFFSET_FACEMASK_F = list(0,0), OFFSET_HEAD_F = list(0,1), \
+	OFFSET_CLOAK_F = list(0,1), OFFSET_FACEMASK_F = list(0,0), OFFSET_HEAD_F = list(0,0), \
 	OFFSET_FACE_F = list(0,0), OFFSET_BELT_F = list(0,1), OFFSET_BACK_F = list(0,0), \
 	OFFSET_NECK_F = list(0,0), OFFSET_MOUTH_F = list(0,0), OFFSET_PANTS_F = list(0,1), \
 	OFFSET_SHIRT_F = list(0,1), OFFSET_ARMOR_F = list(0,1), OFFSET_UNDIES_F = list(0,1))

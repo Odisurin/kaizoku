@@ -45,6 +45,7 @@
 			cloak = /obj/item/clothing/cloak/raincloak/mortus
 
 	armor = /obj/item/clothing/suit/roguetown/armor/plate
+	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
@@ -52,6 +53,8 @@
 	beltr = /obj/item/rogueweapon/mace
 	beltl = /obj/item/storage/belt/rogue/pouch
 	backr = /obj/item/rogueweapon/shovel
+	if(H.PATRON != /datum/patrongods/necra)
+		cloak = /obj/item/clothing/cloak/raincloak/mortus
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/axesmaces, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)

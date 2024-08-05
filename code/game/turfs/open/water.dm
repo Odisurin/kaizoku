@@ -274,6 +274,8 @@
 			return
 		if(iscarbon(AM))
 			var/mob/living/carbon/C = AM
+			if(HAS_TRAIT(AM, TRAIT_LEECHIMMUNE))
+				return
 			if(C.blood_volume <= 0)
 				return
 			var/zonee = list(BODY_ZONE_R_LEG,BODY_ZONE_L_LEG)
@@ -287,19 +289,14 @@
 				BP.add_embedded_object(I, silent = TRUE)
 				return .
 
-/turf/open/water/swamp/attackby(obj/item/C, mob/user, params)
-	if(user.used_intent.type == /datum/intent/panning)
-		playsound(user, 'sound/foley/drawwater.ogg', 100, FALSE)
-		if(prob(66))
-			pickweight(list(/obj/item/natural/panning/trash/fishbones = 2,
-				/obj/item/natural/panning/trash/oldboots = 1,
-				/obj/item/natural/panning/trash/seaweed = 1,
-				/obj/item/shard = 1,
-				/obj/item/natural/panning/trash/corrodedmetal = 1,
-				/obj/item/natural/panning/gravel = 2,
-				/obj/item/natural/worms/leeches = 2
-				))
-	return ..()
+/turf/open/water/swamp/deep
+	name = "murk"
+	desc = "Deep water with several weeds and algae on the surface."
+	icon_state = "dirtW"
+	water_level = 3
+	slowdown = 20
+	swim_skill = TRUE
+
 
 /turf/open/water/swamp/deep
 	name = "murk"

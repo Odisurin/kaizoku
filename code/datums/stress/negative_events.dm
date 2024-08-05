@@ -83,6 +83,10 @@
 			return "<span class='red'>Another [H.dna.species.id] perished.</span>"
 	return desc
 
+/datum/stressevent/nopeople
+	timer = 2 MINUTES
+	stressadd = 2
+	desc = "<span class='red'>Where did everyone go? Did something happen?!</span>"
 
 /datum/stressevent/viewdismember
 	timer = 5 MINUTES

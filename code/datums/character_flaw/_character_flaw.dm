@@ -8,9 +8,15 @@ GLOBAL_LIST_INIT(character_flaws, list("Alcoholic"=/datum/charflaw/addiction/alc
 	"Cyclops (L)"=/datum/charflaw/noeyel,
 	"No Arm (R)"=/datum/charflaw/limbloss/arm_r,
 	"No Arm (L)"=/datum/charflaw/limbloss/arm_l,
+	"Bad Sight"=/datum/charflaw/badsight,
+	"Clingy"=/datum/charflaw/clingy,
+	"Thief-Borne"=/datum/charflaw/addiction/kleptomaniac,
+	"Fire Servant"=/datum/charflaw/addiction/pyromaniac,
 	"Paranoid"=/datum/charflaw/paranoid,
 	"Random Flaw"=/datum/charflaw/randflaw,
-	"No Flaw (3 TRI)"=/datum/charflaw/noflaw))
+	"No Flaw (3 TRI)"=/datum/charflaw/noflaw,
+
+	"Pain Freek"=/datum/charflaw/addiction/masochist))
 
 /datum/charflaw
 	var/name
@@ -94,14 +100,29 @@ GLOBAL_LIST_INIT(character_flaws, list("Alcoholic"=/datum/charflaw/addiction/alc
 				H.adjust_triumphs(-3)
 
 /datum/charflaw/badsight
-	name = "Bad Eyesight"
-	desc = "I need spectacles to see normally from my years spent reading books."
+	name = "Poor literacy"
+	desc = "I 'eed mure learn'n to do sou I'e can read."
 
 /datum/charflaw/badsight/on_mob_creation(mob/user)
 	. = ..()
 	var/mob/living/carbon/human/H = user
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+
+/datum/status_effect/debuff/badvision
+	id = "badvision"
+	alert_type = null
+	effectedstats = list("perception" = -20, "speed" = -5,"fortune" = -20)
+	duration = 100
+
+/// PAIN FREEK
+
+/datum/charflaw/addiction/masochist
+	name = "Pain Freek"
+	desc = "They call me a freek, but it just feels so good..."
+	time = 25 MINUTES
+	needsate_text = "I need to feel good... punch me in the face!"
+
 
 /datum/charflaw/badsight/flaw_on_life(mob/user)
 	if(!ishuman(user))
@@ -167,6 +188,31 @@ GLOBAL_LIST_INIT(character_flaws, list("Alcoholic"=/datum/charflaw/addiction/alc
 	if(cnt > 6)
 		P.add_stress(/datum/stressevent/parablood)
 
+/datum/charflaw/clingy
+	name = "Clingy"
+	desc = "I like being around people, it's just so lively..."
+	var/last_check = 0
+
+/datum/charflaw/clingy/flaw_on_life(mob/user)
+	. = ..()
+	if(world.time < last_check + 10 SECONDS)
+		return
+	if(!user)
+		return
+	last_check = world.time
+	var/cnt = 0
+	for(var/mob/living/carbon/human/L in hearers(7, user))
+		if(L == src)
+			continue
+		if(L.stat)
+			continue
+		if(L.dna.species)
+			cnt++
+		if(cnt > 2)
+			break
+	var/mob/living/carbon/P = user
+	if(cnt < 2)
+		P.add_stress(/datum/stressevent/nopeople)
 
 /datum/charflaw/noeyer
 	name = "Cyclops (R)"

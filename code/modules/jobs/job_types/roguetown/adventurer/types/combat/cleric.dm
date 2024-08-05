@@ -21,7 +21,7 @@
 /datum/outfit/job/roguetown/adventurer/cleric/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.virginity = TRUE
-	var/allowed_patrons = list("Astrata", "Dendor", "Necra")
+	var/allowed_patrons = list("Astrata", "Dendor", "Necra", "Eora", "Ravox", "Noc")
 
 	var/datum/patrongods/ourpatron
 	if(istype(H.PATRON, /datum/patrongods))
@@ -45,6 +45,12 @@
 			neck = /obj/item/clothing/neck/roguetown/psicross/dendor
 		if("Necra")
 			neck = /obj/item/clothing/neck/roguetown/psicross/necra
+		if("Eora")
+			neck = /obj/item/clothing/neck/roguetown/psicross/eora
+		if("Noc")
+			neck = /obj/item/clothing/neck/roguetown/psicross/noc
+		if("Ravox")
+			neck = /obj/item/clothing/neck/roguetown/psicross/ravox
 
 	armor = /obj/item/clothing/suit/roguetown/armor/plate
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
@@ -55,7 +61,7 @@
 	beltr = /obj/item/rogueweapon/mace
 	beltl = /obj/item/storage/belt/rogue/pouch
 	backr = /obj/item/rogueweapon/shovel
-	if(H.PATRON != /datum/patrongods/necra)
+	if(H.PATRON == /datum/patrongods/necra)
 		cloak = /obj/item/clothing/cloak/raincloak/mortus
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/axesmaces, 4, TRUE)

@@ -301,3 +301,11 @@
 	icon_state = "marx"
 	art_type = /datum/component/art/rev
 
+//defined gods
+
+/obj/structure/statue/xylix
+	desc = "Some mad God no doubt."
+	icon = 'icons/roguetown/misc/ay.dmi'
+	icon_state = "xylix_smile"
+	pixel_x = -32
+	pixel_y = -16

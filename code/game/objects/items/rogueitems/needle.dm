@@ -100,6 +100,9 @@
 		return FALSE
 	var/mob/living/doctor = user
 	var/mob/living/carbon/human/patient = target
+	if(stringamt < 1)
+		to_chat(user, "<span class='warning'>The needle has no thread left!</span>")
+		return
 	if(!get_location_accessible(patient, check_zone(doctor.zone_selected)))
 		to_chat(doctor, "<span class='warning'>Something in the way.</span>")
 		return FALSE
@@ -116,9 +119,6 @@
 		sewable = affecting.get_sewable_wounds()
 	else
 		sewable = patient.get_sewable_wounds()
-	if(stringamt < 1)
-		to_chat(user, "<span class='warning'>There's no thread left...</span>")
-		return
 	if(!length(sewable))
 		to_chat(doctor, "<span class='warning'>There aren't any wounds to be sewn.</span>")
 		return FALSE

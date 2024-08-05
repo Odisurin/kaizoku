@@ -150,6 +150,17 @@
 	desc = ""
 	icon_state = "necra"
 
+/obj/item/clothing/neck/roguetown/psicross/ravox
+	name = "amulet of Ravox"
+	desc = "Struggle. Challenge. And rise to struggle again. That is the sword of he who yet lives to fight again."
+	icon_state = "ravox"
+	resistance_flags = FIRE_PROOF
+
+/obj/item/clothing/neck/roguetown/psicross/eora
+	name = "amulet of Eora"
+	desc = "Family, Love, joy of all things of pleasureful."
+	icon_state = "eora"
+
 /obj/item/clothing/neck/roguetown/psicross/silver
 	name = "silver psycross"
 	icon_state = "psicrossiron"

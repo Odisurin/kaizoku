@@ -30,7 +30,7 @@
 			if("hmm")
 				used = list('sound/vo/female/elf/hmm (1).ogg','sound/vo/female/elf/hmm (2).ogg')
 			if("pain")
-				used = list('sound/vo/female/abyssariad/painl1.ogg','sound/vo/female/abyssariad/painl2.ogg','sound/vo/female/abyssariad/painl3.ogg','sound/vo/female/abyssariad/painl4.ogg')
+				used = list('sound/vo/female/abyssariad/painl.ogg','sound/vo/female/abyssariad/painl2.ogg','sound/vo/female/abyssariad/painl3.ogg','sound/vo/female/abyssariad/painl4.ogg')
 			if("embed")
 				used = list('sound/vo/female/elf/pain (1).ogg','sound/vo/female/elf/pain (2).ogg','sound/vo/female/elf/pain (3).ogg','sound/vo/female/elf/pain (4).ogg')
 			if("paincrit")

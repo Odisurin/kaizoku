@@ -43,7 +43,7 @@ GLOBAL_LIST_EMPTY(patronlist)
 	name = "Abyssor"
 	domain = "God of the Ocean, Storms and the Tide"
 	summary = "The Beloved Son, gifted primordial men food and water."
-	worshippers = "Men of the Sea, Primitive Aquatics"
+	worshippers = "Men of the Sea, Primitive Aquatics, Abyssians"
 
 /datum/patrongods/ravox
 	name = "Ravox"
@@ -55,7 +55,7 @@ GLOBAL_LIST_EMPTY(patronlist)
 	name = "Necra"
 	domain = "Goddess of Death and the Afterlife"
 	summary = "The Veiled Lady, a feared but respected God who leads the dead."
-	worshippers = " Necromancers, The Dead, Gravekeepers"
+	worshippers = "The Dead, Gravekeepers, Death Clerics"
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 	t1 = /obj/effect/proc_holder/spell/targeted/burialrite
 	t2 = /obj/effect/proc_holder/spell/targeted/churn
@@ -80,9 +80,9 @@ GLOBAL_LIST_EMPTY(patronlist)
 
 /datum/patrongods/eora
 	name = "Eora"
-	domain = "Goddess of the Family, Love and Lust"
-	summary = "The Lovely One, her divine gift was that of family and love."
-	worshippers = "Lovers, Harlots, Doting Grandparents"
+	domain = "Goddess of Love and Lust"
+	summary = "The Lovely One, her divine gift was that of family and love. Mother of Graggarspawn."
+	worshippers = "Lovers, Harlots, Dark Elves"
 
 
 

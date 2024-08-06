@@ -10,7 +10,8 @@
 	"Elf",
 	"Half-Elf",
 	"Dark Elf",
-	"Tiefling")
+	"Tiefling",
+	"Beastkin")
 	outfit = /datum/outfit/job/roguetown/adventurer/sfighter
 	maxchosen = 1
 	pickprob = 11

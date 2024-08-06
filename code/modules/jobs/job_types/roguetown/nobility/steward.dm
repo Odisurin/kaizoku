@@ -15,7 +15,8 @@
 	"Kitsune",
 	"Tengu",
 	"Oni",
-	"Kappa")
+	"Kappa",
+	"Beastkin")
 	allowed_sexes = list(MALE, FEMALE)
 	display_order = JDO_STEWARD
 	bypass_lastclass = TRUE

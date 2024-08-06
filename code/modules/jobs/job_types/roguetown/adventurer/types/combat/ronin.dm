@@ -9,8 +9,7 @@
 	allowed_races = list(
 	"Kitsune",
 	"Tengu",
-	"Oni",
-	"Kappa")
+	"Oni")
 	outfit = /datum/outfit/job/roguetown/adventurer/ronin
 	isvillager = FALSE
 	tutorial = "A person of the waves, the one who drifters as the ocean. These are samurais with no masters and severed the link with their clan. In shameful display, they are know for not following the code of Abyssal Tide, acting as highwaymen, operating gambling rings and protection rackets."

@@ -100,7 +100,10 @@
 			if("yoo")
 				used = 'sound/vo/male/abyssariad/yoooo.ogg'
 			if("throatsing")
-				used = list('sound/vo/male/abyssariad/throatsing1.ogg','sound/vo/male/abyssariad/throatsing2.ogg')
+				if(prob(5))
+					used = 'sound/vo/male/abyssariad/throatsing_rare.ogg' //I am not afraid.
+				else
+					used = list('sound/vo/male/abyssariad/throatsing1.ogg','sound/vo/male/abyssariad/mthroatsing1.ogg','sound/vo/male/abyssariad/mthroatsing2.ogg','sound/vo/male/abyssariad/mthroatsing3.ogg','sound/vo/male/abyssariad/mthroatsing4.ogg','sound/vo/male/abyssariad/mthroatsing5.ogg')
 	if(!used)
 		used = ..(soundin)
 	return used

@@ -10,8 +10,8 @@
 	"Dwarf",
 	"Tiefling",
 	"Dark Elf",
-	"Aasimar"
-	)
+	"Aasimar",
+	"Beastkin")
 	outfit = /datum/outfit/job/roguetown/adventurer/assassin
 	maxchosen = 1
 	plevel_req = 2

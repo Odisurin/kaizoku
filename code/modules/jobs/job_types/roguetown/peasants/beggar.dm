@@ -17,7 +17,8 @@
 	"Kitsune",
 	"Tengu",
 	"Oni",
-	"Kappa")
+	"Kappa",
+	"Beastkin")
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	outfit = /datum/outfit/job/roguetown/vagrant
 	bypass_lastclass = TRUE
@@ -62,6 +63,13 @@
 		r_hand = /obj/item/rogueweapon/mace/woodclub
 	if(prob(5))
 		l_hand = /obj/item/rogueweapon/mace/woodclub
+	if(H.dna?.species)
+		if(H.dna.species?.id == "abyssariad")
+			mask = /obj/item/clothing/mask/rogue/kaizoku/facemask/dishonor
+			to_chat(H, "<span class='userdanger'>In pursuit of hedonism and vices, I forfeited my honor and values of the Abyssal Tide. My soul can no longer claim the essence of an Abyssariad.</span>")
+			if(H.PATRON == /datum/patrongods/abyssor)
+				H.PATRON = GLOB.patronlist[/datum/patrongods/eora]
+				to_chat(H, "<span class='warning'>The waters I once revered now scorn me - the rivers blistering my skin. I've failed Abyssor as his champion, and now I've bonded with [H.PATRON].")
 	H.change_stat("strength", -1)
 	H.change_stat("intelligence", -4)
 	H.change_stat("constitution", -3)

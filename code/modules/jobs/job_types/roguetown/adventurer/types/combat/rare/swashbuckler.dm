@@ -14,7 +14,8 @@
 	"Kitsune",
 	"Tengu",
 	"Oni",
-	"Kappa")
+	"Kappa",
+	"Beastkin")
 	outfit = /datum/outfit/job/roguetown/adventurer/swashbuckler
 	maxchosen = 1
 	israre = TRUE

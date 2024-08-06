@@ -4,8 +4,7 @@
 	allowed_races = list(
 	"Kitsune",
 	"Tengu",
-	"Oni",
-	"Kappa")
+	"Oni")
 	outfit = /datum/outfit/job/roguetown/adventurer/zamurai
 	maxchosen = 2
 	isvillager = FALSE
@@ -30,6 +29,7 @@
 	armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/oyoroi
 	wrists = /obj/item/clothing/wrists/roguetown/kaizoku/kote
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless
+	neck = /obj/item/clothing/mask/rogue/kaizoku/menpo
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 	backl = /obj/item/storage/backpack/rogue/satchel
 	beltr = /obj/item/quiver/arrows
@@ -44,7 +44,7 @@
 	H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)

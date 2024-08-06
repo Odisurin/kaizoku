@@ -991,10 +991,16 @@
 		return
 	if(stat != DEAD)
 		if(health <= HEALTH_THRESHOLD_DEAD && !HAS_TRAIT(src, TRAIT_NODEATH))
-			emote("deathgurgle")
-			death()
-			cure_blind(UNCONSCIOUS_BLIND)
-			return
+			if(dna.species?.id == "abyssariad")
+				emote("deathgurgleabyss")
+				death()
+				cure_blind(UNCONSCIOUS_BLIND)
+				return
+			else
+				emote("deathgurgle")
+				death()
+				cure_blind(UNCONSCIOUS_BLIND)
+				return
 		if(((blood_volume in -INFINITY to BLOOD_VOLUME_SURVIVE) && !HAS_TRAIT(src, TRAIT_BLOODLOSS_IMMUNE)) || IsUnconscious() || IsSleeping() || getOxyLoss() > 75 || (HAS_TRAIT(src, TRAIT_DEATHCOMA)) || (health <= HEALTH_THRESHOLD_FULLCRIT && !HAS_TRAIT(src, TRAIT_NOHARDCRIT)))
 			stat = UNCONSCIOUS
 			become_blind(UNCONSCIOUS_BLIND)

@@ -261,7 +261,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT)
 	blocksound = SOFTHIT
 	allowed_sex = list("female")
-	allowed_race = list("human", "tiefling", "elf", "aasimar", "abyssariad")
+	allowed_race = list("human", "tiefling", "elf", "aasimar", "abyssariad", "beastkin")
 	blade_dulling = DULLING_BASHCHOP
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
@@ -303,7 +303,7 @@
 	name = "arming jacket"
 	icon_state = "dgamb"
 	allowed_sex = list(MALE)
-	allowed_race = list("human", "tiefling", "aasimar", "abyssariad")
+	allowed_race = list("human", "tiefling", "aasimar", "abyssariad", "beastkin")
 
 /obj/item/clothing/suit/roguetown/armor/leather
 	name = "leather armor"
@@ -394,7 +394,7 @@
 	icon_state = "nightman"
 	sleeved = 'icons/roguetown/clothing/onmob/armor.dmi'
 	allowed_sex = list(MALE)
-	allowed_race = list("human", "tiefling", "aasimar", "abyssariad")
+	allowed_race = list("human", "tiefling", "aasimar", "abyssariad", "beastkin")
 
 
 /obj/item/clothing/suit/roguetown/armor/leather/vest/hand
@@ -402,7 +402,7 @@
 	icon_state = "handcoat"
 	color = null
 	allowed_sex = list(MALE, FEMALE)
-	allowed_race = list("human", "tiefling", "dwarf", "elf", "aasimar")
+	allowed_race = list("human", "tiefling", "dwarf", "elf", "aasimar", "abyssariad", "beastkin")
 
 /obj/item/clothing/suit/roguetown/armor/leather/vest/black
 	color = "#3c3a38"
@@ -447,7 +447,7 @@
 	sellprice = 50
 	armor_class = ARMOR_CLASS_LIGHT
 	allowed_sex = list(FEMALE)
-	allowed_race = list("humen", "tiefling", "dwarfm","argonian", "elfd", "elfw", "helf", "aasimar")
+	allowed_race = list("humen", "tiefling", "dwarfm","argonian", "elfd", "elfw", "helf", "aasimar", "beastkin")
 
 /obj/item/clothing/suit/roguetown/armor/silkcoat/Initialize()
 	color = pick(CLOTHING_PURPLE, null,CLOTHING_GREEN, CLOTHING_RED)
@@ -874,7 +874,6 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	desc = "The heavy armor used by the tribalistic Kappa marauder forces under the flag of Abyssariads from the Flag Islands. Made of ceramic-like material from lava forges."
 	icon_state = "marauder_chest"
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
-	armor = null
 	blade_dulling = DULLING_BASHCHOP
 	body_parts_covered = CHEST|VITALS|ARMS|GROIN
 	smeltresult = /obj/item/ingot/siliconcarbide

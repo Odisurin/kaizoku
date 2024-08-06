@@ -25,14 +25,22 @@
 	mutant_bodyparts = list("ears","tail_human")
 	possible_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
+/* experimenting - origional
 	limbs_icon_m = 'icons/roguetown/mob/bodies/m/ms_kappa.dmi'
 	limbs_icon_f = 'icons/roguetown/mob/bodies/f/fs_kappa.dmi'
 	dam_icon = 'icons/roguetown/mob/bodies/dam/dam_male.dmi'
 	dam_icon_f = 'icons/roguetown/mob/bodies/dam/dam_female.dmi'
+*/
+	limbs_icon_m = 'icons/roguetown/mob/bodies/m/mss_test.dmi'
+	limbs_icon_f = 'icons/roguetown/mob/bodies/f/fss_test.dmi'
+	dam_icon = 'icons/roguetown/mob/bodies/dam/dam_male.dmi'
+	dam_icon_f = 'icons/roguetown/mob/bodies/dam/dam_female.dmi'
+
 	hairyness = ""
 	use_f = FALSE
 	soundpack_m = /datum/voicepack/male/elf
 	soundpack_f = /datum/voicepack/female/elf
+/* experimenting - original
 	offset_features = list(OFFSET_ID = list(0,-1), OFFSET_GLOVES = list(0,-1), OFFSET_WRISTS = list(0,-1),\
 	OFFSET_CLOAK = list(0,-1), OFFSET_FACEMASK = list(0,-1), OFFSET_HEAD = list(0,-1), \
 	OFFSET_FACE = list(0,-1), OFFSET_BELT = list(0,-1), OFFSET_BACK = list(0,-1), \
@@ -43,6 +51,17 @@
 	OFFSET_FACE_F = list(0,-2), OFFSET_BELT_F = list(0,-1), OFFSET_BACK_F = list(0,-2), \
 	OFFSET_NECK_F = list(0,-2), OFFSET_MOUTH_F = list(0,-2), OFFSET_PANTS_F = list(0,-1), \
 	OFFSET_SHIRT_F = list(0,-1), OFFSET_ARMOR_F = list(0,-1), OFFSET_UNDIES_F = list(0,-1))
+*/
+	offset_features = list(OFFSET_ID = list(0,-2), OFFSET_GLOVES = list(0,-1), OFFSET_WRISTS = list(0,-2),\
+	OFFSET_CLOAK = list(0,-2), OFFSET_FACEMASK = list(0,-2), OFFSET_HEAD = list(0,-2), \
+	OFFSET_FACE = list(0,-2), OFFSET_BELT = list(0,-2), OFFSET_BACK = list(0,-2), \
+	OFFSET_NECK = list(0,-2), OFFSET_MOUTH = list(0,-2), OFFSET_PANTS = list(0,-2), \
+	OFFSET_SHIRT = list(0,-2), OFFSET_ARMOR = list(0,-2), OFFSET_HANDS = list(0,-2), OFFSET_UNDIES = list(0,-2), \
+	OFFSET_ID_F = list(0,-2), OFFSET_GLOVES_F = list(0,-2), OFFSET_WRISTS_F = list(0,-2), OFFSET_HANDS_F = list(0,-3), \
+	OFFSET_CLOAK_F = list(0,-2), OFFSET_FACEMASK_F = list(0,-3), OFFSET_HEAD_F = list(0,-3), \
+	OFFSET_FACE_F = list(0,-3), OFFSET_BELT_F = list(0,-2), OFFSET_BACK_F = list(0,-3), \
+	OFFSET_NECK_F = list(0,-3), OFFSET_MOUTH_F = list(0,-3), OFFSET_PANTS_F = list(0,-2), \
+	OFFSET_SHIRT_F = list(0,-2), OFFSET_ARMOR_F = list(0,-2), OFFSET_UNDIES_F = list(0,-2))
 	specstats = list("strength" = 0, "perception" = 0, "intelligence" = 0, "constitution" = 2, "endurance" = 2, "speed" = 0, "fortune" = 0)
 	specstats_f = list("strength" = -1, "perception" = 0, "intelligence" = 0, "constitution" = 2, "endurance" = 2, "speed" = 1, "fortune" = 0)
 	enflamed_icon = "widefire"
@@ -64,11 +83,12 @@
 	return sortList(list(
 	"Swampclan" = "728400", 
 	"Jungleclan" = "0D6D30",
-	"Leafclan" = "E26846",
-	"Bogclan" = "086247",
+	"Leafclan" = "5ea889",
+	"Bogclan" = "1b7a5e",
 	"Forestclan" = "5FB098",
-	"Shadowclan" = "3D3D8D",
-	"Abyssalclan" = "5D40AD"
+	"Shadowclan" = "60609e",
+	"Firebloomclan" = "E26846",
+	"Abyssalclan" = "a198b8"
 	))
 
 /datum/species/elf/kappa/get_hairc_list()

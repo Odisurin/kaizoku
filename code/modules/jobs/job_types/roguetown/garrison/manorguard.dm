@@ -16,7 +16,8 @@
 	"Kitsune",
 	"Tengu",
 	"Oni",
-	"Kappa")
+	"Kappa",
+	"Beastkin")
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	tutorial = "You're an elite member of the Garrison, awarded with knighthood for your prowess and loyalty. Be a stalwart guardian for the royal family, and serve them until your dying breath."
 	display_order = JDO_ROYALGUARD
@@ -67,7 +68,26 @@
 		head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
 	else
 		head = /obj/item/clothing/head/roguetown/helmet/sallet
-		
+	if(H.dna?.species)
+		if(H.dna.species?.id == "abyssariad")
+			pants = /obj/item/clothing/under/roguetown/chainlegs
+			cloak = /obj/item/clothing/cloak/stabard/surcoat/guard
+			neck = /obj/item/clothing/neck/roguetown/gorget
+			shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt/merc
+			armor = /obj/item/clothing/suit/roguetown/armor/brigandine // Wear the King's colors.
+			shoes = /obj/item/clothing/shoes/roguetown/boots/armor/light
+			beltl = /obj/item/keyring/guardcastle
+			belt = /obj/item/storage/belt/rogue/leather
+			beltr = /obj/item/rogueweapon/sword
+			backr = /obj/item/storage/backpack/rogue/satchel
+			backl = /obj/item/rogueweapon/shield/tower/metal
+			r_hand = /obj/item/rogueweapon/halberd/iron //TODO: Royal Guard armory with actual good polearms.
+			if(prob(30))
+				head = /obj/item/clothing/head/roguetown/helmet/heavy/knight
+			else
+				head = /obj/item/clothing/head/roguetown/helmet/sallet
+
+
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)

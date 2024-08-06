@@ -308,6 +308,7 @@
 /obj/item/clothing/under/roguetown/kaizoku/tobi/hakama
 	name = "hakama"
 	icon_state = "hakama"
+	alternate_worn_layer = SHOESLEEVE_LAYER
 	body_parts_covered = GROIN|LEGS|FEET
 	desc = "suitable for the Abyssariad-cultured, in which men can use skirts without being considered an act of homossexuality."
 	colorable_var = TRUE
@@ -328,7 +329,7 @@
 
 /obj/item/clothing/under/roguetown/kaizoku/ceramic
 	name = "marauder chausses"
-	desc = "."
+	desc = "Chausses used by marauders under the banner of the Abyssariads."
 	gender = PLURAL
 	icon_state = "marauder_leg"
 	item_state = "marauder_leg"
@@ -346,8 +347,8 @@
 	l_sleeve_status = SLEEVE_NOMOD
 
 /obj/item/clothing/under/roguetown/kaizoku/ceramic/light
-	name = "ivory chausses"
-	desc = "."
+	name = "ivory leg plates"
+	desc = "The leg protection proper for Kappa warriors."
 	max_integrity = 200
 	prevent_crits = list(BCLASS_CHOP, BCLASS_BLUNT)
 

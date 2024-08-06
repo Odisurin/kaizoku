@@ -396,16 +396,20 @@
 	stressadd = 1
 	desc = "<span class='red'>Helldweller... better stay away.</span>"
 
-
 /datum/stressevent/teng
 	timer = 1 MINUTES
 	stressadd = 1
-	desc = "<span class='red'>Filthy, coward weakling. Beware.</span>"
+	desc = "<span class='red'>Filthy, coward weakling. Still part of my fold.</span>"
 
 /datum/stressevent/vulp
 	timer = 1 MINUTES
 	stressadd = 1
-	desc = "<span class='red'>Selfish, self-sacrificial lamb. Beware.</span>"
+	desc = "<span class='red'>Selfish, self-sacrificial lamb. Still part of my fold.</span>"
+
+/datum/stressevent/whalerzuck
+	timer = 15 MINUTES
+	stressadd = 2
+	desc = "<span class='red'>I made love with a insolent, obnoxious whale-killing freak with low quality, substandarded genitals. Disgraceful, outright abhorrent.</span>"
 
 /datum/stressevent/paracrowd
 	timer = 15 SECONDS

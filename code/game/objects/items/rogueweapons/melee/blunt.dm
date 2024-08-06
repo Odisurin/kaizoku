@@ -97,6 +97,23 @@
 	smeltresult = /obj/item/ash
 	minstr = 0
 
+/obj/item/rogueweapon/mace/cudgel/rungu
+	force = 15
+	force_wielded = 20
+	name = "rungu club"
+	desc = "A more well defined, chiseled wooden club that can be throw at enemies. Used by Kappa warriors."
+	icon_state = "rungu"
+	wbalance = 0
+	wdefense = 1
+	wlength = WLENGTH_NORMAL
+	w_class = WEIGHT_CLASS_NORMAL
+	max_integrity = 150
+	possible_item_intents = list(/datum/intent/mace/strike/wood)
+	gripped_intents = list(/datum/intent/mace/strike/wood, /datum/intent/mace/smash/wood)
+	smeltresult = /obj/item/ash
+	minstr = 0
+	throwforce = 25
+
 /obj/item/rogueweapon/mace/cudgel/jitte
 	force = 15
 	force_wielded = 20
@@ -251,7 +268,7 @@
 	possible_item_intents = list(/datum/intent/mace/heavy/strike)
 	gripped_intents = list(/datum/intent/mace/heavy/strike, /datum/intent/mace/heavy/smash)
 	name = "kanabo"
-	desc = "A heavy two handed club, reinforced with an iron sleeve. Most commonly seen in the hands of Oni."
+	desc = "A heavy two handed club, reinforced with an iron sleeve. Most commonly seen in the hands of Onis and Yamabushis."
 	icon_state = "kanabo"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	sharpness = IS_BLUNT

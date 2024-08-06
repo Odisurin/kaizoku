@@ -1,3 +1,7 @@
+//The Tengus focuses on high speed and perception, but way less constitution and endurance. It's all due to their role as
+//as Abyssor's scout units, which is physically portrayed by their actually hollow bones and low body weight.
+//They are proper for Assassins-type of roles. Due to the lack of strength Malus, they are suitable as monks capable of dodging instead of focusing on body slamming, giving a new breath to the role.
+
 /mob/living/carbon/human/species/abyssariad/tengu
 	race = /datum/species/abyssariad/tengu
 
@@ -5,14 +9,14 @@
 	name = "Tengu"
 	id = "abyssariad"
 	desc = "<b>Ocean branched Champions</b><br>\
-	Molded from Abyssor's relentless oceans, the Tengu are a inquisitive race with bodies lithe \
-	and glaceful as the flow of the tides to navigate the rocky shores and crashing waves \
-	of their domain to provide information, supplies and messages in any battlefield. \
-	Deeply bonded with honor. Their society almost crumbled during the Demonic \
-	wars, and what was left is strife with the other remaining abyssariad race, the Kitsunes. \
-	These tricksters tends to appear aloof and solitary to outsiders, while being fiercely traditional; \
-	Abandoned by Abyssor, they are stranded without divine guidance, unable to use their wings. \
-	Trickster souls, condenmned to suffer in a dying world."
+	Molded from Abyssor's relentless oceans, the Tengus are a inquisitive race with lithe bodies \
+	glaceful as the flows of the tides to navigate and glide across the rocky shores and crashing \
+	waves of their currently destroyed domain to provide information, supplies and messages in any \
+	battlefield. Just like the oceans they branched from, they are vast and enduring - if not \
+	mysterious and deep, often appearing aloof and solitary to outsiders. Their society almost crumbled \
+	during The Bloody Apotheosis, but their bronze-age traditions lives on together with a deep \
+	hatred for all things Graggar. They are refined souls that, when not belonging to military or clerical jobs, \
+	usually partakes in the society's mercantile division, usually as merchants, bankers and gem lapidary."
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
@@ -31,9 +35,9 @@
 	mutant_bodyparts = list("ears","tail_human")
 	use_f = TRUE
 	soundpack_m = /datum/voicepack/male/abyssariad
-	soundpack_f = /datum/voicepack/female
+	soundpack_f = /datum/voicepack/female/abyssariad
 	offset_features = list(OFFSET_ID = list(0,2), OFFSET_GLOVES = list(0,0), OFFSET_WRISTS = list(0,1),\
-	OFFSET_CLOAK = list(0,2), OFFSET_FACEMASK = list(0,2), OFFSET_HEAD = list(0,1), \
+	OFFSET_CLOAK = list(0,2), OFFSET_FACEMASK = list(0,1), OFFSET_HEAD = list(0,1), \
 	OFFSET_FACE = list(0,1), OFFSET_BELT = list(0,1), OFFSET_BACK = list(0,2), \
 	OFFSET_NECK = list(0,1), OFFSET_MOUTH = list(0,2), OFFSET_PANTS = list(0,2), \
 	OFFSET_SHIRT = list(0,2), OFFSET_ARMOR = list(0,2), OFFSET_HANDS = list(0,2), OFFSET_UNDIES = list(0,0), \
@@ -47,7 +51,6 @@
 	enflamed_icon = "widefire"
 	possible_faiths = list(FAITH_PSYDON)
 	mutanteyes = /obj/item/organ/eyes/tengu
-
 
 /datum/species/abyssariad/tengu/get_span_language(datum/language/message_language)
 	if(!message_language)
@@ -123,9 +126,9 @@
 	randname += " Clanless"
 	return randname
 
-/datum/species/abyssariad/kitsune/random_surname()
+/datum/species/abyssariad/tengu/random_surname()
 	return " [pick(world.file2list("strings/rt/names/abyssariad/abyssnorm.txt.txt"))]"
 
-/datum/species/abyssariad/kitsune/get_accent_list()
+/datum/species/abyssariad/tengu/get_accent_list()
 	return strings("japanese_replacement.json", "japanese")
 

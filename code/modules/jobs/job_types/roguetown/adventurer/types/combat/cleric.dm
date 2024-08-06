@@ -13,7 +13,8 @@
 	"Kitsune",
 	"Tengu",
 	"Oni",
-	"Kappa")
+	"Kappa",
+	"Beastkin")
 	allowed_patrons = list("Astrata", "Dendor", "Necra")
 	ispilgrim = FALSE
 	outfit = /datum/outfit/job/roguetown/adventurer/cleric
@@ -45,6 +46,7 @@
 			neck = /obj/item/clothing/neck/roguetown/psicross/dendor
 		if("Necra")
 			neck = /obj/item/clothing/neck/roguetown/psicross/necra
+			cloak = /obj/item/clothing/cloak/raincloak/mortus
 
 	armor = /obj/item/clothing/suit/roguetown/armor/plate
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random

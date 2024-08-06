@@ -13,7 +13,8 @@
 	"Kitsune",
 	"Tengu",
 	"Oni",
-	"Kappa")
+	"Kappa",
+	"Beastkin")
 	outfit = /datum/outfit/job/roguetown/adventurer/blacksmith
 	isvillager = TRUE
 	ispilgrim = TRUE

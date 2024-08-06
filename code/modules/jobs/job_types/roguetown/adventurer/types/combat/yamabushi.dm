@@ -15,9 +15,13 @@
 	if(H.PATRON != /datum/patrongods/abyssor)
 		H.PATRON = GLOB.patronlist["Abyssor"]
 		to_chat(H, "<span class='warning'>I am a Abyssanctum, loyal to The World Whale. May the tides of fate guide me to honor.")
-
 	neck = /obj/item/clothing/neck/roguetown/psicross/abyssor
-	armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/plate
+	if(prob(40))
+		armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/plate
+	else if(prob(20))
+		armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/cuirass/steel
+	else
+		armor =	/obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 	pants = /obj/item/clothing/under/roguetown/kaizoku/tobi/hakama
 	shirt = /obj/item/clothing/suit/roguetown/shirt/kaizoku/looseshirt
@@ -26,16 +30,20 @@
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	if(prob(50))
 		head = /obj/item/clothing/head/roguetown/kaizoku/big/tengai/yamabushi
+	else if(prob(40))
+		head = /obj/item/clothing/head/roguetown/kaizoku/big/sandogasa/yamabushi
 	else
-		head = /obj/item/clothing/head/roguetown/kaizoku/big/tengai/yamabushi
-	if(prob(50))
+		head = /obj/item/clothing/head/roguetown/kaizoku/helmet/hachigane
+	if(prob(40))
 		beltr = /obj/item/rogueweapon/mace/cudgel/ararebo
 		beltl = /obj/item/rogueweapon/thrown/ono
+	else if(prob(20))
+		backr = /obj/item/rogueweapon/mace/goden/kanabo
 	else
 		backr = /obj/item/rogueweapon/mace/warhammer/otsuchi
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/axesmaces, 4, TRUE)
-		H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/combat/bows, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
@@ -56,6 +64,7 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/attach_bodypartz)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/revivez)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	var/datum/devotion/cleric_holder/C = new /datum/devotion/cleric_holder(H, H.PATRON)
 	C.holder_mob = H
 	C.grant_spells(H)

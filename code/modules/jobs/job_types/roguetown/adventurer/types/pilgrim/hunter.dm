@@ -59,7 +59,8 @@
 		"Dwarf",
 		"Tiefling",
 		"Dark Elf",
-		"Aasimar"
+		"Aasimar",
+	"Beastkin"
 	)
 	outfit = /datum/outfit/job/roguetown/adventurer/hunter // Everything is the same
 	isvillager = TRUE

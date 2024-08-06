@@ -242,3 +242,41 @@
 	icon_state = "surgcollar"
 	item_state = "surgcollar"
 	sellprice = 15
+
+/obj/item/clothing/neck/roguetown/kaizoku
+	icon = 'icons/kaizoku/clothingicon/neck.dmi'
+	mob_overlay_icon = 'icons/kaizoku/clothing/neck.dmi'
+	var/colorable_var = FALSE
+	var/picked
+
+/obj/item/clothing/neck/roguetown/kaizoku/inodowa
+	name = "iron meckguard"
+	icon_state = "inodowa"
+	desc = "A articulated nodowa with hinged plates that moves independently, allowing any Zamurai or Ashigaru to turn and tilt their head without compromising defense."
+	flags_inv = HIDEFACIALHAIR
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	max_integrity = 150
+	resistance_flags = FIRE_PROOF
+	slot_flags = ITEM_SLOT_NECK
+	body_parts_covered = NECK
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	blocksound = PLATEHIT
+	smeltresult = /obj/item/ingot/iron
+	anvilrepair = /datum/skill/craft/armorsmithing
+
+/obj/item/clothing/neck/roguetown/kaizoku/snodowa
+	name = "steel meckguard"
+	icon_state = "snodowa"
+	desc = "A articulated nodowa with hinged plates that moves independently, allowing any Zamurai or Ashigaru to turn and tilt their head without compromising defense."
+	flags_inv = HIDEFACIALHAIR
+	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	smeltresult = /obj/item/ingot/iron
+	anvilrepair = /datum/skill/craft/armorsmithing
+	max_integrity = 300
+	resistance_flags = FIRE_PROOF
+	slot_flags = ITEM_SLOT_NECK
+	body_parts_covered = NECK|EARS|MOUTH|NOSE
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	blocksound = PLATEHIT
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/iron

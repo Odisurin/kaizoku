@@ -110,6 +110,28 @@
 	reqs = list(/obj/item/natural/fibers = 5)
 	craftdiff = 1
 
+//the sewing materials below will change when Lilypads flowers are in the game.
+
+/datum/crafting_recipe/roguetown/sewing/smalllily
+	name = "small lilypad gasa"
+	result = list(/obj/item/clothing/head/roguetown/kaizoku/lilly/small)
+	reqs = list(/obj/item/natural/fibers = 5)
+	craftdiff = 1
+
+/datum/crafting_recipe/roguetown/sewing/mediumlily
+	name = "medium lilypad gasa"
+	result = list(/obj/item/clothing/head/roguetown/kaizoku/lilly/medium)
+	reqs = list(/obj/item/natural/fibers = 5)
+	craftdiff = 1
+
+/datum/crafting_recipe/roguetown/sewing/biglily
+	name = "big lilypad gasa"
+	result = list(/obj/item/clothing/head/roguetown/kaizoku/lilly/big)
+	reqs = list(/obj/item/natural/fibers = 5)
+	craftdiff = 1
+
+//the sewing materials above will change when Lilypads flowers are in the game.
+
 /datum/crafting_recipe/roguetown/sewing/kimono
 	name = "kimono"
 	result = list(/obj/item/clothing/suit/roguetown/shirt/kaizoku/kimono)

@@ -9,7 +9,7 @@
 	"Kappa")
 	outfit = /datum/outfit/job/roguetown/adventurer/shinobi
 	isvillager = FALSE
-	tutorial = "(this role is not finished yet)The convert agents of a Daimyo or a clan who operates in secrecy, using stealth, disguise and deception as tool. Knowledged in poison, Shinobis steals battle plans and assassinates important political figures."
+	tutorial = "(this role is not finished yet, VERY POWERFUL)The convert agents of a Daimyo or a clan who operates in secrecy, using stealth, disguise and deception as tool. Knowledged in poison, Shinobis steals battle plans and assassinates important political figures."
 
 /datum/outfit/job/roguetown/adventurer/shinobi/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -53,7 +53,36 @@
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
 
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-	H.change_stat("strength", 1)
-	H.change_stat("perception", 2)
-	H.change_stat("speed", 2)
+	H.change_stat("perception", 1)
+	H.change_stat("speed", 3)
 	H.change_stat("constitution", 1)
+
+/*
+/obj/item/grenade/smokebomb
+	name = "smoke grenade"
+	desc = ""
+	icon = 'icons/obj/grenade.dmi'
+	icon_state = "smokewhite"
+	item_state = "smoke"
+	slot_flags = ITEM_SLOT_BELT
+	///It's extremely important to keep this list up to date. It helps to generate the insightful description of the smokebomb
+	var/static/list/bruh_moment = list("Dank", "Hip", "Lit", "Based", "Robust", "Bruh", "Nyagger")
+
+///Here we generate the extremely insightful description.
+/obj/item/grenade/smokebomb/Initialize()
+	. = ..()
+	desc = ""
+
+///Here we generate some smoke and also damage blobs??? for some reason. Honestly not sure why we do that.
+/obj/item/grenade/smokebomb/prime()
+	update_mob()
+	playsound(src, 'sound/blank.ogg', 50, TRUE, -3)
+	var/datum/effect_system/smoke_spread/bad/smoke = new
+	smoke.set_up(4, src)
+	smoke.start()
+	qdel(smoke) //And deleted again. Sad really.
+	for(var/obj/structure/blob/B in view(8,src))
+		var/damage = round(30/(get_dist(B,src)+1))
+		B.take_damage(damage, BURN, "melee", 0)
+	qdel(src)
+*/

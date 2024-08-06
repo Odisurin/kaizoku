@@ -11,10 +11,7 @@
 	"Tiefling",
 	"Dark Elf",
 	"Aasimar",
-	"Kitsune",
-	"Tengu",
-	"Oni",
-	"Kappa")
+	"Beastkin")
 	outfit = /datum/outfit/job/roguetown/adventurer/assassin
 	maxchosen = 1
 	plevel_req = 2

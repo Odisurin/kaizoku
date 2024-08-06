@@ -47,6 +47,3 @@
 /datum/skill/craft/tailor
 	name = "Clothesmaking"
 	desc = ""
-
-/datum/skill/craft/casting
-	name = "Casting"

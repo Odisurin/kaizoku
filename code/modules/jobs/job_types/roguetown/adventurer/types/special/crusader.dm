@@ -7,11 +7,8 @@
 	"Dwarf",
 	"Tiefling",
 	"Dark Elf",
-	"Aasimar",
-	"Kitsune",
-	"Tengu",
-	"Oni",
-	"Kappa")
+	"Aasimar"
+	)
 	outfit = /datum/outfit/job/roguetown/adventurer/crusader
 	plevel_req = 0
 	maxchosen = 2

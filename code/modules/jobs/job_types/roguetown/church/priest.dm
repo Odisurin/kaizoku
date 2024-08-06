@@ -8,17 +8,18 @@
 	spawn_positions = 1
 
 	f_title = "Priestess"
-	allowed_races = list(
-		"Humen",
-		"Elf",
-		"Half-Elf",
-		"Dwarf",
-		"Aasimar",
-		"Kitsune",
-		"Tengu",
-		"Oni",
-		"Kappa"
-	)
+	allowed_races = list("Humen",
+	"Elf",
+	"Half-Elf",
+	"Dwarf",
+	"Tiefling",
+	"Dark Elf",
+	"Aasimar",
+	"Kitsune",
+	"Tengu",
+	"Oni",
+	"Kappa",
+	"Beastkin")
 	allowed_patrons = list("Astrata")
 	tutorial = "The Divine is all that matters in a world of the immoral. The Weeping god left his children to rule over us mortals and you will preach their wisdom to any who still heed their will. The faithless are growing in number, it is up to you to shepard them to a God-Fearing future."
 	whitelist_req = FALSE

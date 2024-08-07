@@ -3,10 +3,16 @@
 	tutorial = "A mercenary from hailing from the wild frontier steppes. There are three things you value most; saigas, freedom, and coin."
 	allowed_sexes = list("male", "female")
 	allowed_races = list("Humen",
-	"Humen",
+	"Elf",
 	"Half-Elf",
-	"Aasimar"
-	)
+	"Dwarf",
+	"Tiefling",
+	"Dark Elf",
+	"Aasimar",
+	"Kitsune",
+	"Tengu",
+	"Oni",
+	"Kappa")
 	outfit = /datum/outfit/job/roguetown/mercenary/steppesman
 	ismerc = TRUE
 

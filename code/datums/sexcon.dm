@@ -192,9 +192,9 @@
 		else
 			stop_fucking()
 		return
-	if(horny < 0)
-		to_chat(owner, "<span class='warning'>I'm spent.</span>")
-		return
+//	if(horny < 0)
+//		to_chat(owner, "<span class='warning'>I'm spent.</span>")
+//		return
 	fuckspeed = initial(fuckspeed)
 	lastfuck = world.time
 	fucking = user
@@ -265,9 +265,9 @@
 		else
 			stop_fucking()
 		return
-	if(horny < 0)
-		to_chat(owner, "<span class='warning'>I'm spent.</span>")
-		return
+//	if(horny < 0)
+//		to_chat(owner, "<span class='warning'>I'm spent.</span>")
+//		return
 	fuckspeed = initial(fuckspeed)
 	lastfuck = world.time
 	fucking = user
@@ -317,9 +317,9 @@
 		else
 			stop_fucking()
 		return
-	if(horny < 0)
-		to_chat(owner, "<span class='warning'>I'm spent.</span>")
-		return
+//	if(horny < 0)
+//		to_chat(owner, "<span class='warning'>I'm spent.</span>")
+//		return
 	fuckspeed = initial(fuckspeed)
 	lastfuck = world.time
 	fucking = user
@@ -369,9 +369,9 @@
 		else
 			stop_fucking()
 		return
-	if(horny < 0)
-		to_chat(owner, "<span class='warning'>I'm spent.</span>")
-		return
+//	if(horny < 0)
+//		to_chat(owner, "<span class='warning'>I'm spent.</span>")
+//		return
 	fuckspeed = initial(fuckspeed)
 	lastfuck = world.time
 	fucking = user
@@ -424,9 +424,9 @@
 		else
 			stop_riding()
 		return
-	if(horny < 0)
-		to_chat(owner, "<span class='warning'>I'm spent.</span>")
-		return
+//	if(horny < 0)
+//		to_chat(owner, "<span class='warning'>I'm spent.</span>")
+//		return
 	user.sexcon.eatspeed = initial(user.sexcon.eatspeed)
 	user.sexcon.lasteat = world.time
 	user.sexcon.weeating = owner
@@ -577,9 +577,9 @@
 		return
 	if(user == owner)
 		owner.visible_message("<span class='love'>[owner] faps.</span>")
-		if(horny < 0)
-			to_chat(owner, "<span class='warning'>I'm spent.</span>")
-			return
+//		if(horny < 0)
+//			to_chat(owner, "<span class='warning'>I'm spent.</span>")
+//			return
 	fapspeed = initial(fapspeed)
 	lastfap = world.time
 	fapping = G

@@ -41,7 +41,8 @@
 				used = list('sound/vo/male/elf/rage (1).ogg','sound/vo/male/elf/rage (2).ogg')
 			if("scream")
 				used = list('sound/vo/male/elf/scream (1).ogg','sound/vo/male/elf/scream (2).ogg')
-
+			if("croak")
+				used = list('sound/vo/female/elf/kappa_croak1.ogg','sound/vo/female/elf/kappa_croak2.ogg','sound/vo/female/elf/kappa_croak3.ogg')
 	if(!used)
 		used = ..(soundin)
 	return used

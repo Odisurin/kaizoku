@@ -6,14 +6,18 @@
 	total_positions = 4
 	spawn_positions = 4
 
-	allowed_races = list(
-		"Humen",
-		"Elf",
-		"Half-Elf",
-		"Tiefling",
-		"Dark Elf",
-		"Aasimar"
-	)
+	allowed_races = list("Humen",
+	"Elf",
+	"Half-Elf",
+	"Dwarf",
+	"Tiefling",
+	"Dark Elf",
+	"Aasimar",
+	"Kitsune",
+	"Tengu",
+	"Oni",
+	"Kappa",
+	"Beastkin")
 
 	tutorial = "Nobody would envy your lot in life, for the role of the bathwench is not something so idly taken. It comes from a place of desperation, least usually: for any with true compassion or skill would seek position with a nunnery or the medical trade. Launder clothes and soothe wounds, that is your loathsome creed."
 
@@ -32,6 +36,13 @@
 	neck = /obj/item/storage/belt/rogue/pouch
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	beltr = /obj/item/roguekey/nightmaiden
+	if(H.dna?.species)
+		if(H.dna.species?.id == "abyssariad")
+			mask = /obj/item/clothing/mask/rogue/kaizoku/facemask/dishonor
+			to_chat(H, "<span class='userdanger'>In pursuit of hedonism and vices, I forfeited my honor and values of the Abyssal Tide. My soul can no longer claim the essence of an Abyssariad.</span>")
+			if(H.PATRON == /datum/patrongods/abyssor)
+				H.PATRON = GLOB.patronlist[/datum/patrongods/eora]
+				to_chat(H, "<span class='warning'>The waters I once revered now scorn me - the rivers blistering my skin. I've failed Abyssor as his champion, and now I've bonded with [H.PATRON].")
 	ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 
 	if(H.mind)

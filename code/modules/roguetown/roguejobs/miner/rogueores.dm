@@ -112,3 +112,9 @@
 	icon_state = "ingotsteel"
 	smeltresult = /obj/item/ingot/steel
 	sellprice = 40
+/obj/item/ingot/siliconcarbide
+	name = "cristalized sand"
+	desc = "A rudimentary mixture of materials sourced from Corundum and emery - or sand and coal formed through cristalizations in high-temperature on lava forges. A merge of Kappa and Abyssariad knowledge from the bronze age, still viable today."
+	icon_state = "siliconcarbide"
+	smeltresult = /obj/item/ingot/siliconcarbide
+	sellprice = 15

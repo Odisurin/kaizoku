@@ -158,6 +158,11 @@
 	embedchance = 80
 	armor_penetration = 40
 
+/obj/projectile/bullet/reusable/arrow/obsidian
+	damage = 55
+	ammo_type = /obj/item/ammo_casing/caseless/rogue/arrow/obsidian
+	armor_penetration = 20
+
 /obj/projectile/bullet/reusable/arrow/poison
 	name = "poison arrow"
 	desc = "An arrow with it's tip drenched in a powerful poison."
@@ -267,6 +272,12 @@
 	projectile_type = /obj/projectile/bullet/reusable/arrow/stone //weaker projectile
 	max_integrity = 5
 
+/obj/item/ammo_casing/caseless/rogue/arrow/obsidian
+	name = "obsidian arrow"
+	icon_state = "obsidianarrow"
+	projectile_type = /obj/projectile/bullet/reusable/arrow/obsidian //versatile projectile. More damage, less armor penetration. Meant to be single use.
+	max_integrity = 5
+
 /obj/projectile/bullet/reusable/bullet
 	name = "lead ball"
 	desc = "A round lead shot, simple and spherical."
@@ -300,7 +311,7 @@
 	name = "fog arrow"
 	desc = "An arrow with it's tip drenched in a powerful sedactive."
 	icon = 'icons/roguetown/weapons/ammo.dmi'
-	icon_state = "arrowpoison_proj"
+	icon_state = "arrowfog_proj"
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/arrow
 
 /obj/item/ammo_casing/caseless/rogue/arrow/poison/fog
@@ -308,7 +319,7 @@
 	desc = "An arrow with it's tip drenched in a powerful sedactive."
 	projectile_type = /obj/projectile/bullet/reusable/arrow/poison/fog
 	icon = 'icons/roguetown/weapons/ammo.dmi'
-	icon_state = "arrow_poison"
+	icon_state = "arrow_fog"
 
 /obj/projectile/bullet/reusable/arrow/poison/fog/Initialize()
 	. = ..()
@@ -345,7 +356,7 @@
 	projectile_type = /obj/projectile/bullet/reusable/bolt/poison/fog
 	possible_item_intents = list(/datum/intent/dagger/cut, /datum/intent/dagger/thrust)
 	icon = 'icons/roguetown/weapons/ammo.dmi'
-	icon_state = "bolt_poison"
+	icon_state = "bolt_fog"
 
 /obj/projectile/bullet/reusable/bolt/poison/fog
 	name = "fog bolt"
@@ -353,7 +364,7 @@
 	damage = 35
 	damage_type = BRUTE
 	icon = 'icons/roguetown/weapons/ammo.dmi'
-	icon_state = "boltpoison_proj"
+	icon_state = "boltfogn_proj"
 	ammo_type = /obj/item/ammo_casing/caseless/rogue/bolt
 
 /obj/projectile/bullet/reusable/bolt/poison/fog/Initialize()

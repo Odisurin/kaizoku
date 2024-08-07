@@ -11,10 +11,8 @@
 	"Tiefling",
 	"Dark Elf",
 	"Aasimar",
-	"Kitsune",
-	"Tengu",
-	"Oni",
-	"Kappa")
+	"Beastkin"
+	)
 	outfit = /datum/outfit/job/roguetown/adventurer/gravedigger
 
 /datum/outfit/job/roguetown/adventurer/gravedigger/pre_equip(mob/living/carbon/human/H)

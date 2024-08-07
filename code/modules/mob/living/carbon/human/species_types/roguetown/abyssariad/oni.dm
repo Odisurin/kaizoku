@@ -4,17 +4,16 @@
 /datum/species/abyssariad/oni
 	name = "Oni"
 	id = "abyssariad"
-	desc = "<b>Island Branched Champion</b><br>\
-	Created from Abyssor's purifying artifacts under guide of others Abyssariads, \
-	the Oni are a stoic race, with stout and sturdy bodies like wide trunked \
-	trees. Like the islands that sprinkle the ocean's surface, \
-	Oni are individuals bearing the constant waves and storms of life. \
-	It is said that Oni were a salvaged orcs from the Demonic Wars, \
-	taken in, and reshaped with abyssal artifacts to be molded more into the \
-	likeness of the Oceanic races. Now abandoned by Abyssor, they are stranded \
-	without divine guidance, marred by their past. \
-	Rekindled souls, condemned to suffer in a dying world. \
-	"
+	desc = "<b>Island Branched Champions</b><br>\
+	Created from Abyssor's purifying artifacts under the guide of other Abyssariads, \
+	the Oni are a stoic race, with stout and sturdy bodies equal to wide trunked trees. \
+	Just like the islands that sprinkled the ocean's surface, the Onis are individuals \
+	bearing the constant waves and storms of life. It is set in history that Onis were \
+	recovered orcs from the Bloody Apotheosis under the effects of Abyssor's Grey Dreams, \
+	and under mercy instead of carnage, were purified by Abyssal artifacts into the \
+	complete removal of their graggarious demonic corruption, unrooting the evil for the \
+	forevermore. They are rekindled souls that, when not belonging to military or clerical jobs, \
+	usually partakes in the society's industrial division, usually as blacksmiths, artisans and architects."
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
@@ -33,7 +32,7 @@
 	hairyness = "t2"
 	use_m = TRUE
 	soundpack_m = /datum/voicepack/male/abyssariad
-	soundpack_f = /datum/voicepack/female
+	soundpack_f = /datum/voicepack/female/abyssariad
 	offset_features = list(OFFSET_ID = list(0,1), OFFSET_GLOVES = list(0,1), OFFSET_WRISTS = list(0,1),\
 	OFFSET_CLOAK = list(0,1), OFFSET_FACEMASK = list(0,1), OFFSET_HEAD = list(0,1), \
 	OFFSET_FACE = list(0,1), OFFSET_BELT = list(0,1), OFFSET_BACK = list(0,1), \

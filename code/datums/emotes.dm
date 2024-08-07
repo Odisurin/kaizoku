@@ -13,6 +13,7 @@
 	var/message_monkey = "" //Message displayed if the user is a monkey
 	var/message_simple = "" //Message to display if the user is a simple_animal
 	var/message_param = "" //Message to display if a param was given
+	var/message_abyssariad =  "" //Message to display if the user is a Abyssor Champion
 	var/emote_type = EMOTE_VISIBLE //Whether the emote is visible or audible
 	var/restraint_check = FALSE //Checks if the mob is restrained before performing the emote
 	var/muzzle_ignore = FALSE //Will only work if the emote is EMOTE_AUDIBLE
@@ -203,6 +204,8 @@
 		. = message_monkey
 	else if(isanimal(user) && message_simple)
 		. = message_simple
+	else if(isabyssariad(user) && message_abyssariad)
+		. = message_abyssariad
 
 /datum/emote/proc/select_param(mob/user, params)
 	return replacetext(message_param, "%t", params)

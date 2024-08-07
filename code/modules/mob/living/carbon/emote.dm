@@ -12,6 +12,17 @@
 	stat_allowed = UNCONSCIOUS
 	mob_type_ignore_stat_typecache = list(/mob/living/carbon/human)
 
+/datum/emote/living/carbon/deathgurgleabyss
+	key = "deathgurgleabyss"
+	key_third_person = ""
+	emote_type = EMOTE_AUDIBLE
+	only_forced_audio = TRUE
+	vary = TRUE
+	message = "emits a distorted wail, a chilling aura emanating from their body before collapsing into a lifeless form."
+	message_simple =  "loses abyssor connection."
+	stat_allowed = UNCONSCIOUS
+	mob_type_ignore_stat_typecache = list(/mob/living/carbon/human)
+
 /datum/emote/living/carbon/airguitar
 	key = "airguitar"
 	message = "strums an invisible lute."

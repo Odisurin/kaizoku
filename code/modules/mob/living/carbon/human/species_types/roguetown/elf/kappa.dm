@@ -5,14 +5,15 @@
 	name = "Kappa"
 	id = "elf"
 	desc = "<b>Kappa</b><br>\
-    Originally elves that arrived at the island centuries in the past, they have been \
-    corrupted by the demonic essence over generations, now possessing a blend of their \
-    elven features and current reptilian traits, as their skin obtained a scaled texture \
-    and a large shell on the back. They are a small, water-dwelling creatures that inhabit \
-    rivers and ponds, and usually live a tribalistic life, feared by those aware of their \
-    mischievous, people-drowning nature. Kitsunes and Tengus consider them viable assets \
-    for the defense of the isles, yet Onis find them fun to squash due to their natural \
-    armor."
+	An amalgamation between Goblins and Elves that arrived at the Fog islands centuries \
+	ago, long corrupted by demonic essence and alchemical misconducts over generations, \
+	they now possess features that blends amphibious traits from Goblin's lineage, \
+	including moist, permeable skin and a large shell on their back. They are a small, \
+	water-dwelling creatures that inhabit rivers and ponds, often living tribalistic, \
+	hedonistic lives, feared by those aware of their mischievous, people-drowning nature. \
+	One may say these are misunderstood rituals of trust, others warns the others that it is \
+	a sacrifice to the spirits they believe that exists. They have a natural, biological \
+	antipathy and abhorrence to humens - and a mutual alliance with Abyssariads."
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,OLDGREY)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
@@ -24,14 +25,22 @@
 	mutant_bodyparts = list("ears","tail_human")
 	possible_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
+/* experimenting - origional
 	limbs_icon_m = 'icons/roguetown/mob/bodies/m/ms_kappa.dmi'
 	limbs_icon_f = 'icons/roguetown/mob/bodies/f/fs_kappa.dmi'
 	dam_icon = 'icons/roguetown/mob/bodies/dam/dam_male.dmi'
 	dam_icon_f = 'icons/roguetown/mob/bodies/dam/dam_female.dmi'
+*/
+	limbs_icon_m = 'icons/roguetown/mob/bodies/m/mss_test.dmi'
+	limbs_icon_f = 'icons/roguetown/mob/bodies/f/fss_test.dmi'
+	dam_icon = 'icons/roguetown/mob/bodies/dam/dam_male.dmi'
+	dam_icon_f = 'icons/roguetown/mob/bodies/dam/dam_female.dmi'
+
 	hairyness = ""
 	use_f = FALSE
 	soundpack_m = /datum/voicepack/male/elf
 	soundpack_f = /datum/voicepack/female/elf
+/* experimenting - original
 	offset_features = list(OFFSET_ID = list(0,-1), OFFSET_GLOVES = list(0,-1), OFFSET_WRISTS = list(0,-1),\
 	OFFSET_CLOAK = list(0,-1), OFFSET_FACEMASK = list(0,-1), OFFSET_HEAD = list(0,-1), \
 	OFFSET_FACE = list(0,-1), OFFSET_BELT = list(0,-1), OFFSET_BACK = list(0,-1), \
@@ -42,6 +51,17 @@
 	OFFSET_FACE_F = list(0,-2), OFFSET_BELT_F = list(0,-1), OFFSET_BACK_F = list(0,-2), \
 	OFFSET_NECK_F = list(0,-2), OFFSET_MOUTH_F = list(0,-2), OFFSET_PANTS_F = list(0,-1), \
 	OFFSET_SHIRT_F = list(0,-1), OFFSET_ARMOR_F = list(0,-1), OFFSET_UNDIES_F = list(0,-1))
+*/
+	offset_features = list(OFFSET_ID = list(0,-2), OFFSET_GLOVES = list(0,-1), OFFSET_WRISTS = list(0,-2),\
+	OFFSET_CLOAK = list(0,-2), OFFSET_FACEMASK = list(0,-2), OFFSET_HEAD = list(0,-2), \
+	OFFSET_FACE = list(0,-2), OFFSET_BELT = list(0,-2), OFFSET_BACK = list(0,-2), \
+	OFFSET_NECK = list(0,-2), OFFSET_MOUTH = list(0,-2), OFFSET_PANTS = list(0,-2), \
+	OFFSET_SHIRT = list(0,-2), OFFSET_ARMOR = list(0,-2), OFFSET_HANDS = list(0,-2), OFFSET_UNDIES = list(0,-2), \
+	OFFSET_ID_F = list(0,-2), OFFSET_GLOVES_F = list(0,-2), OFFSET_WRISTS_F = list(0,-2), OFFSET_HANDS_F = list(0,-3), \
+	OFFSET_CLOAK_F = list(0,-2), OFFSET_FACEMASK_F = list(0,-3), OFFSET_HEAD_F = list(0,-3), \
+	OFFSET_FACE_F = list(0,-3), OFFSET_BELT_F = list(0,-2), OFFSET_BACK_F = list(0,-3), \
+	OFFSET_NECK_F = list(0,-3), OFFSET_MOUTH_F = list(0,-3), OFFSET_PANTS_F = list(0,-2), \
+	OFFSET_SHIRT_F = list(0,-2), OFFSET_ARMOR_F = list(0,-2), OFFSET_UNDIES_F = list(0,-2))
 	specstats = list("strength" = 0, "perception" = 0, "intelligence" = 0, "constitution" = 2, "endurance" = 2, "speed" = 0, "fortune" = 0)
 	specstats_f = list("strength" = -1, "perception" = 0, "intelligence" = 0, "constitution" = 2, "endurance" = 2, "speed" = 1, "fortune" = 0)
 	enflamed_icon = "widefire"
@@ -63,11 +83,12 @@
 	return sortList(list(
 	"Swampclan" = "728400", 
 	"Jungleclan" = "0D6D30",
-	"Leafclan" = "E26846",
-	"Bogclan" = "086247",
+	"Leafclan" = "5ea889",
+	"Bogclan" = "1b7a5e",
 	"Forestclan" = "5FB098",
-	"Shadowclan" = "3D3D8D",
-	"Abyssalclan" = "5D40AD"
+	"Shadowclan" = "60609e",
+	"Firebloomclan" = "E26846",
+	"Abyssalclan" = "a198b8"
 	))
 
 /datum/species/elf/kappa/get_hairc_list()
@@ -122,3 +143,15 @@
 
 /datum/species/elf/kappa/get_accent_list()
 	return strings("japanese_replacement.json", "japanese")
+
+/datum/species/elf/kappa/on_species_gain(mob/living/carbon/C, datum/species/old_species)
+	..()
+	RegisterSignal(C, COMSIG_MOB_SAY, .proc/handle_speech)
+	C.grant_language(/datum/language/abyssal)
+	C.cmode_music = 'sound/music/combatabyssariad.ogg'
+	C.verbs |= /mob/proc/croak
+
+/mob/proc/croak()
+	set name = "Croak"
+	set category = "Noises"
+	emote("croak")

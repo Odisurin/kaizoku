@@ -84,7 +84,7 @@
 	description = "liquid concentrate from fog island's frogs. Used by shinobis."
 	taste_description = "naked kappa"
 	reagent_state = LIQUID
-	color = "#34aa3d"
+	color = "#1f434d"
 	metabolization_rate = 0.2
 
 /datum/reagent/fogblight/on_mob_life(mob/living/carbon/M)

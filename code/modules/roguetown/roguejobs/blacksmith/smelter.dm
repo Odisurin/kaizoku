@@ -132,3 +132,40 @@
 								qdel(I)
 					playsound(src,'sound/misc/smelter_fin.ogg', 100, FALSE)
 					cooking = 31
+
+/obj/machinery/light/rogue/smelter/great/process()
+	..()
+	if(on)
+		if(ore.len)
+			if(cooking < 30)
+				cooking++
+				playsound(src.loc,'sound/misc/smelter_sound.ogg', 50, FALSE)
+			else
+				if(cooking == 30)
+					var/alloy
+					for(var/obj/item/I in ore)
+						if(I.smeltresult == /obj/item/rogueore/coal)
+							alloy = alloy + 1
+						if(I.smeltresult == /obj/item/ingot/iron)
+							alloy = alloy + 2
+					if(alloy == 7)
+						testing("ALLOYED")
+						alloy = /obj/item/ingot/steel
+					else
+						alloy = null
+					if(alloy)
+						for(var/obj/item/I in ore)
+							ore -= I
+							qdel(I)
+						for(var/i in 1 to maxore)
+							var/obj/item/R = new alloy(src)
+							ore += R
+					else
+						for(var/obj/item/I in ore)
+							if(I.smeltresult)
+								ore -= I
+								var/obj/item/R = new I.smeltresult(src)
+								ore += R
+								qdel(I)
+					playsound(src,'sound/misc/smelter_fin.ogg', 100, FALSE)
+					cooking = 31

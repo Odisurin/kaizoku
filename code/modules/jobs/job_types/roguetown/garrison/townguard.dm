@@ -7,17 +7,18 @@
 	spawn_positions = 5
 
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = list(
-		"Humen",
-		"Elf",
-		"Half-Elf",
-		"Dwarf",
-		"Aasimar",
-		"Kitsune",
-		"Tengu",
-		"Oni",
-		"Kappa"
-	)
+	allowed_races = list("Humen",
+	"Elf",
+	"Half-Elf",
+	"Dwarf",
+	"Tiefling",
+	"Dark Elf",
+	"Aasimar",
+	"Kitsune",
+	"Tengu",
+	"Oni",
+	"Kappa",
+	"Beastkin")
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	tutorial = "You are a soldier on guard duty in the kings Garrison, you have been trained in defensive tactics to deal with the horrors of the island and protect the town to the best of your ability."
 	display_order = JDO_GARRISONGUARD
@@ -58,6 +59,19 @@
 		head = /obj/item/clothing/head/roguetown/helmet/kettle
 	else
 		head = /obj/item/clothing/head/roguetown/helmet
+	if(H.dna?.species)
+		if(H.dna.species?.id == "abyssariad")
+			pants = /obj/item/clothing/under/roguetown/kaizoku/tobi/hakama
+			shirt = /obj/item/clothing/suit/roguetown/shirt/kaizoku/looseshirt
+			armor = /obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail/statami
+			neck = /obj/item/clothing/neck/roguetown/kaizoku/inodowa
+			belt = /obj/item/storage/belt/rogue/kaizoku/leather/daisho
+			beltr = /obj/item/rogueweapon/mace/cudgel/jitte
+			backpack_contents = list(/obj/item/rogueweapon/huntingknife/idagger/sai = 1)
+			if(prob(30))
+				head = /obj/item/clothing/head/roguetown/kaizoku/big/tosei_kabuto
+			else
+				head = /obj/item/clothing/head/roguetown/kaizoku/helmet/jingasa
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)

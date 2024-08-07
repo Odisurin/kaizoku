@@ -6,15 +6,18 @@
 	total_positions = 1
 	spawn_positions = 1
 
-	allowed_races = list(
-		"Humen",
-		"Aasimar",
-		"Kitsune",
-		"Tengu",
-		"Oni",
-		"Kappa"
-		)
-	allowed_sexes = list(MALE)
+	allowed_races = list("Humen",
+	"Elf",
+	"Half-Elf",
+	"Dwarf",
+	"Tiefling",
+	"Dark Elf",
+	"Aasimar",
+	"Kitsune",
+	"Tengu",
+	"Oni",
+	"Kappa")
+	allowed_sexes = list(MALE, FEMALE)
 
 	tutorial = "The Priest is my shepard and I am their enforcer, I will do everything in my power to protect the church from evil and serve the priest at all costs. Should I capture evil they will confess their sins before the gods!"
 	whitelist_req = FALSE

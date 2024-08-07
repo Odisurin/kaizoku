@@ -28,15 +28,6 @@
 	sellprice = 20
 	wdefense = 4
 
-/obj/item/rogueweapon/sword/uchigatana
-	force_wielded = 30
-	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/chop)
-	name = "uchigatana"
-	desc = "Slightly shorter and simpler in design than the tachi, the uchigatana is the main sword of Abyssariad and Islander footsoldiers. Unlike continental swords of similar length, this design lends itself well to brutal chopping strikes alongside skillful swordplay, but lacks a long crossguard for safely parrying other blades."
-	icon = 'icons/roguetown/weapons/64.dmi'
-	icon_state = "uchigatana"
-	wdefense = 3
-
 /obj/item/rogueweapon/sword/Initialize()
 	. = ..()
 	if(icon_state == "sword1")
@@ -81,6 +72,40 @@
 	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
 	penfactor = 20
 	misscost = 5
+
+/obj/item/rogueweapon/sword/uchigatana
+	force_wielded = 30
+	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/chop)
+	name = "uchigatana"
+	desc = "Slightly shorter and simpler in design than the tachi, the uchigatana is the main sword of Abyssariad and Islander footsoldiers. Unlike continental swords of similar length, this design lends itself well to brutal chopping strikes alongside skillful swordplay, but lacks a long crossguard for safely parrying other blades."
+	icon = 'icons/roguetown/weapons/64.dmi'
+	icon_state = "uchigatana"
+	wdefense = 3
+
+/obj/item/rogueweapon/sword/uchigatana/ice
+	name = "ice uchigatana"
+	desc = "Slightly shorter and simpler in design than the tachi, the uchigatana is the main sword of Abyssariad and Islander footsoldiers. Unlike other uchigatanas, this sword in specifically seems curiously improved with 'ignis' runes."
+
+/obj/item/rogueweapon/sword/uchigatana/fire
+	name = "fire uchigatana"
+	desc = "Slightly shorter and simpler in design than the tachi, the uchigatana is the main sword of Abyssariad and Islander footsoldiers. Unlike other uchigatanas, this sword in specifically seems curiously improved with 'frigus' runes."
+
+/obj/item/rogueweapon/sword/uchigatana/fire/attack(mob/M, mob/living/carbon/human/user)
+	if(ismob(M))
+		fire_effect(M, user)
+		..()
+
+/obj/item/rogueweapon/sword/uchigatana/fire/proc/fire_effect(mob/living/L, mob/user)
+	L.adjust_fire_stacks(1)
+	L.IgniteMob()
+	addtimer(CALLBACK(L, TYPE_PROC_REF(/mob/living, ExtinguishMob)), 5 SECONDS)
+	if(user)
+		L.lastattacker = user.real_name
+		L.lastattackerckey = user.ckey
+		L.visible_message("<span class='danger'>[user] has ignited [L] with [src]!</span>", \
+								"<span class='danger'>[user] has ignited you with [src]!</span>")
+	playsound(loc, 'sound/blank.ogg', 50, TRUE, -1)
+	return
 
 // Long Swords
 /obj/item/rogueweapon/sword/long

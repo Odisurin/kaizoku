@@ -16,7 +16,8 @@
 	"Kitsune",
 	"Tengu",
 	"Oni",
-	"Kappa")
+	"Kappa",
+	"Beastkin")
 	tutorial = "Youve lived in this shithole for effectively all your life. You are not an explorer, nor exactly a warrior in many cases. Youre just some average poor bastard who thinks theyll be something someday."
 
 	outfit = null

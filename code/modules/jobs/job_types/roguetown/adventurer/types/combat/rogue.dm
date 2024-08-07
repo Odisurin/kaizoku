@@ -12,7 +12,8 @@
 	"Kitsune",
 	"Tengu",
 	"Oni",
-	"Kappa")
+	"Kappa",
+	"Beastkin")
 	outfit = /datum/outfit/job/roguetown/adventurer/rogue
 /datum/outfit/job/roguetown/adventurer/rogue/pre_equip(mob/living/carbon/human/H)
 	..()

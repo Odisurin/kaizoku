@@ -261,7 +261,7 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT)
 	blocksound = SOFTHIT
 	allowed_sex = list("female")
-	allowed_race = list("human", "tiefling", "elf", "aasimar", "abyssariad")
+	allowed_race = list("human", "tiefling", "elf", "aasimar", "abyssariad", "beastkin")
 	blade_dulling = DULLING_BASHCHOP
 	break_sound = 'sound/foley/cloth_rip.ogg'
 	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
@@ -303,7 +303,7 @@
 	name = "arming jacket"
 	icon_state = "dgamb"
 	allowed_sex = list(MALE)
-	allowed_race = list("human", "tiefling", "aasimar", "abyssariad")
+	allowed_race = list("human", "tiefling", "aasimar", "abyssariad", "beastkin")
 
 /obj/item/clothing/suit/roguetown/armor/leather
 	name = "leather armor"
@@ -394,7 +394,7 @@
 	icon_state = "nightman"
 	sleeved = 'icons/roguetown/clothing/onmob/armor.dmi'
 	allowed_sex = list(MALE)
-	allowed_race = list("human", "tiefling", "aasimar", "abyssariad")
+	allowed_race = list("human", "tiefling", "aasimar", "abyssariad", "beastkin")
 
 
 /obj/item/clothing/suit/roguetown/armor/leather/vest/hand
@@ -402,7 +402,7 @@
 	icon_state = "handcoat"
 	color = null
 	allowed_sex = list(MALE, FEMALE)
-	allowed_race = list("human", "tiefling", "dwarf", "elf", "aasimar")
+	allowed_race = list("human", "tiefling", "dwarf", "elf", "aasimar", "abyssariad", "beastkin")
 
 /obj/item/clothing/suit/roguetown/armor/leather/vest/black
 	color = "#3c3a38"
@@ -447,7 +447,7 @@
 	sellprice = 50
 	armor_class = ARMOR_CLASS_LIGHT
 	allowed_sex = list(FEMALE)
-	allowed_race = list("humen", "tiefling", "dwarfm","argonian", "elfd", "elfw", "helf", "aasimar")
+	allowed_race = list("humen", "tiefling", "dwarfm","argonian", "elfd", "elfw", "helf", "aasimar", "beastkin")
 
 /obj/item/clothing/suit/roguetown/armor/silkcoat/Initialize()
 	color = pick(CLOTHING_PURPLE, null,CLOTHING_GREEN, CLOTHING_RED)
@@ -594,6 +594,8 @@
 	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_armor.dmi'
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
+	var/picked
+	var/colorable_var = FALSE
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/leather/muneate
 	name = "muneate"
@@ -617,7 +619,7 @@
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "steel nanbando"
-	desc = "Abyssariad steel cuirass, refined and with additional sode for protection. Rare and prized by High-ranking zamurais, this design has been adquired by raided humen settlements."
+	desc = "Abyssariad steel cuirass, refined and with additional sode for protection. Rare and prized by High-ranking zamurais, this design has been acquired by raided humen settlements."
 	body_parts_covered = CHEST|GROIN|VITALS
 	icon_state = "nanbando"
 	item_state = "nanbando"
@@ -631,6 +633,7 @@
 	smeltresult = /obj/item/ingot/steel
 	equip_delay_self = 40
 	armor_class = ARMOR_CLASS_HEAVY
+	anvilrepair = /datum/skill/craft/armorsmithing
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/full
 	name = "Full nanbando"
@@ -653,7 +656,7 @@
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_MEDIUM
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail/kusari
+/obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "kusari"
 	desc = "A abyssariad steel maille that protects the legs."
@@ -664,6 +667,10 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_MEDIUM
+	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/steel
+	var/do_sound = TRUE
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/cuirass/iron
 	name = "iron mirror armor"
@@ -677,7 +684,7 @@
 	name = "mirror armor"
 	icon_state = "mirrorarmor"
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	smeltresult = /obj/item/ingot/iron
+	smeltresult = /obj/item/ingot/steel
 	armor_class = ARMOR_CLASS_MEDIUM
 
 /*
@@ -740,7 +747,7 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	name = "island san mai-do"
 	color = "#bd3541"
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/tatami
+/obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail/statami
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "steel karuta tatami"
 	desc = "a foldable, lightweight armor for convenient motion and manufacturing ease. \
@@ -756,8 +763,9 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	blade_dulling = DULLING_BASHCHOP
 	equip_delay_self = 25
 	armor_class = ARMOR_CLASS_MEDIUM
+	do_sound = FALSE
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/itatami
+/obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail/itatami
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "iron karuta tatami"
 	desc = "a foldable, lightweight armor for convenient motion and manufacturing ease. \
@@ -767,9 +775,15 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	icon_state = "tatami"
 	smeltresult = /obj/item/ingot/iron
-	anvilrepair = /datum/skill/craft/armorsmithing
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/kikko
+/obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail/Initialize()
+	. = ..()
+	if(do_sound)
+		AddComponent(/datum/component/squeak, list('sound/foley/footsteps/armor/chain (1).ogg',\
+													'sound/foley/footsteps/armor/chain (2).ogg',\
+													'sound/foley/footsteps/armor/chain (3).ogg'), 100)
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail/kikko
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	name = "kikko tatami"
 	desc = "A leather armor with small iron hexagon plates that has been sew on the material. Foldeable, cheap, easy to make and easy to repair."
@@ -789,8 +803,10 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	sewrepair = TRUE
 	r_sleeve_status = SLEEVE_NORMAL
 	l_sleeve_status = SLEEVE_NORMAL
+	colorable_var = TRUE
+	smeltresult = null
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/tatami/kikko/ronin
+/obj/item/clothing/suit/roguetown/armor/kaizoku/chainmail/kikko/ronin
 	color = "#413f55"
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/oyoroi
@@ -806,6 +822,7 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	equip_delay_self = 40
 	armor_class = ARMOR_CLASS_HEAVY
 	detail_color = CLOTHING_RED
+	smeltresult = /obj/item/ingot/steel
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate/oyoroi/update_icon()
 	cut_overlays()
@@ -850,70 +867,71 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 	l_sleeve_status = SLEEVE_NORMAL
 	nodismemsleeves = TRUE
 	boobed = TRUE
+	colorable_var = TRUE
 
-/obj/item/clothing/suit/roguetown/armor/kaizoku/haori/Initialize()
-	color = pick("#94b4b6", "#ba8f9e", "#bd978c", "#92bd8c", "#06363f")
-	..()
-/*
-/obj/item/clothing/suit/roguetown/armor/chainmail
+/obj/item/clothing/suit/roguetown/armor/kaizoku/ceramic
+	name = "marauder heavy armor"
+	desc = "The heavy armor used by the tribalistic Kappa marauder forces under the flag of Abyssariads from the Flag Islands. Made of ceramic-like material from lava forges."
+	icon_state = "marauder_chest"
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
+	blade_dulling = DULLING_BASHCHOP
+	body_parts_covered = CHEST|VITALS|ARMS|GROIN
+	smeltresult = /obj/item/ingot/siliconcarbide
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	allowed_race = ALL_RACES_LIST
+	nodismemsleeves = TRUE
+	blocking_behavior = null
+	max_integrity = 300
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/siliconcarbide
+	equip_delay_self = 40
+	armor_class = ARMOR_CLASS_HEAVY
+	anvilrepair = /datum/skill/craft/armorsmithing
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/ceramic/light
+	name = "bone coverings"
+	desc = "nothing but an simple armor of animal bones, thin enough to be weared equally as a shirt. Not very protective."
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	icon_state = "ivory_coverings"
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
-	name = "haubergeon"
-	desc = "A maille shirt typically made out of steel. Successor to the iron chain vest. A firm medium protection format."
-	body_parts_covered = CHEST|GROIN|ARMS|VITALS
-	icon_state = "haubergeon"
-	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP) // Chainmail is meant to stop cuts and chops, but is weaker against stabs and arrows on its own. Wear a gambeson under it.
-	blocksound = CHAINHIT
-	var/do_sound = FALSE
-	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
-	anvilrepair = /datum/skill/craft/armorsmithing
+	armor = null
+	blocksound = SOFTHIT
+	blade_dulling = DULLING_BASHCHOP
+	body_parts_covered = CHEST|GROIN
+	max_integrity = 200
+	prevent_crits = list(BCLASS_STAB, BCLASS_BLUNT)
+	armor_class = ARMOR_CLASS_LIGHT
+	smeltresult = null
+
+/obj/item/clothing/suit/roguetown/armor/kaizoku/ceramic/medium
+	name = "tribal coverings"
+	desc = "A more well-designed armor made with a mysterious, cristalized material. It is rigid and feels like ceramic clay on the hand."
+	icon_state = "nacre_covering"
+	armor = null
+	blocksound = SOFTHIT
+	blade_dulling = DULLING_BASHCHOP
+	body_parts_covered = CHEST|GROIN|VITALS|ARMS
+	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_STAB)
 	armor_class = ARMOR_CLASS_MEDIUM
-	smeltresult = /obj/item/ingot/steel
+	max_integrity = 200
 
-/obj/item/clothing/suit/roguetown/armor/chainmail/Initialize()
-	. = ..()
-	if(do_sound)
-		AddComponent(/datum/component/squeak, list('sound/foley/footsteps/armor/chain (1).ogg',\
-													'sound/foley/footsteps/armor/chain (2).ogg',\
-													'sound/foley/footsteps/armor/chain (3).ogg'), 100)
-
-
-/obj/item/clothing/suit/roguetown/armor/chainmail
-	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
-	name = "steel scale mail"
-	desc = "A maille shirt typically made out of steel. Successor to the iron chain vest. A firm medium protection format."
-	body_parts_covered = CHEST|GROIN|ARMS|VITALS
-	icon_state = "haubergeon"
-	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP) // Chainmail is meant to stop cuts and chops, but is weaker against stabs and arrows on its own. Wear a gambeson under it.
-	blocksound = CHAINHIT
-	var/do_sound = FALSE
-	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
-	anvilrepair = /datum/skill/craft/armorsmithing
-	armor_class = ARMOR_CLASS_MEDIUM
-	smeltresult = /obj/item/ingot/steel
-
-
-/obj/item/clothing/suit/roguetown/armor/chainmail/iron
-	icon_state = "iron scale armor"
-	name = "chainmaille"
-	desc = "A chain vest made of heavy iron rings. Good protection form against melee weaponry of all kind."
-	body_parts_covered = CHEST|GROIN|VITALS
-	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	armor_class = ARMOR_CLASS_MEDIUM
-	smeltresult = /obj/item/ingot/iron
-	anvilrepair = /datum/skill/craft/armorsmithing
-
-/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
-	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
-	name = "hauberk"
-	desc = "A longer steel maille that protects the legs."
-	body_parts_covered = CHEST|GROIN|ARMS|LEGS|VITALS
-	icon_state = "hauberk"
-	item_state = "hauberk"
-	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	anvilrepair = /datum/skill/craft/armorsmithing
-	do_sound = TRUE
-	smeltresult = /obj/item/ingot/steel
-	armor_class = ARMOR_CLASS_MEDIUM
-*/
+/obj/item/clothing/suit/roguetown/armor/kaizoku/attack_right(mob/user)
+	if(colorable_var == TRUE)
+		if(picked)
+			return
+		var/the_time = world.time
+		if(world.time > (the_time + 30 SECONDS))
+			return
+		var/colorone = input(user, "Your emotions spreads your will.","Abyssor allows you to flush emotions within the threads.") as null|anything in CLOTHING_COLOR_NAMES
+		if(!colorone)
+			return
+		picked = TRUE
+		color = clothing_color2hex(colorone)
+		update_icon()
+		if(ismob(loc))
+			var/mob/L = loc
+			L.update_inv_shirt()
+			L.update_inv_armor()
+		return
+	else 
+		return

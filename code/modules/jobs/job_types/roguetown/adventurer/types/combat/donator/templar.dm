@@ -15,7 +15,7 @@
 	outfit = /datum/outfit/job/roguetown/adventurer/templar
 	maxchosen = 1
 	plevel_req = 1
-	israre = TRUE
+	israre = FALSE
 
 /datum/outfit/job/roguetown/adventurer/templar/pre_equip(mob/living/carbon/human/H)
 	..()

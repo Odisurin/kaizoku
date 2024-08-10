@@ -616,7 +616,7 @@
 /datum/stressevent/music/six
 	stressadd = -6
 	timer = 10 MINUTES
-	desc = "<span class='green'>The music is a blessing from Eora.</span>"
+	desc = "<span class='green'>The music is a blessing from Enora.</span>"
 
 /datum/stressevent/vblood
 	stressadd = -5

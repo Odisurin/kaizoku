@@ -4,7 +4,7 @@
 /datum/species/goblin
 	name = "Goblin"
 	id = "goblin"
-	desc = "Goblin are the creation of Eora and Graggar's affair."
+	desc = "Goblin are the creation of Lystra and Graggar's affair."
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,STUBBLE,OLDGREY)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
@@ -43,7 +43,7 @@
 
 /datum/species/goblin/get_skin_list()
 	return sortList(list(
-	"Eoran" = "9FC460",
+	"Enoran" = "9FC460",
 	"Grumysand" = "6E582B",
 	"Wornoutboot" = "645B3B",
 	"Palegrimlin" = "4F6252",

@@ -31,9 +31,9 @@ GLOBAL_LIST_EMPTY(patronlist)
 
 /datum/patrongods/dendor
 	name = "Dendor"
-	domain = "God of the Earth and Nature"
+	domain = "God of the Life, Survival, Adaptation, and Wild Beasts"
 	summary = "The Primordial Son, patron of beasts and the wood. Gone mad with time."
-	worshippers = "Druids, Beasts, Madmen"
+	worshippers = "Wild men, Rangers, Beastmen, Wood Elves"
 	t0 = /obj/effect/proc_holder/spell/invoked/lesser_heal
 	t1 = /obj/effect/proc_holder/spell/targeted/blesscrop
 	t2 = /obj/effect/proc_holder/spell/targeted/beasttame
@@ -41,13 +41,13 @@ GLOBAL_LIST_EMPTY(patronlist)
 
 /datum/patrongods/abyssor
 	name = "Abyssor"
-	domain = "God of the Ocean, Storms and the Tide"
+	domain = "God of the Sea, Storms, Rebirth, and Purification"
 	summary = "The Beloved Son, gifted primordial men food and water."
 	worshippers = "Men of the Sea, Primitive Aquatics, Abyssians"
 
 /datum/patrongods/ravox
 	name = "Ravox"
-	domain = "God of War, Justice and Strength"
+	domain = "God of Honor, War and Strife"
 	summary = "The strongest of Psydons children, he watches man from afar."
 	worshippers = "Warriors, Sellswords & those who seek Justice"
 
@@ -62,8 +62,8 @@ GLOBAL_LIST_EMPTY(patronlist)
 
 /datum/patrongods/xylix
 	name = "Xylix"
-	domain = "God of Trickery, Freedom and Inspiration"
-	summary = "The Mad-God, gifted man wanderlust and a thousand tricks."
+	domain = "God of Trickery, Greed and Luck"
+	summary = "The two-faced God, gifted man wanderlust and a thousand tricks."
 	worshippers = "Cheats & Frauds, Silver-Tongued devils and Roguish Types"
 
 /datum/patrongods/pestra
@@ -74,15 +74,15 @@ GLOBAL_LIST_EMPTY(patronlist)
 
 /datum/patrongods/malum
 	name = "Malum"
-	domain = "God of Fire, Destruction and Rebirth"
+	domain = "God of Fire, Destruction and Creation"
 	summary = "The Opinionless God, his children hold no malice in their actions."
 	worshippers = "Smiths, Miners, Artists."
 
-/datum/patrongods/eora
-	name = "Eora"
-	domain = "Goddess of Love and Lust"
-	summary = "The Lovely One, her divine gift was that of family and love. Mother of Graggarspawn."
-	worshippers = "Lovers, Harlots, Dark Elves"
+/datum/patrongods/enora
+	name = "Enora"
+	domain = "Goddess of Love and Compassion"
+	summary = "The Lady of Love, The Beautiful, The Forgiving one, her divine gift was that of family and love. Mother of Forgiveness."
+	worshippers = "Lovers, Lone Souls, Sanctioned Prostitutes"
 
 
 

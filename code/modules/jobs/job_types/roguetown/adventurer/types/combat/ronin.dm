@@ -40,7 +40,7 @@
 			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
 		if(4 to 5)
 			beltr = /obj/item/rogueweapon/battle/ono
-			to_chat(H, "<span class='info'>I killed a sanguinary savage and took from him his axe. I've conquered a WHALER's soul, and will DOMINATE HIS WAYS.</span>")
+			to_chat(H, "<span class='info'>I killed a sanguinary savage and took from him his axe, and grinded the steel into a more efficient Ono. I've conquered a WHALER's soul, and will DOMINATE HIS WAYS.</span>")
 			H.mind.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
 		if(6)
 			beltr = /obj/item/rogueweapon/sword/yuntoudao

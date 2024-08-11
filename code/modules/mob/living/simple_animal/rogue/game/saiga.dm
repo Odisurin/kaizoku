@@ -358,3 +358,44 @@
 	var/obj/item/natural/saddle/S = new(src)
 	ssaddle = S
 	update_icon()
+
+/*
+/mob/living/simple_animal/hostile/retaliate/rogue/saiga/horse
+	icon = 'icons/roguetown/mob/monster/saiga.dmi'
+	name = "saiga"
+	desc = "The creatures of a lost age, thought extinct ever since The Bloody Apotheosis. Abyssariads kept them alive within the Fog islands, away from prying eyes."
+	icon_state = "horse"
+	icon_living = "horse"
+	icon_dead = "horse_dead"
+	icon_gib = "horse_gib"
+	animal_species = /mob/living/simple_animal/hostile/retaliate/rogue/saigabuck
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 1,
+						/obj/item/reagent_containers/food/snacks/fat = 1,
+						/obj/item/natural/hide = 1)
+	base_intents = list(/datum/intent/simple/headbutt)
+	health = 160
+	maxHealth = 160
+	food_type = list(/obj/item/reagent_containers/food/snacks/grown/wheat,/obj/item/reagent_containers/food/snacks/grown/oat,/obj/item/reagent_containers/food/snacks/grown/apple)
+	tame_chance = 36
+	bonus_tame_chance = 10
+	footstep_type = FOOTSTEP_MOB_SHOE
+	pooptype = /obj/item/natural/poo/horse
+	faction = list("saiga")
+	attack_verb_continuous = "headbutts"
+	attack_verb_simple = "headbutt"
+	melee_damage_lower = 15
+	melee_damage_upper = 25
+	retreat_distance = 10
+	minimum_distance = 10
+	STASPD = 15
+	STACON = 8
+	STASTR = 9
+	childtype = list(/mob/living/simple_animal/hostile/retaliate/rogue/saiga/horsekid = 70, /mob/living/simple_animal/hostile/retaliate/rogue/saiga/horseboy = 30)
+	pixel_x = -8
+	attack_sound = list('sound/vo/mobs/saiga/attack (1).ogg','sound/vo/mobs/saiga/attack (2).ogg')
+	can_buckle = TRUE
+	buckle_lying = 0
+	can_saddle = TRUE
+	aggressive = 1
+	remains_type = /obj/effect/decal/remains/saiga
+*/

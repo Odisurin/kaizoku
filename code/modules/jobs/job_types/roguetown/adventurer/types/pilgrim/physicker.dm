@@ -13,7 +13,7 @@
         "Tiefling",
         "Dark Elf",
         "Aasimar",
-	"Beastkin"
+	    "Beastkin"
     )
     outfit = /datum/outfit/job/roguetown/adventurer/physicker
     ispilgrim = TRUE

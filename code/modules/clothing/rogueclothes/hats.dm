@@ -726,12 +726,15 @@
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	desc = "A wide-brimmed hat traditionally worn by wandering monks of the Abyssanctum fold."
 	bloody_icon_state = "helmetblood"
+	bigboy = 1
 
 /obj/item/clothing/head/roguetown/kaizoku/big/tengai/yamabushi
 	name = "yamabushi tengai"
 	icon_state = "stengai"
 	desc = "A tengai painted in black tar traditionally worn by Abyssanctum yamabushis."
 	bloody_icon_state = "helmetblood"
+	bloody_icon_state = null
+	bigboy = 1
 
 /obj/item/clothing/head/roguetown/kaizoku/soheicloth
 	name = "sohei coverings"
@@ -761,6 +764,7 @@
 	icon_state = "gasa"
 	desc = "A conical straw hat used to protect from the sun and rain."
 	flags_inv = HIDEEARS
+	bloody_icon_state = null
 
 /obj/item/clothing/head/roguetown/kaizoku/lilly/small
 	name = "small lilypad gasa"
@@ -782,22 +786,26 @@
 	icon_state = "roningasa"
 	flags_inv = HIDEEARS|HIDEFACE
 	desc = "A hat typically worn by masterless zamurai, or the ronin."
+	bloody_icon_state = null
 
 /obj/item/clothing/head/roguetown/kaizoku/big/torioigasa
 	name = "torioigasa"
 	icon_state = "torioigasa"
 	desc = "A traditional Abyssariad hat designed for long travels on the murklands. Most used by commoners."
+	bloody_icon_state = null
 
 /obj/item/clothing/head/roguetown/kaizoku/big/sandogasa
 	name = "sandogasa"
 	icon_state = "sandogasa"
 	flags_inv = HIDEEARS
 	desc = "A large hat providing ample shade and protection from the elements, including rain."
+	bloody_icon_state = null
 
 /obj/item/clothing/head/roguetown/kaizoku/big/sandogasa/yamabushi
 	name = "yamabushi sandogasa"
-	icon_state = "sandogasa"
+	icon_state = "ssandogasa"
 	desc = "A sandogasa painted in black tar traditionally worn by Abyssanctum yamabushis."
+	bloody_icon_state = null
 
 /obj/item/clothing/head/roguetown/kaizoku/shinobi_zukin
 	name = "shinobi hood"
@@ -874,6 +882,7 @@
 	body_parts_covered = HEAD|HAIR|EARS
 	flags_inv = HIDEEARS
 	max_integrity = 200
+	bloody_icon_state = null
 
 /obj/item/clothing/head/roguetown/kaizoku/zunari
 	name = "zunari kabuto"
@@ -899,6 +908,7 @@
 	body_parts_covered = HEAD|HAIR|EARS
 	flags_inv = HIDEEARS
 	max_integrity = 150
+	bloody_icon_state = null
 
 /obj/item/clothing/head/roguetown/kaizoku/big/bronzeb
 	name = "relic of urn"
@@ -909,6 +919,7 @@
 	body_parts_covered = HEAD|EARS|HAIR|NOSE|EYES|FACE
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	max_integrity = 200
+	bloody_icon_state = null
 
 /obj/item/clothing/head/roguetown/kaizoku/big/dragonslayer
 	name = "dragonslayer helmet"
@@ -923,6 +934,9 @@
 	heat_protection = HEAD|EARS|HAIR|NOSE|EYES|FACE
 	max_heat_protection_temperature = FIRE_IMMUNITY_MAX_TEMP_PROTECT
 	resistance_flags = FIRE_PROOF | ACID_PROOF
+	bloody_icon_state = null
+	worn_x_dimension = 64
+	worn_y_dimension = 64
 
 /obj/item/clothing/head/roguetown/kaizoku/ceramic
 	name = "bone helmet"
@@ -946,6 +960,7 @@
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	smeltresult = /obj/item/ingot/siliconcarbide
+	bloody_icon_state = null
 
 /obj/item/clothing/head/roguetown/kaizoku/big/ceramic/heavy
 	name = "marauder heavy helmet"
@@ -960,3 +975,4 @@
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	block2add = FOV_RIGHT|FOV_LEFT
 	smeltresult = /obj/item/ingot/siliconcarbide
+	bloody_icon_state = null

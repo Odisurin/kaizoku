@@ -238,7 +238,7 @@
 	armor = list("melee" = 50, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT)
 	flags_inv = HIDEFACE
-	body_parts_covered = FACE
+	body_parts_covered = EYES | EARS | NOSE //Allows them to use their mouth due to the mouth opening.
 	block2add = FOV_BEHIND
 	slot_flags = ITEM_SLOT_MASK|ITEM_SLOT_HIP
 	experimental_onhip = TRUE
@@ -267,7 +267,7 @@
 		var/the_time = world.time
 		if(world.time > (the_time + 30 SECONDS))
 			return
-		var/colorone = input(user, "Your emotions spreads your will.","Abyssor allows you to flush emotions within the threads.") as null|anything in CLOTHING_COLOR_NAMES
+		var/colorone = input(user, "Your emotions spreads your will.","Flush emotions within the threads.") as null|anything in CLOTHING_COLOR_NAMES
 		if(!colorone)
 			return
 		picked = TRUE

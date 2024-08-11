@@ -306,6 +306,10 @@ GLOBAL_LIST_EMPTY(species_list)
 /mob
 	var/doing = 0
 
+/mob/living/carbon/human
+	var/mutable_appearance/eldritch_maw = null
+	var/overlay_eldritchjaw = 0 // 0 means no overlay, 1 means overlay is active
+
 /proc/do_after(mob/user, delay, needhand = 1, atom/target = null, progress = 1, datum/callback/extra_checks = null)
 	if(!user)
 		return 0

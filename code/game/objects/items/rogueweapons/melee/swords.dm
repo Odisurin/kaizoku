@@ -81,6 +81,8 @@
 	icon = 'icons/roguetown/weapons/64.dmi'
 	icon_state = "uchigatana"
 	wdefense = 3
+	bloody_icon_state = null
+	bigboy = 1
 
 /obj/item/rogueweapon/sword/uchigatana/ice
 	name = "ice uchigatana"
@@ -610,6 +612,19 @@
 	name = "iron dao"
 	desc = "A single edged iron saber of Abyssariad making for horseback use. Suitable for chopping."
 	icon_state = "dao"
+
+/obj/item/rogueweapon/sword/yuntoudao
+	name = "Yuntoudao"
+	desc = "A expensive Abyssariad saber with wide middle and tapered ends in a 'willow-leaf' shape, it concentrates the force of a strike in an axe-like blow, while retaining the swiftness of a saber."
+	icon_state = "yuntoudao"
+	force = 25
+	smeltresult = /obj/item/ingot/steel
+	possible_item_intents = list(/datum/intent/sword/cut/sabre, /datum/intent/sword/thrust, /datum/intent/axe/chop)
+	gripped_intents = null
+	minstr = 12
+	wdefense = 4
+	wbalance = -1
+	sellprice = 40
 
 /obj/item/rogueweapon/sword/short
 	force = 25

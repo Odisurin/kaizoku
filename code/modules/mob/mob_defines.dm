@@ -25,6 +25,7 @@
 	var/datum/mind/mind
 	var/static/next_mob_id = 0
 
+
 ///Cursor icon used when holding shift over things
 	var/examine_cursor_icon = 'icons/effects/mousemice/human_looking.dmi'
 

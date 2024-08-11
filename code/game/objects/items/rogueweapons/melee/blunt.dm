@@ -178,9 +178,9 @@
 	force_wielded = 20
 	name = "ararebo"
 	icon_state = "ararebo"
-	desc = "A short, steel-capped club used by Abyssariads as a cudgel. The spikes cause it to inflict bleeding wounds."
+	desc = "A short, iron-capped club used by Abyssariads as a cudgel. The spikes cause it to inflict bleeding wounds."
 	gripped_intents = null
-	smeltresult = /obj/item/ingot/steel
+	smeltresult = /obj/item/ingot/iron
 	wlength = WLENGTH_SHORT
 	w_class = WEIGHT_CLASS_NORMAL
 	sharpness = IS_SHARP
@@ -192,8 +192,17 @@
 /obj/item/rogueweapon/mace/cudgel/ararebo/obsidian
 	name = "obsidian club"
 	icon_state = "obsidian_club"
-	desc = "A short, wooden club with sharp flakes of obsidian embedded into it. Its appearance is similar to a flanged mace, but it inflicts deep cuts.s"
+	desc = "A short, wooden club with sharp flakes of obsidian embedded into it. Its appearance is similar to a flanged mace, but it inflicts deep cuts."
 	max_integrity = 150
+
+/obj/item/rogueweapon/mace/cudgel/ararebos
+	force = 20
+	force_wielded = 25
+	name = "steel ararebo"
+	icon_state = "ararebos"
+	desc = "A short, steel-capped club used by Abyssariads as a cudgel. The spikes cause it to inflict bleeding wounds."
+	gripped_intents = null
+	smeltresult = /obj/item/ingot/steel
 
 /obj/item/rogueweapon/mace/cudgel/getonmobprop(tag)
 	. = ..()

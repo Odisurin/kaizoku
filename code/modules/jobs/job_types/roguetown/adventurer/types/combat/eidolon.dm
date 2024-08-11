@@ -7,7 +7,9 @@
 	"Tengu",
 	"Oni",
 	"Kappa")
+	maxchosen = 1
 	outfit = /datum/outfit/job/roguetown/adventurer/eidolon
+
 /datum/outfit/job/roguetown/adventurer/eidolon/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
@@ -22,10 +24,12 @@
 	backl = /obj/item/storage/backpack/rogue/satchel
 	head = /obj/item/clothing/head/roguetown/kaizoku/big/bronzeb
 	belt = /obj/item/storage/belt/rogue/kaizoku/leather/daisho
-	beltr = /obj/item/rogueweapon/huntingknife/idagger/sai
+	beltr = /obj/item/rogueweapon/sword/uchigatana
+	beltl = /obj/item/rogueweapon/sword/uchigatana
 
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
-	H.change_stat("strength", 1)
-	H.change_stat("perception", -2)
+	H.change_stat("strength", 2)
+	H.change_stat("perception", -3)
 	H.change_stat("speed", 5)
 	H.change_stat("endurance", -2)
+	H.change_stat("constitution", -1)

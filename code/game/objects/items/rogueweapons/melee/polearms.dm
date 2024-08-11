@@ -350,24 +350,24 @@
 
 /obj/item/rogueweapon/halberd/bardiche/naginata
 	name = "naginata"
-	desc = "Its earliest form being a tachi blade mounted upon a long wooden pole, the naginata was the first polearm to come into widespread use by the Abyssariad, who developed the weapon in order to better combat Humen and Elven cavalry. It functions much like a bardiche or glaive, with its devastating chopping attacks."
+	desc = "Its earliest form being a tachi blade mounted upon a long wooden pole, the naginata was the first polearm to come into widespread use by the Abyssariad, who developed the weapon in order to better combat Humen and Elven cavalry."
 	icon_state = "naginata"
 	smeltresult = /obj/item/ingot/iron
 	dropshrink = 0.8
 
-/obj/item/rogueweapon/halberd/bardiche/naginata/tsukushi 
+/obj/item/rogueweapon/halberd/bardiche/naginata/tsukushi //When smithed, make two instead of one.
 	name = "tsukushi naginata"
 	desc = "A cheaper, easier to construct Iron Naginata with a blade held by its guard instead of its tang. Likely developed from a scythe, the blade is easily found on poor, wandering monks."
 	force = 15
 	force_wielded = 25
-	icon_state = "inaginata"
+	icon_state = "surplusnaginata"
 	smeltresult = /obj/item/ingot/iron
 	dropshrink = 0.8
 	wdefense = 4
 
 /obj/item/rogueweapon/halberd/bardiche/naginata/bisento
 	name = "bisento"
-	desc = "The Bisento is the direct evolution of the old, outdated Champion Guandao. Akin to a large cleaver or a broad axe, it's sheer chopping power cleaves through armor and bone, as its design allows sweeping and overhead chops in high speed, perfect for breaking through enemy lines."
+	desc = "The Bisento is the direct evolution of the old, outdated Champion Guandao. Akin to a large cleaver or a broad axe."
 	force = 10
 	force_wielded = 40
 	icon_state = "bisento"

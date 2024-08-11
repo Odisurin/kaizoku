@@ -1,6 +1,6 @@
 // see _DEFINES/is_helpers.dm for mob type checks
-
 ///Find the mob at the bottom of a buckle chain
+
 /mob/proc/lowest_buckled_mob()
 	. = src
 	if(buckled && ismob(buckled))
@@ -478,17 +478,11 @@
 	if(input != QINTENT_SPELL)
 		if(ranged_ability)
 			ranged_ability.deactivate()
-//	var/mutable_appearance/eldritch_maw = mutable_appearance('icons/roguetown/mob/bodies/m/mt_kit.dmi', "eldritch_maw", MOUTH_LAYER)
-	//var/mob/living/carbon/human/H = src
-	//if(input != QINTENT_BITE)
-		//if(ishuman(src) && H.dna.species.name == "Kitsune") //The intention is to take away the overlay if not clicking on bite intent.
-			//for(eldritch_maw in H.overlays)
-			//	H.remove_overlay(eldritch_maw)
-			//visible_message("<span class='warning'>[src]'s face knits together.</span>")
-			//playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
-			//	H.cut_overlay(eldritch_maw)
-			//	update_icon()
-			//	H.update_body()
+
+	// Just a double check if it didn't shitted up.
+	if(!eldritch_maw)
+		eldritch_maw = mutable_appearance('icons/roguetown/mob/bodies/m/mt_kit.dmi', "eldritch_maw", MOUTH_LAYER)
+
 	switch(input)
 		if(QINTENT_KICK)
 			if(mmb_intent?.type == INTENT_KICK)
@@ -509,40 +503,10 @@
 				qdel(mmb_intent)
 				input = null
 				mmb_intent = null
-				//if(ishuman(src) && H.dna.species.name == "Kitsune") //The intention is to make them get an overlay. They may crit with their bite, but everyone will know they are biting.
-				//	H.remove_overlay(eldritch_maw)
-				//	visible_message("<span class='warning'>[src]'s face knits together.</span>")
-				//	playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
-				//	H.cut_overlay(eldritch_maw)
-				//	update_icon()
-				//	H.update_body()
+				overlay_eldritchjaw = 0  // disactivates jaw
 			else
 				mmb_intent = new INTENT_BITE(src)
-				//if(ishuman(src) && H.dna.species.name == "Kitsune") //The intention is to make them get an overlay. They may crit with their bite, but everyone will know they are biting.
-				//	H.remove_overlay(eldritch_maw)
-				//	visible_message("<span class='warning'>[src]'s face splits into a deadly maw.</span>")
-				//	playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
-				//	add_overlay(eldritch_maw)
-				//	update_icon()
-				//	H.update_body()
-
-/*
-		if(QINTENT_STEAL)
-		if(QINTENT_KICK)
-		if(QINTENT_SPELL)
-		if(QINTENT_JUMP)
-		if(QINTENT_GIVE)
-		if(QINTENT_SPELL)
-
-
-
-var/mutable_appearance/colored_overlay = mutble_appearance(icon, "lipstick_uncap_color")
-colored_overlay.color = colour
-icon_state = "lipstick_uncap"
-add_overlay(colored_overlay)
-*/
-
-
+				overlay_eldritchjaw = 1  // activates jaw
 		if(QINTENT_JUMP)
 			if(mmb_intent?.type == INTENT_JUMP)
 				qdel(mmb_intent)
@@ -573,9 +537,28 @@ add_overlay(colored_overlay)
 			mmb_intent.chargedloop = ranged_ability.chargedloop
 			mmb_intent.update_chargeloop()
 
+	// Call update_overlay to handle the overlay based on the state
+	update_overlay()
+
 	hud_used.quad_intents.switch_intent(input)
 	hud_used.give_intent.switch_intent(input)
 	givingto = null
+
+// Procedure to update overlay based on state
+/mob/proc/update_overlay()
+	if(ishuman(src))
+		var/mob/living/carbon/human/C = src
+		if(C.dna.species.name == "Kitsune")
+			if(C.overlay_eldritchjaw == 1)
+				C.add_overlay(C.eldritch_maw)
+				visible_message("<span class='warning'>[src]'s face splits into a deadly maw.</span>")
+				playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
+			else if(C.overlay_eldritchjaw == 0) // Check explicitly for 0
+				C.remove_overlay(C.eldritch_maw)
+				visible_message("<span class='warning'>[src]'s face knits together.</span>")
+				playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
+			C.update_icon()
+			C.update_body()
 
 /mob/verb/def_intent_change(input as num)
 	set name = "def-change"
@@ -999,3 +982,4 @@ add_overlay(colored_overlay)
 ///Can the mob see reagents inside of containers?
 /mob/proc/can_see_reagents()
 	return stat == DEAD || has_unlimited_silicon_privilege //Dead guys and silicons can always see reagents
+

@@ -1,5 +1,5 @@
 //Balance>
-//Pros: Good stats (8 points), Sword skill specialization,  Medium armor perk, Steel swords and knife variation. 
+//Pros: Good stats (8 points), Sword skill specialization,  Medium armor perk, Steel weapons and knife variation. 
 //Cons: No chest or head armor, antagonizable adventurer role, no heavy armor perk. 
 // >>>This is the role for PROPER Akira Kurosawa EXPERIENCE.<<<
 
@@ -28,7 +28,24 @@
 		beltr = /obj/item/rogueweapon/sword/short/wakizashi
 	else
 		beltr = /obj/item/rogueweapon/huntingknife/idagger/steel/tanto
-	beltl = /obj/item/rogueweapon/sword/uchigatana
+	var/randy = rand(1,6)
+	switch(randy)
+		if(1)
+			beltl = /obj/item/rogueweapon/sword/uchigatana
+			to_chat(H, "<span class='info'>I managed to retain my full Daisho, even without masters to finance my activities.</span>")
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
+		if(2 to 3)
+			beltl = /obj/item/rogueweapon/flail/kusarigama
+			to_chat(H, "<span class='info'>My sword was broken during battle, and from the blade, I made one anew. This is all what remains of my deceased master.</span>")
+			H.mind.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
+		if(4 to 5)
+			beltr = /obj/item/rogueweapon/battle/ono
+			to_chat(H, "<span class='info'>I killed a sanguinary savage and took from him his axe. I've conquered a WHALER's soul, and will DOMINATE HIS WAYS.</span>")
+			H.mind.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
+		if(6)
+			beltr = /obj/item/rogueweapon/sword/yuntoudao
+			to_chat(H, "<span class='info'>The Daisho is obsolete. My sword is made to do more than draw blood - It should grind my enemies into mince..</span>")
+			H.mind.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 	head = /obj/item/clothing/head/roguetown/kaizoku/big/roningasa
 	if(prob(23))
 		gloves = /obj/item/clothing/gloves/roguetown/leather
@@ -37,7 +54,7 @@
 
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
-	H.mind.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)

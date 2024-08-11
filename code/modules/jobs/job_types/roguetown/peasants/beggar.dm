@@ -68,7 +68,7 @@
 			mask = /obj/item/clothing/mask/rogue/kaizoku/facemask/dishonor
 			to_chat(H, "<span class='userdanger'>In pursuit of hedonism and vices, I forfeited my honor and values of the Abyssal Tide. My soul can no longer claim the essence of an Abyssariad.</span>")
 			if(H.PATRON == /datum/patrongods/abyssor)
-				H.PATRON = GLOB.patronlist[/datum/patrongods/eora]
+				H.PATRON = GLOB.patronlist[/datum/patrongods/enora]
 				to_chat(H, "<span class='warning'>The waters I once revered now scorn me - the rivers blistering my skin. I've failed Abyssor as his champion, and now I've bonded with [H.PATRON].")
 	H.change_stat("strength", -1)
 	H.change_stat("intelligence", -4)

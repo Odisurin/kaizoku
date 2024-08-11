@@ -3,7 +3,7 @@
 
 #define ALL_RACES_LIST_NAMES		list("Humen", "Humen", "Half-Elf", "Elf", "Elf", "Dwarf","Dwarf","Tiefling", "Aasimar", "Kitsune", "Tengu", "Oni", "Kappa", "beastkin")
 
-#define ALL_PATRON_NAMES_LIST		list("Astrata", "Noc", "Xylix", "Eora", "Malum", "Dendor", "Abyssor", "Necra", "Pestra", "Malum", "Ravox")
+#define ALL_PATRON_NAMES_LIST		list("Astrata", "Noc", "Xylix", "Enora", "Malum", "Dendor", "Abyssor", "Necra", "Pestra", "Malum", "Ravox")
 
 #define PLATEHIT "plate"
 #define CHAINHIT "chain"

@@ -89,7 +89,7 @@
 /obj/item/rogue/instrument/lute
 	force = 15
 	name = "lute"
-	desc = "The favored instrument of Eora, made of wood and simple string."
+	desc = "The favored instrument of Enora, made of wood and simple string."
 	possible_item_intents = list(/datum/intent/mace/strike/wood)
 	icon_state = "lute"
 	minstr = 0
@@ -129,14 +129,14 @@
 	"Song 4" = 'sound/music/instruments/guitar (4).ogg',
 	"Song 5" = 'sound/music/instruments/guitar (5).ogg',
 	"Song 6" = 'sound/music/instruments/guitar (6).ogg',
-	"Tiberian Sunset" = 'sound/music/instruments/guitar (Tiberian Sunset).ogg',	
-	"Romanza" = 'sound/music/instruments/guitar (Romanza).ogg',	
+	"Tiberian Sunset" = 'sound/music/instruments/guitar (Tiberian Sunset).ogg',
+	"Romanza" = 'sound/music/instruments/guitar (Romanza).ogg',
 	"Malaguena" = 'sound/music/instruments/guitar (Malaguena).ogg',
-	"Cancion del mariachi" = 'sound/music/instruments/guitar (Cancion del mariachi).ogg',	
+	"Cancion del mariachi" = 'sound/music/instruments/guitar (Cancion del mariachi).ogg',
 	"El Masque" = 'sound/music/instruments/guitar (El Masque).ogg',
-	"Evolvado" = 'sound/music/instruments/guitar (Evolvado).ogg',	
+	"Evolvado" = 'sound/music/instruments/guitar (Evolvado).ogg',
 	"Asturias" = 'sound/music/instruments/guitar (Asturias).ogg',
-	"La Follia" = 'sound/music/instruments/guitar (La Follia).ogg',	
+	"La Follia" = 'sound/music/instruments/guitar (La Follia).ogg',
 	)
 
 /obj/item/rogue/instrument/harp

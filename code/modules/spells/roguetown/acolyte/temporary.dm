@@ -20,7 +20,7 @@
 		var/mob/living/target = targets[1]
 		if(target.anti_magic_check(TRUE, TRUE))
 			return FALSE
-		target.visible_message("<span class='warning'>[user] points at [target]'s eyes!</span>","<span class='warning'>My eyes are covered in abyssal darkness!</span>")		
+		target.visible_message("<span class='warning'>[user] points at [target]'s eyes!</span>","<span class='warning'>My eyes are covered in abyssal darkness!</span>")
 		target.blind_eyes(2)
 	return TRUE
 
@@ -56,7 +56,7 @@
 //eorite
 
 /obj/effect/proc_holder/spell/invoked/budz
-	name = "Eoran Bloom"
+	name = "Enoran Bloom"
 	desc = ""
 	clothes_req = FALSE
 	range = 7
@@ -77,7 +77,7 @@
 	if(!isclosedturf(T))
 		new /obj/item/clothing/head/peaceflower(T)
 		return TRUE
-	to_chat(user, "<span class='warning'>The targeted location is blocked. The flowers of Eora refuse to grow.</span>")
+	to_chat(user, "<span class='warning'>The targeted location is blocked. The flowers of Enora refuse to grow.</span>")
 	return FALSE
 
 /obj/effect/proc_holder/spell/invoked/eoracursez

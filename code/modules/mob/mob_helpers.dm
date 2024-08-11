@@ -480,8 +480,11 @@
 			ranged_ability.deactivate()
 
 	// Just a double check if it didn't shitted up.
-	if(!eldritch_maw)
-		eldritch_maw = mutable_appearance('icons/roguetown/mob/bodies/m/mt_kit.dmi', "eldritch_maw", MOUTH_LAYER)
+	if(ishuman(src))
+		var/mob/living/carbon/human/K = src
+		if(K.dna.species.name == "Kitsune")
+			if(!K.eldritch_maw)
+				K.eldritch_maw = mutable_appearance('icons/roguetown/mob/bodies/m/mt_kit.dmi', "eldritch_maw", MOUTH_LAYER)
 
 	switch(input)
 		if(QINTENT_KICK)
@@ -503,10 +506,18 @@
 				qdel(mmb_intent)
 				input = null
 				mmb_intent = null
-				overlay_eldritchjaw = 0  // disactivates jaw
+				if(ishuman(src))
+					var/mob/living/carbon/human/K = src
+					if(K.dna.species.name == "Kitsune")
+						K.mawchange = TRUE
+						K.overlay_eldritchjaw = 0  // disactivates jaw
 			else
 				mmb_intent = new INTENT_BITE(src)
-				overlay_eldritchjaw = 1  // activates jaw
+				if(ishuman(src))
+					var/mob/living/carbon/human/K = src
+					if(K.dna.species.name == "Kitsune")
+						K.mawchange = TRUE
+						K.overlay_eldritchjaw = 1 // activates jaw
 		if(QINTENT_JUMP)
 			if(mmb_intent?.type == INTENT_JUMP)
 				qdel(mmb_intent)
@@ -553,10 +564,11 @@
 				C.add_overlay(C.eldritch_maw)
 				visible_message("<span class='warning'>[src]'s face splits into a deadly maw.</span>")
 				playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
-			else if(C.overlay_eldritchjaw == 0) // Check explicitly for 0
-				C.remove_overlay(C.eldritch_maw)
-				visible_message("<span class='warning'>[src]'s face knits together.</span>")
-				playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
+			else if(C.overlay_eldritchjaw == 0 && C.mmb_intent?.type == null) // Check explicitly for NO intent, that means we turned off our bite intent
+				if(C.mawchange) // Failsafe so that nulling intents any other way doesn't proc this.
+					C.cut_overlay(C.eldritch_maw)
+					visible_message("<span class='warning'>[src]'s face knits together.</span>")
+					playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
 			C.update_icon()
 			C.update_body()
 
@@ -982,4 +994,3 @@
 ///Can the mob see reagents inside of containers?
 /mob/proc/can_see_reagents()
 	return stat == DEAD || has_unlimited_silicon_privilege //Dead guys and silicons can always see reagents
-

@@ -472,6 +472,161 @@
 	gender = FEMALE
 	specuse = list("elf", "abyssariad")
 
+//New dews
+
+/datum/sprite_accessory/hair/hairfre
+	name = "Flair"
+	icon_state = "hairfre"
+	gender = FEMALE
+	specuse = list("elf", "human", "tiefling")
+
+/datum/sprite_accessory/hair/curtains
+	name = "Curtain"
+	icon_state = "hairfre"
+	gender = FEMALE
+	specuse = list("beastkin", "human", "tiefling")
+
+/datum/sprite_accessory/hair/glamourh
+	name = "Glamour"
+	icon_state = "glamourh"
+	gender = FEMALE
+	specuse = list("elf", "tiefling")
+
+/datum/sprite_accessory/hair/emma
+	name = "Emma"
+	icon_state = "emma"
+	gender = FEMALE
+	specuse = list("human", "beastkin", "tiefling")
+
+/datum/sprite_accessory/hair/damsel
+	name = "Damsel"
+	icon_state = "damsel"
+	gender = FEMALE
+	specuse = list("human", "beastkin", "elf")
+
+/datum/sprite_accessory/hair/wavylong
+	name = "Wavylong"
+	icon_state = "wavylong"
+	gender = FEMALE
+	specuse = list("human", "beastkin")
+
+
+/datum/sprite_accessory/hair/wavyovereye
+	name = "WavyOverEye"
+	icon_state = "wavyovereye"
+	gender = FEMALE
+	specuse = list("human", "beastkin", "elf", "tiefling")
+
+/datum/sprite_accessory/hair/straightovereye
+	name = "StraightOvereye"
+	icon_state = "straightovereye"
+	gender = FEMALE
+	specuse = list("human", "beastkin", "elf", "tiefling")
+
+/datum/sprite_accessory/hair/straightside
+	name = "StraightSide"
+	icon_state = "straightside"
+	gender = FEMALE
+	specuse = list("human", "beastkin", "elf", "tiefling")
+
+/datum/sprite_accessory/hair/straightshort
+	name = "Straightshort"
+	icon_state = "straightshort"
+	gender = NEUTER
+	specuse = list("human", "beastkin", "elf", "abyssariad")
+
+
+/datum/sprite_accessory/hair/straightlong
+	name = "Straightlong"
+	icon_state = "straightlong"
+	gender = FEMALE
+	specuse = list("human", "beastkin", "elf", "abyssariad")
+
+/datum/sprite_accessory/hair/straightfloorlength
+	name = "Straightfloorlength"
+	icon_state = "straightfloorlength"
+	gender = FEMALE
+	specuse = list("human", "elf", "abyssariad", "aasimar")
+
+/datum/sprite_accessory/hair/fluffball
+	name = "Fluffball"
+	icon_state = "fluffball"
+	gender = FEMALE
+	specuse = list("human", "beastkin", "abyssariad", "aasimar")
+
+/datum/sprite_accessory/hair/halfshave_long_alt
+	name = "Halfshavelongalt"
+	icon_state = "halfshave_long_alt"
+	gender = FEMALE
+	specuse = list("human", "tiefling", "aasimar", "elf", "beastkin")
+
+/datum/sprite_accessory/hair/halfshave_messy_alt
+	name = "HalfshaveMessyAlt"
+	icon_state = "halfshave_messy_alt"
+	gender = FEMALE
+	specuse = list("human", "tiefling", "elf", "beastkin")
+
+/datum/sprite_accessory/hair/halfshave_glamorous_alt
+	name = "halfShaveGlamorousAlt"
+	icon_state = "halfshave_glamorous_alt"
+	gender = FEMALE
+	specuse = list("human", "tiefling", "elf", "beastkin")
+
+/datum/sprite_accessory/hair/halfshave_glamorous_alt
+	name = "halfShaveGlamorousAlt"
+	icon_state = "halfshave_glamorous_alt"
+	gender = FEMALE
+	specuse = list("human", "tiefling", "elf", "beastkin")
+
+/datum/sprite_accessory/hair/halfshave_glamorous_alt
+	name = "HalfshaveGlamorousAlt"
+	icon_state = "halfshave_glamorous_alt"
+	gender = FEMALE
+	specuse = list("human", "tiefling", "elf", "beastkin", "aasimar")
+
+/datum/sprite_accessory/hair/halfshave_long
+	name = "HalfshaveLong"
+	icon_state = "halfshave_long"
+	gender = FEMALE
+	specuse = list("human", "tiefling", "elf", "beastkin", "aasimar")
+
+/datum/sprite_accessory/hair/halfshave_messy
+	name = "HalfshaveMessy"
+	icon_state = "halfshave_messy"
+	gender = FEMALE
+	specuse = list("human", "tiefling", "beastkin", "aasimar")
+
+/datum/sprite_accessory/hair/thick_long
+	name = "Thick Long hair"
+	icon_state = "thick_(long)"
+	gender = FEMALE
+	specuse = list("human", "beastkin")
+
+/datum/sprite_accessory/hair/thick_short
+	name = "Thick Short hair"
+	icon_state = "thick_(short)"
+	gender = FEMALE
+	specuse = list("human", "beastkin")
+
+/datum/sprite_accessory/hair/thick_curly
+	name = "Thick Short hair"
+	icon_state = "thick_(curly)"
+	gender = FEMALE
+	specuse = list("human", "beastkin", "elf")
+
+/datum/sprite_accessory/hair/thick_long_alt
+	name = "Thick Long hair II"
+	icon_state = "thick_(long alt)"
+	gender = FEMALE
+	specuse = list("human", "beastkin", "elf")
+
+/datum/sprite_accessory/hair/baum
+	name = "Thick Long hair II"
+	icon_state = "thick_(long alt)"
+	gender = FEMALE
+	specuse = list("human", "beastkin", "elf", "aasimar", "tiefling" )
+
+///////////////////////////////////////////////////////////////////
 /datum/sprite_accessory/hair/kaizoku/empress
 	name = "Abyssal Empress (Abyssariad Culture)"
 	icon = 'icons/kaizoku/mobs/hairstyles.dmi'

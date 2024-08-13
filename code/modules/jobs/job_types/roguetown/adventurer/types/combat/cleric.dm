@@ -55,7 +55,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	belt = /obj/item/storage/belt/rogue/leather
 	beltr = /obj/item/rogueweapon/mace
-	beltl = /obj/item/storage/belt/rogue/pouch
+	beltl = /obj/item/storage/belt/rogue/pouch/coins/poor
 	backr = /obj/item/rogueweapon/shovel
 	if(H.PATRON != /datum/patrongods/necra)
 		cloak = /obj/item/clothing/cloak/raincloak/mortus

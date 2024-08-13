@@ -81,6 +81,59 @@
 	created_item = list(/obj/item/clothing/gloves/roguetown/chain,
 						/obj/item/clothing/gloves/roguetown/chain,)
 
+/datum/anvil_recipe/armor/astratahelm
+	name = "Astrata Helmet (+1 Steel, +1 Gold)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/gold)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/astratahelm
+
+/datum/anvil_recipe/armor/eorahelm
+	name = "Enora Helmet (+1 Steel)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/eorahelm
+
+/datum/anvil_recipe/armor/necrahelm
+	name = "Necra Helmet (+1 Steel)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/necrahelm
+
+/datum/anvil_recipe/armor/nochelm
+	name = "Noc Helmet (+1 Steel)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/nochelm
+
+/datum/anvil_recipe/armor/dendorhelm
+	name = "Dendor Helmet (+1 Steel)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/dendorhelm
+
+/datum/anvil_recipe/armor/dwarfhelm
+	name = "Dwarven Helmet (+1 Steel, +1 Gold)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/gold)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/dwarfhelm
+
+/datum/anvil_recipe/armor/dwarfgauntlets
+	name = "Dwarven Gauntlets"
+	req_bar = /obj/item/ingot/steel
+	created_item = /obj/item/clothing/gloves/roguetown/dwarfgauntlets
+
+/datum/anvil_recipe/armor/dwarfboots
+	name = "Dwarven Boots +1 gold"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/gold)
+	created_item = /obj/item/clothing/shoes/roguetown/boots/dwarfboots
+
+/datum/anvil_recipe/armor/dwarffull
+	name = "Full-Dwarven Armour (+2 Steel, +1 Gold)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/ingot/gold)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/dwarffull
+
 /datum/anvil_recipe/armor/plateglove
 	name = "plate gauntlets"
 	req_bar = /obj/item/ingot/steel

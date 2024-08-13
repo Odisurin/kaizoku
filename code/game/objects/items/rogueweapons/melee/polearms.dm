@@ -58,6 +58,34 @@
 	gripsprite = TRUE
 	associated_skill = /datum/skill/combat/polearms
 
+/obj/item/rogueweapon/woodstaff/wise
+	name = "wise staff"
+	desc = "A staff for keeping the volfs at bay..."
+
+/obj/item/rogueweapon/woodstaff/aries
+	name = "staff of the shepherd"
+	desc = "Your flock awaits your protection and guidance."
+	force = 25
+	force_wielded = 28
+	icon_state = "aries"
+	icon = 'icons/roguetown/weapons/32.dmi'
+	pixel_y = 0
+	pixel_x = 0
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	bigboy = FALSE
+	gripsprite = FALSE
+	gripped_intents = null
+
+/obj/item/rogueweapon/woodstaff/aries/getonmobprop(tag)
+	. = ..()
+	if(tag)
+		switch(tag)
+			if("gen")
+				return list("shrink" = 0.6,"sx" = -6,"sy" = 2,"nx" = 8,"ny" = 2,"wx" = -4,"wy" = 2,"ex" = 1,"ey" = 2,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = -38,"sturn" = 300,"wturn" = 32,"eturn" = -23,"nflip" = 0,"sflip" = 100,"wflip" = 8,"eflip" = 0)
+			if("wielded")
+				return list("shrink" = 0.6,"sx" = 4,"sy" = -2,"nx" = -3,"ny" = -2,"wx" = -5,"wy" = -1,"ex" = 3,"ey" = -2,"northabove" = 0,"southabove" = 1,"eastabove" = 1,"westabove" = 0,"nturn" = 7,"sturn" = -7,"wturn" = 16,"eturn" = -22,"nflip" = 8,"sflip" = 0,"wflip" = 8,"eflip" = 0)
+
 /obj/item/rogueweapon/mancatcher
 	force = 10
 	force_wielded = 20

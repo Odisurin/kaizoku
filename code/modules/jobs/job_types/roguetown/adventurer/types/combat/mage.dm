@@ -24,6 +24,7 @@
 	armor = /obj/item/clothing/suit/roguetown/shirt/robe/mage
 	belt = /obj/item/storage/belt/rogue/leather/rope
 	backr = /obj/item/storage/backpack/rogue/satchel
+	neck = /obj/item/storage/belt/rogue/pouch/coins/poor
 	beltl = /obj/item/reagent_containers/glass/bottle/rogue/manapot
 	r_hand = /obj/item/rogueweapon/woodstaff
 	if(H.mind)
@@ -34,7 +35,7 @@
 			head = /obj/item/clothing/head/roguetown/wizhat/gen
 			armor = /obj/item/clothing/suit/roguetown/shirt/robe
 			backl = /obj/item/storage/backpack/rogue/backpack
-			H.change_stat("intelligence", 1)
+			H.change_stat("intelligence", 4)
 			H.mind.adjust_skillrank(/datum/skill/magic/arcane, 2, TRUE)
 		H.change_stat("strength", -2)
 		H.change_stat("intelligence", 3)

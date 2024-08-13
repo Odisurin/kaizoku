@@ -336,6 +336,20 @@
 	base_icon_state = "book6"
 	bookfile = "tales9.json"
 
+/obj/item/book/rogue/necravow
+	name = "Vow of Necra"
+	desc = "By Zenor, High Priest of The Veiled Lady."
+	icon_state ="book6_0"
+	base_icon_state = "book6"
+	bookfile = "VowOfNecraPage.json"
+
+/obj/item/book/rogue/darkbookii
+	name = "Black Book of Dark Knowledge Volume II"
+	desc = "By Ozok, Grand Warlock of the Umbric-pass."
+	icon_state ="dk1_0"
+	base_icon_state = "dk1"
+	bookfile = "DarkKnowledge.json"
+
 /obj/item/book/rogue/noc
 	name = "Dreamseeker"
 	desc = "By Hunlaf, Gravedigger. Revised by Lenore, Priest of Necra."

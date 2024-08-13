@@ -161,3 +161,45 @@
 	slot_flags = ITEM_SLOT_ARMOR
 	boobed = TRUE
 	color = null
+
+/obj/item/clothing/suit/roguetown/shirt/robe/enora
+	slot_flags = ITEM_SLOT_ARMOR
+	name = "enoran robe"
+	desc = "Holy robes, intended for use by followers of Enora"
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS|VITALS
+	icon_state = "enorarobes"
+	icon = 'icons/roguetown/clothing/armor.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/armor.dmi'
+	sleeved = 'icons/roguetown/clothing/onmob/helpers/sleeves_armor.dmi'
+	boobed = TRUE
+	color = null
+	flags_inv = HIDEBOOB
+	r_sleeve_status = SLEEVE_NORMAL
+	l_sleeve_status = SLEEVE_NORMAL
+	var/fanatic_wear = FALSE
+
+/obj/item/clothing/suit/roguetown/shirt/robe/enora/alt
+	name = "open enoran robe"
+	desc = "Used by more radical followers of the Enoran Church"
+	body_parts_covered = null
+	icon_state = "enorastraps"
+	fanatic_wear = TRUE
+
+/obj/item/clothing/suit/roguetown/shirt/robe/enora/attack_right(mob/user)
+	switch(fanatic_wear)
+		if(FALSE)
+			name = "open enoran robe"
+			desc = "Used by more radical followers of the Enoran Church"
+			body_parts_covered = null
+			icon_state = "enorastraps"
+			fanatic_wear = TRUE
+		if(TRUE)
+			name = "enoran robe"
+			desc = "Holy robes, intended for use by followers of Enora"
+			body_parts_covered = CHEST|GROIN|ARMS|LEGS|VITALS
+			icon_state = "enorarobes"
+			fanatic_wear = FALSE
+	update_icon()
+	if(ismob(loc))
+		var/mob/L = loc
+		L.update_inv_armor()

@@ -33,6 +33,19 @@
 	toggle_icon_state = TRUE
 	max_integrity = 100
 
+/obj/item/clothing/head/roguetown/helmet/leather/volfhelm
+	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_HIP
+	name = "volf helmet"
+	desc = "Bandit initiation rites involve the slaying of a volf."
+	body_parts_covered = HEAD|HAIR|EARS
+	icon_state = "volfhead"
+	item_state = "volfhead"
+	armor = list("blunt" = 47, "slash" = 27, "stab" = 37, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_BLUNT, BCLASS_TWIST)
+	anvilrepair = null
+	sewrepair = TRUE
+	blocksound = SOFTHIT
+
 /obj/item/clothing/head/roguetown/roguehood/shalal
 	name = "keffiyeh"
 	desc = ""
@@ -57,6 +70,22 @@
 	icon = 'icons/roguetown/clothing/head.dmi'
 	body_parts_covered = NECK
 	slot_flags = ITEM_SLOT_HEAD
+	dynamic_hair_suffix = ""
+	edelay_type = 1
+	adjustable = CAN_CADJUST
+	toggle_icon_state = TRUE
+	max_integrity = 100
+
+/obj/item/clothing/head/roguetown/roguehood/nochood
+	name = "moon hood"
+	desc = "A hood worn by those who favor Noc with a mask in the shape of a crescent."
+	color = null
+	icon_state = "nochood"
+	item_state = "nochood"
+	icon = 'icons/roguetown/clothing/head.dmi'
+	body_parts_covered = NECK
+	slot_flags = ITEM_SLOT_HEAD
+	flags_inv = HIDEFACE|HIDEFACIALHAIR
 	dynamic_hair_suffix = ""
 	edelay_type = 1
 	adjustable = CAN_CADJUST
@@ -131,6 +160,96 @@
 					H.update_inv_head()
 		user.update_fov_angles()
 
+/obj/item/clothing/head/roguetown/helmet/heavy/astratahelm
+	name = "astrata helmet"
+	desc = "Headwear commonly worn by Templars in service to Astrata. The firstborn child's light will forever shine on within its crest."
+	icon_state = "astratahelm"
+	item_state = "astratahelm"
+	emote_environment = 3
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	block2add = FOV_BEHIND
+	smeltresult = /obj/item/ingot/steel
+
+/obj/item/clothing/head/roguetown/helmet/heavy/eorahelm
+    name = "enora helmet"
+    desc = "Headwear commonly worn by Templars in service to Enora. The chained heart on its front demonstrates its wearer's commitment to protect unbound love, even at ones own expense."
+    icon_state = "eorahelm"
+    item_state = "eorahelm"
+    emote_environment = 3
+    flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+    block2add = FOV_BEHIND
+    smeltresult = /obj/item/ingot/steel
+
+/obj/item/clothing/head/roguetown/enoramask
+	name = "enoran mask"
+	desc = "A silver rabbet mask worn by the faithful of Enora, usually during their rituals."
+	color = null
+	icon_state = "eoramask"
+	item_state = "eoramask"
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
+	worn_x_dimension = 64
+	worn_y_dimension = 64
+	flags_inv = HIDEFACE|HIDEFACIALHAIR|HIDEHAIR
+	dynamic_hair_suffix = ""
+	resistance_flags = FIRE_PROOF // Made of metal
+
+/obj/item/clothing/head/roguetown/helmet/heavy/nochelm
+	name = "noc helmet"
+	desc = "Hearwear commonly worn by Templars in service to Noc. Without the night there can be no day, without Noc there can be no light in the dark hours."
+	icon_state = "nochelm"
+	item_state = "nochelm"
+	emote_environment = 3
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	block2add = FOV_BEHIND
+	smeltresult = /obj/item/ingot/steel
+
+/obj/item/clothing/head/roguetown/helmet/heavy/necrahelm
+	name = "necra helmet"
+	desc = "Headwear commonly worn by Templars in service to Necra. Let its skeletal features remind you of the only thing which is guaranteed in life. You will die."
+	icon_state = "necrahelm"
+	item_state = "necrahelm"
+	emote_environment = 3
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	block2add = FOV_BEHIND
+	smeltresult = /obj/item/ingot/steel
+
+/obj/item/clothing/head/roguetown/helmet/heavy/dendorhelm
+	name = "dendor helmet"
+	desc = "Headwear commonly worn by Templars in service to Dendor. Its protrusions almost resemble branches. Take root in the earth, and you will never be moved."
+	icon_state = "dendorhelm"
+	item_state = "dendorhelm"
+	emote_environment = 3
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	block2add = FOV_BEHIND
+	smeltresult = /obj/item/ingot/steel
+
+/obj/item/clothing/head/roguetown/helmet/heavy/dwarfhelm
+	name = "dwarven helmet"
+	desc = "A helmet which offers good protection to the face at the expense of vision."
+	icon_state = "dwarvenhelmet"
+	item_state = "dwarvenhelmet"
+	emote_environment = 3
+	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
+	block2add = FOV_BEHIND
+	smeltresult = /obj/item/ingot/steel
+
+/obj/item/clothing/head/roguetown/antlerhood
+	name = "antlerhood"
+	desc = "A hood suited for druids and shamans."
+	color = null
+	flags_inv = HIDEEARS|HIDEHAIR
+	icon_state = "antlerhood"
+	item_state = "antlerhood"
+	icon = 'icons/roguetown/clothing/head.dmi'
+	body_parts_covered = HEAD|HAIR|EARS|NECK
+	slot_flags = ITEM_SLOT_HEAD
+	dynamic_hair_suffix = ""
+	max_integrity = 100
+	armor = list("blunt" = 16, "slash" = 19, "stab" = 15, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_TWIST)
+	anvilrepair = null
+	sewrepair = TRUE
+	blocksound = SOFTHIT
 
 /obj/item/clothing/head/roguetown/menacing
 	name = "sack hood"
@@ -566,12 +685,45 @@
 	icon_state = "wizardhat"
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
 	dynamic_hair_suffix = "+generic"
-	sellprice = 100
 	worn_x_dimension = 64
 	worn_y_dimension = 64
+	sewrepair = TRUE
+
+/obj/item/clothing/head/roguetown/wizhat/red
+	icon_state = "wizardhatred"
+
+/obj/item/clothing/head/roguetown/wizhat/yellow
+	icon_state = "wizardhatyellow"
+
+/obj/item/clothing/head/roguetown/wizhat/green
+	icon_state = "wizardhatgreen"
+
+/obj/item/clothing/head/roguetown/wizhat/black
+	icon_state = "wizardhatblack"
 
 /obj/item/clothing/head/roguetown/wizhat/gen
 	icon_state = "wizardhatgen"
+
+/obj/item/clothing/head/roguetown/wizhat/gen/wise
+	name = "wise hat"
+	sellprice = 100
+	desc = "Only the wisest of nimrods wear this."
+
+/obj/item/clothing/head/roguetown/wizhat/gen/wise/equipped(mob/user, slot)
+	. = ..()
+	if(!ishuman(user))
+		return
+	var/mob/living/carbon/wise = user
+	if(slot == SLOT_HEAD)
+		wise.change_stat("intelligence", 2, "wisehat")
+
+/obj/item/clothing/head/roguetown/wizhat/gen/wise/dropped(mob/user)
+	. = ..()
+	if(!ishuman(user))
+		return
+	var/mob/living/carbon/human/wise = user
+	if(wise.get_item_by_slot(SLOT_HEAD) == src)
+		wise.change_stat("intelligence", -2, "wisehat")
 
 /obj/item/clothing/head/roguetown/nyle
 	name = "jewel of nyle"
@@ -976,3 +1128,54 @@
 	block2add = FOV_RIGHT|FOV_LEFT
 	smeltresult = /obj/item/ingot/siliconcarbide
 	bloody_icon_state = null
+
+/obj/item/clothing/head/roguetown/crown/circlet
+	name = "golden circlet"
+	desc = ""
+	icon_state = "goldcirclet"
+	item_state = "goldcirclet"
+	dynamic_hair_suffix = null
+	resistance_flags = FIRE_PROOF | ACID_PROOF
+	sellprice = 50
+
+/obj/item/clothing/head/roguetown/crown/circlet/vision
+	name = "mystical circlet"
+	desc = "A shining gold circlet, with a mysterious purple insert. You feel like you have a third eye while near it..."
+	icon_state = "visioncirclet"
+	item_state = "visioncirclet"
+	sellprice = 80
+
+/obj/item/clothing/head/roguetown/crown/circlet/vision/equipped(mob/user, slot)
+	. = ..()
+	if (slot == SLOT_HEAD && istype(user))
+		ADD_TRAIT(user, TRAIT_THERMAL_VISION,"thermal_vision")
+	else
+		REMOVE_TRAIT(user, TRAIT_THERMAL_VISION,"thermal_vision")
+
+/obj/item/clothing/head/roguetown/crown/circlet/sleepless
+	name = "clouded circlet"
+	desc = "A shining gold circlet, with a mysterious blue insert. You feel more energetic while near it..."
+	icon_state = "sleepcirclet"
+	item_state = "sleepcirclet"
+	sellprice = 80
+
+/obj/item/clothing/head/roguetown/crown/circlet/sleepless/equipped(mob/user, slot)
+	. = ..()
+	if (slot == SLOT_HEAD && istype(user))
+		ADD_TRAIT(user, TRAIT_NOSLEEP,"Fatal Insomnia")
+	else
+		REMOVE_TRAIT(user, TRAIT_NOSLEEP,"Fatal Insomnia")
+
+/obj/item/clothing/head/roguetown/crown/circlet/stink
+	name = "numbing circlet"
+	desc = "A shining gold circlet, with a mysterious green insert. You feel your sense of smell numb while near it..."
+	icon_state = "stinkcirclet"
+	item_state = "stinkcirclet"
+	sellprice = 80
+
+/obj/item/clothing/head/roguetown/crown/circlet/stink/equipped(mob/user, slot)
+	. = ..()
+	if (slot == SLOT_HEAD && istype(user))
+		ADD_TRAIT(user, TRAIT_NOSTINK,"Dead Nose")
+	else
+		REMOVE_TRAIT(user, TRAIT_NOSTINK,"Dead Nose")

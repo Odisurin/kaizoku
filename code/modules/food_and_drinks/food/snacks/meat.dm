@@ -337,7 +337,7 @@
 	tastes = list("meat" = 1, "salmon" = 1)
 
 /obj/item/reagent_containers/food/snacks/meat/steak/xeno
-	name = "xeno steak"
+	name = "steak"
 	tastes = list("meat" = 1, "acid" = 1)
 
 /obj/item/reagent_containers/food/snacks/meat/steak/spider
@@ -404,7 +404,7 @@
 	tastes = list("meat" = 1, "salmon" = 1)
 
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/xeno
-	name = "raw xeno cutlet"
+	name = "raw cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/xeno
 	tastes = list("meat" = 1, "acid" = 1)
 

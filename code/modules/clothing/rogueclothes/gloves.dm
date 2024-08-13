@@ -146,6 +146,16 @@
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 
+/obj/item/clothing/gloves/roguetown/dwarfgauntlets
+	name = "dwarven gauntlets"
+	desc = "A heavy set of plate gauntlets which provide excellent protection."
+	icon_state = "dwarvengauntlets"
+	item_state = "dwarvengauntlets"
+	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CHOP, BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
+	resistance_flags = null
+	blocksound = PLATEHIT
+
 /obj/item/clothing/gloves/roguetown/rare/humanswplate
 	name = "northern plate gauntlets"
 	desc = ""

@@ -38,6 +38,38 @@
 	icon_state = "ridingboots"
 	item_state = "ridingboots"
 
+/obj/item/clothing/shoes/roguetown/boots/dwarfboots
+	name = "dwarven boots"
+	desc = "A heavy pair of steel plated boots."
+	body_parts_covered = FEET
+	icon_state = "dwarvenboots"
+	item_state = "dwarvenboots"
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	color = null
+	blocksound = PLATEHIT
+	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/steel
+
+/obj/item/clothing/shoes/roguetown/boots/furlinedboots
+	name = "fur lined boots"
+	desc = "Leather boots lined with fur."
+	gender = PLURAL
+	icon_state = "furlinedboots"
+	item_state = "furlinedboots"
+	sewrepair = TRUE
+	armor = list("blunt" = 30, "slash" = 10, "stab" = 20, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+
+/obj/item/clothing/shoes/roguetown/boots/furlinedanklets
+	name = "fur lined anklets"
+	desc = "Leather anklets lined with fur, foot remains bare."
+	gender = PLURAL
+	icon_state = "furlinedanklets"
+	item_state = "furlinedanklets"
+	sewrepair = TRUE
+	armor = list("blunt" = 30, "slash" = 10, "stab" = 20, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	isbarefoot = TRUE
+
 ///obj/item/clothing/shoes/roguetown/ridingboots/Initialize()
 //	. = ..()
 //	AddComponent(/datum/component/squeak, list('sound/foley/spurs (1).ogg'sound/blank.ogg'=1), 50)

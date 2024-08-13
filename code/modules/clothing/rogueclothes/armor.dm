@@ -586,6 +586,14 @@
 													'sound/foley/footsteps/armor/fullplate (2).ogg',\
 													'sound/foley/footsteps/armor/fullplate (3).ogg'), 100)
 
+/obj/item/clothing/suit/roguetown/armor/plate/dwarffull
+	name = "dwarven fullarmor"
+	desc = "Full plate. Leg protecting tassets, groin cup, armored vambraces."
+	icon_state = "dwarvenchestplate"
+	item_state = "dwarvenchestplate"
+	body_parts_covered = CHEST|GROIN|VITALS|LEGS|ARMS
+	equip_delay_self = 80
+
 ////Kaizoku Armor Content////
 
 /obj/item/clothing/suit/roguetown/armor/kaizoku
@@ -933,5 +941,5 @@ obj/item/clothing/suit/roguetown/armor/kaizoku/plate/sanmaido
 			L.update_inv_shirt()
 			L.update_inv_armor()
 		return
-	else 
+	else
 		return

@@ -28,6 +28,17 @@
 	verbage = "tie"
 	verbage_tp = "ties"
 
+/datum/crafting_recipe/roguetown/antlerhood
+	name = "antlerhood"
+	result = /obj/item/clothing/head/roguetown/antlerhood
+	reqs = list(/obj/item/natural/hide = 1,
+				/obj/item/natural/antler = 2)
+	sellprice = 12
+	tools = list(/obj/item/needle)
+	skillcraft = /datum/skill/misc/sewing
+	verbage = "sew"
+	verbage_tp= "sews"
+
 /datum/crafting_recipe/roguetown/rope
 	name = "rope"
 	result = /obj/item/rope

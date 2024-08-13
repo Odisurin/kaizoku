@@ -20,12 +20,15 @@
 /datum/outfit/job/roguetown/adventurer/templar/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.virginity = TRUE
-	wrists = /obj/item/clothing/neck/roguetown/psicross/astrata
-	armor = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+	wrists = /obj/item/clothing/wrists/roguetown/bracers
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/full
+	shirt = /obj/item/clothing/suit/roguetown/armor/chainmail
+	gloves = /obj/item/clothing/gloves/roguetown/plate
 	pants = /obj/item/clothing/under/roguetown/chainlegs
 	shoes = /obj/item/clothing/shoes/roguetown/boots/leather
 	head = /obj/item/clothing/head/roguetown/helmet/heavy/bucket
 	belt = /obj/item/storage/belt/rogue/leather/hand
+	beltr = /obj/item/clothing/neck/roguetown/psicross/astrata
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 	id = /obj/item/clothing/ring/silver
 	cloak = /obj/item/clothing/cloak/tabard/crusader

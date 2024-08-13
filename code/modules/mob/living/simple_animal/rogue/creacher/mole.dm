@@ -13,9 +13,10 @@
 	see_in_dark = 6
 	move_to_delay = 5
 	base_intents = list(/datum/intent/simple/claw)
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 2,
-						/obj/item/natural/hide = 1,
-						/obj/item/natural/fur = 1)
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 7,
+						/obj/item/natural/hide = 2,
+						/obj/item/natural/fur = 1,
+						/obj/item/natural/bone = 3)
 	faction = list("orcs")
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	health = 300

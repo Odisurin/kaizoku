@@ -34,7 +34,38 @@
 	peopleknowme = list()
 
 /datum/outfit/job/roguetown/vagrant/pre_equip(mob/living/carbon/human/H)
+
 	..()
+	// wise beggar!!!
+	// guaranteed full beggar gear + random stats
+	if(is_wise)
+		head = /obj/item/clothing/head/roguetown/wizhat/gen/wise //wise hat
+		beltr = /obj/item/reagent_containers/powder/moondust
+		beltl = /obj/item/clothing/mask/cigarette/rollie/cannabis
+		cloak = /obj/item/clothing/cloak/raincloak/brown
+		gloves = /obj/item/clothing/gloves/roguetown/fingerless
+		armor = /obj/item/clothing/suit/roguetown/shirt/rags
+		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/vagrant
+		pants = /obj/item/clothing/under/roguetown/tights/vagrant
+		shoes = /obj/item/clothing/shoes/roguetown/shalal // wise boots
+		r_hand = /obj/item/rogueweapon/woodstaff/wise // dog beating staff
+		l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/special // dog butchering knife
+		if(H.mind)
+			H.mind.adjust_skillrank(/datum/skill/misc/sneaking, rand(2,5), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/stealing, 5, TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/climbing, rand(2,5), TRUE)
+			H.mind.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE) //very good reading he is wise
+			H.mind.adjust_skillrank(/datum/skill/combat/polearms, rand(2,5), TRUE) // dog beating staff
+			H.STASTR = rand(1, 20)
+			H.STAINT = rand(5, 20)
+			H.STALUC = rand(1, 20)
+		H.change_stat("constitution", -rand(0, 2))
+		H.change_stat("endurance", -rand(0, 2))
+		H.real_name = "[H.real_name] the Wise"
+		H.name = "[H.name] the Wise"
+		H.facial_hairstyle = "Knowledge"
+		H.update_hair()
+		H.age = AGE_OLD
 	if(prob(20))
 		head = /obj/item/clothing/head/roguetown/knitcap
 	if(prob(5))
@@ -77,3 +108,9 @@
 
 /datum/outfit/job/roguetown/vagrant
 	name = "Beggar"
+	/// Whether or not we get wise gear and stats
+	var/is_wise = FALSE
+
+/datum/outfit/job/roguetown/vagrant/wise
+	name = "Wise Beggar"
+	is_wise = TRUE

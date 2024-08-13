@@ -39,7 +39,7 @@
 
 /datum/crafting_recipe/roguetown/leather/gloves
 	name = "leather gloves (x2)"
-	result = list(/obj/item/clothing/gloves/roguetown/leather, 
+	result = list(/obj/item/clothing/gloves/roguetown/leather,
 	/obj/item/clothing/gloves/roguetown/leather)
 	reqs = list(/obj/item/natural/hide = 1)
 	sellprice = 10
@@ -64,12 +64,28 @@
 	reqs = list(/obj/item/natural/hide = 1)
 	sellprice = 10
 
+/datum/crafting_recipe/roguetown/leather/volfhelm
+	name = "wolf helmet"
+	result = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
+	reqs = list(/obj/item/natural/volf_head = 1, /obj/item/natural/hide = 2)
+	craftdiff = 1
+
 /datum/crafting_recipe/roguetown/leather/shoes
 	name = "leather shoes (x2)"
 	result = list(/obj/item/clothing/shoes/roguetown/simpleshoes,
 				/obj/item/clothing/shoes/roguetown/simpleshoes,)
 	reqs = list(/obj/item/natural/hide = 1)
 	sellprice = 10
+
+/datum/crafting_recipe/roguetown/leather/furlinedboots
+	name = "fur-lined boots"
+	result = /obj/item/clothing/shoes/roguetown/boots/furlinedboots
+	reqs = list(/obj/item/natural/hide = 1,/obj/item/natural/fur = 1)
+
+/datum/crafting_recipe/roguetown/leather/furlinedanklets
+	name = "fur-lined anklets"
+	result = /obj/item/clothing/shoes/roguetown/boots/furlinedanklets
+	reqs = list(/obj/item/natural/hide = 1,/obj/item/natural/fur = 1)
 
 /datum/crafting_recipe/roguetown/leather/boots
 	name = "leather boots"
@@ -143,5 +159,5 @@
 	name = "leather whip"
 	result = /obj/item/rogueweapon/whip
 	reqs = list(/obj/item/natural/hide = 2)
-	sellprice = 39	
+	sellprice = 39
 	craftdiff = 1

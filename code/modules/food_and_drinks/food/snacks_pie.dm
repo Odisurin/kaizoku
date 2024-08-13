@@ -118,7 +118,7 @@
 		reagents.add_reagent(/datum/reagent/medicine/omnizine, 5)
 
 /obj/item/reagent_containers/food/snacks/pie/xemeatpie
-	name = "xeno-pie"
+	name = "meat pie"
 	icon_state = "xenomeatpie"
 	desc = ""
 	trash = /obj/item/trash/plate

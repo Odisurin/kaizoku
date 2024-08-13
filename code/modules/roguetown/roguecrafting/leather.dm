@@ -64,6 +64,12 @@
 	reqs = list(/obj/item/natural/hide = 1)
 	sellprice = 10
 
+/datum/crafting_recipe/roguetown/leather/volfhelm
+	name = "wolf helmet"
+	result = /obj/item/clothing/head/roguetown/helmet/leather/volfhelm
+	reqs = list(/obj/item/natural/volf_head = 1, /obj/item/natural/hide = 2)
+	craftdiff = 1
+
 /datum/crafting_recipe/roguetown/leather/shoes
 	name = "leather shoes (x2)"
 	result = list(/obj/item/clothing/shoes/roguetown/simpleshoes,

@@ -87,11 +87,11 @@
 	additional_items = list(/obj/item/ingot/gold)
 	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/astratahelm
 
-/datum/anvil_recipe/armor/eorahelm
+/datum/anvil_recipe/armor/enorahelm
 	name = "Enora Helmet (+1 Steel)"
 	req_bar = /obj/item/ingot/steel
 	additional_items = list(/obj/item/ingot/steel)
-	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/eorahelm
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/enorahelm
 
 /datum/anvil_recipe/armor/necrahelm
 	name = "Necra Helmet (+1 Steel)"

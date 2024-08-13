@@ -170,11 +170,11 @@
 	block2add = FOV_BEHIND
 	smeltresult = /obj/item/ingot/steel
 
-/obj/item/clothing/head/roguetown/helmet/heavy/eorahelm
+/obj/item/clothing/head/roguetown/helmet/heavy/enorahelm
     name = "enora helmet"
     desc = "Headwear commonly worn by Templars in service to Enora. The chained heart on its front demonstrates its wearer's commitment to protect unbound love, even at ones own expense."
-    icon_state = "eorahelm"
-    item_state = "eorahelm"
+    icon_state = "enorahelm"
+    item_state = "enorahelm"
     emote_environment = 3
     flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
     block2add = FOV_BEHIND
@@ -184,8 +184,8 @@
 	name = "enoran mask"
 	desc = "A silver rabbet mask worn by the faithful of Enora, usually during their rituals."
 	color = null
-	icon_state = "eoramask"
-	item_state = "eoramask"
+	icon_state = "enoramask"
+	item_state = "enoramask"
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
 	worn_x_dimension = 64
 	worn_y_dimension = 64

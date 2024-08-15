@@ -32,6 +32,9 @@
 /datum/skill/misc/medicine
 	name = "Medicine"
 
+/datum/skill/misc/alchemy
+	name = "Alchemy"
+
 /datum/skill/misc/sewing
 	name = "Sewing"
 

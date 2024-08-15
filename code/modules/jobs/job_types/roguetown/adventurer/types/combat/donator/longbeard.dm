@@ -28,15 +28,14 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/blacksmithing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/armorsmithing, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/weaponsmithing, 2, TRUE)
-		
+
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	backr = /obj/item/rogueweapon/mace/warhammer
 	beltl = /obj/item/storage/belt/rogue/pouch/coins/mid
 	shoes = /obj/item/clothing/shoes/roguetown/boots/rare/dwarfplate
-	gloves = /obj/item/clothing/gloves/roguetown/rare/dwarfplate
 	belt = /obj/item/storage/belt/rogue/leather
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
-	armor = /obj/item/clothing/suit/roguetown/armor/rare/dwarfplate
+	armor = /obj/item/clothing/suit/roguetown/armor/plate/dwarffull
 	backl = /obj/item/storage/backpack/rogue/satchel
 	head = /obj/item/clothing/head/roguetown/rare/dwarfplate
 	neck = /obj/item/clothing/neck/roguetown/chaincoif

@@ -145,6 +145,19 @@
 	desc = ""
 	icon_state = "dendor"
 
+/obj/item/clothing/neck/roguetown/psicross/dendor/hunt
+	name = "amulet of the hunt"
+	desc = "a strange amulet which seems to emit churping and odd screams which sound gutteral."
+	icon_state = "dendor"
+
+/obj/item/clothing/neck/roguetown/psicross/dendor/hunt/equipped(mob/living/user, slot)
+	. = ..()
+	if(user.mind)
+		if (slot == SLOT_NECK && istype(user))
+			user.apply_status_effect(/datum/status_effect/buff/dendor)
+		else
+			user.remove_status_effect(/datum/status_effect/buff/dendor)
+
 /obj/item/clothing/neck/roguetown/psicross/necra
 	name = "amulet of Necra"
 	desc = ""

@@ -20,6 +20,9 @@
 /obj/item/reagent_containers/glass/bottle/rogue/fogblight
 	list_reagents = list(/datum/reagent/fogblight = 45)
 
+/obj/item/reagent_containers/glass/bottle/rogue/antipoisonpot
+	list_reagents = list(/datum/reagent/medicine/antipoisonpot = 45)
+
 //////////////////////////
 /// ALCOHOLIC BOTTLES ///
 //////////////////////////

@@ -130,12 +130,38 @@
 	REMOVE_TRAIT(user, TRAIT_ANTIMAGIC,"Anti-Magic")
 	REMOVE_TRAIT(user, TRAIT_SHOCKIMMUNE, "Shock Immunity")
 
+/obj/item/clothing/ring/gold/divinity
+	name = "ring of minor divinity"
+	desc = "Ancient ring, inscribed with archaic words. Just being near it imbues you with aethic strength."
+	icon_state = "ring_minordivinity"
+
+/obj/item/clothing/ring/gold/divinity/equipped(mob/living/user, slot)
+	. = ..()
+	if(user.mind)
+		if (slot == SLOT_RING && istype(user))
+			user.apply_status_effect(/datum/status_effect/buff/ravox/divine)
+		else
+			user.remove_status_effect(/datum/status_effect/buff/ravox/divine)
+
 /obj/item/clothing/ring/gold/ravox
 	name = "ring of ravox"
 	desc = "Old ring, inscribed with arcane words. Just being near it imbues you with otherworldly strength."
 	icon_state = "ring_ravox"
 
 /obj/item/clothing/ring/gold/ravox/equipped(mob/living/user, slot)
+	. = ..()
+	if(user.mind)
+		if (slot == SLOT_RING && istype(user))
+			user.apply_status_effect(/datum/status_effect/buff/ravox/super)
+		else
+			user.remove_status_effect(/datum/status_effect/buff/ravox/super)
+
+/obj/item/clothing/ring/gold/strife
+	name = "ring of strife"
+	desc = "Old ring, inscribed with arcane words. Just being near it imbues you with some otherworldly strength."
+	icon_state = "rubyii"
+
+/obj/item/clothing/ring/gold/strife/equipped(mob/living/user, slot)
 	. = ..()
 	if(user.mind)
 		if (slot == SLOT_RING && istype(user))

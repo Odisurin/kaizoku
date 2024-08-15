@@ -179,6 +179,18 @@
 	desc = "<span class='nicegreen'>I am so high maaaaaaaaan</span>\n"
 	icon_state = "weed"
 
+
+/datum/status_effect/buff/dendor
+	id = "dendorbuff"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/ravoxbuff
+	effectedstats = list("endurance" = 1,"speed" = 3, "inteligence" = -2)
+	duration = 240 MINUTES
+
+/atom/movable/screen/alert/status_effect/buff/dendor
+	name = "Divine Speed"
+	desc = "<span class='nicegreen'>Divine power flows through me.</span>\n"
+	icon_state = "dendor"
+
 /datum/status_effect/buff/ravox
 	id = "ravoxbuff"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/ravoxbuff
@@ -189,6 +201,28 @@
 	name = "Divine Power"
 	desc = "<span class='nicegreen'>Divine power flows through me.</span>\n"
 	icon_state = "ravox"
+
+/datum/status_effect/buff/ravox/super
+	id = "ravoxbuffii"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/ravoxbuff/super
+	effectedstats = list("constitution" = 3,"endurance" = 3,"strength" = 4)
+	duration = 240 MINUTES
+
+/atom/movable/screen/alert/status_effect/buff/ravoxbuff/super
+	name = "Divine Power II"
+	desc = "<span class='nicegreen'>Divine power flows through me...I feel power..</span>\n"
+	icon_state = "ravoxii"
+
+/datum/status_effect/buff/ravox/divine
+	id = "ravoxbuffiii"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/ravoxbuff/divine
+	effectedstats = list("constitution" = 6,"endurance" = 6,"strength" = 8)
+	duration = 240 MINUTES
+
+/atom/movable/screen/alert/status_effect/buff/ravoxbuff/divine
+	name = "Divine Power III"
+	desc = "<span class='nicegreen'>Divine power flows through me.. I am all powerful..</span>\n"
+	icon_state = "ravoxiii"
 
 /datum/status_effect/buff/calm
 	id = "calm"

@@ -84,3 +84,4 @@
 	C.holder_mob = H
 	C.grant_spells(H)
 	H.verbs += list(/mob/living/carbon/human/proc/devotionreport, /mob/living/carbon/human/proc/clericpray)
+	H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/heal)

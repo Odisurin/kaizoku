@@ -38,19 +38,6 @@
 	icon_state = "ridingboots"
 	item_state = "ridingboots"
 
-/obj/item/clothing/shoes/roguetown/boots/dwarfboots
-	name = "dwarven boots"
-	desc = "A heavy pair of steel plated boots."
-	body_parts_covered = FEET
-	icon_state = "dwarvenboots"
-	item_state = "dwarvenboots"
-	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
-	color = null
-	blocksound = PLATEHIT
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	anvilrepair = /datum/skill/craft/armorsmithing
-	smeltresult = /obj/item/ingot/steel
-
 /obj/item/clothing/shoes/roguetown/boots/furlinedboots
 	name = "fur lined boots"
 	desc = "Leather boots lined with fur."
@@ -69,6 +56,19 @@
 	sewrepair = TRUE
 	armor = list("blunt" = 30, "slash" = 10, "stab" = 20, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	isbarefoot = TRUE
+
+/obj/item/clothing/shoes/roguetown/boots/dwarfboots
+	name = "dwarven boots"
+	desc = "A heavy pair of steel plated boots."
+	body_parts_covered = FEET
+	icon_state = "dwarvenboots"
+	item_state = "dwarvenboots"
+	prevent_crits = list(BCLASS_CUT, BCLASS_STAB, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
+	color = null
+	blocksound = PLATEHIT
+	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	anvilrepair = /datum/skill/craft/armorsmithing
+	smeltresult = /obj/item/ingot/steel
 
 ///obj/item/clothing/shoes/roguetown/ridingboots/Initialize()
 //	. = ..()
@@ -190,8 +190,8 @@
 	allowed_sex = list(MALE, FEMALE)
 	desc = ""
 	body_parts_covered = FEET|LEGS
-	icon_state = "dwarfshoe"
-	item_state = "dwarfshoe"
+	icon_state = "dwarvenboots"
+	item_state = "dwarvenboots"
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT)
 	color = null
 	blocksound = PLATEHIT

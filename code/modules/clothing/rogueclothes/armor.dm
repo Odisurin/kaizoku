@@ -509,31 +509,6 @@
 													'sound/foley/footsteps/armor/fullplate (2).ogg',\
 													'sound/foley/footsteps/armor/fullplate (3).ogg'), 100)
 
-/obj/item/clothing/suit/roguetown/armor/rare/dwarfplate
-	slot_flags = ITEM_SLOT_ARMOR
-	name = "dwarvish plate"
-	desc = "Plate armor made out of the sturdiest, finest dwarvish metal armor. It's as heavy and durable as it gets."
-	body_parts_covered = CHEST|GROIN|ARMS|VITALS
-	icon_state = "dwarfchest"
-	item_state = "dwarfchest"
-	allowed_race = list("dwarf")
-	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT)
-	nodismemsleeves = TRUE
-	max_integrity = 500
-	var/do_sound = TRUE
-	anvilrepair = /datum/skill/craft/armorsmithing
-	smeltresult = /obj/item/ingot/steel
-	equip_delay_self = 40
-	armor_class = ARMOR_CLASS_HEAVY
-
-/obj/item/clothing/suit/roguetown/armor/rare/dwarfplate/Initialize()
-	. = ..()
-	if(do_sound)
-		AddComponent(/datum/component/squeak, list('sound/foley/footsteps/armor/fullplate (1).ogg',\
-													'sound/foley/footsteps/armor/fullplate (2).ogg',\
-													'sound/foley/footsteps/armor/fullplate (3).ogg'), 100)
-
 /obj/item/clothing/suit/roguetown/armor/rare/humanswplate
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "northern plate"
@@ -553,13 +528,6 @@
 	equip_delay_self = 40
 	armor_class = ARMOR_CLASS_HEAVY
 
-/obj/item/clothing/suit/roguetown/armor/rare/dwarfplate/Initialize()
-	. = ..()
-	if(do_sound)
-		AddComponent(/datum/component/squeak, list('sound/foley/footsteps/armor/fullplate (1).ogg',\
-													'sound/foley/footsteps/armor/fullplate (2).ogg',\
-													'sound/foley/footsteps/armor/fullplate (3).ogg'), 100)
-
 /obj/item/clothing/suit/roguetown/armor/rare/humanspplate
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "southern plate"
@@ -578,13 +546,6 @@
 	smeltresult = /obj/item/ingot/steel
 	equip_delay_self = 40
 	armor_class = ARMOR_CLASS_HEAVY
-
-/obj/item/clothing/suit/roguetown/armor/rare/dwarfplate/Initialize()
-	. = ..()
-	if(do_sound)
-		AddComponent(/datum/component/squeak, list('sound/foley/footsteps/armor/fullplate (1).ogg',\
-													'sound/foley/footsteps/armor/fullplate (2).ogg',\
-													'sound/foley/footsteps/armor/fullplate (3).ogg'), 100)
 
 /obj/item/clothing/suit/roguetown/armor/plate/dwarffull
 	name = "dwarven fullarmor"

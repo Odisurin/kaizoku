@@ -128,34 +128,6 @@
 	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 
-/obj/item/clothing/gloves/roguetown/rare/dwarfplate
-	name = "dwarvish plate gauntlets"
-	desc = ""
-	item_state = "dwarfhand"
-	icon_state = "dwarfhand"
-	armor = list("melee" = 100, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CHOP, BCLASS_CUT, BCLASS_BLUNT)
-	resistance_flags = null
-	allowed_race = list("dwarf")
-	allowed_sex = list(MALE, FEMALE)
-	blocksound = PLATEHIT
-	body_parts_covered = HANDS
-	max_integrity = 400
-	blade_dulling = DULLING_BASH
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
-	anvilrepair = /datum/skill/craft/armorsmithing
-
-/obj/item/clothing/gloves/roguetown/dwarfgauntlets
-	name = "dwarven gauntlets"
-	desc = "A heavy set of plate gauntlets which provide excellent protection."
-	icon_state = "dwarvengauntlets"
-	item_state = "dwarvengauntlets"
-	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	prevent_crits = list(BCLASS_CHOP, BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
-	resistance_flags = null
-	blocksound = PLATEHIT
-
 /obj/item/clothing/gloves/roguetown/rare/humanswplate
 	name = "northern plate gauntlets"
 	desc = ""
@@ -203,6 +175,16 @@
 	desc = "Improved grip for wielding disembowled organs."
 	icon_state = "surggloves"
 	item_state = "surggloves"
+
+/obj/item/clothing/gloves/roguetown/dwarfgauntlets
+	name = "dwarven gauntlets"
+	desc = "A heavy set of plate gauntlets which provide excellent protection."
+	icon_state = "dwarvengauntlets"
+	item_state = "dwarvengauntlets"
+	armor = list("blunt" = 90, "slash" = 100, "stab" = 80, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	prevent_crits = list(BCLASS_CHOP, BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST)
+	resistance_flags = null
+	blocksound = PLATEHIT
 
 /* Re-using Gundam content here.
 /obj/item/clothing/gloves/dusters

@@ -161,6 +161,12 @@
 //	additional_items = list(/obj/item/ingot/gold)
 //	created_item = /obj/item/clothing/shoes/roguetown/boots/dwarfboots
 
+/datum/anvil_recipe/armor/dwarfhelmet
+	name = "Dwarven Helmet +1 Gold"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/gold)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/dwarfhelm
+
 /datum/anvil_recipe/armor/brigadine
 	name = "brigadine (3s 1c)"
 	req_bar = /obj/item/ingot/steel

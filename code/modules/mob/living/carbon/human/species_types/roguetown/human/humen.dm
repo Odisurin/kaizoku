@@ -2,7 +2,7 @@
 	race = /datum/species/human/northern
 
 /datum/species/human/northern
-	name = "Human"
+	name = "Humen"
 	id = "human"
 	desc = "<b>Human</b><br>\
 	Humans are the eldest of the weeping gods creation. Noted for their\

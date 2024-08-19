@@ -466,7 +466,7 @@
                 qdel(src)
 
 /obj/item/flashlight/flare/torch/lantern
-	name = "lamptern"
+	name = "lantern"
 	icon_state = "lamp"
 	desc = ""
 	brightness_on = 7

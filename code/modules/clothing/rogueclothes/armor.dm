@@ -512,7 +512,7 @@
 /obj/item/clothing/suit/roguetown/armor/rare/humanswplate
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "northern plate"
-	desc = "The heaviest, most durable set of armor that the northern Humen craft. It's said it's smiths pray for Ravox's divination during the smelting process."
+	desc = "The heaviest, most durable set of armor that the Inuarmen craft. It's said it's smiths pray for Ravox's divination during the smelting process."
 	body_parts_covered = CHEST|GROIN|ARMS|VITALS
 	icon_state = "human_swordchest"
 	item_state = "human_swordchest"
@@ -588,7 +588,7 @@
 /obj/item/clothing/suit/roguetown/armor/kaizoku/plate
 	slot_flags = ITEM_SLOT_ARMOR
 	name = "steel nanbando"
-	desc = "Abyssariad steel cuirass, refined and with additional sode for protection. Rare and prized by High-ranking zamurais, this design has been acquired by raided humen settlements."
+	desc = "Abyssariad steel cuirass, refined and with additional sode for protection. Rare and prized by High-ranking zamurais, this design has been acquired by raided human settlements."
 	body_parts_covered = CHEST|GROIN|VITALS
 	icon_state = "nanbando"
 	item_state = "nanbando"

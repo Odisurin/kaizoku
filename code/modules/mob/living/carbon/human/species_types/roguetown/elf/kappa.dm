@@ -13,7 +13,7 @@
 	hedonistic lives, feared by those aware of their mischievous, people-drowning nature. \
 	One may say these are misunderstood rituals of trust, others warns the others that it is \
 	a sacrifice to the spirits they believe that exists. They have a natural, biological \
-	antipathy and abhorrence to humens - and a mutual alliance with Abyssariads."
+	antipathy and abhorrence to humans - and a mutual alliance with Abyssariads."
 	default_color = "FFFFFF"
 	species_traits = list(EYECOLOR,HAIR,FACEHAIR,LIPS,OLDGREY)
 	inherent_traits = list(TRAIT_NOMOBSWAP)
@@ -81,7 +81,7 @@
 
 /datum/species/elf/kappa/get_skin_list()
 	return sortList(list(
-	"Swampclan" = "728400", 
+	"Swampclan" = "728400",
 	"Jungleclan" = "0D6D30",
 	"Leafclan" = "5ea889",
 	"Bogclan" = "1b7a5e",

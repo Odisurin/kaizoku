@@ -72,8 +72,8 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_VILLAIN = "I am a devious, conniving villain!",
 	TRAIT_SOUL_EXAMINE = "<span class='deadsay'>I know when someone's soul has departed.</span>",
 	TRAIT_CYCLOPS_RIGHT = "<span class='warning'>My right eye has been poked out...</span>",
-	TRAIT_RETARD_ANATOMY = "My anatomy is inhumen, preventing me from wearing hats and shoes.",
-	TRAIT_ABYSSAL_AVERSION = "They killed Abyssor's storm daughter. Humen soul is tainted - and deserve no love of mine."
+	TRAIT_RETARD_ANATOMY = "My anatomy is inhuman, preventing me from wearing hats and shoes.",
+	TRAIT_ABYSSAL_AVERSION = "They killed Abyssor's storm daughter. Humanities soul is tainted - and deserve no love of mine."
 
 	))
 

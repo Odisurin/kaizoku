@@ -149,7 +149,7 @@
 
 /obj/item/rogue/instrument/flute
 	name = "flute"
-	desc = "A cacophonous wind-instrument, played primarily by humens all around Grimoria."
+	desc = "A cacophonous wind-instrument, played primarily by humans all around Grimoria."
 	icon_state = "flute"
 	song_list = list("Song 1" = 'sound/music/instruments/flute (1).ogg',
 	"Song 2" = 'sound/music/instruments/flute (2).ogg',

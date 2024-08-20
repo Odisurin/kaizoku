@@ -1,7 +1,7 @@
 //terrify mobs scream
 /datum/advclass/combat/barbarian
 	name = "Barbarian"
-	tutorial = "Barbarians are humen men who live in the outskirts of society, \
+	tutorial = "Barbarians are human men who live in the outskirts of society, \
 	living off the land and bathing in the red glory of combat."
 	allowed_sexes = list(MALE)
 	allowed_races = list("Humen")

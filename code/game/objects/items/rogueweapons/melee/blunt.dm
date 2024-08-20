@@ -118,7 +118,7 @@
 	force = 15
 	force_wielded = 20
 	name = "jitte"
-	desc = "Unlike most weapons named in the Abyssariad tongue, the jitte was designed by Humens. The hook along the shaft allows the club to arrest a blade that has been parried, greatly increasing the defensive utility of the otherwise simple baton."
+	desc = "Unlike most weapons named in the Abyssariad tongue, the jitte was designed by Humans. The hook along the shaft allows the club to arrest a blade that has been parried, greatly increasing the defensive utility of the otherwise simple baton."
 	icon_state = "jitte"
 	//dropshrink = 0.75
 	wbalance = 2

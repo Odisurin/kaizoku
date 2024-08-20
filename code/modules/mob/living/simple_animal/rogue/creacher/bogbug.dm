@@ -4,7 +4,7 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/sewercarrion
 	icon = 'icons/roguetown/mob/monster/sewercarrion.dmi'
 	name = "sewercarrion"
-	desc = "when humenity first developed the sewers, the cockroaches overfed upon alchemical waste, overgrowing- taking on humen flesh."
+	desc = "when humanity first developed the sewers, the cockroaches overfed upon alchemical waste, overgrowing- taking on human flesh."
 	icon_state = "sewercarrion"
 	icon_living = "sewercarrion"
 	icon_dead = "sewercarriondead"
@@ -55,7 +55,7 @@
 	icon_state = "necrobug"
 	icon_living = "necrobug"
 	icon_dead = "necrobugdead"
-	desc = "overgrow from alchemical waste and humen flesh, the necrophages spreads across all non-contaminated sewers from commertial lines."
+	desc = "overgrow from alchemical waste and human flesh, the necrophages spreads across all non-contaminated sewers from commertial lines."
 
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/rawcutlet/xeno = 2,
 						/obj/item/natural/hide = 2)

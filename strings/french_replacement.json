@@ -20,23 +20,29 @@
        		 ], 
 		"cake": "gateau",
       		  "captain": "capitaine", 
-      		  "cook": "cuisinier", 
+      		  "cook": "kook", 
      		   "dad": "papa", 
      		   "good": "bon", 
+			   "hate": "detester",
         "hello": [
             "'allo", 
             "bonjour",
 			"salut"
         ], 
-        "mom ": "mama ", 
+        "mom ": "mere", 
         "my ": "mon ", 
 	"shit": "merde",
-        "spaghetti": "macaroni", 
+	"penis": "coq",
+	" pussy ": "chatte",
         "thanks": "merci",  
         "thank you": "merci",   
         "what's": "quel est",
         "who's": "qui est",
-        "wine": "vin"
+        "wine": "vin",
+		"beer": "biere",
+		"sex": "sexe",
+		" music ": "musique",
+		" lord ": "seigneur",
 		}
 		
 }

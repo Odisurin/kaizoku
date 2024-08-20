@@ -76,7 +76,7 @@
 	created_item = /obj/item/rogueweapon/pitchfork
 
 /datum/anvil_recipe/tools/lamptern
-	name = "lamptern"
+	name = "lantern"
 	req_bar = /obj/item/ingot/iron
 	created_item = /obj/item/flashlight/flare/torch/lantern
 

@@ -167,7 +167,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	icon_state = "kaiken"
 	name = "kaiken"
-	desc = "As improvements in Abyssariad steelcraft were made, laws were put into place in many a humen society forbidding anyone outside of the nobility and their ashigaru from carrying blades in public. Following such laws came the emergence of tiny, easily concealed blades such as this, used mostly for self-defense but also, occasionally, for political assassinations."
+	desc = "As improvements in Abyssariad steelcraft were made, laws were put into place in many a human society forbidding anyone outside of the nobility and their ashigaru from carrying blades in public. Following such laws came the emergence of tiny, easily concealed blades such as this, used mostly for self-defense but also, occasionally, for political assassinations."
 
 /obj/item/rogueweapon/huntingknife/idagger/sai
 	possible_item_intents = list(/datum/intent/dagger/thrust,/datum/intent/dagger/thrust/pick)

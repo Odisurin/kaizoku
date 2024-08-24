@@ -308,7 +308,7 @@ GLOBAL_VAR(restart_counter)
 	s += "<center><a href=\"https://discord.gg/6UzZQYqVHT\">"
 #ifdef MATURESERVER
 	s += "<big><b>KAIZOKU (18+)</b></big></a><br>"
-	s += "<b>Dark Medieval Eastern Fantasy World Roleplay,Whitelist Adult Content. https://discord.gg/224QdHzv3x</b></center><br>"
+	s += "<b>Dark Medieval Eastern Fantasy World Roleplay,Whitelist Adult Content.</b></center><br>"
 #else
 	s += "<big><b>KAIWORLD</b></big></a><br>"
 	s += "<b>Fantasy Computer Survival Game</b></center><br>"

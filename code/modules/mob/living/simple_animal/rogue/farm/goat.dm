@@ -8,13 +8,6 @@
 	..()
 	GLOB.farm_animals = max(GLOB.farm_animals - 1, 0)
 
-/mob/living/simple_animal/hostile/retaliate/rogue/goat/find_food()
-	..()
-	var/obj/structure/spacevine/SV = locate(/obj/structure/spacevine) in loc
-	if(SV)
-		SV.eat(src)
-		food = max(food + 30, 100)
-
 /mob/living/simple_animal/hostile/retaliate/rogue/goat/tamed()
 	..()
 	deaggroprob = 50
@@ -25,7 +18,6 @@
 		D.set_vehicle_dir_layer(NORTH, OBJ_LAYER)
 		D.set_vehicle_dir_layer(EAST, OBJ_LAYER)
 		D.set_vehicle_dir_layer(WEST, OBJ_LAYER)
-
 
 /mob/living/simple_animal/hostile/retaliate/rogue/goat/update_icon()
 	cut_overlays()
@@ -51,6 +43,14 @@
 				if(step)
 					if(locate(/obj/structure/spacevine) in step || locate(/obj/structure/glowshroom) in step)
 						Move(step, get_dir(src, step))
+
+/mob/living/simple_animal/hostile/retaliate/rogue/goat/UniqueAttack()
+	if(istype(target, /obj/structure/spacevine))
+		var/obj/structure/spacevine/SV = target
+		SV.eat(src)
+		food = max(food + 30, food_max + 50)
+		return
+	return ..()
 
 /mob/living/simple_animal/hostile/retaliate/rogue/goat
 	icon = 'icons/roguetown/mob/monster/gote.dmi'

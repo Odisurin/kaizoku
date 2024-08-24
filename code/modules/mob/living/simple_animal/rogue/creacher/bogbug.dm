@@ -49,6 +49,7 @@
 	aggressive = 1
 //	stat_attack = UNCONSCIOUS
 	remains_type = /obj/effect/decal/remains/sewercarrion
+	body_eater = TRUE
 
 /mob/living/simple_animal/hostile/retaliate/rogue/sewercarrion/necrobug
 	name = "necrophage"
@@ -111,11 +112,6 @@
 	if(pulledby)
 		Retaliate()
 		GiveTarget(pulledby)
-
-/mob/living/simple_animal/hostile/retaliate/rogue/sewercarrion/find_food()
-	. = ..()
-	if(!.)
-		return eat_bodies()
 
 /mob/living/simple_animal/hostile/retaliate/rogue/sewercarrion/simple_limb_hit(zone)
 	if(!zone)

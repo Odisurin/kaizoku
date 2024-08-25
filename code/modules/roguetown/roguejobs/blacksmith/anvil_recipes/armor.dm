@@ -20,6 +20,12 @@
 	created_item = list(/obj/item/clothing/neck/roguetown/gorget,
 						/obj/item/clothing/neck/roguetown/gorget)
 
+/datum/anvil_recipe/armor/iplatehelmet
+	name = "Plate helmet +2"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/ingot/iron)
+	created_item = /obj/item/clothing/head/roguetown/helmet/ironplate
+
 /datum/anvil_recipe/armor/ichainglove
 	name = "chain gauntlets"
 	req_bar = /obj/item/ingot/iron
@@ -31,6 +37,11 @@
 	req_bar = /obj/item/ingot/iron
 	created_item = list(/obj/item/clothing/under/roguetown/chainlegs/iron,
 						/obj/item/clothing/under/roguetown/chainlegs/iron)
+
+/datum/anvil_recipe/armor/ipothelmet
+	name = "Pot helmet"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/head/roguetown/helmet/ironpot
 
 /datum/anvil_recipe/armor/platemask
 	name = "iron mask"

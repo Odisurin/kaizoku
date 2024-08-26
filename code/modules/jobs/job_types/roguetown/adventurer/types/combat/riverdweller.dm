@@ -34,6 +34,7 @@
 	H.mind.adjust_skillrank(/datum/skill/craft/tanning, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/traps, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/labor/fishing, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)

@@ -27,6 +27,7 @@
 	H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/swords, pick(3,4), TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/knives, pick(1,3), TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/shields, pick(1,1,2), TRUE)

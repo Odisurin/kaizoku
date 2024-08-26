@@ -31,6 +31,9 @@
 #define TRAIT_CYCLOPS_LEFT				"Cyclops (Left)" //poked left eye
 #define TRAIT_CYCLOPS_RIGHT				"Cyclops (Right)" //poked right eye
 #define TRAIT_LEECHIMMUNE				"Unleechable" //leeches wont attach in bog squares
+#define TRAIT_PERFECT_TRACKER "Perfect Tracker" //! Will always find any tracks and analyzes them perfectly.
+
+
 
 #define TRAIT_MISSING_NOSE "Missing Nose" //halved stamina regeneration
 #define TRAIT_DISFIGURED "Disfigured"
@@ -73,8 +76,8 @@ GLOBAL_LIST_INIT(roguetraits, list(
 	TRAIT_SOUL_EXAMINE = "<span class='deadsay'>I know when someone's soul has departed.</span>",
 	TRAIT_CYCLOPS_RIGHT = "<span class='warning'>My right eye has been poked out...</span>",
 	TRAIT_RETARD_ANATOMY = "My anatomy is inhuman, preventing me from wearing hats and shoes.",
-	TRAIT_ABYSSAL_AVERSION = "They killed Abyssor's storm daughter. Humanities soul is tainted - and deserve no love of mine."
-
+	TRAIT_ABYSSAL_AVERSION = "They killed Abyssor's storm daughter. Humanities soul is tainted - and deserve no love of mine.",
+	TRAIT_PERFECT_TRACKER = "I am the perfect tracker. No tracks will deceive my eyes, nor will they hide their secrets from me."
 	))
 
 // trait accessor defines

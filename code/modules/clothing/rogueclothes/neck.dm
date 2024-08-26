@@ -140,6 +140,16 @@
 	desc = ""
 	icon_state = "noc"
 
+/obj/item/clothing/neck/roguetown/psicross/ravox
+	name = "amulet of Ravox"
+	desc = ""
+	icon_state = "ravox"
+
+/obj/item/clothing/neck/roguetown/psicross/enora
+	name = "amulet of Enora"
+	desc = ""
+	icon_state = "enora"
+
 /obj/item/clothing/neck/roguetown/psicross/dendor
 	name = "amulet of Dendor"
 	desc = ""

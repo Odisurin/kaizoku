@@ -1,6 +1,6 @@
 /mob/living/carbon/human/species/skeleton
 	name = "skeleton"
-	
+
 	race = /datum/species/human/northern
 	gender = MALE
 	bodyparts = list(/obj/item/bodypart/chest, /obj/item/bodypart/head, /obj/item/bodypart/l_arm,
@@ -102,3 +102,9 @@
 		r_hand = /obj/item/rogueweapon/sword
 	else
 		r_hand = /obj/item/rogueweapon/mace/woodclub
+
+/mob/living/carbon/human/species/skeleton/npc/no_equipment
+    skel_outfit = null
+
+/mob/living/carbon/human/species/skeleton/no_equipment
+    skel_outfit = null

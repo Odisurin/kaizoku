@@ -60,7 +60,6 @@
 	UnregisterSignal(C, COMSIG_MOB_SAY)
 	C.remove_language(/datum/language/common)
 
-
 /datum/species/beastkin/handle_speech(datum/source, mob/speech_args)
 	. = ..()
 	var/message = speech_args[SPEECH_MESSAGE]

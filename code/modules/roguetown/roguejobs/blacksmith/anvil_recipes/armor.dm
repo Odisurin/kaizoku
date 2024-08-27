@@ -250,3 +250,30 @@
 	name = "steel mask"
 	req_bar = /obj/item/ingot/steel
 	created_item = (/obj/item/clothing/mask/rogue/facemask/steel)
+
+// Bikini Papalobee
+
+/datum/anvil_recipe/armor/studdedbikini
+	name = "Studded Leather Bikini (+Leather Bikini)"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/clothing/suit/roguetown/armor/leather/bikini)
+	created_item = /obj/item/clothing/suit/roguetown/armor/leather/studded/bikini
+
+/datum/anvil_recipe/armor/studdedbikinitwo
+	name = "Studded Leather Bikini (+Leather Armor)"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/clothing/suit/roguetown/armor/leather)
+	created_item = /obj/item/clothing/suit/roguetown/armor/leather/studded/bikini
+
+/datum/anvil_recipe/armor/platebikini
+	name = "Half-Plate Bikini (+2 Steel +1 Cloth)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/natural/cloth)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/bikini
+
+/datum/anvil_recipe/armor/platefullbikini
+	name = "Full-Plate Bikini (+3 Steel +1 Cloth)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/natural/cloth)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/full/bikini
+

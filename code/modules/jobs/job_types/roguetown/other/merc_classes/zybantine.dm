@@ -9,6 +9,7 @@
 	"Tiefling",
 	"Dark Elf",
 	"Aasimar",
+	"Beastkin",
 	"Kitsune",
 	"Tengu",
 	"Oni",

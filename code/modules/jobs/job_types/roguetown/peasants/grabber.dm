@@ -15,6 +15,7 @@
 	"Aasimar",
 	"Kitsune",
 	"Tengu",
+	"Beastkin",
 	"Oni",
 	"Kappa")
 	tutorial = "Hauler is one of the lowest positions in town, they are expected to aid steward, merchant, masons, and blacksmiths in hauling goods and deliveries."

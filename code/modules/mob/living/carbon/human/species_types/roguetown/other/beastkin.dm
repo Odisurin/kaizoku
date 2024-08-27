@@ -4,7 +4,7 @@
 /datum/species/beastkin
 	name = "Beastkin"
 	id = "beastkin"
-	desc = "Coming from the Southern arid lands, the Beastkins are dendor creatures \
+	desc = "Coming from the Southern arid lands, the Beastkins or Osuni to themselves are dendoric creatures \
 	once belonging to a rich, proudful empire where the gold flowed as river, the soil \
 	lush in life, and hills rich in copper and tin. However, nothing was made to last \
 	as mankind's influence stretched far and wide - and under their new control, the Beastkins \

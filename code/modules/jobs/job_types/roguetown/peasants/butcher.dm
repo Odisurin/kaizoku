@@ -14,6 +14,7 @@
 	"Dark Elf",
 	"Aasimar",
 	"Kitsune",
+	"Beastkin",
 	"Tengu",
 	"Oni",
 	"Kappa")

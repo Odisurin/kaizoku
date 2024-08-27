@@ -30,7 +30,7 @@
 		if(!(istype(C, /area/rogue/indoors/town/church/chapel)))
 			if(!(istype(C, /area/rogue/underworld)))
 				to_chat(user, "<span class='danger'>I should go to the Chapel!</span>")
-				return		
+				return
 		var/msg = input("Whisper your prayer:", "Prayer") as text|null
 		if(msg)
 			L.whisper(msg)
@@ -1315,3 +1315,5 @@
 	key_third_person = "smugs with evil intention."
 	message = "delivers a gloating, soul-piercing wicked smug."
 	message_param = "delivers a gloating, soul-piercing wicked smug at %t."
+
+//Osuni use only.

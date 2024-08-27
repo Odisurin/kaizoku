@@ -1,5 +1,5 @@
 /datum/advclass/mercenary/steppesman
-	name = "Steppesman"
+	name = "Erduni Stepperider"
 	tutorial = "A mercenary from hailing from the wild frontier steppes. There are three things you value most; saigas, freedom, and coin."
 	allowed_sexes = list("male", "female")
 	allowed_races = list("Humen",

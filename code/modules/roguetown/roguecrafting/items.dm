@@ -53,6 +53,28 @@
 	verbage = "merge"
 	verbage_tp = "merges"
 
+/datum/crafting_recipe/roguetown/ceramic/light
+	name = "bone coverings"
+	result = /obj/item/clothing/suit/roguetown/armor/kaizoku/ceramic/light
+	reqs = list(/obj/item/natural/fibers  = 1,
+				/obj/item/natural/bone = 4)
+	sellprice = 5
+	tools = list(/obj/item/needle)
+	skillcraft = /datum/skill/misc/sewing
+	verbage = "bind"
+	verbage_tp= "binds"
+
+/datum/crafting_recipe/roguetown/ceramic
+	name = "marauder heavy armor"
+	result = /obj/item/clothing/suit/roguetown/armor/kaizoku/ceramic
+	reqs = list(/obj/item/natural/fibers  = 2,
+				/obj/item/natural/bone = 8)
+	sellprice = 5
+	tools = list(/obj/item/needle)
+	skillcraft = /datum/skill/misc/sewing
+	verbage = "bind"
+	verbage_tp= "binds"
+
 /datum/crafting_recipe/roguetown/antlerhood
 	name = "antlerhood"
 	result = /obj/item/clothing/head/roguetown/antlerhood

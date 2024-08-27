@@ -1,12 +1,4 @@
 
-
-/mob/living/simple_animal/hostile/retaliate/rogue/saiga/find_food()
-	..()
-	var/obj/structure/spacevine/SV = locate(/obj/structure/spacevine) in loc
-	if(SV)
-		SV.eat(src)
-		food = max(food + 30, 100)
-
 /mob/living/simple_animal/hostile/retaliate/rogue/saiga/update_icon()
 	cut_overlays()
 	..()
@@ -261,14 +253,13 @@
 		D.set_vehicle_dir_layer(EAST, OBJ_LAYER)
 		D.set_vehicle_dir_layer(WEST, OBJ_LAYER)
 
-
-/mob/living/simple_animal/hostile/retaliate/rogue/saigabuck/eat_plants()
-	//..()
-	var/obj/structure/spacevine/SV = locate(/obj/structure/spacevine) in loc
-	if(SV)
+/mob/living/simple_animal/hostile/retaliate/rogue/saiga/UniqueAttack()
+	if(istype(target, /obj/structure/spacevine))
+		var/obj/structure/spacevine/SV = target
 		SV.eat(src)
-		food = max(food + 30, 100)
-
+		food = max(food + 30, food_max + 50)
+		return
+	return ..()
 
 /mob/living/simple_animal/hostile/retaliate/rogue/saigabuck/simple_limb_hit(zone)
 	if(!zone)

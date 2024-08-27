@@ -9,6 +9,8 @@
 	dynamic_hair_suffix = "+generic"
 	bloody_icon_state = "helmetblood"
 	experimental_onhip = TRUE
+	var/will_cover // used for avoiding issues when worn on hip, currently only helmets
+	var/will_hide
 
 /obj/item/clothing/head/roguetown/equipped(mob/user, slot)
 	. = ..()
@@ -45,6 +47,32 @@
 	anvilrepair = null
 	sewrepair = TRUE
 	blocksound = SOFTHIT
+
+/obj/item/clothing/head/roguetown/helmet/heavy/rust
+	name = "rusted barbute"
+	desc = "A rusted barbute. Relatively fragile, and might turn your hair brown, but offers good protection."
+	icon_state = "rustbarbuta"
+	emote_environment = 3
+	will_hide = HIDEEARS|HIDEFACE|HIDEHAIR
+	block2add = FOV_RIGHT|FOV_LEFT
+	smeltresult = /obj/item/ingot/iron
+	max_integrity = 200 // shitty rusted iron
+
+/obj/item/clothing/head/roguetown/helmet/ironplate
+	icon = 'icons/roguetown/clothing/head.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/head.dmi'
+	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_HIP
+	name = "iron plate helmet"
+	max_integrity = 350//isn't the same as a steel helmet but is better than a skullcap, costs 2 bars and protects the mouth
+	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_STAB) // Stab protection out of having faceplate
+	block2add = FOV_RIGHT|FOV_LEFT // Unremovable visor.
+	armor = list("melee" = 60, "bullet" = 60, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	icon_state = "ironplate"
+	item_state = "ironplate"
+	desc = "An iron masked helmet usually worn by armed men, it is a solid design yet antiquated and cheap."
+	will_cover = HEAD|HAIR|NOSE|MOUTH|EARS
+	flags_inv = HIDEEARS
+	smeltresult = /obj/item/ingot/iron
 
 /obj/item/clothing/head/roguetown/roguehood/shalal
 	name = "keffiyeh"
@@ -476,6 +504,7 @@
 	desc = "A steel helmet which protects the ears."
 	icon_state = "kettle"
 	body_parts_covered = HEAD|HAIR|EARS
+	will_cover = HEAD|HAIR
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	flags_inv = HIDEEARS
 
@@ -484,7 +513,7 @@
 	icon_state = "sallet"
 	desc = "A steel helmet which protects the ears."
 	smeltresult = /obj/item/ingot/steel
-	body_parts_covered = HEAD|HAIR|EARS
+	will_cover = HEAD|HAIR|EARS
 	flags_inv = HIDEEARS
 
 /obj/item/clothing/head/roguetown/helmet/sallet/visored
@@ -534,6 +563,7 @@
 	icon_state = "barbute"
 	item_state = "barbute"
 	flags_inv = HIDEEARS|HIDEFACE
+	will_cover = FULL_HEAD
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
@@ -1179,3 +1209,17 @@
 		ADD_TRAIT(user, TRAIT_NOSTINK,"Dead Nose")
 	else
 		REMOVE_TRAIT(user, TRAIT_NOSTINK,"Dead Nose")
+
+/obj/item/clothing/head/roguetown/helmet/ironpot
+	icon = 'icons/roguetown/clothing/head.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/head.dmi'
+	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_HIP
+	name = "iron plate helmet"
+	max_integrity = 250//isn't the same as a steel helmet but is better than a skullcap
+	armor = list("melee" = 50, "bullet" = 30, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	icon_state = "ironpot"
+	item_state = "ironpot"
+	desc = "A iron pot style helmet designed to protect the skull and the nose, designs like those are outdated but they are simple to make in big numbers."
+	will_cover = HEAD|HAIR|NOSE|EARS
+	flags_inv = HIDEEARS
+	smeltresult = /obj/item/ingot/iron

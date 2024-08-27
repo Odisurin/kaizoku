@@ -241,6 +241,27 @@
 	base_icon_state = "lawtome"
 	bookfile = "law.json"
 
+/obj/item/book/rogue/hetheia
+	name = "Hethenomicon"
+	desc = "Druid Theia of longleaves"
+	icon_state ="book11_0"
+	base_icon_state = "book11"
+	bookfile = "hetheia.json"
+
+/obj/item/book/rogue/terminus
+	name = "Book of Terminus est"
+	desc = "Unknown Arthur"
+	icon_state ="Blackbook1_0"
+	base_icon_state = "Blackbook1"
+	bookfile = "terminus.json"
+
+/obj/item/book/rogue/cook
+	name = "Cooking for Tallums"
+	desc = "Written by Ulga Denstone"
+	icon_state ="book5_0"
+	base_icon_state = "book5"
+	bookfile = "cooking.json"
+
 		//no more theif stole the books
 /obj/item/book/rogue/knowledge1
 	name = "Book of Knowledge"
@@ -279,6 +300,12 @@
 	base_icon_state = "book2"
 	bookfile = "tales2.json"
 
+/obj/item/book/rogue/countess
+	name = "The Chained Countess"
+	desc = "wrote by Rassius Kur"
+	icon_state ="book10_0"
+	base_icon_state = "book10"
+	bookfile = "countess.json"
 
 /obj/item/book/rogue/tales3
 	name = "Myths & Legends of Rockhill & Beyond Volume I"
@@ -384,6 +411,13 @@
 	icon_state ="book8_0"
 	base_icon_state = "book8"
 	bookfile = "tales14.json"
+
+/obj/item/book/rogue/midnightquaint
+	name = "The Midnight Quaint"
+	desc = "By Lorezn de Attori of House Attori"
+	icon_state ="book6_0"
+	base_icon_state = "book6"
+	bookfile = "midnightquaint.json"
 
 /obj/item/book/rogue/playerbook
 	var/player_book_text = "moisture in the air or water leaks have rendered the carefully written caligraphy of this book unreadable"

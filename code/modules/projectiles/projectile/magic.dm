@@ -719,3 +719,17 @@
 	armor_penetration = 100
 	temperature = 50
 	flag = "magic"
+
+/obj/projectile/magic/sickness
+	name = "Bolt of Sickness"
+	icon_state = "xray"
+	damage = 10
+	damage_type = BURN
+	flag = "magic"
+	range = 15
+
+/obj/projectile/magic/sickness/on_hit(atom/target, blocked = FALSE)
+	. = ..()
+	if(iscarbon(target))
+		var/mob/living/carbon/M = target
+		M.reagents.add_reagent(/datum/reagent/toxin, 3)

@@ -31,6 +31,7 @@
 	H.mind.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)

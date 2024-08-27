@@ -286,7 +286,7 @@
 	lefthand_file = 'icons/mob/inhands/weapons/roguebig_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/roguebig_righthand.dmi'
 	name = "kilij scimitar"
-	desc = "A curved blade of Zybantu origin meaning 'curved one'. The standard sword that saw the conquest of the Zybantine continent and peoples."
+	desc = "A curved blade of Bayyidic origin meaning 'curved one'. The standard sword that saw the conquest of the Zybantine continent and peoples."
 	parrysound = "bladedmedium"
 	swingsound = BLADEWOOSH_LARGE
 	pickup_sound = 'sound/foley/equip/swordlarge2.ogg'

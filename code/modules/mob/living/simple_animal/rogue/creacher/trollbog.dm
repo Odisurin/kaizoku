@@ -44,6 +44,7 @@
 	aggressive = 1
 //	stat_attack = UNCONSCIOUS
 	remains_type = /obj/item/rogueweapon/battle
+	body_eater = TRUE
 
 /mob/living/simple_animal/hostile/retaliate/rogue/trollbog/death(gibbed)
 	..()
@@ -73,11 +74,6 @@
 	if(pulledby)
 		Retaliate()
 		GiveTarget(pulledby)
-
-/mob/living/simple_animal/hostile/retaliate/rogue/trollbog/find_food()
-	. = ..()
-	if(!.)
-		return eat_bodies()
 
 /mob/living/simple_animal/hostile/retaliate/rogue/trollbog/simple_limb_hit(zone)
 	if(!zone)

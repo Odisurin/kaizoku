@@ -66,6 +66,10 @@
 /obj/item/clothing/mask/rogue/lordmask/l
 	icon_state = "lmask_l"
 
+/obj/item/clothing/mask/rogue/shepherd/rag
+	name = "rag halfmask"
+	icon_state = "ragmask"
+
 /obj/item/clothing/mask/rogue/facemask
 	name = "iron mask"
 	icon_state = "imask"
@@ -277,5 +281,5 @@
 			var/mob/L = loc
 			L.update_inv_wear_mask()
 		return
-	else 
+	else
 		return

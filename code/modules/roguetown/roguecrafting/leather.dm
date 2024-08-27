@@ -37,6 +37,20 @@
 	sellprice = 10
 	craftdiff = 1
 
+/datum/crafting_recipe/roguetown/leather/bikini
+	name = "leather bikini armor"
+	result = /obj/item/clothing/suit/roguetown/armor/leather/bikini
+	reqs = list(/obj/item/natural/hide = 2)
+	sellprice = 24	//Costs about ~12 to make.
+
+/datum/crafting_recipe/roguetown/leather/hidebikini
+	name = "hide bikini armor"
+	result = /obj/item/clothing/suit/roguetown/armor/leather/hide/bikini
+	reqs = list(/obj/item/natural/hide = 1,
+				/obj/item/natural/fur = 1)
+	sellprice = 28	//Costs about ~16 to make. So, HIGH resale.
+
+
 /datum/crafting_recipe/roguetown/leather/gloves
 	name = "leather gloves (x2)"
 	result = list(/obj/item/clothing/gloves/roguetown/leather,

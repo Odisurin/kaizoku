@@ -5,7 +5,7 @@
 	name = "Half-Elf"
 	id = "human"
 	desc = "<b>Half Elf</b><br>\
-	The child of an Elf and Humen, Half-Elves are generally frowned \
+	The child of an Elf and Human, Half-Elves are generally frowned \
 	upon by more conservative peoples, although as racial tensions lower, \
 	more and more half-elves are being born. To the point that some scholars \
 	worry that someday, it may be impossible to distinguish the two species. \

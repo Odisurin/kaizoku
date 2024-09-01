@@ -2,6 +2,9 @@
 	name = "Misc"
 	desc = ""
 
+/datum/skill/misc/tracking
+	name = "Tracking"
+
 /datum/skill/misc/athletics
 	name = "Athletics"
 

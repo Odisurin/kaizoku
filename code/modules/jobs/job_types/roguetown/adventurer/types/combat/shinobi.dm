@@ -23,6 +23,7 @@
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, 5)
 		H.mind.adjust_skillrank(/datum/skill/misc/sneaking, 5, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/stealing, 4, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
@@ -45,12 +46,13 @@
 	beltr = /obj/item/quiver/arrows/shinobi
 	if(prob(50))
 		beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/tanto
-	else 
+	else
 		beltl = /obj/item/rogueweapon/huntingknife/idagger/steel/kaiken
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 	shoes = /obj/item/clothing/shoes/roguetown/kaizoku/jikatabi/shinobi
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather
+	backpack_contents = list(/obj/item/lockpick = 1)
 
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	H.change_stat("perception", 1)

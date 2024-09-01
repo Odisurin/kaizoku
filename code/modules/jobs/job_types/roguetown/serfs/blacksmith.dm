@@ -15,6 +15,7 @@
 	"Aasimar",
 	"Kitsune",
 	"Tengu",
+	"Beastkin",
 	"Oni",
 	"Kappa")
 

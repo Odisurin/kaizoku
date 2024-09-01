@@ -92,7 +92,7 @@
 	possible_item_intents = list(SPEAR_BASH)
 	gripped_intents = list(SPEAR_BASH,/datum/intent/spear/thrust/mancatcher)
 	name = "sasumata"
-	desc = "A unique polearm featuring a spring-action pincer on the end, lined with spikes designed to cause extreme pain, rather than extreme injury. Referred to as a man-catcher in the Humen tongue, it is a favored tool of slavers and bounty-hunters."
+	desc = "A unique polearm featuring a spring-action pincer on the end, lined with spikes designed to cause extreme pain, rather than extreme injury. Referred to as a man-catcher in the Human tongue, it is a favored tool of slavers and bounty-hunters."
 	icon_state = "sasumata"
 	icon = 'icons/roguetown/weapons/64.dmi'
 	wlength = WLENGTH_GREAT
@@ -283,7 +283,7 @@
 	force = 10
 	force_wielded = 15
 	name = "simple spear"
-	desc = "With this weapon, the tribes of humenity became the chosen people of the Forgotten God."
+	desc = "With this weapon, the tribes of humanity became the chosen people of the Forgotten God."
 	icon_state = "stonespear"
 	pixel_y = -16
 	pixel_x = -16
@@ -378,7 +378,7 @@
 
 /obj/item/rogueweapon/halberd/bardiche/naginata
 	name = "naginata"
-	desc = "Its earliest form being a tachi blade mounted upon a long wooden pole, the naginata was the first polearm to come into widespread use by the Abyssariad, who developed the weapon in order to better combat Humen and Elven cavalry."
+	desc = "Its earliest form being a tachi blade mounted upon a long wooden pole, the naginata was the first polearm to come into widespread use by the Abyssariad, who developed the weapon in order to better combat Human and Elven cavalry."
 	icon_state = "naginata"
 	smeltresult = /obj/item/ingot/iron
 	dropshrink = 0.8

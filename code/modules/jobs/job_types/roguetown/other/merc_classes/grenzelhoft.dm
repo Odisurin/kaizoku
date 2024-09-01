@@ -1,6 +1,6 @@
 /datum/advclass/mercenary/grenzelhoft
-	name = "Grenzelhoft"
-	tutorial = "A mercenary from the Grenzelhoft Empire's Mercenary Guild. Their only care is coin, and the procurement of coin."
+	name = "Grenzlandian"
+	tutorial = "A mercenary from the Grenzlandic Empire's Western Mercenary Guild. They care only for coin and glory, and the procurement of more coin."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list("Humen",
 	"Elf",
@@ -31,7 +31,7 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/shields, pick(0,0,1), TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
-	
+
 	beltr = /obj/item/storage/belt/rogue/pouch/coins/poor
 	neck = /obj/item/clothing/neck/roguetown/chaincoif
 
@@ -39,7 +39,7 @@
 		H.underwear = "Femleotard"
 		H.underwear_color = CLOTHING_BLACK
 		H.update_body()
-	
+
 	pants = /obj/item/clothing/under/roguetown/grenzelpants
 	shoes = /obj/item/clothing/shoes/roguetown/grenzelhoft
 	gloves = /obj/item/clothing/gloves/roguetown/grenzelgloves

@@ -16,6 +16,7 @@
 	"Aasimar",
 	"Kitsune",
 	"Tengu",
+	"Beastkin",
 	"Oni",
 	"Kappa")
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)

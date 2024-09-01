@@ -4,7 +4,7 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/sewercarrion
 	icon = 'icons/roguetown/mob/monster/sewercarrion.dmi'
 	name = "sewercarrion"
-	desc = "when humenity first developed the sewers, the cockroaches overfed upon alchemical waste, overgrowing- taking on humen flesh."
+	desc = "when humanity first developed the sewers, the cockroaches overfed upon alchemical waste, overgrowing- taking on human flesh."
 	icon_state = "sewercarrion"
 	icon_living = "sewercarrion"
 	icon_dead = "sewercarriondead"
@@ -49,13 +49,14 @@
 	aggressive = 1
 //	stat_attack = UNCONSCIOUS
 	remains_type = /obj/effect/decal/remains/sewercarrion
+	body_eater = TRUE
 
 /mob/living/simple_animal/hostile/retaliate/rogue/sewercarrion/necrobug
 	name = "necrophage"
 	icon_state = "necrobug"
 	icon_living = "necrobug"
 	icon_dead = "necrobugdead"
-	desc = "overgrow from alchemical waste and humen flesh, the necrophages spreads across all non-contaminated sewers from commertial lines."
+	desc = "overgrow from alchemical waste and human flesh, the necrophages spreads across all non-contaminated sewers from commertial lines."
 
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/rawcutlet/xeno = 2,
 						/obj/item/natural/hide = 2)
@@ -111,11 +112,6 @@
 	if(pulledby)
 		Retaliate()
 		GiveTarget(pulledby)
-
-/mob/living/simple_animal/hostile/retaliate/rogue/sewercarrion/find_food()
-	. = ..()
-	if(!.)
-		return eat_bodies()
 
 /mob/living/simple_animal/hostile/retaliate/rogue/sewercarrion/simple_limb_hit(zone)
 	if(!zone)

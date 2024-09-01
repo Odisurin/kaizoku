@@ -4,13 +4,13 @@
 /datum/species/beastkin
 	name = "Beastkin"
 	id = "beastkin"
-	desc = "Coming from the Zybantine's arid lands, the Beastkins are dendor creatures \
+	desc = "Coming from the Southern arid lands, the Beastkins or Osuni to themselves are dendoric creatures \
 	once belonging to a rich, proudful empire where the gold flowed as river, the soil \
 	lush in life, and hills rich in copper and tin. However, nothing was made to last \
-	as Humen's influence stretched far and wide - and under their new control, the Beastkins \
+	as mankind's influence stretched far and wide - and under their new control, the Beastkins \
 	were humilliated, their glorious leaders forgotten and preserved only in ruins. As \
-	Abyssariads raided Zybantine, many found protection under the raiders to work as \
-	laborers- but faced oppression from the island's lowest cast, such as Humens and \
+	Abyssariads raided Zybanti and Bayyid territories, many found protection under the raiders to work as \
+	laborers- but faced oppression from the island's lowest cast, such as Humans and \
 	Kappas due to competition. Even with Kitsune and Tengu's support, they struggle \
 	to receive citizenship due to many cultural shocks."
 	default_color = "FFFFFF"
@@ -59,7 +59,6 @@
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_SAY)
 	C.remove_language(/datum/language/common)
-
 
 /datum/species/beastkin/handle_speech(datum/source, mob/speech_args)
 	. = ..()

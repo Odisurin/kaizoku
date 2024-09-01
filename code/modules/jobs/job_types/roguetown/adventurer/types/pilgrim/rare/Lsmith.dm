@@ -2,7 +2,7 @@
 
 /datum/advclass/pilgrim/rare/masterblacksmith
 	name = "Master Blacksmith"
-	tutorial = "Dwarves, and humen who trained extensively under them in the art of smithing, \
+	tutorial = "Dwarves, and humans who trained extensively under them in the art of smithing, \
 	become the most legendary smiths at their craft, gaining reputation beyond compare."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(
@@ -29,7 +29,7 @@
 	cloak = /obj/item/clothing/cloak/apron/brown
 	gloves = /obj/item/clothing/gloves/roguetown/leather
 	backpack_contents = list(/obj/item/flint = 1, /obj/item/rogueweapon/tongs=1, /obj/item/rogueore/coal=1, /obj/item/rogueore/iron=1)
-	
+
 	if(H.mind)
 		H.mind.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/combat/swords, pick(2,3,3), TRUE)
@@ -44,6 +44,7 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, pick(2,2,3), TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/masonry, 2, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/climbing, pick(1,1,2), TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/engineering, pick(2,3,3), TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, pick(1,2,2), TRUE)

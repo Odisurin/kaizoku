@@ -269,6 +269,7 @@
 			barefootstep = initial(barefootstep)
 			clawfootstep = initial(clawfootstep)
 			heavyfootstep = initial(heavyfootstep)
+			track_prob = initial(track_prob)
 	return TRUE
 
 /turf/open/floor/rogue/dirt/proc/become_muddy()
@@ -281,6 +282,7 @@
 		footstep = FOOTSTEP_MUD
 		barefootstep = FOOTSTEP_MUD
 		heavyfootstep = FOOTSTEP_MUD
+		track_prob = 10
 		bloodiness = 20
 
 /turf/open/floor/rogue/dirt/road

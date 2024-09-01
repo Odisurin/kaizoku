@@ -45,5 +45,6 @@
 		H.mind.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/tracking, 1, TRUE)
 		H.change_stat("intelligence", 1)
 		H.change_stat("endurance", 2)

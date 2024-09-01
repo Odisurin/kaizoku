@@ -15,14 +15,14 @@
 	"Oni",
 	"Kappa",
 	"Beastkin")
-	allowed_patrons = list("Astrata", "Dendor", "Necra")
+	allowed_patrons = list("Astrata", "Dendor", "Necra", "Enora")
 	ispilgrim = FALSE
 	outfit = /datum/outfit/job/roguetown/adventurer/cleric
 
 /datum/outfit/job/roguetown/adventurer/cleric/pre_equip(mob/living/carbon/human/H)
 	..()
 	H.virginity = TRUE
-	var/allowed_patrons = list("Astrata", "Dendor", "Necra")
+	var/allowed_patrons = list("Astrata", "Dendor", "Necra", "Enora")
 
 	var/datum/patrongods/ourpatron
 	if(istype(H.PATRON, /datum/patrongods))
@@ -44,6 +44,8 @@
 			neck = /obj/item/clothing/neck/roguetown/psicross/astrata
 		if("Dendor")
 			neck = /obj/item/clothing/neck/roguetown/psicross/dendor
+		if("Enora")
+			neck = /obj/item/clothing/neck/roguetown/psicross/enora
 		if("Necra")
 			neck = /obj/item/clothing/neck/roguetown/psicross/necra
 			cloak = /obj/item/clothing/cloak/raincloak/mortus

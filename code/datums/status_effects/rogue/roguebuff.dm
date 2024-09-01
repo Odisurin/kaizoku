@@ -99,6 +99,17 @@
 		var/mob/living/carbon/C = owner
 		C.remove_stress(/datum/stressevent/ozium)
 
+/datum/status_effect/buff/Speedy
+	id = "Speedy"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/Speedy
+	effectedstats = list("strength" = -3, "speed" = 3)
+	duration = 1 MINUTES
+
+/atom/movable/screen/alert/status_effect/buff/Speedy
+	name = "Speedy"
+	desc = "Must go faster!"
+	icon_state = "muscles"
+
 /datum/status_effect/buff/moondust
 	id = "moondust"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/druqks

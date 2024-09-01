@@ -1,7 +1,7 @@
 //terrify mobs scream
 /datum/advclass/combat/barbarian
 	name = "Barbarian"
-	tutorial = "Barbarians are humen men who live in the outskirts of society, \
+	tutorial = "Barbarians are human men who live in the outskirts of society, \
 	living off the land and bathing in the red glory of combat."
 	allowed_sexes = list(MALE)
 	allowed_races = list("Humen")
@@ -20,6 +20,7 @@
 	H.mind.adjust_skillrank(/datum/skill/misc/swimming, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
+	H.mind.adjust_skillrank(/datum/skill/misc/tracking, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
 	H.mind.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)

@@ -1,5 +1,5 @@
 /datum/advclass/mercenary/zybantine
-	name = "Zybantine"
+	name = "Zybanti"
 	tutorial = "A cutthroat from the southern countries, you've headed into foreign lands to make even greater coin than you had prior."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list("Humen",
@@ -9,6 +9,7 @@
 	"Tiefling",
 	"Dark Elf",
 	"Aasimar",
+	"Beastkin",
 	"Kitsune",
 	"Tengu",
 	"Oni",

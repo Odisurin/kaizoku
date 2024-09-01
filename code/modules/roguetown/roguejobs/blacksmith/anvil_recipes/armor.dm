@@ -20,6 +20,12 @@
 	created_item = list(/obj/item/clothing/neck/roguetown/gorget,
 						/obj/item/clothing/neck/roguetown/gorget)
 
+/datum/anvil_recipe/armor/iplatehelmet
+	name = "Plate helmet +2"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/ingot/iron)
+	created_item = /obj/item/clothing/head/roguetown/helmet/ironplate
+
 /datum/anvil_recipe/armor/ichainglove
 	name = "chain gauntlets"
 	req_bar = /obj/item/ingot/iron
@@ -31,6 +37,11 @@
 	req_bar = /obj/item/ingot/iron
 	created_item = list(/obj/item/clothing/under/roguetown/chainlegs/iron,
 						/obj/item/clothing/under/roguetown/chainlegs/iron)
+
+/datum/anvil_recipe/armor/ipothelmet
+	name = "Pot helmet"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/head/roguetown/helmet/ironpot
 
 /datum/anvil_recipe/armor/platemask
 	name = "iron mask"
@@ -161,6 +172,12 @@
 //	additional_items = list(/obj/item/ingot/gold)
 //	created_item = /obj/item/clothing/shoes/roguetown/boots/dwarfboots
 
+/datum/anvil_recipe/armor/dwarfhelmet
+	name = "Dwarven Helmet +1 Gold"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/gold)
+	created_item = /obj/item/clothing/head/roguetown/helmet/heavy/dwarfhelm
+
 /datum/anvil_recipe/armor/brigadine
 	name = "brigadine (3s 1c)"
 	req_bar = /obj/item/ingot/steel
@@ -233,3 +250,30 @@
 	name = "steel mask"
 	req_bar = /obj/item/ingot/steel
 	created_item = (/obj/item/clothing/mask/rogue/facemask/steel)
+
+// Bikini Papalobee
+
+/datum/anvil_recipe/armor/studdedbikini
+	name = "Studded Leather Bikini (+Leather Bikini)"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/clothing/suit/roguetown/armor/leather/bikini)
+	created_item = /obj/item/clothing/suit/roguetown/armor/leather/studded/bikini
+
+/datum/anvil_recipe/armor/studdedbikinitwo
+	name = "Studded Leather Bikini (+Leather Armor)"
+	req_bar = /obj/item/ingot/iron
+	additional_items = list(/obj/item/clothing/suit/roguetown/armor/leather)
+	created_item = /obj/item/clothing/suit/roguetown/armor/leather/studded/bikini
+
+/datum/anvil_recipe/armor/platebikini
+	name = "Half-Plate Bikini (+2 Steel +1 Cloth)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/natural/cloth)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/bikini
+
+/datum/anvil_recipe/armor/platefullbikini
+	name = "Full-Plate Bikini (+3 Steel +1 Cloth)"
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/ingot/steel, /obj/item/natural/cloth)
+	created_item = /obj/item/clothing/suit/roguetown/armor/plate/full/bikini
+

@@ -48,6 +48,7 @@
 		H.mind.adjust_skillrank(/datum/skill/craft/crafting, pick(1,2,2), TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/masonry, pick(0,0,1), TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/engineering, pick(0,1,1), TRUE)
+		H.mind.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 		H.mind.adjust_skillrank(/datum/skill/craft/traps, 1, TRUE)
@@ -64,7 +65,7 @@
 
 	if(H.gender == MALE)
 		shoes = /obj/item/clothing/shoes/roguetown/boots/leather
-		shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt	
+		shirt = /obj/item/clothing/suit/roguetown/shirt/shortshirt
 	else
 		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random
 		shoes = /obj/item/clothing/shoes/roguetown/shortboots

@@ -1120,7 +1120,7 @@
 	color_src = SKINCOLOR
 	offsetti = TRUE
 
-/datum/sprite_accessory/ears/elfh //halfelfs are humens techincally
+/datum/sprite_accessory/ears/elfh //halfelfs are humans techincally
 	icon = 'icons/roguetown/mob/bodies/attachments.dmi'
 	name = "ElfH"
 	icon_state = "elf"

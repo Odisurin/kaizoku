@@ -115,7 +115,7 @@
 	force_wielded = 20
 	possible_item_intents = list(/datum/intent/axe/cut)
 	name = "nagai ono"
-	desc = "A battleaxe of Abyssariad design with a longer handle and shorter blade than its Humen counterpart. The increased leverage, reduced weight, and smaller striking area give it greater use against armor, while the longer handle makes it easier to parry with."
+	desc = "A battleaxe of Abyssariad design with a longer handle and shorter blade than its Human counterpart. The increased leverage, reduced weight, and smaller striking area give it greater use against armor, while the longer handle makes it easier to parry with."
 	icon_state = "ono"
 	max_blade_int = 500
 	smeltresult = /obj/item/ingot/steel
@@ -192,7 +192,7 @@
 /obj/item/rogueweapon/woodcut/steel
 	slot_flags = ITEM_SLOT_HIP
 	name = "steel axe"
-	desc = "A bearded steel axe revered by dwarf, humen and elf alike. Performs much better than its iron counterpart."
+	desc = "A bearded steel axe revered by dwarf, human and elf alike. Performs much better than its iron counterpart."
 	icon_state = "saxe"
 	icon = 'icons/roguetown/weapons/32.dmi'
 	force = 20

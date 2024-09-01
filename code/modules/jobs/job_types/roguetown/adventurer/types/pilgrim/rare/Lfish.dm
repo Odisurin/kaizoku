@@ -2,7 +2,7 @@
 
 /datum/advclass/pilgrim/rare/fishermaster
 	name = "Master Fisher"
-	tutorial = "Humen who have mastered the seas, able to catch any fish with ease \
+	tutorial = "Humans who have mastered the seas, able to catch any fish with ease \
 	no matter the body of water, who are also skilled swimmers and cooks."
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list("Humen")

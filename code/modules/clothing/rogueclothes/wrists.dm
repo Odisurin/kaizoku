@@ -6,14 +6,15 @@
 	sleevetype = "shirt"
 
 /obj/item/clothing/wrists/roguetown/bracers
-	name = "bracers"
+	name = "plate vambracers"
 	desc = ""
 	body_parts_covered = ARMS
 	icon_state = "bracers"
 	item_state = "bracers"
-	armor = list("melee" = 100, "bullet" = 100, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = list("melee" = 80, "bullet" = 60, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
 	blocksound = PLATEHIT
+	resistance_flags = FIRE_PROOF
 	anvilrepair = /datum/skill/craft/armorsmithing
 
 /obj/item/clothing/wrists/roguetown/bracers/leather
@@ -37,6 +38,12 @@
 	slot_flags = ITEM_SLOT_WRISTS
 	icon_state = "wrappings"
 	item_state = "wrappings"
+
+/obj/item/clothing/wrists/roguetown/nocwrappings
+	name = "moon wrappings"
+	slot_flags = ITEM_SLOT_WRISTS
+	icon_state = "nocwrappings"
+	item_state = "nocwrappings"
 
 ////Kaizoku Wrist Content////
 

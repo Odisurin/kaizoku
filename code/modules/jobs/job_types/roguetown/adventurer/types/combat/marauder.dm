@@ -5,7 +5,7 @@
 	"Kappa")
 	outfit = /datum/outfit/job/roguetown/adventurer/marauder
 	isvillager = FALSE
-	tutorial = "The Kappa tribes offers warriors to Abyssariad parties under mutual agreement of more manpower for the usage of their technology. Armored in bone and ceramic plates made of silica and carbon in abyssal lava furnaces, these marauders are formidable annihilators of goblins and humens alike."
+	tutorial = "The Kappa tribes offers warriors to Abyssariad parties under mutual agreement of more manpower for the usage of their technology. Armored in bone and ceramic plates made of silica and carbon in abyssal lava furnaces, these marauders are formidable annihilators of goblins and humans alike."
 
 /datum/outfit/job/roguetown/adventurer/marauder/pre_equip(mob/living/carbon/human/H)
 	..()
